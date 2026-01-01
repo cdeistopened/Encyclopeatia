@@ -54,44 +54,22 @@ function formatEmailDate(): string {
 
 export default function AskPeatPage() {
   const [emails, setEmails] = useState<Email[]>([]);
-  const [userEmail, setUserEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedEmail, setSelectedEmail] = useState<Email | null>(null);
   const [view, setView] = useState<"compose" | "inbox">("compose");
-  const [emailValidated, setEmailValidated] = useState(false);
   const emailIdRef = useRef(0);
 
-  // Check if user has provided email before
-  useEffect(() => {
-    const savedEmail = localStorage.getItem("askpeat_email");
-    if (savedEmail) {
-      setUserEmail(savedEmail);
-      setEmailValidated(true);
-    }
-  }, []);
-
-  const validateEmail = (email: string) => {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  };
-
-  const handleEmailSubmit = () => {
-    if (validateEmail(userEmail)) {
-      localStorage.setItem("askpeat_email", userEmail);
-      setEmailValidated(true);
-    }
-  };
-
   const handleSend = async () => {
-    if (!body.trim() || isLoading || !emailValidated) return;
+    if (!body.trim() || isLoading) return;
 
     const newEmail: Email = {
       id: ++emailIdRef.current,
-      from: userEmail,
-      to: "dr.peat@encyclopeatia.com",
-      subject: subject || "Question for Dr. Peat",
+      from: "you@reader.com",
+      to: "ask@raypeat.wiki",
+      subject: subject || "Research Question",
       body: body,
       date: formatEmailDate(),
       isUser: true,
@@ -119,8 +97,8 @@ export default function AskPeatPage() {
 
       const replyEmail: Email = {
         id: ++emailIdRef.current,
-        from: "dr.peat@encyclopeatia.com",
-        to: userEmail,
+        from: "Dr. Peat AI <ask@raypeat.wiki>",
+        to: "you@reader.com",
         subject: `Re: ${newEmail.subject}`,
         body: data.answer,
         date: formatEmailDate(),
@@ -178,12 +156,30 @@ export default function AskPeatPage() {
             AI-Powered Research
           </div>
           <h1 className="font-serif text-4xl md:text-5xl font-bold leading-[0.95] mb-4">
-            Ask <span className="text-primary">Dr. Peat</span>
+            Ask <span className="text-primary">Peat</span>
           </h1>
           <p className="text-ink-muted text-lg max-w-xl">
-            Send an email to our AI research assistant trained on 770+ transcripts,
+            Ask questions and get AI-synthesized answers from 770+ transcripts,
             newsletters, and articles from Ray Peat&apos;s archive.
           </p>
+        </div>
+
+        {/* Important Disclaimer */}
+        <div className="mb-6 p-4 bg-amber-50 border-2 border-amber-600 rounded flex gap-3 items-start">
+          <span className="material-symbols-outlined text-amber-600 flex-shrink-0">
+            info
+          </span>
+          <div className="text-sm">
+            <p className="font-bold text-amber-800 mb-1">
+              This is not Ray Peat.
+            </p>
+            <p className="text-amber-700">
+              Responses are AI-generated summaries based on Ray Peat&apos;s
+              published work. They may contain errors or misrepresentations.
+              Always verify with original sources and consult qualified
+              professionals for health decisions.
+            </p>
+          </div>
         </div>
 
         {/* Email Client */}
@@ -199,7 +195,9 @@ export default function AskPeatPage() {
                     : "bg-paper border-ink/30 hover:border-ink"
                 }`}
               >
-                <span className="material-symbols-outlined text-base">edit</span>
+                <span className="material-symbols-outlined text-base">
+                  edit
+                </span>
                 Compose
               </button>
               <button
@@ -210,56 +208,17 @@ export default function AskPeatPage() {
                     : "bg-paper border-ink/30 hover:border-ink"
                 }`}
               >
-                <span className="material-symbols-outlined text-base">inbox</span>
+                <span className="material-symbols-outlined text-base">
+                  inbox
+                </span>
                 Inbox ({emails.filter((e) => !e.isUser).length})
               </button>
             </div>
-            {emailValidated && (
-              <span className="text-xs text-ink-muted font-mono">
-                Signed in as {userEmail}
-              </span>
-            )}
           </div>
 
           {/* Content */}
           <div className="min-h-[500px]">
-            {!emailValidated ? (
-              /* Email Gate */
-              <div className="flex flex-col items-center justify-center h-[500px] p-8 text-center">
-                <span className="material-symbols-outlined text-6xl text-primary mb-4">
-                  mail
-                </span>
-                <h2 className="font-serif text-2xl font-bold mb-2">
-                  Enter your email to continue
-                </h2>
-                <p className="text-ink-muted mb-6 max-w-md">
-                  We&apos;ll send responses to your research questions directly to your inbox.
-                  Your first 3 queries are free.
-                </p>
-                <div className="w-full max-w-sm space-y-4">
-                  <input
-                    type="email"
-                    value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
-                    placeholder="you@example.com"
-                    className="w-full bg-paper border-2 border-ink px-4 py-3 font-body focus:ring-0 focus:border-primary focus:shadow-hard transition-all"
-                    onKeyDown={(e) => e.key === "Enter" && handleEmailSubmit()}
-                  />
-                  <button
-                    onClick={handleEmailSubmit}
-                    disabled={!validateEmail(userEmail)}
-                    className="w-full btn-primary py-3 disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    Continue
-                  </button>
-                  <p className="text-xs text-ink-muted">
-                    By continuing, you agree to receive emails from EncycloPEATia.
-                    <br />
-                    Upgrade to Pro for unlimited queries.
-                  </p>
-                </div>
-              </div>
-            ) : view === "compose" ? (
+            {view === "compose" ? (
               /* Compose View */
               <div className="p-6">
                 <div className="space-y-4">
@@ -272,17 +231,13 @@ export default function AskPeatPage() {
                       <span className="material-symbols-outlined text-primary text-lg">
                         smart_toy
                       </span>
-                      <span className="font-medium">dr.peat@encyclopeatia.com</span>
-                      <span className="text-xs text-ink-muted">(AI Research Assistant)</span>
+                      <span className="font-medium">
+                        dr.peat@encyclopeatia.com
+                      </span>
+                      <span className="text-xs text-ink-muted">
+                        (AI Research Assistant)
+                      </span>
                     </div>
-                  </div>
-
-                  {/* From Field */}
-                  <div className="flex items-center gap-4 pb-4 border-b border-ink/10">
-                    <label className="w-16 font-mono text-xs font-bold uppercase text-ink-muted">
-                      From:
-                    </label>
-                    <span className="font-medium">{userEmail}</span>
                   </div>
 
                   {/* Subject Field */}
@@ -318,7 +273,9 @@ I have a question about..."
                           key={i}
                           onClick={() => {
                             setSubject(s);
-                            setBody(`Dear Dr. Peat,\n\nI'd like to learn more about ${s.toLowerCase()}. What are your thoughts on this topic?\n\nThank you.`);
+                            setBody(
+                              `Dear Dr. Peat,\n\nI'd like to learn more about ${s.toLowerCase()}. What are your thoughts on this topic?\n\nThank you.`,
+                            );
                           }}
                           className="text-xs px-3 py-1.5 bg-paper-dim border border-ink/20 hover:border-primary hover:text-primary transition-all"
                         >
@@ -350,7 +307,9 @@ I have a question about..."
                           </>
                         ) : (
                           <>
-                            <span className="material-symbols-outlined text-base">send</span>
+                            <span className="material-symbols-outlined text-base">
+                              send
+                            </span>
                             Send
                           </>
                         )}
@@ -360,7 +319,9 @@ I have a question about..."
 
                   {error && (
                     <div className="mt-4 p-3 bg-red-50 border-2 border-red-200 text-red-700 text-sm flex items-center gap-2">
-                      <span className="material-symbols-outlined text-base">error</span>
+                      <span className="material-symbols-outlined text-base">
+                        error
+                      </span>
                       {error}
                     </div>
                   )}
@@ -397,8 +358,12 @@ I have a question about..."
                             {email.isUser ? "Sent" : "From Dr. Peat"}
                           </span>
                         </div>
-                        <p className="font-medium text-sm truncate">{email.subject}</p>
-                        <p className="text-xs text-ink-muted mt-1">{email.date}</p>
+                        <p className="font-medium text-sm truncate">
+                          {email.subject}
+                        </p>
+                        <p className="text-xs text-ink-muted mt-1">
+                          {email.date}
+                        </p>
                       </div>
                     ))
                   )}
@@ -422,7 +387,9 @@ I have a question about..."
                           <span className="font-mono text-xs font-bold uppercase text-ink-muted">
                             Subject:
                           </span>
-                          <span className="font-bold">{selectedEmail.subject}</span>
+                          <span className="font-bold">
+                            {selectedEmail.subject}
+                          </span>
                           <span className="font-mono text-xs font-bold uppercase text-ink-muted">
                             Date:
                           </span>
@@ -433,46 +400,53 @@ I have a question about..."
                       {/* Email Body */}
                       <div className="prose prose-sm max-w-none mb-6">
                         {selectedEmail.isUser ? (
-                          <p className="whitespace-pre-wrap">{selectedEmail.body}</p>
+                          <p className="whitespace-pre-wrap">
+                            {selectedEmail.body}
+                          </p>
                         ) : (
                           <ReactMarkdown>{selectedEmail.body}</ReactMarkdown>
                         )}
                       </div>
 
                       {/* Sources (Attachments) */}
-                      {selectedEmail.sources && selectedEmail.sources.length > 0 && (
-                        <div className="pt-6 border-t-2 border-ink/10">
-                          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-4 flex items-center gap-2">
-                            <span className="material-symbols-outlined text-base">
-                              attach_file
-                            </span>
-                            Sources ({selectedEmail.sources.length} transcript references)
-                          </h4>
-                          <div className="grid gap-2">
-                            {selectedEmail.sources.slice(0, 6).map((source, j) => (
-                              <Link
-                                key={j}
-                                href={`/episode/${source.episode_id}`}
-                                className="block p-3 bg-paper-dim border-2 border-ink/10 hover:border-primary hover:bg-primary/5 transition-all group"
-                              >
-                                <div className="flex items-start justify-between gap-2">
-                                  <div className="flex-1 min-w-0">
-                                    <p className="font-medium text-sm truncate group-hover:text-primary transition-colors">
-                                      {source.episode_title}
-                                    </p>
-                                    <p className="text-xs text-ink-muted mt-1">
-                                      Section: &quot;{source.section_header}&quot; • {source.show}
-                                    </p>
-                                  </div>
-                                  <span className="material-symbols-outlined text-ink-muted text-sm group-hover:text-primary transition-colors">
-                                    open_in_new
-                                  </span>
-                                </div>
-                              </Link>
-                            ))}
+                      {selectedEmail.sources &&
+                        selectedEmail.sources.length > 0 && (
+                          <div className="pt-6 border-t-2 border-ink/10">
+                            <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-4 flex items-center gap-2">
+                              <span className="material-symbols-outlined text-base">
+                                attach_file
+                              </span>
+                              Sources ({selectedEmail.sources.length} transcript
+                              references)
+                            </h4>
+                            <div className="grid gap-2">
+                              {selectedEmail.sources
+                                .slice(0, 6)
+                                .map((source, j) => (
+                                  <Link
+                                    key={j}
+                                    href={`/episode/${source.episode_id}`}
+                                    className="block p-3 bg-paper-dim border-2 border-ink/10 hover:border-primary hover:bg-primary/5 transition-all group"
+                                  >
+                                    <div className="flex items-start justify-between gap-2">
+                                      <div className="flex-1 min-w-0">
+                                        <p className="font-medium text-sm truncate group-hover:text-primary transition-colors">
+                                          {source.episode_title}
+                                        </p>
+                                        <p className="text-xs text-ink-muted mt-1">
+                                          Section: &quot;{source.section_header}
+                                          &quot; • {source.show}
+                                        </p>
+                                      </div>
+                                      <span className="material-symbols-outlined text-ink-muted text-sm group-hover:text-primary transition-colors">
+                                        open_in_new
+                                      </span>
+                                    </div>
+                                  </Link>
+                                ))}
+                            </div>
                           </div>
-                        </div>
-                      )}
+                        )}
 
                       {/* Reply Button */}
                       {!selectedEmail.isUser && (
@@ -481,7 +455,9 @@ I have a question about..."
                             onClick={() => setView("compose")}
                             className="btn-primary flex items-center gap-2"
                           >
-                            <span className="material-symbols-outlined text-base">reply</span>
+                            <span className="material-symbols-outlined text-base">
+                              reply
+                            </span>
                             Reply
                           </button>
                         </div>
@@ -511,26 +487,6 @@ I have a question about..."
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>
               Connected to EncycloPEATia
             </span>
-          </div>
-        </div>
-
-        {/* Upgrade CTA */}
-        <div className="mt-8 p-6 bg-ink text-white border-2 border-ink">
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="font-serif text-xl font-bold mb-1">
-                Upgrade to Pro
-              </h3>
-              <p className="text-white/70 text-sm">
-                Unlimited queries + custom research reports + priority support
-              </p>
-            </div>
-            <div className="text-right">
-              <div className="font-mono text-2xl font-bold text-primary">$5/mo</div>
-              <button className="mt-2 px-6 py-2 bg-primary text-ink font-mono text-xs font-bold uppercase border-2 border-primary hover:bg-primary/90 transition-all">
-                Upgrade Now
-              </button>
-            </div>
           </div>
         </div>
 
