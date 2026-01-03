@@ -36,11 +36,11 @@ export default function AudioPlayer() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--card)] border-t border-[var(--border)] shadow-lg safe-bottom">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-paper border-t-2 border-ink shadow-hard safe-bottom">
       {/* Progress Bar */}
-      <div className="w-full h-1 bg-[var(--border)] group cursor-pointer relative">
+      <div className="w-full h-1 bg-ink/20 group cursor-pointer relative">
         <div
-          className="absolute top-0 left-0 h-full bg-[var(--primary)]"
+          className="absolute top-0 left-0 h-full bg-primary"
           style={{ width: `${(currentTime / duration) * 100}%` }}
         />
         <input
@@ -57,30 +57,24 @@ export default function AudioPlayer() {
         {/* Play/Pause Button */}
         <button
           onClick={toggle}
-          className="w-10 h-10 flex items-center justify-center rounded-full bg-[var(--primary)] text-white hover:bg-[var(--primary-dark)] transition-colors flex-shrink-0"
+          className="w-10 h-10 flex items-center justify-center bg-primary border-2 border-ink shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 active:shadow-none active:translate-y-0 transition-all flex-shrink-0"
         >
-          {isPlaying ? (
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-            </svg>
-          ) : (
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          )}
+          <span className="material-symbols-outlined text-ink">
+            {isPlaying ? "pause" : "play_arrow"}
+          </span>
         </button>
 
         {/* Episode Info */}
         <div className="flex-1 min-w-0">
           <Link 
             href={`/episode/${encodeURIComponent(currentEpisode.slug)}`}
-            className="block hover:underline"
+            className="block hover:text-primary transition-colors"
           >
-            <h3 className="font-medium text-sm truncate text-[var(--foreground)]">
+            <h3 className="font-medium text-sm truncate text-ink">
               {currentEpisode.title}
             </h3>
           </Link>
-          <div className="flex items-center gap-2 text-xs text-[var(--muted)] truncate">
+          <div className="flex items-center gap-2 text-xs text-ink-muted truncate font-mono">
             <span>{currentEpisode.show}</span>
             <span>•</span>
             <span>
@@ -90,33 +84,29 @@ export default function AudioPlayer() {
         </div>
 
         {/* Controls */}
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex items-center gap-2 flex-shrink-0">
           {/* Rewind 15s */}
           <button
             onClick={() => seek(Math.max(0, currentTime - 15))}
-            className="p-2 rounded hover:bg-[var(--background)] text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+            className="p-2 border-2 border-ink bg-surface hover:bg-primary hover:shadow-hard-sm transition-all"
             title="Rewind 15s"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12.066 11.2a1 1 0 100 1.6 1 1 0 000-1.6zm-4.757-1.485A5.006 5.006 0 0111.45 6.222M6 8.5h2.5V6m10.19 11.778a5.006 5.006 0 01-4.141 3.498m4.949-2.276H17v2.5" />
-            </svg>
+            <span className="material-symbols-outlined text-lg">replay_10</span>
           </button>
 
-          {/* Forward 15s */}
+          {/* Forward 30s */}
           <button
-            onClick={() => seek(Math.min(duration, currentTime + 15))}
-            className="p-2 rounded hover:bg-[var(--background)] text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
-            title="Forward 15s"
+            onClick={() => seek(Math.min(duration, currentTime + 30))}
+            className="p-2 border-2 border-ink bg-surface hover:bg-primary hover:shadow-hard-sm transition-all"
+            title="Forward 30s"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.934 11.2a1 1 0 100 1.6 1 1 0 000-1.6zm4.757-1.485A5.006 5.006 0 0012.55 6.222M18 8.5h-2.5V6m-10.19 11.778a5.006 5.006 0 004.141 3.498M6.949 19.5H9.5v2.5" />
-            </svg>
+            <span className="material-symbols-outlined text-lg">forward_30</span>
           </button>
 
           {/* Speed */}
           <button
             onClick={cyclePlaybackRate}
-            className="min-w-[3rem] px-2 py-1 text-xs font-medium rounded border border-[var(--border)] hover:bg-[var(--background)] transition-colors"
+            className="min-w-[3rem] px-3 py-2 text-xs font-mono font-bold border-2 border-ink bg-surface hover:bg-primary hover:shadow-hard-sm transition-all"
           >
             {playbackRate}x
           </button>
