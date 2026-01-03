@@ -1,0 +1,64 @@
+filters: file.inFolder(this.file.folder)
+properties:
+  note.title:
+    displayName: Episode
+  note.show:
+    displayName: Show
+  note.date_published:
+    displayName: Date
+  note.audio_url:
+    displayName: Audio
+  note.status:
+    displayName: Status
+  note.polished_version:
+    displayName: Polished
+views:
+  - type: table
+    name: All Episodes
+    filters:
+      and:
+        - "!date_transcribed.isEmpty()"
+    order:
+      - show
+      - title
+      - date_published
+      - audio_url
+      - file.name
+      - raw_source
+      - date_transcribed
+      - date_polished
+      - file.embeds
+      - feed
+      - polished_version
+    sort:
+      - property: polished_version
+        direction: ASC
+      - property: raw_source
+        direction: ASC
+      - property: date_published
+        direction: ASC
+    columnSize:
+      note.show: 185
+      note.title: 468
+      note.feed: 26
+  - type: table
+    name: Ask the Herb Doctor
+    filters: show == "Ask the Herb Doctor"
+    order:
+      - date_published
+  - type: table
+    name: EastWest Healing
+    filters: show == "EastWest Healing"
+    order:
+      - date_published
+  - type: table
+    name: Politics and Science
+    filters: show == "Politics and Science"
+    order:
+      - date_published
+  - type: table
+    name: Needs Polishing
+    filters: status != "polished"
+    order:
+      - show
+      - date_published

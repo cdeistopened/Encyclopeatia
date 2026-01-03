@@ -99,9 +99,9 @@ export default function EpisodeTable({ episodes, className = "" }: EpisodeTableP
           placeholder="Search episodes..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full px-4 py-2 bg-[var(--background)] border border-[var(--border)] rounded-md focus:outline-none focus:ring-1 focus:ring-[var(--muted)] transition-shadow"
+          className="w-full px-4 py-2 bg-paper border border-ink rounded-md focus:outline-none focus:ring-1 focus:ring-ink-muted transition-shadow"
         />
-        <div className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--muted)]">
+        <div className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -109,55 +109,55 @@ export default function EpisodeTable({ episodes, className = "" }: EpisodeTableP
       </div>
 
       {/* Table */}
-      <div className="border border-[var(--border)] rounded-md overflow-hidden bg-[var(--card)]">
+      <div className="border border-ink rounded-md overflow-hidden bg-surface">
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
-            <thead className="bg-[var(--background)] border-b border-[var(--border)] text-[var(--muted)] font-medium">
+            <thead className="bg-paper border-b border-ink text-ink-muted font-medium">
               <tr>
                 <th className="px-4 py-3 w-10"></th>
                 <th 
-                  className="px-4 py-3 cursor-pointer hover:text-[var(--foreground)]"
+                  className="px-4 py-3 cursor-pointer hover:text-ink"
                   onClick={() => handleSort("title")}
                 >
                   Title {sortField === "title" && (sortDirection === "asc" ? "↑" : "↓")}
                 </th>
                 <th 
-                  className="px-4 py-3 cursor-pointer hover:text-[var(--foreground)]"
+                  className="px-4 py-3 cursor-pointer hover:text-ink"
                   onClick={() => handleSort("show")}
                 >
                   Show {sortField === "show" && (sortDirection === "asc" ? "↑" : "↓")}
                 </th>
                 <th 
-                  className="px-4 py-3 cursor-pointer hover:text-[var(--foreground)] w-32"
+                  className="px-4 py-3 cursor-pointer hover:text-ink w-32"
                   onClick={() => handleSort("date")}
                 >
                   Date {sortField === "date" && (sortDirection === "asc" ? "↑" : "↓")}
                 </th>
                  <th 
-                  className="px-4 py-3 cursor-pointer hover:text-[var(--foreground)] w-24 text-right"
+                  className="px-4 py-3 cursor-pointer hover:text-ink w-24 text-right"
                   onClick={() => handleSort("duration")}
                 >
                   Duration {sortField === "duration" && (sortDirection === "asc" ? "↑" : "↓")}
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[var(--border)]">
+            <tbody className="divide-y divide-ink/20">
               {filteredAndSortedEpisodes.map((episode) => {
                   const isCurrent = currentEpisode?.slug === episode.slug;
                   const isPlayingCurrent = isCurrent && isPlaying;
 
                   return (
-                    <tr 
+                     <tr 
                         key={episode.slug} 
-                        className="group hover:bg-[var(--hover)] transition-colors"
+                        className="group hover:bg-paper-dim transition-colors"
                     >
                       <td className="px-4 py-3">
                         <button
                           onClick={() => isCurrent ? toggle() : play(episode)}
                           className={`w-6 h-6 flex items-center justify-center rounded-full transition-colors ${
                               isCurrent 
-                                ? "bg-[var(--foreground)] text-[var(--background)]" 
-                                : "text-[var(--muted)] group-hover:text-[var(--foreground)] group-hover:bg-[var(--border)]"
+                                ? "bg-ink text-paper" 
+                                : "text-ink-muted group-hover:text-ink group-hover:bg-ink/10"
                           }`}
                         >
                           {isPlayingCurrent ? (
@@ -167,18 +167,18 @@ export default function EpisodeTable({ episodes, className = "" }: EpisodeTableP
                           )}
                         </button>
                       </td>
-                      <td className="px-4 py-3 font-medium text-[var(--foreground)]">
-                        <Link href={`/episode/${episode.slug}`} className="hover:underline decoration-[var(--muted)] underline-offset-4 block">
+                      <td className="px-4 py-3 font-medium text-ink">
+                        <Link href={`/episode/${episode.slug}`} className="hover:underline decoration-ink-muted underline-offset-4 block">
                           {episode.title}
                         </Link>
                       </td>
-                      <td className="px-4 py-3 text-[var(--muted)] whitespace-nowrap">
+                      <td className="px-4 py-3 text-ink-muted whitespace-nowrap">
                         {episode.show}
                       </td>
-                      <td className="px-4 py-3 text-[var(--muted)] whitespace-nowrap">
+                      <td className="px-4 py-3 text-ink-muted whitespace-nowrap">
                         {formatDate(episode.date)}
                       </td>
-                      <td className="px-4 py-3 text-[var(--muted)] text-right font-mono text-xs">
+                      <td className="px-4 py-3 text-ink-muted text-right font-mono text-xs">
                         {episode.duration || "-"}
                       </td>
                     </tr>
@@ -189,12 +189,12 @@ export default function EpisodeTable({ episodes, className = "" }: EpisodeTableP
         </div>
         
         {filteredAndSortedEpisodes.length === 0 && (
-            <div className="p-8 text-center text-[var(--muted)]">
+            <div className="p-8 text-center text-ink-muted">
                 No episodes found matching "{search}"
             </div>
         )}
         
-        <div className="px-4 py-2 border-t border-[var(--border)] bg-[var(--background)] text-xs text-[var(--muted)] text-right">
+        <div className="px-4 py-2 border-t border-ink bg-paper text-xs text-ink-muted text-right">
             {filteredAndSortedEpisodes.length} episodes
         </div>
       </div>

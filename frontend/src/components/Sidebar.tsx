@@ -30,7 +30,7 @@ export default function Sidebar() {
   const selectedShow = searchParams.get("show");
 
   return (
-    <aside className="w-64 border-r border-[var(--border)] bg-[var(--background)] h-screen overflow-y-auto flex-shrink-0 sticky top-0 hidden md:block">
+    <aside className="w-64 border-r border-ink bg-paper h-screen overflow-y-auto flex-shrink-0 sticky top-0 hidden md:block">
       <div className="p-4">
         <Link href="/" className="block mb-8">
           <h1 className="text-xl font-bold tracking-tight">Ray Peat Radio</h1>
@@ -44,8 +44,8 @@ export default function Sidebar() {
               href={item.href}
               className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 pathname === item.href && !selectedShow
-                  ? "bg-[var(--card)] text-[var(--foreground)] shadow-sm border border-[var(--border)]"
-                  : "text-[var(--muted)] hover:bg-[var(--card)] hover:text-[var(--foreground)]"
+                  ? "bg-surface text-ink shadow-sm border border-ink"
+                  : "text-ink-muted hover:bg-surface hover:text-ink"
               }`}
             >
               <svg
@@ -67,7 +67,7 @@ export default function Sidebar() {
         </nav>
 
         {/* Shows Section */}
-        <div className="mb-2 px-3 text-xs font-semibold text-[var(--muted)] uppercase tracking-wider">
+        <div className="mb-2 px-3 text-xs font-semibold text-ink-muted uppercase tracking-wider">
           Shows
         </div>
         <nav className="space-y-0.5">
@@ -77,8 +77,8 @@ export default function Sidebar() {
               href={`/?show=${encodeURIComponent(show)}`}
               className={`block px-3 py-1.5 text-sm rounded-md transition-colors truncate ${
                 selectedShow === show
-                  ? "bg-[var(--card)] text-[var(--foreground)] font-medium"
-                  : "text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--card)]"
+                  ? "bg-surface text-ink font-medium"
+                  : "text-ink-muted hover:text-ink hover:bg-surface"
               }`}
             >
               {show}
