@@ -20,10 +20,11 @@ interface EntityDetail {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const entityId = parseInt(params.id);
+    const resolvedParams = await params;
+    const entityId = parseInt(resolvedParams.id);
 
     if (isNaN(entityId)) {
       return NextResponse.json(
