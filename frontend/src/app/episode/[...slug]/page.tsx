@@ -14,6 +14,8 @@ interface EpisodeWithTranscript {
   speakers: string[];
   filePath: string;
   transcript: string;
+  rawTranscript?: string;
+  hasRawTranscript?: boolean;
 }
 
 interface TranscriptBlock {
@@ -119,6 +121,7 @@ export default function EpisodePage({
   const [episode, setEpisode] = useState<EpisodeWithTranscript | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showRawTranscript, setShowRawTranscript] = useState(false);
 
   // Audio player state
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -241,7 +244,10 @@ export default function EpisodePage({
   }
 
   const showInfo = getShow(episode.show);
-  const transcriptBlocks = parseTranscript(episode.transcript);
+  const activeTranscript = showRawTranscript && episode.rawTranscript
+    ? episode.rawTranscript
+    : episode.transcript;
+  const transcriptBlocks = parseTranscript(activeTranscript);
   const formattedDate = episode.date
     ? new Date(episode.date).toLocaleDateString("en-US", {
         weekday: "long",
@@ -444,14 +450,41 @@ export default function EpisodePage({
 
         {/* Transcript */}
         <div className="bg-surface border-2 border-ink shadow-hard-sm">
-          <div className="border-b-2 border-ink p-4 flex items-center justify-between">
+          <div className="border-b-2 border-ink p-4 flex items-center justify-between flex-wrap gap-3">
             <h2 className="font-mono text-sm font-bold uppercase tracking-widest flex items-center gap-2">
               <span className="material-symbols-outlined">description</span>
               Transcript
             </h2>
-            <span className="font-mono text-xs text-ink-muted">
-              {transcriptBlocks.filter((b) => b.type === "paragraph").length} paragraphs
-            </span>
+            <div className="flex items-center gap-3">
+              {/* Polished/Raw Toggle */}
+              {episode.hasRawTranscript && (
+                <div className="flex items-center border-2 border-ink rounded overflow-hidden">
+                  <button
+                    onClick={() => setShowRawTranscript(false)}
+                    className={`px-3 py-1.5 text-xs font-mono font-bold uppercase transition-colors ${
+                      !showRawTranscript
+                        ? "bg-primary text-ink"
+                        : "bg-surface text-ink-muted hover:bg-paper-dim"
+                    }`}
+                  >
+                    Polished
+                  </button>
+                  <button
+                    onClick={() => setShowRawTranscript(true)}
+                    className={`px-3 py-1.5 text-xs font-mono font-bold uppercase transition-colors border-l-2 border-ink ${
+                      showRawTranscript
+                        ? "bg-primary text-ink"
+                        : "bg-surface text-ink-muted hover:bg-paper-dim"
+                    }`}
+                  >
+                    Raw
+                  </button>
+                </div>
+              )}
+              <span className="font-mono text-xs text-ink-muted">
+                {transcriptBlocks.filter((b) => b.type === "paragraph").length} paragraphs
+              </span>
+            </div>
           </div>
 
           <div className="p-6 md:p-8">

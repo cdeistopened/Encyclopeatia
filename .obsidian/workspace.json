@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "69fac0d606b7aaf3",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a3aa01485120cd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19f65c29dea483db",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "065963174e961a72",
+    "type": "split",
+    "children": [
+      {
+        "id": "b883ed4b59fa4a54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7108e1ffa19053f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b7338a044ad7cdb5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b3e7d0c92627b8a6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "57b85a3e61f63351",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd86f288e53fb3f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73923fbe02997862",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0cca7cc20fbf2e8d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a720d51764477d17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c382926798492969",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1cfc97ae51d36820",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "19f65c29dea483db",
+  "lastOpenFiles": [
+    "clips/queue/20251208-prolactin-osteoporosis/clip.mp3",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/clip.mp3",
+    "clips/queue/20251208-prolactin-osteoporosis/caption.md",
+    "clips/queue/20251208-prolactin-osteoporosis/extract.sh",
+    "clips/queue/20251208-prolactin-osteoporosis/descript_edit.md",
+    "clips/queue/20251208-prolactin-osteoporosis/raw_segment.md",
+    "clips/queue/20251208-prolactin-osteoporosis/metadata.yaml",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/caption.md",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/extract.sh",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/descript_edit.md",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/raw_segment.md",
+    "clips/queue/20251208-serotonin-muscular-dystrophy/metadata.yaml",
+    "clips/queue/20251208-prolactin-osteoporosis",
+    "clips/queue/20251208-serotonin-muscular-dystrophy",
+    "clips/queue/20251208-tryptophans-electronic-properties/clip.mp3",
+    "clips/queue/20251208-tryptophans-electronic-properties/extract.sh",
+    "clips/queue/20251208-tryptophans-electronic-properties/caption.md",
+    "clips/queue/20251208-tryptophans-electronic-properties/edit_notes.md",
+    "clips/queue/20251208-tryptophans-electronic-properties/raw_segment.md",
+    "clips/queue/20251208-tryptophans-electronic-properties/metadata.yaml",
+    "clips/README.md",
+    "backend/rag/venv/lib/python3.14/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/torchgen/packaged/autograd/README.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sentence_transformers/sparse_encoder/model_card_template.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sentence_transformers/cross_encoder/model_card_template.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sentence_transformers/model_card_template.md",
+    "backend/rag/venv/lib/python3.14/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/huggingface_hub/templates/modelcard_template.md",
+    "backend/rag/venv/lib/python3.14/site-packages/huggingface_hub/templates/datasetcard_template.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sklearn/externals/array_api_compat/README.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sklearn/externals/array_api_extra/README.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sklearn/datasets/images/flower.jpg",
+    "backend/rag/venv/lib/python3.14/site-packages/sklearn/datasets/images/china.jpg",
+    "backend/rag/venv/lib/python3.14/site-packages/scipy/ndimage/tests/dots.png",
+    "backend/rag/venv/lib/python3.14/site-packages/scipy/fft/_pocketfft/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_house_with_colors.png",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_display_shortest_path.png",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_display_labels_and_colors.png",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_display_house_with_colors.png",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_display_empty_graph.png",
+    "backend/rag/venv/lib/python3.14/site-packages/networkx/drawing/tests/baseline/test_display_complex.png",
+    "backend/rag/venv/lib/python3.14/site-packages/numpy/random/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/sympy/plotting/tests/test_region_xor.png",
+    "backend/rag/venv/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+    "backend/rag/venv/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md"
+  ]
+}
