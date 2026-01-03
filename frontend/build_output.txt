@@ -1,0 +1,23 @@
+
+> frontend@0.1.0 build
+> next build
+
+node:internal/modules/package_json_reader:110
+  const parsed = modulesBinding.readPackageJSON(
+                                ^
+
+Error: Invalid package config /Users/charliedeist/Library/Mobile Documents/com~apple~CloudDocs/Root Docs/ray-peat-radio/frontend/node_modules/next/dist/compiled/glob/package.json.
+    at Object.read (node:internal/modules/package_json_reader:110:33)
+    at _readPackage (node:internal/modules/cjs/loader:477:55)
+    at tryPackage (node:internal/modules/cjs/loader:497:36)
+    at Function._findPath (node:internal/modules/cjs/loader:796:18)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1387:27)
+    at /Users/charliedeist/Library/Mobile Documents/com~apple~CloudDocs/Root Docs/ray-peat-radio/frontend/node_modules/next/dist/server/require-hook.js:57:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  code: 'ERR_INVALID_PACKAGE_CONFIG'
+}
+
+Node.js v22.16.0

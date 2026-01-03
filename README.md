@@ -1,12 +1,6 @@
-# EncycloPEATia
+# Ray Peat Radio
 
-The complete Ray Peat archive - 770+ podcast transcripts, newsletters, and articles with AI-powered search.
-
-## Features
-
-- **Browse Archive** - Filter by show, year, or search all transcripts
-- **Ask Peat** - AI-powered Q&A with source citations
-- **Encyclopedia** - Wiki-style entries on bioenergetic topics
+A wiki-style database of Ray Peat podcast transcripts with an attractive frontend for browsing, filtering, and listening.
 
 ## Collection Overview
 
@@ -17,13 +11,6 @@ The complete Ray Peat archive - 770+ podcast transcripts, newsletters, and artic
 | Polished Transcripts | 220 |
 | Shows | 13 |
 | Total Audio Hours | ~200 hrs |
-
-## Tech Stack
-
-- **Frontend**: Next.js 16 (App Router) + Tailwind CSS v4
-- **Backend**: FastAPI + RAG system with Gemini
-- **Design**: Warm neobrutalist aesthetic with golden accents
-- **Data**: SQLite + vector search
 
 ## Shows Included
 
@@ -43,53 +30,34 @@ The complete Ray Peat archive - 770+ podcast transcripts, newsletters, and artic
 | World Puja | 1 | - | Single interview |
 | Other | misc | - | Hope for Health, etc. |
 
-## Getting Started
-
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### Backend
-```bash
-cd backend
-pip3 install -r requirements.txt
-python3 run.py
-```
-
-Open [http://localhost:3000](http://localhost:3000) for the frontend and [http://localhost:8080](http://localhost:8080) for the API.
-
 ## Directory Structure
 
 ```
-app/
+ray-peat-radio/
 ├── README.md                    # This file
-├── backend/                     # FastAPI server
-│   ├── main.py                  # FastAPI application
-│   ├── run.py                   # Server runner
-│   ├── requirements.txt         # Python dependencies
-│   └── rag/                     # RAG system
-│       ├── config.py            # Configuration
-│       ├── inference.py         # AI inference layer
-│       └── vector_store.py      # Vector database
-├── frontend/                    # Next.js app
+├── transcripts/
+│   ├── raw/                     # Original AssemblyAI transcripts
+│   │   ├── ask-the-herb-doctor/
+│   │   ├── politics-and-science/
+│   │   ├── generative-energy/
+│   │   └── ...
+│   └── polished/                # Gemini-cleaned versions
+│       ├── ask-the-herb-doctor/
+│       ├── politics-and-science/
+│       └── ...
+├── audio/                       # Audio files or URLs
+│   └── metadata.json            # Episode metadata with audio URLs
+├── contexts/                    # Show-specific speaker info
+│   ├── ask-the-herb-doctor.md
+│   ├── eastwest-healing.md
+│   └── ...
+├── frontend/                    # Web interface
 │   ├── src/
 │   └── package.json
-├── transcripts/                 # Transcript files
-│   ├── raw/                     # Original AssemblyAI transcripts
-│   └── polished/                # Gemini-cleaned versions
-├── contexts/                    # Show-specific speaker info
-└── docs/                        # Documentation
+└── docs/
+    ├── transcription-progress.md
+    └── polishing-progress.md
 ```
-
-## API Endpoints
-
-- `GET /` - Health check
-- `POST /ask` - Ask questions with AI synthesis
-- `POST /search` - Search transcript sections
-- `GET /stats` - System statistics
 
 ## Transcript Format
 
@@ -112,11 +80,45 @@ status: polished  # raw | polished
 [Transcript content...]
 ```
 
+## Frontend Features (Planned)
+
+### Browse & Filter
+- Filter by show, year, topic
+- Full-text search across all transcripts
+- Tag-based navigation (thyroid, progesterone, PUFA, etc.)
+
+### Read
+- Clean reading view with speaker labels
+- Side-by-side raw vs polished comparison
+- Highlight and annotate
+
+### Listen
+- Embedded audio player
+- Sync playback with transcript position
+- Playback speed control
+
+### Discover
+- Related episodes
+- Topic clustering
+- Timeline view
+
 ## Data Sources
 
 - **Toxinless Forum**: Primary source for Ray Peat interview archive
 - **Generative Energy Podcast**: Danny Roddy's YouTube/podcast
 - **KMUD Archives**: Ask Your Herb Doctor, Politics and Science
+
+## Technical Notes
+
+### Transcription
+- Engine: AssemblyAI with speaker diarization
+- Cost: ~$0.15/hour of audio
+- Total cost: ~$30 for full collection
+
+### Polishing
+- Engine: Gemini 2.5 Flash (thinking mode)
+- Purpose: Fix speaker names, clean up OCR artifacts, improve readability
+- Status: In progress
 
 ## License
 
@@ -124,4 +126,4 @@ Transcripts are provided for educational and research purposes. Original audio c
 
 ---
 
-Built with love for the Ray Peat community.
+*This project was bootstrapped from the [Verbatim](https://github.com/cdeistopened/Verbatim) transcription tool.*

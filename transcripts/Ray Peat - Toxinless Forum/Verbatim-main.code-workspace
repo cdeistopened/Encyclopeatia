@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Verbatim-main",
+			"path": "../../.."
+		},
+		{
+			"name": "Rough",
+			"path": "../../../../transcribr-main/ray-peat-transcripts/Ray Peat Transcripts/Transcripts/Rough"
+		},
+		{
+			"name": "Episodes",
+			"path": "../../../../transcribr-main/ray-peat-transcripts/Ray Peat Transcripts/Episodes"
+		},
+		{
+			"name": "Polished",
+			"path": "../../../../transcribr-main/ray-peat-transcripts/Ray Peat Transcripts/Transcripts/Polished"
+		},
+		{
+			"path": "../../../../../../../../Downloads/PDFMD-main"
+		}
+	],
+	"settings": {}
+}

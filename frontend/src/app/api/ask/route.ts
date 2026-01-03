@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// Backend API URL - defaults to localhost for development
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8080";
+import { spawn } from "child_process";
+import path from "path";
 
 interface RAGSource {
   text: string;
@@ -13,20 +12,17 @@ interface RAGSource {
   date_published: string | null;
   audio_url: string | null;
   score: number;
-  metadata?: Record<string, unknown>;
 }
 
 interface RAGResponse {
   answer: string;
   sources: RAGSource[];
   query: string;
-  entities_found?: string[];
-  graph_enhanced?: boolean;
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const { question, limit = 12, show, doc_type } = await request.json();
+    const { question, limit = 12, show } = await request.json();
 
     if (!question || typeof question !== "string") {
       return NextResponse.json(
@@ -35,90 +31,104 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Call the FastAPI backend
-    const response = await fetch(`${BACKEND_URL}/ask`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        question,
-        limit,
-        show: show || null,
-        doc_type: doc_type || null,
-        include_sources: true,
-        use_graph: true,
-      }),
+    // Path to the RAG system
+    const ragDir = path.resolve(process.cwd(), "../backend/rag");
+    const venvPython = path.join(ragDir, "venv/bin/python");
+
+    // Build the Python script to run
+    const pythonScript = `
+import sys
+import json
+sys.path.insert(0, "${ragDir}")
+from inference import RayPeatRAG
+
+rag = RayPeatRAG()
+response = rag.ask(
+    question=${JSON.stringify(question)},
+    limit=${limit},
+    show=${show ? JSON.stringify(show) : "None"}
+)
+
+def filepath_to_slug(filepath):
+    """Convert filepath to frontend slug format."""
+    import os
+    parts = filepath.split(os.sep)
+    for i, part in enumerate(parts):
+        if part in ('polished', 'raw') and i > 0:
+            filename = os.path.splitext(parts[-1])[0]
+            return f"{parts[i-1]}/{part}/{filename}"
+    return os.path.splitext(os.path.basename(filepath))[0]
+
+# Convert to JSON-serializable format
+result = {
+    "answer": response.answer,
+    "query": response.query,
+    "sources": [
+        {
+            "text": s.text[:500] + "..." if len(s.text) > 500 else s.text,
+            "section_header": s.section_header,
+            "section_anchor": s.section_anchor,
+            "episode_title": s.episode_title,
+            "episode_id": filepath_to_slug(s.metadata.get("filepath", "")) if s.metadata.get("filepath") else s.episode_id,
+            "show": s.show,
+            "date_published": s.date_published,
+            "audio_url": s.audio_url,
+            "score": s.score
+        }
+        for s in response.sources
+    ]
+}
+print(json.dumps(result))
+`;
+
+    // Execute Python script
+    const result = await new Promise<RAGResponse>((resolve, reject) => {
+      const pythonProcess = spawn(venvPython, ["-c", pythonScript], {
+        cwd: ragDir,
+        env: { ...process.env },
+      });
+
+      let stdout = "";
+      let stderr = "";
+
+      pythonProcess.stdout.on("data", (data) => {
+        stdout += data.toString();
+      });
+
+      pythonProcess.stderr.on("data", (data) => {
+        stderr += data.toString();
+      });
+
+      pythonProcess.on("close", (code) => {
+        if (code !== 0) {
+          console.error("Python stderr:", stderr);
+          reject(new Error(`Python process exited with code ${code}: ${stderr}`));
+          return;
+        }
+
+        try {
+          // Find the JSON in stdout (skip any logging output)
+          const lines = stdout.trim().split("\n");
+          const jsonLine = lines[lines.length - 1];
+          const parsed = JSON.parse(jsonLine);
+          resolve(parsed);
+        } catch (e) {
+          console.error("Failed to parse Python output:", stdout);
+          reject(new Error("Failed to parse RAG response"));
+        }
+      });
+
+      pythonProcess.on("error", (err) => {
+        reject(err);
+      });
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error("Backend error:", errorData);
-      return NextResponse.json(
-        { error: errorData.detail || `Backend error: ${response.status}` },
-        { status: response.status }
-      );
-    }
-
-    const result: RAGResponse = await response.json();
-
-    // Transform sources to match frontend expectations
-    // Truncate text and convert filepath to slug format
-    const transformedSources = result.sources.map((s) => ({
-      text: s.text.length > 500 ? s.text.slice(0, 500) + "..." : s.text,
-      section_header: s.section_header,
-      section_anchor: s.section_anchor,
-      episode_title: s.episode_title,
-      episode_id: filepathToSlug(s.metadata?.filepath as string, s.episode_id),
-      show: s.show,
-      date_published: s.date_published,
-      audio_url: s.audio_url,
-      score: s.score,
-    }));
-
-    return NextResponse.json({
-      answer: result.answer,
-      query: result.query,
-      sources: transformedSources,
-      entities_found: result.entities_found || [],
-      graph_enhanced: result.graph_enhanced || false,
-    });
+    return NextResponse.json(result);
   } catch (error) {
     console.error("RAG API error:", error);
-
-    // Check if it's a connection error to the backend
-    if (error instanceof TypeError && error.message.includes("fetch")) {
-      return NextResponse.json(
-        { error: "Backend service unavailable. Please try again later." },
-        { status: 503 }
-      );
-    }
-
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Internal server error" },
       { status: 500 }
     );
   }
-}
-
-/**
- * Convert filepath to frontend slug format.
- * Example: "/app/transcripts/ask-the-herb-doctor/polished/2019-11-15.md"
- *       -> "ask-the-herb-doctor/polished/2019-11-15"
- */
-function filepathToSlug(filepath: string | undefined, fallback: string): string {
-  if (!filepath) return fallback;
-
-  // Find the show folder in the path
-  const parts = filepath.split(/[/\\]/);
-  for (let i = 0; i < parts.length; i++) {
-    if ((parts[i] === "polished" || parts[i] === "raw") && i > 0) {
-      const filename = parts[parts.length - 1].replace(/\.md$/, "");
-      return `${parts[i - 1]}/${parts[i]}/${filename}`;
-    }
-  }
-
-  // Fallback: just return the filename without extension
-  const filename = parts[parts.length - 1].replace(/\.md$/, "");
-  return filename || fallback;
 }

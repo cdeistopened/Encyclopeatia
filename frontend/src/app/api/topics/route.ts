@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// Backend API URL - defaults to localhost for development
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8080";
+import { spawn } from "child_process";
+import path from "path";
 
 interface Entity {
   id: number;
@@ -27,57 +26,106 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const entityType = searchParams.get("type");
     const search = searchParams.get("search");
-    const limit = searchParams.get("limit") || "100";
+    const limit = parseInt(searchParams.get("limit") || "100");
 
-    // Build query params for backend
-    const params = new URLSearchParams();
-    if (entityType) params.set("entity_type", entityType);
-    if (search) params.set("search", search);
-    params.set("limit", limit);
+    // Path to the RAG system
+    const ragDir = path.resolve(process.cwd(), "../backend/rag");
+    const venvPython = path.join(ragDir, "venv/bin/python");
 
-    // Call the FastAPI backend
-    const response = await fetch(`${BACKEND_URL}/topics?${params.toString()}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    // Build the Python script to run
+    const pythonScript = `
+import sys
+import json
+sys.path.insert(0, "${ragDir}")
+
+try:
+    from knowledge_graph import KnowledgeGraph
+    graph = KnowledgeGraph()
+
+    ${search ? `
+    # Search mode
+    entities = graph.search_entities(
+        query=${JSON.stringify(search)},
+        entity_type=${entityType ? JSON.stringify(entityType) : "None"},
+        limit=${limit}
+    )
+
+    result = {
+        "entities": [
+            {
+                "id": e.id,
+                "name": e.name,
+                "entity_type": e.entity_type,
+                "description": e.description,
+                "mention_count": e.mention_count,
+                "episode_count": len(graph.get_episodes_for_entity(e.id))
+            }
+            for e in entities
+        ],
+        "stats": graph.get_stats()
+    }
+    ` : `
+    # Export all data for frontend
+    result = graph.export_for_frontend()
+    `}
+
+    print(json.dumps(result))
+except ImportError as e:
+    print(json.dumps({"error": f"Knowledge graph not available: {e}", "entities_by_type": {}, "stats": {}}))
+except Exception as e:
+    print(json.dumps({"error": str(e), "entities_by_type": {}, "stats": {}}))
+`;
+
+    // Execute Python script
+    const result = await new Promise<TopicsResponse>((resolve, reject) => {
+      const pythonProcess = spawn(venvPython, ["-c", pythonScript], {
+        cwd: ragDir,
+        env: { ...process.env },
+      });
+
+      let stdout = "";
+      let stderr = "";
+
+      pythonProcess.stdout.on("data", (data) => {
+        stdout += data.toString();
+      });
+
+      pythonProcess.stderr.on("data", (data) => {
+        stderr += data.toString();
+      });
+
+      pythonProcess.on("close", (code) => {
+        if (code !== 0) {
+          console.error("Python stderr:", stderr);
+          reject(new Error(`Python process exited with code ${code}: ${stderr}`));
+          return;
+        }
+
+        try {
+          // Find the JSON in stdout (skip any logging output)
+          const lines = stdout.trim().split("\n");
+          const jsonLine = lines[lines.length - 1];
+          const parsed = JSON.parse(jsonLine);
+          resolve(parsed);
+        } catch (e) {
+          console.error("Failed to parse Python output:", stdout);
+          reject(new Error("Failed to parse topics response"));
+        }
+      });
+
+      pythonProcess.on("error", (err) => {
+        reject(err);
+      });
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error("Backend error:", errorData);
-      return NextResponse.json(
-        {
-          error: errorData.detail || `Backend error: ${response.status}`,
-          entities_by_type: {},
-          stats: {},
-        },
-        { status: response.status }
-      );
-    }
-
-    const result: TopicsResponse = await response.json();
     return NextResponse.json(result);
   } catch (error) {
     console.error("Topics API error:", error);
-
-    // Check if it's a connection error to the backend
-    if (error instanceof TypeError && error.message.includes("fetch")) {
-      return NextResponse.json(
-        {
-          error: "Backend service unavailable. Please try again later.",
-          entities_by_type: {},
-          stats: {},
-        },
-        { status: 503 }
-      );
-    }
-
     return NextResponse.json(
       {
         error: error instanceof Error ? error.message : "Internal server error",
         entities_by_type: {},
-        stats: {},
+        stats: {}
       },
       { status: 500 }
     );

@@ -1,0 +1,8 @@
+
+> frontend@0.1.0 build
+> npm run build:index && next build
+
+
+> frontend@0.1.0 build:index
+> npx tsx scripts/build-index.ts
+

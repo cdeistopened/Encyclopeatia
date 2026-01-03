@@ -18,27 +18,39 @@ ray-peat-radio/
 ├── CLAUDE.md           # This file
 ├── transcripts/        # All transcript files
 │   ├── ask-the-herb-doctor/
-│   │   ├── raw/        # AssemblyAI output
-│   │   └── polished/   # Gemini-cleaned
+│   │   ├── raw/        # AssemblyAI output (with timestamps)
+│   │   └── polished/   # Gemini-cleaned (with ## section headers)
 │   ├── politics-and-science/
 │   ├── generative-energy/
 │   ├── eastwest-healing/
 │   ├── one-radio-network/
 │   ├── jodellefit/
-│   ├── butter-living-podcast/
-│   ├── its-rainmaking-time/
 │   ├── eluv/
-│   ├── source-nutritional-show/
-│   ├── voice-of-america/
-│   ├── world-puja/
-│   ├── other/
-│   └── Generative Energy/   # Danny Roddy's podcast (standalone)
-├── contexts/           # Show-specific speaker identification
-│   ├── ask-the-herb-doctor.md
-│   ├── generative-energy.md
 │   └── ...
+├── newsletters/
+│   └── v2/              # Ray Peat newsletters (Markdown)
+├── backend/
+│   └── rag/            # RAG search system
+│       ├── config.py
+│       ├── transcript_parser.py  # Parse markdown by ## headers
+│       ├── newsletter_parser.py  # Parse newsletters (v2)
+│       ├── vector_store.py       # Qdrant vector DB (local, free)
+│       ├── inference.py          # Gemini Flash for Q&A
+│       ├── ingest.py             # Index transcripts
+│       ├── query.py              # CLI query interface
+│       └── data/                 # Vector storage (auto-created)
+├── clips/              # Social media clip workflow
+│   ├── scripts/        # Python tools for clip creation
+│   │   ├── clip.py     # Main CLI (unified interface)
+│   │   ├── find_clips.py
+│   │   ├── create_project.py
+│   │   └── extract_audio.py
+│   ├── queue/          # Clips awaiting processing
+│   ├── in_progress/    # Clips being edited
+│   ├── ready/          # Clips ready for export
+│   └── published/      # Archived published clips
+├── contexts/           # Show-specific speaker identification
 ├── docs/
-│   └── transcription-progress.md
 └── frontend/           # Web app (TBD)
 ```
 
@@ -121,9 +133,39 @@ Description of the show format.
 
 ### Tech Stack (TBD)
 - Framework: Next.js or Astro
-- Search: Fuse.js or Algolia
+- Search: RAG system (backend/rag/) with Qdrant + Gemini
 - Audio: Custom player or Plyr
 - Styling: Tailwind CSS
+
+## RAG Search System
+
+The `backend/rag/` folder contains a semantic search system:
+
+### Features
+- **Section-based indexing** - Chunks by `##` headers, not arbitrary text
+- **Rich metadata** - Show, date, speakers, audio URL preserved
+- **Vector search** - Qdrant (local, free)
+- **AI answers** - Gemini Flash synthesizes answers from sources
+
+### Usage
+
+```bash
+cd backend/rag
+pip install -r requirements.txt
+
+# Index all polished transcripts
+python ingest.py
+
+# Query
+python query.py "What does Ray Peat say about calcium?"
+python query.py "serotonin" --show ask-the-herb-doctor
+python query.py "aspirin" --no-llm  # Search only
+```
+
+### Costs
+- Qdrant: FREE (local storage)
+- Embeddings: FREE (runs locally with sentence-transformers)
+- Gemini Flash: ~$0.001 per query (optional, for AI synthesis)
 
 ## Data Origin
 
@@ -145,6 +187,64 @@ find transcripts -path "*/polished/*.md" | wc -l
 # List shows
 ls transcripts/
 ```
+
+## Social Media Clips Workflow
+
+The `clips/` folder contains a workflow for creating short audio clips for social media.
+
+### Workflow
+
+1. **Find** - Scan raw transcripts for clip-worthy segments
+2. **Create** - Generate a project folder with transcript, edit notes, captions
+3. **Edit** - Review and refine the clip (strikethrough for cuts, italics for moves)
+4. **Extract** - Use FFmpeg to cut the audio segment
+5. **Publish** - Move to published/ after posting
+
+### Usage
+
+```bash
+cd clips/scripts
+pip install -r requirements.txt
+
+# Scan transcripts for clip candidates
+python clip.py find
+
+# Show details of a candidate
+python clip.py show 0
+
+# Create project folder from candidate #0
+python clip.py create 0
+
+# Extract audio from project
+python clip.py extract 20241208-tryptophan
+
+# List all projects by status
+python clip.py list
+
+# Move project between status folders
+python clip.py move 20241208-tryptophan in_progress
+```
+
+### Clip Criteria
+
+- **Hook Strength (1-10)**: How attention-grabbing is the opening?
+- **Arc Quality (1-10)**: Does it contain a complete thought?
+- **Standalone Value**: Understandable without context?
+
+### Project Folder Contents
+
+Each clip project in `queue/`, `in_progress/`, etc. contains:
+- `metadata.yaml` - Source info, timestamps, scores
+- `raw_segment.md` - Full raw transcript
+- `edit_notes.md` - Suggested edits with notation
+- `caption.md` - Social media caption options
+- `extract.sh` - FFmpeg command to extract audio
+- `clip.mp3` - Extracted audio (after extraction)
+
+### Dependencies
+
+- FFmpeg (for audio extraction)
+- Gemini API key (for LLM analysis)
 
 ## Next Steps
 
