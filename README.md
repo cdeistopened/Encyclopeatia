@@ -14,37 +14,36 @@ A wiki-style database of Ray Peat podcast transcripts with an attractive fronten
 
 ## Shows Included
 
-| Show | Episodes | Years | Description |
-|------|----------|-------|-------------|
-| Ask Your Herb Doctor | ~100 | 2008-2019 | Monthly call-in on KMUD Radio with Andrew & Sarah Murray |
-| Politics and Science | ~20 | 2000-2015 | John Barkhausen's show on KMUD |
-| Generative Energy | ~35 | 2020-2024 | Danny Roddy's podcast (post-Ray Peat) |
-| EastWest Healing | ~12 | 2010-2013 | Josh & Jeanne Rubin interviews |
-| One Radio Network | ~12 | 2014-2019 | Patrick Timpone interviews |
-| Butter Living Podcast | 2 | 2011, 2019 | Casual conversations |
-| Jodellefit | 4 | 2019 | Jodelle fitness/nutrition interviews |
-| It's Rainmaking Time | 2 | 2011, 2014 | Kim Greenhouse interviews |
-| ELUV | 2 | 2008, 2014 | Health radio show |
-| Source Nutritional Show | 2 | 2012 | Brain and tissue series |
-| Voice of America | 1 | - | Single interview |
-| World Puja | 1 | - | Single interview |
-| Other | misc | - | Hope for Health, etc. |
+| Show                    | Episodes | Years      | Description                                              |
+| ----------------------- | -------- | ---------- | -------------------------------------------------------- |
+| Ask Your Herb Doctor    | ~100     | 2008-2019  | Monthly call-in on KMUD Radio with Andrew & Sarah Murray |
+| Politics and Science    | ~20      | 2000-2015  | John Barkhausen's show on KMUD                           |
+| Generative Energy       | ~35      | 2020-2024  | Danny Roddy's podcast (post-Ray Peat)                    |
+| EastWest Healing        | ~12      | 2010-2013  | Josh & Jeanne Rubin interviews                           |
+| One Radio Network       | ~12      | 2014-2019  | Patrick Timpone interviews                               |
+| Butter Living Podcast   | 2        | 2011, 2019 | Casual conversations                                     |
+| Jodellefit              | 4        | 2019       | Jodelle fitness/nutrition interviews                     |
+| It's Rainmaking Time    | 2        | 2011, 2014 | Kim Greenhouse interviews                                |
+| ELUV                    | 2        | 2008, 2014 | Health radio show                                        |
+| Source Nutritional Show | 2        | 2012       | Brain and tissue series                                  |
+| Voice of America        | 1        | -          | Single interview                                         |
+| World Puja              | 1        | -          | Single interview                                         |
+| Other                   | misc     | -          | Hope for Health, etc.                                    |
 
 ## Directory Structure
 
 ```
 ray-peat-radio/
 ├── README.md                    # This file
-├── transcripts/
-│   ├── raw/                     # Original AssemblyAI transcripts
-│   │   ├── ask-the-herb-doctor/
-│   │   ├── politics-and-science/
-│   │   ├── generative-energy/
-│   │   └── ...
-│   └── polished/                # Gemini-cleaned versions
-│       ├── ask-the-herb-doctor/
-│       ├── politics-and-science/
-│       └── ...
+├── transcripts/                 # Podcast transcripts (by show)
+│   ├── ask-the-herb-doctor/
+│   │   ├── raw/                 # AssemblyAI output
+│   │   └── polished/            # Gemini-cleaned (with ## section headers)
+│   ├── politics-and-science/
+│   ├── generative-energy/
+│   └── ...
+├── newsletters/
+│   └── v2/                      # Ray Peat newsletters (Markdown)
 ├── audio/                       # Audio files or URLs
 │   └── metadata.json            # Episode metadata with audio URLs
 ├── contexts/                    # Show-specific speaker info

@@ -33,162 +33,71 @@ interface Email {
   isUser: boolean;
 }
 
-const SENDING_MESSAGES = [
-  "Connecting to mail server...",
-  "Authenticating...",
-  "Uploading message...",
-  "Searching transcript archives...",
-  "Consulting the bioenergetic literature...",
-  "Formulating response...",
-  "Delivering reply...",
+const SAMPLE_SUBJECTS = [
+  "Question about thyroid and metabolism",
+  "How does serotonin affect the body?",
+  "Ray Peat's views on aspirin",
+  "Understanding estrogen dominance",
 ];
 
 function formatEmailDate(): string {
   const now = new Date();
   return now.toLocaleDateString("en-US", {
     weekday: "short",
-    year: "numeric",
     month: "short",
     day: "numeric",
-    hour: "2-digit",
+    year: "numeric",
+    hour: "numeric",
     minute: "2-digit",
   });
 }
 
-function Win95Button({ children, onClick, disabled, primary }: {
-  children: React.ReactNode;
-  onClick?: () => void;
-  disabled?: boolean;
-  primary?: boolean;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className={`
-        px-4 py-1 text-sm font-bold
-        ${primary ? "bg-[#000080] text-white" : "bg-[#c0c0c0] text-black"}
-        border-t-2 border-l-2 border-[#ffffff]
-        border-b-2 border-r-2 border-[#808080]
-        active:border-t-[#808080] active:border-l-[#808080]
-        active:border-b-[#ffffff] active:border-r-[#ffffff]
-        disabled:opacity-50 disabled:cursor-not-allowed
-        font-['MS_Sans_Serif',_'Segoe_UI',_sans-serif]
-      `}
-    >
-      {children}
-    </button>
-  );
-}
-
-function Win95Window({ title, children, onClose }: {
-  title: string;
-  children: React.ReactNode;
-  onClose?: () => void;
-}) {
-  return (
-    <div className="bg-[#c0c0c0] border-t-2 border-l-2 border-[#ffffff] border-b-2 border-r-2 border-b-[#808080] border-r-[#808080] shadow-lg">
-      {/* Title Bar */}
-      <div className="bg-gradient-to-r from-[#000080] to-[#1084d0] px-2 py-1 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 flex items-center justify-center">
-            <svg viewBox="0 0 16 16" className="w-4 h-4">
-              <rect x="1" y="3" width="14" height="10" fill="#ffff00" stroke="#000" strokeWidth="1"/>
-              <polygon points="1,3 8,8 15,3" fill="#c0c000"/>
-            </svg>
-          </div>
-          <span className="text-white text-sm font-bold font-['MS_Sans_Serif',_'Segoe_UI',_sans-serif]">
-            {title}
-          </span>
-        </div>
-        <div className="flex gap-1">
-          <button className="w-4 h-4 bg-[#c0c0c0] border border-[#ffffff] border-b-[#808080] border-r-[#808080] text-xs font-bold flex items-center justify-center">
-            _
-          </button>
-          <button className="w-4 h-4 bg-[#c0c0c0] border border-[#ffffff] border-b-[#808080] border-r-[#808080] text-xs font-bold flex items-center justify-center">
-            □
-          </button>
-          {onClose && (
-            <button
-              onClick={onClose}
-              className="w-4 h-4 bg-[#c0c0c0] border border-[#ffffff] border-b-[#808080] border-r-[#808080] text-xs font-bold flex items-center justify-center"
-            >
-              ×
-            </button>
-          )}
-        </div>
-      </div>
-      {/* Content */}
-      <div className="p-1">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function SendingAnimation({ message }: { message: string }) {
-  return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <Win95Window title="Sending Message...">
-        <div className="bg-[#c0c0c0] p-6 min-w-[300px]">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="animate-spin">
-              <svg viewBox="0 0 24 24" className="w-8 h-8">
-                <circle cx="12" cy="12" r="10" fill="none" stroke="#000080" strokeWidth="2" strokeDasharray="20 40"/>
-              </svg>
-            </div>
-            <span className="text-sm font-['MS_Sans_Serif',_'Segoe_UI',_sans-serif]">{message}</span>
-          </div>
-          {/* Progress bar */}
-          <div className="h-4 bg-white border-2 border-[#808080] border-t-[#404040]">
-            <div className="h-full bg-[#000080] animate-pulse" style={{ width: "60%" }} />
-          </div>
-        </div>
-      </Win95Window>
-    </div>
-  );
-}
-
 export default function AskPeatPage() {
   const [emails, setEmails] = useState<Email[]>([]);
+  const [userEmail, setUserEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [selectedEmail, setSelectedEmail] = useState<Email | null>(null);
-  const [view, setView] = useState<"inbox" | "compose">("compose");
+  const [view, setView] = useState<"compose" | "inbox">("compose");
+  const [emailValidated, setEmailValidated] = useState(false);
   const emailIdRef = useRef(0);
 
-  // Cycle through loading messages
+  // Check if user has provided email before
   useEffect(() => {
-    if (!isLoading) return;
+    const savedEmail = localStorage.getItem("askpeat_email");
+    if (savedEmail) {
+      setUserEmail(savedEmail);
+      setEmailValidated(true);
+    }
+  }, []);
 
-    let index = 0;
-    setLoadingMessage(SENDING_MESSAGES[0]);
+  const validateEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
 
-    const interval = setInterval(() => {
-      index = (index + 1) % SENDING_MESSAGES.length;
-      setLoadingMessage(SENDING_MESSAGES[index]);
-    }, 1500);
-
-    return () => clearInterval(interval);
-  }, [isLoading]);
+  const handleEmailSubmit = () => {
+    if (validateEmail(userEmail)) {
+      localStorage.setItem("askpeat_email", userEmail);
+      setEmailValidated(true);
+    }
+  };
 
   const handleSend = async () => {
-    if (!body.trim() || isLoading) return;
+    if (!body.trim() || isLoading || !emailValidated) return;
 
-    const userEmail: Email = {
+    const newEmail: Email = {
       id: ++emailIdRef.current,
-      from: "you@raypeatradio.local",
-      to: "dr.peat@raypeatradio.local",
-      subject: subject || "Question",
+      from: userEmail,
+      to: "dr.peat@encyclopeatia.com",
+      subject: subject || "Question for Dr. Peat",
       body: body,
       date: formatEmailDate(),
       isUser: true,
     };
 
-    setEmails((prev) => [userEmail, ...prev]);
+    setEmails((prev) => [newEmail, ...prev]);
     setSubject("");
     setBody("");
     setIsLoading(true);
@@ -210,9 +119,9 @@ export default function AskPeatPage() {
 
       const replyEmail: Email = {
         id: ++emailIdRef.current,
-        from: "dr.peat@raypeatradio.local",
-        to: "you@raypeatradio.local",
-        subject: `Re: ${userEmail.subject}`,
+        from: "dr.peat@encyclopeatia.com",
+        to: userEmail,
+        subject: `Re: ${newEmail.subject}`,
         body: data.answer,
         date: formatEmailDate(),
         sources: data.sources,
@@ -230,142 +139,266 @@ export default function AskPeatPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#008080] p-4 md:p-8 font-['MS_Sans_Serif',_'Segoe_UI',_sans-serif]">
-      {isLoading && <SendingAnimation message={loadingMessage} />}
+    <div className="min-h-screen text-ink font-body antialiased">
+      {/* Header */}
+      <header className="w-full border-b-2 border-ink bg-paper sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <span className="material-symbols-outlined text-3xl text-primary group-hover:rotate-12 transition-transform duration-300">
+              auto_stories
+            </span>
+            <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
+              EncycloPEATia
+            </h1>
+          </Link>
+          <nav className="hidden md:flex gap-8 items-center">
+            <Link
+              href="/podcasts"
+              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
+            >
+              ARCHIVE
+            </Link>
+            <Link
+              href="/encyclopedia"
+              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
+            >
+              ENCYCLOPEDIA
+            </Link>
+            <Link href="/ask" className="btn-primary">
+              ASK PEAT
+            </Link>
+          </nav>
+        </div>
+      </header>
 
-      <div className="max-w-4xl mx-auto">
-        {/* Main Email Window */}
-        <Win95Window title="Peat Mail - [Ask Dr. Peat]">
-          {/* Menu Bar */}
-          <div className="bg-[#c0c0c0] border-b border-[#808080] px-2 py-1 flex gap-4 text-sm">
-            <span className="hover:bg-[#000080] hover:text-white px-1 cursor-pointer">File</span>
-            <span className="hover:bg-[#000080] hover:text-white px-1 cursor-pointer">Edit</span>
-            <span className="hover:bg-[#000080] hover:text-white px-1 cursor-pointer">View</span>
-            <span className="hover:bg-[#000080] hover:text-white px-1 cursor-pointer">Help</span>
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        {/* Page Header */}
+        <div className="mb-8">
+          <div className="inline-block bg-primary text-ink font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 border-2 border-ink shadow-hard-sm mb-4">
+            AI-Powered Research
           </div>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold leading-[0.95] mb-4">
+            Ask <span className="text-primary">Dr. Peat</span>
+          </h1>
+          <p className="text-ink-muted text-lg max-w-xl">
+            Send an email to our AI research assistant trained on 770+ transcripts,
+            newsletters, and articles from Ray Peat&apos;s archive.
+          </p>
+        </div>
 
+        {/* Email Client */}
+        <div className="bg-surface border-2 border-ink shadow-hard">
           {/* Toolbar */}
-          <div className="bg-[#c0c0c0] border-b border-[#808080] px-2 py-2 flex gap-2">
-            <Win95Button onClick={() => setView("compose")} primary={view === "compose"}>
-              New Mail
-            </Win95Button>
-            <Win95Button onClick={() => setView("inbox")} primary={view === "inbox"}>
-              Inbox ({emails.filter(e => !e.isUser).length})
-            </Win95Button>
+          <div className="border-b-2 border-ink px-4 py-3 flex items-center justify-between bg-paper-dim">
+            <div className="flex gap-2">
+              <button
+                onClick={() => setView("compose")}
+                className={`flex items-center gap-2 px-4 py-2 font-mono text-xs font-bold uppercase border-2 transition-all ${
+                  view === "compose"
+                    ? "bg-primary border-ink text-ink shadow-hard-sm"
+                    : "bg-paper border-ink/30 hover:border-ink"
+                }`}
+              >
+                <span className="material-symbols-outlined text-base">edit</span>
+                Compose
+              </button>
+              <button
+                onClick={() => setView("inbox")}
+                className={`flex items-center gap-2 px-4 py-2 font-mono text-xs font-bold uppercase border-2 transition-all ${
+                  view === "inbox"
+                    ? "bg-primary border-ink text-ink shadow-hard-sm"
+                    : "bg-paper border-ink/30 hover:border-ink"
+                }`}
+              >
+                <span className="material-symbols-outlined text-base">inbox</span>
+                Inbox ({emails.filter((e) => !e.isUser).length})
+              </button>
+            </div>
+            {emailValidated && (
+              <span className="text-xs text-ink-muted font-mono">
+                Signed in as {userEmail}
+              </span>
+            )}
           </div>
 
-          {/* Content Area */}
-          <div className="bg-white min-h-[500px]">
-            {view === "compose" ? (
+          {/* Content */}
+          <div className="min-h-[500px]">
+            {!emailValidated ? (
+              /* Email Gate */
+              <div className="flex flex-col items-center justify-center h-[500px] p-8 text-center">
+                <span className="material-symbols-outlined text-6xl text-primary mb-4">
+                  mail
+                </span>
+                <h2 className="font-serif text-2xl font-bold mb-2">
+                  Enter your email to continue
+                </h2>
+                <p className="text-ink-muted mb-6 max-w-md">
+                  We&apos;ll send responses to your research questions directly to your inbox.
+                  Your first 3 queries are free.
+                </p>
+                <div className="w-full max-w-sm space-y-4">
+                  <input
+                    type="email"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="w-full bg-paper border-2 border-ink px-4 py-3 font-body focus:ring-0 focus:border-primary focus:shadow-hard transition-all"
+                    onKeyDown={(e) => e.key === "Enter" && handleEmailSubmit()}
+                  />
+                  <button
+                    onClick={handleEmailSubmit}
+                    disabled={!validateEmail(userEmail)}
+                    className="w-full btn-primary py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Continue
+                  </button>
+                  <p className="text-xs text-ink-muted">
+                    By continuing, you agree to receive emails from EncycloPEATia.
+                    <br />
+                    Upgrade to Pro for unlimited queries.
+                  </p>
+                </div>
+              </div>
+            ) : view === "compose" ? (
               /* Compose View */
-              <div className="p-4">
-                <div className="space-y-3">
+              <div className="p-6">
+                <div className="space-y-4">
                   {/* To Field */}
-                  <div className="flex items-center gap-2">
-                    <label className="w-16 text-sm font-bold text-right">To:</label>
-                    <input
-                      type="text"
-                      value="dr.peat@raypeatradio.local"
-                      readOnly
-                      className="flex-1 px-2 py-1 bg-[#c0c0c0] border-2 border-[#808080] border-t-[#404040] text-sm"
-                    />
+                  <div className="flex items-center gap-4 pb-4 border-b border-ink/10">
+                    <label className="w-16 font-mono text-xs font-bold uppercase text-ink-muted">
+                      To:
+                    </label>
+                    <div className="flex-1 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary text-lg">
+                        smart_toy
+                      </span>
+                      <span className="font-medium">dr.peat@encyclopeatia.com</span>
+                      <span className="text-xs text-ink-muted">(AI Research Assistant)</span>
+                    </div>
+                  </div>
+
+                  {/* From Field */}
+                  <div className="flex items-center gap-4 pb-4 border-b border-ink/10">
+                    <label className="w-16 font-mono text-xs font-bold uppercase text-ink-muted">
+                      From:
+                    </label>
+                    <span className="font-medium">{userEmail}</span>
                   </div>
 
                   {/* Subject Field */}
-                  <div className="flex items-center gap-2">
-                    <label className="w-16 text-sm font-bold text-right">Subject:</label>
+                  <div className="flex items-center gap-4 pb-4 border-b border-ink/10">
+                    <label className="w-16 font-mono text-xs font-bold uppercase text-ink-muted">
+                      Subject:
+                    </label>
                     <input
                       type="text"
                       value={subject}
                       onChange={(e) => setSubject(e.target.value)}
-                      placeholder="Your question about health, metabolism, etc."
-                      className="flex-1 px-2 py-1 border-2 border-[#808080] border-t-[#404040] text-sm"
+                      placeholder="What's your question about?"
+                      className="flex-1 bg-transparent border-none focus:ring-0 font-medium placeholder:text-ink-muted/50"
                     />
                   </div>
 
                   {/* Body */}
-                  <div className="flex gap-2">
-                    <label className="w-16 text-sm font-bold text-right pt-1">Body:</label>
-                    <textarea
-                      value={body}
-                      onChange={(e) => setBody(e.target.value)}
-                      placeholder="Dear Dr. Peat,&#10;&#10;I have a question about..."
-                      rows={12}
-                      className="flex-1 px-2 py-1 border-2 border-[#808080] border-t-[#404040] text-sm resize-none font-mono"
-                    />
-                  </div>
+                  <textarea
+                    value={body}
+                    onChange={(e) => setBody(e.target.value)}
+                    placeholder="Dear Dr. Peat,
 
-                  {/* Send Button */}
-                  <div className="flex justify-end gap-2 pt-2">
-                    <Win95Button onClick={() => { setSubject(""); setBody(""); }}>
-                      Clear
-                    </Win95Button>
-                    <Win95Button onClick={handleSend} disabled={!body.trim() || isLoading} primary>
-                      Send
-                    </Win95Button>
+I have a question about..."
+                    rows={10}
+                    className="w-full bg-paper border-2 border-ink/20 focus:border-ink p-4 font-body resize-none focus:ring-0 focus:shadow-hard-sm transition-all"
+                  />
+
+                  {/* Actions */}
+                  <div className="flex items-center justify-between pt-4">
+                    <div className="flex gap-2">
+                      {SAMPLE_SUBJECTS.slice(0, 2).map((s, i) => (
+                        <button
+                          key={i}
+                          onClick={() => {
+                            setSubject(s);
+                            setBody(`Dear Dr. Peat,\n\nI'd like to learn more about ${s.toLowerCase()}. What are your thoughts on this topic?\n\nThank you.`);
+                          }}
+                          className="text-xs px-3 py-1.5 bg-paper-dim border border-ink/20 hover:border-primary hover:text-primary transition-all"
+                        >
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                    <div className="flex gap-3">
+                      <button
+                        onClick={() => {
+                          setSubject("");
+                          setBody("");
+                        }}
+                        className="px-4 py-2 font-mono text-xs font-bold uppercase border-2 border-ink/30 hover:border-ink transition-all"
+                      >
+                        Clear
+                      </button>
+                      <button
+                        onClick={handleSend}
+                        disabled={!body.trim() || isLoading}
+                        className="btn-primary flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {isLoading ? (
+                          <>
+                            <span className="material-symbols-outlined text-base animate-spin">
+                              progress_activity
+                            </span>
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            <span className="material-symbols-outlined text-base">send</span>
+                            Send
+                          </>
+                        )}
+                      </button>
+                    </div>
                   </div>
 
                   {error && (
-                    <div className="mt-4 p-3 bg-[#ffcccc] border-2 border-[#ff0000] text-sm">
-                      Error: {error}
+                    <div className="mt-4 p-3 bg-red-50 border-2 border-red-200 text-red-700 text-sm flex items-center gap-2">
+                      <span className="material-symbols-outlined text-base">error</span>
+                      {error}
                     </div>
                   )}
-                </div>
-
-                {/* Example Questions */}
-                <div className="mt-6 pt-4 border-t border-[#808080]">
-                  <p className="text-sm font-bold mb-2">Sample questions you can ask:</p>
-                  <div className="grid gap-1 text-sm">
-                    {[
-                      "What does Ray Peat say about thyroid and metabolism?",
-                      "How does serotonin affect inflammation?",
-                      "What are Ray Peat's views on aspirin?",
-                      "How does estrogen affect the body?",
-                    ].map((q, i) => (
-                      <button
-                        key={i}
-                        onClick={() => setBody(q)}
-                        className="text-left px-2 py-1 hover:bg-[#000080] hover:text-white text-[#000080] underline"
-                      >
-                        • {q}
-                      </button>
-                    ))}
-                  </div>
                 </div>
               </div>
             ) : (
               /* Inbox View */
               <div className="flex h-[500px]">
                 {/* Email List */}
-                <div className="w-1/3 border-r border-[#808080] overflow-y-auto">
+                <div className="w-1/3 border-r-2 border-ink overflow-y-auto">
                   {emails.length === 0 ? (
-                    <div className="p-4 text-sm text-[#808080] text-center">
-                      No messages yet
+                    <div className="p-6 text-center text-ink-muted">
+                      <span className="material-symbols-outlined text-4xl mb-2 block">
+                        inbox
+                      </span>
+                      <p className="text-sm">No messages yet</p>
                     </div>
                   ) : (
                     emails.map((email) => (
                       <div
                         key={email.id}
                         onClick={() => setSelectedEmail(email)}
-                        className={`p-2 border-b border-[#c0c0c0] cursor-pointer ${
+                        className={`p-4 border-b border-ink/10 cursor-pointer transition-all ${
                           selectedEmail?.id === email.id
-                            ? "bg-[#000080] text-white"
-                            : "hover:bg-[#c0c0c0]"
+                            ? "bg-primary/10 border-l-4 border-l-primary"
+                            : "hover:bg-paper-dim"
                         }`}
                       >
-                        <div className="flex items-center gap-2">
-                          {!email.isUser && (
-                            <span className="text-xs">📧</span>
-                          )}
-                          {email.isUser && (
-                            <span className="text-xs">📤</span>
-                          )}
-                          <span className="font-bold text-sm truncate">
-                            {email.isUser ? "To: Dr. Peat" : "From: Dr. Peat"}
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="material-symbols-outlined text-sm">
+                            {email.isUser ? "send" : "mark_email_read"}
+                          </span>
+                          <span className="font-mono text-xs font-bold uppercase">
+                            {email.isUser ? "Sent" : "From Dr. Peat"}
                           </span>
                         </div>
-                        <div className="text-xs truncate">{email.subject}</div>
-                        <div className="text-xs opacity-70">{email.date}</div>
+                        <p className="font-medium text-sm truncate">{email.subject}</p>
+                        <p className="text-xs text-ink-muted mt-1">{email.date}</p>
                       </div>
                     ))
                   )}
@@ -374,27 +407,33 @@ export default function AskPeatPage() {
                 {/* Email Preview */}
                 <div className="flex-1 overflow-y-auto">
                   {selectedEmail ? (
-                    <div className="p-4">
+                    <div className="p-6">
                       {/* Email Header */}
-                      <div className="bg-[#c0c0c0] p-3 mb-4 border-2 border-[#ffffff] border-b-[#808080] border-r-[#808080]">
-                        <div className="text-sm">
-                          <strong>From:</strong> {selectedEmail.from}
-                        </div>
-                        <div className="text-sm">
-                          <strong>To:</strong> {selectedEmail.to}
-                        </div>
-                        <div className="text-sm">
-                          <strong>Subject:</strong> {selectedEmail.subject}
-                        </div>
-                        <div className="text-sm">
-                          <strong>Date:</strong> {selectedEmail.date}
+                      <div className="bg-paper-dim border-2 border-ink/10 p-4 mb-6">
+                        <div className="grid grid-cols-[60px_1fr] gap-2 text-sm">
+                          <span className="font-mono text-xs font-bold uppercase text-ink-muted">
+                            From:
+                          </span>
+                          <span>{selectedEmail.from}</span>
+                          <span className="font-mono text-xs font-bold uppercase text-ink-muted">
+                            To:
+                          </span>
+                          <span>{selectedEmail.to}</span>
+                          <span className="font-mono text-xs font-bold uppercase text-ink-muted">
+                            Subject:
+                          </span>
+                          <span className="font-bold">{selectedEmail.subject}</span>
+                          <span className="font-mono text-xs font-bold uppercase text-ink-muted">
+                            Date:
+                          </span>
+                          <span>{selectedEmail.date}</span>
                         </div>
                       </div>
 
                       {/* Email Body */}
-                      <div className="prose prose-sm max-w-none mb-4 font-mono text-sm whitespace-pre-wrap">
+                      <div className="prose prose-sm max-w-none mb-6">
                         {selectedEmail.isUser ? (
-                          selectedEmail.body
+                          <p className="whitespace-pre-wrap">{selectedEmail.body}</p>
                         ) : (
                           <ReactMarkdown>{selectedEmail.body}</ReactMarkdown>
                         )}
@@ -402,29 +441,34 @@ export default function AskPeatPage() {
 
                       {/* Sources (Attachments) */}
                       {selectedEmail.sources && selectedEmail.sources.length > 0 && (
-                        <div className="mt-4 pt-4 border-t border-[#808080]">
-                          <div className="text-sm font-bold mb-2">
-                            📎 Attachments ({selectedEmail.sources.length} transcript references):
-                          </div>
+                        <div className="pt-6 border-t-2 border-ink/10">
+                          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-4 flex items-center gap-2">
+                            <span className="material-symbols-outlined text-base">
+                              attach_file
+                            </span>
+                            Sources ({selectedEmail.sources.length} transcript references)
+                          </h4>
                           <div className="grid gap-2">
                             {selectedEmail.sources.slice(0, 6).map((source, j) => (
-                              <div
+                              <Link
                                 key={j}
-                                className="p-2 bg-[#ffffcc] border border-[#808080] text-sm"
+                                href={`/episode/${source.episode_id}`}
+                                className="block p-3 bg-paper-dim border-2 border-ink/10 hover:border-primary hover:bg-primary/5 transition-all group"
                               >
-                                <div className="font-bold truncate">
-                                  📄 {source.episode_title}
+                                <div className="flex items-start justify-between gap-2">
+                                  <div className="flex-1 min-w-0">
+                                    <p className="font-medium text-sm truncate group-hover:text-primary transition-colors">
+                                      {source.episode_title}
+                                    </p>
+                                    <p className="text-xs text-ink-muted mt-1">
+                                      Section: &quot;{source.section_header}&quot; • {source.show}
+                                    </p>
+                                  </div>
+                                  <span className="material-symbols-outlined text-ink-muted text-sm group-hover:text-primary transition-colors">
+                                    open_in_new
+                                  </span>
                                 </div>
-                                <div className="text-xs text-[#808080]">
-                                  Section: &quot;{source.section_header}&quot; • {source.show}
-                                </div>
-                                <Link
-                                  href={`/episode/${encodeURIComponent(source.episode_id)}`}
-                                  className="text-xs text-[#000080] underline hover:text-[#ff0000]"
-                                >
-                                  Open transcript →
-                                </Link>
-                              </div>
+                              </Link>
                             ))}
                           </div>
                         </div>
@@ -432,16 +476,25 @@ export default function AskPeatPage() {
 
                       {/* Reply Button */}
                       {!selectedEmail.isUser && (
-                        <div className="mt-4 pt-4 border-t border-[#808080]">
-                          <Win95Button onClick={() => setView("compose")} primary>
+                        <div className="mt-6 pt-6 border-t-2 border-ink/10">
+                          <button
+                            onClick={() => setView("compose")}
+                            className="btn-primary flex items-center gap-2"
+                          >
+                            <span className="material-symbols-outlined text-base">reply</span>
                             Reply
-                          </Win95Button>
+                          </button>
                         </div>
                       )}
                     </div>
                   ) : (
-                    <div className="flex items-center justify-center h-full text-[#808080] text-sm">
-                      Select a message to read
+                    <div className="flex items-center justify-center h-full text-ink-muted">
+                      <div className="text-center">
+                        <span className="material-symbols-outlined text-4xl mb-2 block">
+                          mail
+                        </span>
+                        <p className="text-sm">Select a message to read</p>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -450,21 +503,53 @@ export default function AskPeatPage() {
           </div>
 
           {/* Status Bar */}
-          <div className="bg-[#c0c0c0] border-t border-[#ffffff] px-2 py-1 text-xs flex justify-between">
-            <span>{emails.length} message(s)</span>
-            <span>Connected to raypeatradio.local</span>
+          <div className="border-t-2 border-ink px-4 py-2 bg-paper-dim flex justify-between items-center">
+            <span className="font-mono text-xs text-ink-muted">
+              {emails.length} message{emails.length !== 1 ? "s" : ""}
+            </span>
+            <span className="font-mono text-xs text-ink-muted flex items-center gap-2">
+              <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+              Connected to EncycloPEATia
+            </span>
           </div>
-        </Win95Window>
+        </div>
+
+        {/* Upgrade CTA */}
+        <div className="mt-8 p-6 bg-ink text-white border-2 border-ink">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="font-serif text-xl font-bold mb-1">
+                Upgrade to Pro
+              </h3>
+              <p className="text-white/70 text-sm">
+                Unlimited queries + custom research reports + priority support
+              </p>
+            </div>
+            <div className="text-right">
+              <div className="font-mono text-2xl font-bold text-primary">$5/mo</div>
+              <button className="mt-2 px-6 py-2 bg-primary text-ink font-mono text-xs font-bold uppercase border-2 border-primary hover:bg-primary/90 transition-all">
+                Upgrade Now
+              </button>
+            </div>
+          </div>
+        </div>
 
         {/* Disclaimer */}
-        <div className="mt-4 text-center text-white/80 text-xs">
+        <div className="mt-6 text-center text-ink-muted text-xs">
           <p>
-            This is an AI simulation based on Ray Peat&apos;s podcast transcripts.
+            This is an AI research tool based on Ray Peat&apos;s published work.
             <br />
-            Responses are generated by AI and should not be considered medical advice.
+            Responses should not be considered medical advice.
           </p>
         </div>
-      </div>
-    </main>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t-2 border-ink bg-paper-dim py-8 mt-12">
+        <div className="max-w-7xl mx-auto px-6 text-center font-mono text-xs text-ink-muted">
+          <p>© 2024 EncycloPEATia • A community project</p>
+        </div>
+      </footer>
+    </div>
   );
 }
