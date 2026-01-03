@@ -4,17 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePlayer } from "@/contexts/PlayerContext";
 import type { Episode } from "@/lib/types";
-
-// Blakean color palette
-const colors = {
-  background: "#0a0a0f",
-  surface: "#141420",
-  border: "#2a2a3a",
-  textPrimary: "#f5f5f0",
-  textSecondary: "#8a8a9a",
-  accentGold: "#c9a227",
-  accentBlue: "#4a7ac9",
-};
+import { SHOWS, getAllShows, getShow } from "@/data/shows";
 
 export default function PodcastBrowser() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
@@ -24,6 +14,7 @@ export default function PodcastBrowser() {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [sortBy, setSortBy] = useState<"date" | "title">("date");
   const [sortOrder, setSortOrder] = useState<"desc" | "asc">("desc");
+  const [view, setView] = useState<"shows" | "episodes">("shows");
 
   const { play, currentEpisode, isPlaying } = usePlayer();
 
@@ -41,15 +32,13 @@ export default function PodcastBrowser() {
   }, []);
 
   // Extract unique shows and years
-  const shows = useMemo(() => {
+  const showCounts = useMemo(() => {
     const showMap = new Map<string, number>();
     episodes.forEach((ep) => {
       const count = showMap.get(ep.show) || 0;
       showMap.set(ep.show, count + 1);
     });
-    return Array.from(showMap.entries())
-      .sort((a, b) => b[1] - a[1])
-      .map(([name, count]) => ({ name, count }));
+    return showMap;
   }, [episodes]);
 
   const years = useMemo(() => {
@@ -121,491 +110,361 @@ export default function PodcastBrowser() {
 
   if (loading) {
     return (
-      <div
-        style={{
-          minHeight: "100vh",
-          background: colors.background,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              border: `3px solid ${colors.border}`,
-              borderTop: `3px solid ${colors.accentGold}`,
-              borderRadius: "50%",
-              animation: "spin 1s linear infinite",
-              margin: "0 auto 20px",
-            }}
-          />
-          <div style={{ color: colors.textSecondary, fontFamily: "Georgia, serif" }}>
-            Loading the archive...
+      <div className="min-h-screen bg-paper flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 mb-4">
+            <span className="material-symbols-outlined text-4xl text-primary animate-spin">
+              progress_activity
+            </span>
           </div>
+          <div className="font-mono text-sm text-ink-muted">Loading archive...</div>
         </div>
-        <style jsx>{`
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-        `}</style>
       </div>
     );
   }
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: colors.background,
-        color: colors.textPrimary,
-      }}
-    >
+    <div className="min-h-screen bg-paper text-ink font-body antialiased">
       {/* Header */}
-      <header
-        style={{
-          borderBottom: `1px solid ${colors.border}`,
-          padding: "16px 24px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          background: colors.surface,
-        }}
-      >
-        <Link
-          href="/"
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 20,
-            fontWeight: "bold",
-            color: colors.textPrimary,
-            textDecoration: "none",
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          <span style={{ color: colors.accentGold }}>✦</span>
-          ENCYCLOPEADIA
-        </Link>
-
-        <nav style={{ display: "flex", gap: 24 }}>
-          <Link
-            href="/encyclopedia"
-            style={{
-              color: colors.textSecondary,
-              textDecoration: "none",
-              fontSize: 14,
-            }}
-          >
-            Encyclopedia
+      <header className="w-full border-b-2 border-ink bg-paper sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <span className="material-symbols-outlined text-3xl text-primary group-hover:rotate-12 transition-transform duration-300">
+              auto_stories
+            </span>
+            <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
+              EncycloPEATia
+            </h1>
           </Link>
-          <Link
-            href="/podcasts"
-            style={{
-              color: colors.accentGold,
-              textDecoration: "none",
-              fontSize: 14,
-              fontWeight: "bold",
-            }}
-          >
-            ☉ Podcasts
-          </Link>
-          <Link
-            href="/ask"
-            style={{
-              color: colors.textSecondary,
-              textDecoration: "none",
-              fontSize: 14,
-            }}
-          >
-            Ask Peat
-          </Link>
-        </nav>
+          <nav className="hidden md:flex gap-8 items-center">
+            <Link
+              href="/podcasts"
+              className="font-mono text-sm font-medium underline decoration-2 underline-offset-4 decoration-primary"
+            >
+              ARCHIVE
+            </Link>
+            <Link
+              href="/encyclopedia"
+              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
+            >
+              ENCYCLOPEDIA
+            </Link>
+            <Link href="/ask" className="btn-primary">
+              ASK PEAT
+            </Link>
+          </nav>
+        </div>
       </header>
 
-      <div style={{ display: "flex" }}>
+      <div className="flex">
         {/* Sidebar - Filters */}
-        <aside
-          style={{
-            width: 260,
-            borderRight: `1px solid ${colors.border}`,
-            padding: 24,
-            background: colors.surface,
-            minHeight: "calc(100vh - 60px)",
-          }}
-        >
-          {/* Shows Filter */}
-          <div style={{ marginBottom: 32 }}>
-            <h3
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: 14,
-                color: colors.textSecondary,
-                marginBottom: 16,
-                textTransform: "uppercase",
-                letterSpacing: 1,
-              }}
-            >
-              Shows
-            </h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              <button
-                onClick={() => setSelectedShow(null)}
-                style={{
-                  background: !selectedShow ? colors.accentGold : "transparent",
-                  color: !selectedShow ? colors.background : colors.textSecondary,
-                  border: "none",
-                  padding: "8px 12px",
-                  borderRadius: 4,
-                  cursor: "pointer",
-                  textAlign: "left",
-                  fontSize: 14,
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                <span>All Shows</span>
-                <span style={{ opacity: 0.7 }}>{episodes.length}</span>
-              </button>
-              {shows.map(({ name, count }) => (
+        <aside className="w-72 border-r-2 border-ink min-h-[calc(100vh-5rem)] bg-surface">
+          <div className="p-6">
+            {/* View Toggle */}
+            <div className="mb-6">
+              <div className="flex gap-2">
                 <button
-                  key={name}
-                  onClick={() => setSelectedShow(name)}
-                  style={{
-                    background: selectedShow === name ? colors.accentGold : "transparent",
-                    color: selectedShow === name ? colors.background : colors.textSecondary,
-                    border: "none",
-                    padding: "8px 12px",
-                    borderRadius: 4,
-                    cursor: "pointer",
-                    textAlign: "left",
-                    fontSize: 14,
-                    display: "flex",
-                    justifyContent: "space-between",
-                  }}
+                  onClick={() => setView("shows")}
+                  className={`flex-1 py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
+                    view === "shows"
+                      ? "bg-primary border-ink text-ink shadow-hard-sm"
+                      : "bg-paper border-ink/30 hover:border-ink"
+                  }`}
                 >
-                  <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: 160 }}>
-                    {name}
-                  </span>
-                  <span style={{ opacity: 0.7 }}>{count}</span>
+                  Shows
                 </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Years Filter */}
-          <div style={{ marginBottom: 32 }}>
-            <h3
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: 14,
-                color: colors.textSecondary,
-                marginBottom: 16,
-                textTransform: "uppercase",
-                letterSpacing: 1,
-              }}
-            >
-              Years
-            </h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              <button
-                onClick={() => setSelectedYear(null)}
-                style={{
-                  background: !selectedYear ? colors.accentGold : "transparent",
-                  color: !selectedYear ? colors.background : colors.textSecondary,
-                  border: `1px solid ${!selectedYear ? colors.accentGold : colors.border}`,
-                  padding: "6px 12px",
-                  borderRadius: 4,
-                  cursor: "pointer",
-                  fontSize: 13,
-                }}
-              >
-                All
-              </button>
-              {years.map((year) => (
                 <button
-                  key={year}
-                  onClick={() => setSelectedYear(year)}
-                  style={{
-                    background: selectedYear === year ? colors.accentGold : "transparent",
-                    color: selectedYear === year ? colors.background : colors.textSecondary,
-                    border: `1px solid ${selectedYear === year ? colors.accentGold : colors.border}`,
-                    padding: "6px 12px",
-                    borderRadius: 4,
-                    cursor: "pointer",
-                    fontSize: 13,
-                  }}
+                  onClick={() => setView("episodes")}
+                  className={`flex-1 py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
+                    view === "episodes"
+                      ? "bg-primary border-ink text-ink shadow-hard-sm"
+                      : "bg-paper border-ink/30 hover:border-ink"
+                  }`}
                 >
-                  {year}
+                  Episodes
                 </button>
-              ))}
+              </div>
             </div>
-          </div>
 
-          {/* Ask Peat CTA */}
-          <div
-            style={{
-              background: colors.background,
-              border: `1px solid ${colors.border}`,
-              borderRadius: 8,
-              padding: 16,
-            }}
-          >
-            <h4
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: 14,
-                marginBottom: 8,
-                color: colors.textPrimary,
-              }}
-            >
-              ✉ Have a question?
-            </h4>
-            <p style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12 }}>
-              Get an AI answer from 770+ hours of transcripts.
-            </p>
-            <Link
-              href="/ask"
-              style={{
-                display: "block",
-                textAlign: "center",
-                padding: "10px 16px",
-                background: colors.accentBlue,
-                color: "white",
-                borderRadius: 4,
-                textDecoration: "none",
-                fontSize: 14,
-                fontWeight: "bold",
-              }}
-            >
-              Ask Dr. Peat →
-            </Link>
+            {view === "episodes" && (
+              <>
+                {/* Shows Filter */}
+                <div className="mb-6">
+                  <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-3">
+                    Filter by Show
+                  </h3>
+                  <div className="space-y-1">
+                    <button
+                      onClick={() => setSelectedShow(null)}
+                      className={`w-full text-left px-3 py-2 text-sm border-2 transition-all ${
+                        !selectedShow
+                          ? "bg-primary border-ink text-ink shadow-hard-sm"
+                          : "bg-paper border-ink/20 hover:border-ink"
+                      }`}
+                    >
+                      <div className="flex justify-between items-center">
+                        <span>All Shows</span>
+                        <span className="font-mono text-xs">{episodes.length}</span>
+                      </div>
+                    </button>
+                    {Array.from(showCounts.entries())
+                      .sort((a, b) => b[1] - a[1])
+                      .map(([name, count]) => (
+                        <button
+                          key={name}
+                          onClick={() => setSelectedShow(name)}
+                          className={`w-full text-left px-3 py-2 text-sm border-2 transition-all ${
+                            selectedShow === name
+                              ? "bg-primary border-ink text-ink shadow-hard-sm"
+                              : "bg-paper border-ink/20 hover:border-ink"
+                          }`}
+                        >
+                          <div className="flex justify-between items-center">
+                            <span className="truncate pr-2">{name}</span>
+                            <span className="font-mono text-xs">{count}</span>
+                          </div>
+                        </button>
+                      ))}
+                  </div>
+                </div>
+
+                {/* Years Filter */}
+                <div className="mb-6">
+                  <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-3">
+                    Filter by Year
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={() => setSelectedYear(null)}
+                      className={`px-3 py-1 text-sm font-mono border-2 transition-all ${
+                        !selectedYear
+                          ? "bg-primary border-ink text-ink shadow-hard-sm"
+                          : "bg-paper border-ink/20 hover:border-ink"
+                      }`}
+                    >
+                      All
+                    </button>
+                    {years.map((year) => (
+                      <button
+                        key={year}
+                        onClick={() => setSelectedYear(year)}
+                        className={`px-3 py-1 text-sm font-mono border-2 transition-all ${
+                          selectedYear === year
+                            ? "bg-primary border-ink text-ink shadow-hard-sm"
+                            : "bg-paper border-ink/20 hover:border-ink"
+                        }`}
+                      >
+                        {year}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Ask Peat CTA */}
+            <div className="bg-ink text-white p-4 border-2 border-ink">
+              <h4 className="font-mono text-xs font-bold uppercase tracking-widest mb-2 flex items-center gap-2">
+                <span className="material-symbols-outlined text-base">mail</span>
+                Have a question?
+              </h4>
+              <p className="text-sm mb-3 opacity-90">
+                Get AI answers from 770+ hours of transcripts.
+              </p>
+              <Link
+                href="/ask"
+                className="block text-center py-2 bg-primary text-ink font-mono text-xs font-bold uppercase border-2 border-primary hover:bg-primary/90 transition-all"
+              >
+                Ask Dr. Peat →
+              </Link>
+            </div>
           </div>
         </aside>
 
         {/* Main Content */}
-        <main style={{ flex: 1, padding: 24 }}>
-          {/* Search and Sort Controls */}
-          <div
-            style={{
-              display: "flex",
-              gap: 16,
-              marginBottom: 24,
-              alignItems: "center",
-            }}
-          >
-            <input
-              type="search"
-              placeholder="Search episodes..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              style={{
-                flex: 1,
-                maxWidth: 400,
-                padding: "12px 16px",
-                background: colors.surface,
-                border: `1px solid ${colors.border}`,
-                borderRadius: 6,
-                color: colors.textPrimary,
-                fontSize: 14,
-              }}
-            />
+        <main className="flex-1">
+          {view === "shows" ? (
+            /* Shows View */
+            <div className="p-8">
+              <div className="mb-6">
+                <h2 className="font-serif text-3xl font-bold mb-2">Podcast Shows</h2>
+                <p className="text-ink-muted">
+                  Browse all shows featuring Dr. Ray Peat interviews and discussions.
+                </p>
+              </div>
 
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as "date" | "title")}
-              style={{
-                padding: "12px 16px",
-                background: colors.surface,
-                border: `1px solid ${colors.border}`,
-                borderRadius: 6,
-                color: colors.textPrimary,
-                fontSize: 14,
-                cursor: "pointer",
-              }}
-            >
-              <option value="date">Sort by Date</option>
-              <option value="title">Sort by Title</option>
-            </select>
-
-            <button
-              onClick={() => setSortOrder(sortOrder === "desc" ? "asc" : "desc")}
-              style={{
-                padding: "12px 16px",
-                background: colors.surface,
-                border: `1px solid ${colors.border}`,
-                borderRadius: 6,
-                color: colors.textPrimary,
-                fontSize: 14,
-                cursor: "pointer",
-              }}
-            >
-              {sortOrder === "desc" ? "↓ Newest" : "↑ Oldest"}
-            </button>
-          </div>
-
-          {/* Results Count */}
-          <div
-            style={{
-              marginBottom: 16,
-              fontSize: 14,
-              color: colors.textSecondary,
-            }}
-          >
-            Showing {filteredEpisodes.length} episodes
-            {selectedShow && ` from ${selectedShow}`}
-            {selectedYear && ` in ${selectedYear}`}
-          </div>
-
-          {/* Episode List */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {filteredEpisodes.map((episode) => {
-              const isCurrentlyPlaying = currentEpisode?.slug === episode.slug && isPlaying;
-
-              return (
-                <div
-                  key={episode.slug}
-                  style={{
-                    background: colors.surface,
-                    border: `1px solid ${isCurrentlyPlaying ? colors.accentGold : colors.border}`,
-                    borderRadius: 8,
-                    padding: 20,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 16,
-                  }}
-                >
-                  {/* Play Button */}
-                  <button
-                    onClick={() => handlePlay(episode)}
-                    disabled={!episode.audioUrl}
-                    style={{
-                      width: 48,
-                      height: 48,
-                      borderRadius: "50%",
-                      background: episode.audioUrl
-                        ? isCurrentlyPlaying
-                          ? colors.accentGold
-                          : colors.accentBlue
-                        : colors.border,
-                      border: "none",
-                      color: "white",
-                      fontSize: 18,
-                      cursor: episode.audioUrl ? "pointer" : "default",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {isCurrentlyPlaying ? "❚❚" : "▶"}
-                  </button>
-
-                  {/* Episode Info */}
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <Link
-                      href={`/episode/${encodeURIComponent(episode.slug)}`}
-                      style={{
-                        fontFamily: "Georgia, serif",
-                        fontSize: 18,
-                        color: colors.textPrimary,
-                        textDecoration: "none",
-                        display: "block",
-                        marginBottom: 6,
-                      }}
-                    >
-                      {episode.title}
-                    </Link>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {getAllShows().map((show) => {
+                  const count = showCounts.get(show.name) || 0;
+                  
+                  return (
                     <div
-                      style={{
-                        display: "flex",
-                        gap: 12,
-                        fontSize: 13,
-                        color: colors.textSecondary,
-                      }}
+                      key={show.id}
+                      className="bg-surface border-2 border-ink p-6 hover:shadow-hard transition-all"
                     >
-                      <span
-                        style={{
-                          background: colors.accentGold,
-                          color: colors.background,
-                          padding: "2px 8px",
-                          borderRadius: 3,
-                          fontWeight: "bold",
-                        }}
-                      >
-                        {episode.show}
-                      </span>
-                      {episode.date && (
-                        <span>
-                          {new Date(episode.date).toLocaleDateString("en-US", {
-                            year: "numeric",
-                            month: "short",
-                            day: "numeric",
-                          })}
+                      <div className="flex items-start justify-between mb-3">
+                        <span 
+                          className="material-symbols-outlined text-3xl"
+                          style={{ color: show.color }}
+                        >
+                          {show.icon}
                         </span>
-                      )}
+                        {show.externalUrl !== "#" && (
+                          <a
+                            href={show.externalUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-ink-muted hover:text-primary transition-colors"
+                          >
+                            <span className="material-symbols-outlined text-sm">
+                              open_in_new
+                            </span>
+                          </a>
+                        )}
+                      </div>
+                      
+                      <h3 className="font-serif text-xl font-bold mb-1">{show.name}</h3>
+                      <p className="text-sm text-ink-muted mb-2">Host: {show.host}</p>
+                      <p className="text-sm mb-3">{show.description}</p>
+                      
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="font-mono text-xs text-ink-muted">{show.yearsActive}</span>
+                        <button
+                          onClick={() => {
+                            setView("episodes");
+                            setSelectedShow(show.name);
+                          }}
+                          className="font-mono text-xs font-bold uppercase text-primary hover:underline"
+                        >
+                          {count} episodes →
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            /* Episodes View */
+            <div className="p-8">
+              {/* Search and Sort Controls */}
+              <div className="flex gap-4 mb-6 items-center">
+                <input
+                  type="search"
+                  placeholder="Search episodes..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="flex-1 max-w-md px-4 py-2 bg-paper border-2 border-ink focus:border-primary focus:shadow-hard-sm transition-all"
+                />
 
-                  {/* Read Button */}
-                  <Link
-                    href={`/episode/${encodeURIComponent(episode.slug)}`}
-                    style={{
-                      padding: "10px 16px",
-                      border: `1px solid ${colors.border}`,
-                      borderRadius: 4,
-                      color: colors.textSecondary,
-                      textDecoration: "none",
-                      fontSize: 14,
-                      flexShrink: 0,
-                    }}
-                  >
-                    Read →
-                  </Link>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as "date" | "title")}
+                  className="px-4 py-2 bg-paper border-2 border-ink cursor-pointer"
+                >
+                  <option value="date">Sort by Date</option>
+                  <option value="title">Sort by Title</option>
+                </select>
+
+                <button
+                  onClick={() => setSortOrder(sortOrder === "desc" ? "asc" : "desc")}
+                  className="px-4 py-2 bg-paper border-2 border-ink hover:border-primary transition-all"
+                >
+                  {sortOrder === "desc" ? "↓ Newest" : "↑ Oldest"}
+                </button>
+              </div>
+
+              {/* Results Count */}
+              <div className="mb-4 font-mono text-xs text-ink-muted">
+                Showing {filteredEpisodes.length} episodes
+                {selectedShow && ` from ${selectedShow}`}
+                {selectedYear && ` in ${selectedYear}`}
+              </div>
+
+              {/* Episode List */}
+              <div className="space-y-3">
+                {filteredEpisodes.map((episode) => {
+                  const isCurrentlyPlaying = currentEpisode?.slug === episode.slug && isPlaying;
+                  const show = getShow(episode.show);
+
+                  return (
+                    <div
+                      key={episode.slug}
+                      className={`bg-surface border-2 p-4 transition-all ${
+                        isCurrentlyPlaying ? "border-primary shadow-hard" : "border-ink hover:shadow-hard-sm"
+                      }`}
+                    >
+                      <div className="flex items-center gap-4">
+                        {/* Play Button */}
+                        <button
+                          onClick={() => handlePlay(episode)}
+                          disabled={!episode.audioUrl}
+                          className={`w-12 h-12 flex items-center justify-center border-2 transition-all ${
+                            episode.audioUrl
+                              ? isCurrentlyPlaying
+                                ? "bg-primary border-ink text-ink"
+                                : "bg-paper border-ink hover:bg-primary hover:text-ink"
+                              : "bg-paper-dim border-ink/30 text-ink-muted cursor-not-allowed"
+                          }`}
+                        >
+                          <span className="material-symbols-outlined">
+                            {isCurrentlyPlaying ? "pause" : "play_arrow"}
+                          </span>
+                        </button>
+
+                        {/* Episode Info */}
+                        <div className="flex-1 min-w-0">
+                          <Link
+                            href={`/episode/${encodeURIComponent(episode.slug)}`}
+                            className="font-serif text-lg font-bold hover:text-primary transition-colors line-clamp-1"
+                          >
+                            {episode.title}
+                          </Link>
+                          <div className="flex items-center gap-3 mt-1 text-sm text-ink-muted">
+                            <span
+                              className="font-mono text-xs font-bold uppercase px-2 py-0.5"
+                              style={{ backgroundColor: show.color + "20", color: show.color }}
+                            >
+                              {episode.show}
+                            </span>
+                            {episode.date && (
+                              <span>
+                                {new Date(episode.date).toLocaleDateString("en-US", {
+                                  year: "numeric",
+                                  month: "short",
+                                  day: "numeric",
+                                })}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Read Button */}
+                        <Link
+                          href={`/episode/${encodeURIComponent(episode.slug)}`}
+                          className="px-4 py-2 font-mono text-xs font-bold uppercase border-2 border-ink hover:bg-primary hover:shadow-hard-sm transition-all"
+                        >
+                          Read →
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {filteredEpisodes.length === 0 && (
+                <div className="text-center py-16">
+                  <span className="material-symbols-outlined text-6xl text-ink-muted mb-4 block">
+                    search_off
+                  </span>
+                  <h3 className="font-serif text-xl font-bold mb-2">No episodes found</h3>
+                  <p className="text-ink-muted">Try adjusting your filters or search</p>
                 </div>
-              );
-            })}
-          </div>
-
-          {filteredEpisodes.length === 0 && (
-            <div
-              style={{
-                textAlign: "center",
-                padding: 60,
-                color: colors.textSecondary,
-              }}
-            >
-              <div style={{ fontSize: 48, marginBottom: 16 }}>☉</div>
-              <h3 style={{ fontFamily: "Georgia, serif", marginBottom: 8 }}>
-                No episodes found
-              </h3>
-              <p>Try adjusting your filters or search</p>
+              )}
             </div>
           )}
         </main>
       </div>
-
-      {/* Global Styles */}
-      <style jsx global>{`
-        * {
-          box-sizing: border-box;
-        }
-        body {
-          margin: 0;
-          font-family: system-ui, -apple-system, sans-serif;
-        }
-        input::placeholder {
-          color: ${colors.textSecondary};
-        }
-        select option {
-          background: ${colors.surface};
-          color: ${colors.textPrimary};
-        }
-      `}</style>
     </div>
   );
 }

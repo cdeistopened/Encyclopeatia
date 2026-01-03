@@ -234,7 +234,6 @@ export default function AskPeatPage() {
                 </h2>
                 <p className="text-ink-muted mb-6 max-w-md">
                   We&apos;ll send responses to your research questions directly to your inbox.
-                  Your first 3 queries are free.
                 </p>
                 <div className="w-full max-w-sm space-y-4">
                   <input
@@ -254,8 +253,6 @@ export default function AskPeatPage() {
                   </button>
                   <p className="text-xs text-ink-muted">
                     By continuing, you agree to receive emails from EncycloPEATia.
-                    <br />
-                    Upgrade to Pro for unlimited queries.
                   </p>
                 </div>
               </div>
@@ -514,25 +511,6 @@ I have a question about..."
           </div>
         </div>
 
-        {/* Upgrade CTA */}
-        <div className="mt-8 p-6 bg-ink text-white border-2 border-ink">
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="font-serif text-xl font-bold mb-1">
-                Upgrade to Pro
-              </h3>
-              <p className="text-white/70 text-sm">
-                Unlimited queries + custom research reports + priority support
-              </p>
-            </div>
-            <div className="text-right">
-              <div className="font-mono text-2xl font-bold text-primary">$5/mo</div>
-              <button className="mt-2 px-6 py-2 bg-primary text-ink font-mono text-xs font-bold uppercase border-2 border-primary hover:bg-primary/90 transition-all">
-                Upgrade Now
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Disclaimer */}
         <div className="mt-6 text-center text-ink-muted text-xs">
