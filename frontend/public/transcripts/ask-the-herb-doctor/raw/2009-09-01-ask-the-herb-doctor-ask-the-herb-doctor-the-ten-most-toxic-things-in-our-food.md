@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: The Ten Most Toxic Things In Our Food"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2009-09-01"
+audio_url: "https://www.toxinless.com/kmud-090901-the-ten-most-toxic-things-in-our-food.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 0856aad6-dcc7-421d-879f-b0b1152fa3fa
+---
 
 ## Transcript
 

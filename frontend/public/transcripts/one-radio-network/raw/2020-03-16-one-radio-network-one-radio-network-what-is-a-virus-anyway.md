@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: What is a virus anyway?"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2020-03-16"
+audio_url: "https://www.toxinless.com/orn-200316-what-is-a-virus-anyway.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: c4124d2a-f225-4ba6-a9af-a59c81b79808
+polished_version: "[[one-radio-network/polished/2020-03-16-one-radio-network-one-radio-network-what-is-a-virus-anyway]]"
+---
 
 ## Transcript
 

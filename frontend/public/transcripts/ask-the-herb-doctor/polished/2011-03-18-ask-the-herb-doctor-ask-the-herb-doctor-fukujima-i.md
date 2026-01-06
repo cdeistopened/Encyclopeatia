@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Fukujima I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-03-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110318-fukujima.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 58635f05-0db5-46ca-bca6-a7e18e32067f
+raw_source: "[[ask-the-herb-doctor/raw/2011-03-18-ask-the-herb-doctor-ask-the-herb-doctor-fukujima-i]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

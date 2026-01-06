@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Questions and Answers I"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-07-12
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110712-q-and-a-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 14d0d41e-c945-4faf-9b9e-52fa0eb68a86
+raw_source: "[[eastwest-healing/raw/2011-07-12-eastwest-healing-eastwest-healing-questions-and-answers-i]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome back to a great show with Ray Peat. Today we are going to do a question and answer session. Jeannie is not going to be on the call today, so it will just be me.

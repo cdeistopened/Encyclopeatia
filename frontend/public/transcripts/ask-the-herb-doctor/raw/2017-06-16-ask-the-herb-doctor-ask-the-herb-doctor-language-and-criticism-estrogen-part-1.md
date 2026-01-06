@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Language and Criticism, Estrogen (Part 1)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-06-16"
+audio_url: "https://www.toxinless.com/kmud-170616-language-criticism-estrogen.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: aa7be90e-fab7-4919-b085-3634fa327051
+---
 
 ## Transcript
 

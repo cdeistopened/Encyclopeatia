@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Two Hour Fundraiser I"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2012-02-22
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-120222-fundraiser-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4cd666b1-f097-4061-b448-cb2cd3983224
+raw_source: "[[politics-and-science/raw/2012-02-22-politics-and-science-politics-science-two-hour-fundraiser-i]]"
+---
 ## Progesterone vs. Progestins and Cancer Treatment
 
 **John Barkhausen:** I don't think they've ever used progesterone itself. In a study in humans going back to the 40s, when progesterone was just barely becoming available, people were using it to treat cancer in humans, but it was just on an individual basis. There have been quite a few publications using medroxyprogesterone, which is not progesterone, to treat kidney cancer and breast cancer. It works somewhat, but it isn't progesterone; it doesn't have all of the good properties of progesterone and has some of the bad properties. So the best information is still from animal studies. Even those pretty much faded out after Lipschütz left the field in the 50s.

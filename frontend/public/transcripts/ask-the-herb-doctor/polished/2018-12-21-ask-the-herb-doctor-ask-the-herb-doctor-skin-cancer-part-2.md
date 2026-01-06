@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Skin Cancer Part 2"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-12-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-181221-skin-cancer-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a1f87954-fb2c-41f5-9028-c5f24e1f4e92
+raw_source: "[[ask-the-herb-doctor/raw/2018-12-21-ask-the-herb-doctor-ask-the-herb-doctor-skin-cancer-part-2]]"
+---
 # Ask Your Herb Doctor: Skin Cancer, Candida, and Metabolism
 
 ## Introduction

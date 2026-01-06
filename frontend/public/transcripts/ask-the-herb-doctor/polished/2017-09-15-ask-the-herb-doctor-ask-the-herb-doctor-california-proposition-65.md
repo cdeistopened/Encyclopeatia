@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: California Proposition 65"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-09-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-170915-california-proposition-65.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 01b65fc0-e861-4782-b990-857b00c0eca7
+raw_source: "[[ask-the-herb-doctor/raw/2017-09-15-ask-the-herb-doctor-ask-the-herb-doctor-california-proposition-65]]"
+---
 ## Introduction: Prop 65 and Heavy Metals
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. We have a very special guest speaker with us, Dr. Raymond Peat. I know a lot of people listen purely to glimpse his insights because he always has a different answer for things.

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Ionizing Radiation in Context Part 2"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2009-04-27"
+audio_url: "https://www.toxinless.com/polsci-090427-radiation-2.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 11a1b8a6-aa56-472e-9ef3-0d60737be909
+polished_version: "[[politics-and-science/polished/2009-04-27-politics-and-science-politics-science-ionizing-radiation-in-context-part-2]]"
+---
 
 ## Transcript
 

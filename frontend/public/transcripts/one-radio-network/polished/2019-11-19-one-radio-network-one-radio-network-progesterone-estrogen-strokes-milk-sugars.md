@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Progesterone, estrogen, strokes, milk, sugars"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-11-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-191119-progesterone-estrogen-strokes-milk-sugars.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: c14f3ec6-8108-4fba-b35d-b71ddd0027e4
+raw_source: "[[one-radio-network/raw/2019-11-19-one-radio-network-one-radio-network-progesterone-estrogen-strokes-milk-sugars]]"
+---
 ## Introduction
 
 **Patrick Timpone:** Well, welcome back. It is the third Tuesday of the month, and that brings us to Dr. Ray Peat, who’s been at this nutrition healing game for a very long time. Dr. Ray Peat, good morning.

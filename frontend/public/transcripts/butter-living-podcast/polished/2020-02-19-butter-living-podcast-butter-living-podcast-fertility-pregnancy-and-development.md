@@ -1,3 +1,16 @@
+---
+title: "Butter Living Podcast: Fertility, Pregnancy, and Development"
+feed: "Toxinless Forum"
+show: "Butter Living Podcast"
+date_published: 2020-02-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/blp-200219-fertility-pregnancy-development.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b86ebe53-470c-4214-9736-559bb6b9d9d2
+raw_source: "[[butter-living-podcast/raw/2020-02-19-butter-living-podcast-butter-living-podcast-fertility-pregnancy-and-development]]"
+---
 ## Introduction
 
 **Host:** Hi, Ray, how's it going?

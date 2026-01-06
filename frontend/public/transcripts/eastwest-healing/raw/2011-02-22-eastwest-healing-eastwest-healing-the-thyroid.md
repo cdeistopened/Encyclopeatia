@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: The Thyroid"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-02-22"
+audio_url: "https://www.toxinless.com/ewh-110222-the-thryoid.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 816a1745-0887-4e25-baba-1b99bba2d3c5
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: A Self Ordering World"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2010-11-10"
+audio_url: "https://www.toxinless.com/polsci-101110-self-ordering-world.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4677a847-74a9-4935-b651-251e2266bc04
+polished_version: "[[politics-and-science/polished/2010-11-10-politics-and-science-politics-science-a-self-ordering-world]]"
+---
 
 ## Transcript
 

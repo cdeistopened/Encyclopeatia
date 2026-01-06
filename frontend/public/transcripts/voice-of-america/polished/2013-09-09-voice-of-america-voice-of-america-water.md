@@ -1,3 +1,16 @@
+---
+title: "Voice of America: Water"
+feed: "Toxinless Forum"
+show: "Voice of America"
+date_published: 2013-09-09
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/voiceofamerica-130909-water.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 3b61e5f4-7618-4dbf-92d1-9ea662217e55
+raw_source: "[[voice-of-america/raw/2013-09-09-voice-of-america-voice-of-america-water]]"
+---
 ## Introduction: The Power of Water
 
 **Sharon Kleyne:** I want to invite you to listen to the Sharon Kleyne Hour: The Power of Water. For over 30 years, I have been studying water—not only the water on the surface of the earth and below it, but also water vapor and humidity. From the moment you were born, water vapor became the most important influence of your life. Without water on earth, there would be no water vapor or humidity for you to stay alive.

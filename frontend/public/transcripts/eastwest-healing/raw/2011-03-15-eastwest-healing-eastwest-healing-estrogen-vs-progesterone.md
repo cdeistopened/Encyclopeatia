@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Estrogen vs Progesterone"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-03-15"
+audio_url: "https://www.toxinless.com/ewh-110315-estrogen-vs-progesterone.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: eedad3da-e066-4e8a-9157-64ba475339f0
+---
 
 ## Transcript
 

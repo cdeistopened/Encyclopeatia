@@ -1,4 +1,16 @@
-## Introduction: Aristotle, Culture, and Language
+---
+title: "#19 - Philosophy and Physiology"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 19
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 7a753546-91d1-4a63-867e-f9d4275a19b7
+raw_source: "[[Generative Energy/#19 - Philosophy and Physiology]]"
+---## Introduction: Aristotle, Culture, and Language
 
 **Danny Roddy:** Okay, and we're live. Hello, everybody. Welcome. We have Georgi and Mr. Raymond Peat on the line, and we are talking about Aristotle. We were talking about forms, matter, and deep politics. I'm not going to interrupt what we were talking about, but Georgi, go ahead.
 

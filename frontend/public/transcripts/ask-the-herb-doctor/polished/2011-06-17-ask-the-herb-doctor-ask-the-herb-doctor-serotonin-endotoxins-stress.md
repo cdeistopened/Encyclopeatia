@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Serotonin, Endotoxins, Stress"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-06-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110617-serotonin-endotoxins-stress.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: bc0bbe35-fadd-45f1-bb4c-c2d2e2058e9e
+raw_source: "[[ask-the-herb-doctor/raw/2011-06-17-ask-the-herb-doctor-ask-the-herb-doctor-serotonin-endotoxins-stress]]"
+---
 # Ask Your Herb Doctor: Endotoxin, Stress, and Serotonin
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

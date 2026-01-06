@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Thyroid and Regeneration"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2008-09-11
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-080911-thyroid-and-regeneration.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 415b5a67-77c1-4616-afde-d029add947db
+raw_source: "[[politics-and-science/raw/2008-09-11-politics-and-science-politics-science-thyroid-and-regeneration]]"
+---
 ## Introduction: Brain Fat Regeneration
 
 **John Barkhausen:** Welcome again to Politics and Science. Last week we were talking about oxidative metabolism and glycolysis—creating lactic acid from glucose. We were discussing this in the context of what it is to be a healthy person: having enough energy to get your tasks done, but also enough to regenerate the damage that inevitably happens to everybody as they go through daily life. You said something last week which I thought was interesting, that we regenerate 25 to 30% of the fats in our brains every night.

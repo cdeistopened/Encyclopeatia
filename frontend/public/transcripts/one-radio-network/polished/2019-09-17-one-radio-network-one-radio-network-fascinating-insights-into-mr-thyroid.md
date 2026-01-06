@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Fascinating Insights Into Mr. Thyroid"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-09-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190917-mr-thyroid.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 37a43cc9-6e8d-4d6d-ba5a-395f11f28f75
+raw_source: "[[one-radio-network/raw/2019-09-17-one-radio-network-one-radio-network-fascinating-insights-into-mr-thyroid]]"
+---
 ## Introduction
 
 **Patrick Timpone:** Well, here we go. It is the third Tuesday, and that brings us to a time when we're grateful to have the lovely and talented Dr. Ray Peat on the air. He is a Ph.D. from the University of Oregon with a specialization in physiology. He started working with hormones back in 1968 and wrote his dissertation in 1972. He has a great newsletter that comes out a couple of times a month. Dr. Peat, good morning.

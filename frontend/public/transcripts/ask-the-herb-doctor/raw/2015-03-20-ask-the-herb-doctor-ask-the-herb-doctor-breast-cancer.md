@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Breast Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-03-20"
+audio_url: "https://www.toxinless.com/kmud-150320-breast-cancer.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: d0791d5f-0ac5-4541-acdb-f527fb5eb056
+---
 
 ## Transcript
 

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Altitude"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2010-07-16"
+audio_url: "https://www.toxinless.com/kmud-100716-altitude.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 9a7c651f-2a39-4995-9288-f92a9f245213
+---
 
 ## Transcript
 

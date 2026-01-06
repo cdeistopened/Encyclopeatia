@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Fats and Questions"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-01-24"
+audio_url: "https://www.toxinless.com/orn-190124-fats-and-questions.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 45f2c6a6-7be9-4b63-8b39-410e3dfd45ae
+polished_version: "[[one-radio-network/polished/2019-01-24-one-radio-network-one-radio-network-fats-and-questions]]"
+---
 
 ## Transcript
 

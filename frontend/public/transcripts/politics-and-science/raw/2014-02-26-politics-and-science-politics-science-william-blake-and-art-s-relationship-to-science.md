@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: William Blake and Art's Relationship to Science"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2014-02-26"
+audio_url: "https://www.toxinless.com/polsci-140226-william-blake.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 35ea097b-b063-4815-95cb-287b99efecdf
+polished_version: "[[politics-and-science/polished/2014-02-26-politics-and-science-politics-science-william-blake-and-art-s-relationship-to-science]]"
+---
 
 ## Transcript
 

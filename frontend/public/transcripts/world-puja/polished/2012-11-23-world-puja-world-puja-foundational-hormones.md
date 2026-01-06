@@ -1,3 +1,16 @@
+---
+title: "World Puja: Foundational Hormones"
+feed: "Toxinless Forum"
+show: "World Puja"
+date_published: 2012-11-23
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/wp-121123-foundational-hormones.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f3981827-5044-448f-9345-7d9e078d38f1
+raw_source: "[[world-puja/raw/2012-11-23-world-puja-world-puja-foundational-hormones]]"
+---
 ## Introduction
 
 **Taya Skerry:** Hello and welcome. This is Taya Skerry, your host of the *To Your Health* series broadcasting from the World Puja Network. I'm delighted to present engaging, in-depth conversations with leaders, researchers, and authors in the fields of advanced nutrition, biochemistry, emotional intelligence, energy-based medicine, and the mind-body connection. Every show is designed to give you practical bottom-line information to optimize your physical, emotional, and mental well-being.

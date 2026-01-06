@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Iodine, Supplement Reactions, Hormones, and More"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-02-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-160219-iodine-supplement-reactions-hormones.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 370b72ee-749e-4887-b172-2086e07726f9
+raw_source: "[[ask-the-herb-doctor/raw/2016-02-19-ask-the-herb-doctor-ask-the-herb-doctor-iodine-supplement-reactions-hormones-and-more]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to Ask Your Herb Doctor. My name is Andrew Murray.

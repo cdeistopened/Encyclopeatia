@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Food Quality"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2012-01-07
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-120107-food-quality.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: c68a3f18-c9f4-405b-89a6-add31e7d2750
+raw_source: "[[politics-and-science/raw/2012-01-07-politics-and-science-politics-science-food-quality]]"
+---
 ## Introduction
 
 **John Barkhausen:** This week I'm once again very pleased to have on my show Dr. Raymond Peat, who has a PhD in biology and has studied extensively in the fields of physiology and endocrinology. In my opinion, he is a very learned science historian.

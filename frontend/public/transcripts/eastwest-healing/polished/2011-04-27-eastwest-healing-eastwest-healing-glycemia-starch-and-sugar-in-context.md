@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Glycemia, Starch and Sugar in context"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-04-27
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110427-glycemia-starch-and-sugar-in-context.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 28f406f3-64d0-499f-bb70-f1bc07033c6e
+raw_source: "[[eastwest-healing/raw/2011-04-27-eastwest-healing-eastwest-healing-glycemia-starch-and-sugar-in-context]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome again for a great show. We're going to have Ray Peat on once again. For those who don't know who we are, we own a wellness company in the San Diego area, East West Healing and Performance. We work with people that have GI problems, hormone problems, and physical problems from all over the world.

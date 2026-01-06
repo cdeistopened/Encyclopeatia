@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Economics"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-10-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-171020-economics.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 491d8c6e-977b-48c1-b88c-6741756e6733
+raw_source: "[[ask-the-herb-doctor/raw/2017-10-20-ask-the-herb-doctor-ask-the-herb-doctor-economics]]"
+---
 ## Introduction: Economics, Knowledge, and the Biosphere
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. This month’s subject is a mixed topic involving economics, corporate greed, and idealism. We will be weaving in a couple of characters from the mid-1850s who had visionary thoughts about concepts such as the biosphere and noosphere.

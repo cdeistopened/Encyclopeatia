@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: August 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-08-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-210820.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 620a114c-62ba-41b3-b211-ffa7f444af3f
+raw_source: "[[ask-the-herb-doctor/raw/2021-08-20-ask-the-herb-doctor-ask-the-herb-doctor-august-2021-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** You're listening to *Ask Your Herb Doctor* on KMUD Garberville, 91.1 FM. From 7:30 until the end of the show at 8:00, you are invited to call in with questions related to this month's topic of iron and its dangers. Dr. Raymond Peat is joining us again. Dr. Peat, are you there?

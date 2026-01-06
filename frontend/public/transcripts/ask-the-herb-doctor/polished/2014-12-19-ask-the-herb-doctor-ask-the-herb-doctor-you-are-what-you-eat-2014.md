@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: You Are What You Eat (2014)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-12-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-141219-you-are-what-you-eat.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 08919c76-6044-48f9-af8c-bbf8bb971e64
+raw_source: "[[ask-the-herb-doctor/raw/2014-12-19-ask-the-herb-doctor-ask-the-herb-doctor-you-are-what-you-eat-2014]]"
+---
 ## Introduction: You Are What You Eat
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. I’m Andrew Murray. For those of you who have never listened to the show, I'm a licensed medical herbalist who trained in England and graduated with a degree in Herbal Medicine. I run a clinic in Garberville where I consult with clients about a wide range of conditions and recommend herbal medicine and dietary advice.

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor November 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 5cd22994-bcde-4902-8688-bd0f96dfd71d
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-november-2022]]"
+---
 ## Introduction
 
 **KMUD Host:** Neither Andrew nor Sarah have called in, and Dr. Peat is not answering the phone—which I hear is only for this show and he only answers when he's expecting to be on. I'm assuming that because I've done it before where Dr. Peat was here and took your calls all the time, but I'm afraid that's not going to happen tonight.

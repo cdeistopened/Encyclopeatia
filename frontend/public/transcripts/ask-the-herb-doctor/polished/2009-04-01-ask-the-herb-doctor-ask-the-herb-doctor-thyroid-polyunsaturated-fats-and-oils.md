@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Thyroid, Polyunsaturated Fats and Oils"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2009-04-01
+date_transcribed: 2025-12-03
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/kmud-090401-thyroid-polyunsaturated-fats-and-oils.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 48ffac7c-e360-4c4f-a141-76a24f75ce15
+raw_source: "[[ask-the-herb-doctor/raw/2009-04-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-polyunsaturated-fats-and-oils]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's Ask Your Herb Doctor. My name is Andrew Murray.

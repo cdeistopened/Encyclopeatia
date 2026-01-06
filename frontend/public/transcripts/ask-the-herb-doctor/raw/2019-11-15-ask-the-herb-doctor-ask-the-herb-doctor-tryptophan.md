@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Tryptophan"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-11-15"
+audio_url: "https://www.toxinless.com/kmud-191115-tryptophan.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4ad4f13a-e6e2-4bf8-970c-5cb7a729b09c
+---
 
 ## Transcript
 

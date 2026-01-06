@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Heart III"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-07-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130719-heart-3.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 45d919e8-9776-4530-9539-8129adb9cb26
+raw_source: "[[ask-the-herb-doctor/raw/2013-07-19-ask-the-herb-doctor-ask-the-herb-doctor-heart-iii]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's Ask Your Herb Doctor. Sarah is away looking after our baby girl, so I will be hosting solo. We are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicine and dietary advice.

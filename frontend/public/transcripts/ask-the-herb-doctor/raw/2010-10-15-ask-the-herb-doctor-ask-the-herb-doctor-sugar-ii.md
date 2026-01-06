@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Sugar II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2010-10-15"
+audio_url: "https://www.toxinless.com/kmud-101015-sugar-2.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3500b9f6-4570-4657-ac7c-1f05e0259c3a
+---
 
 ## Transcript
 

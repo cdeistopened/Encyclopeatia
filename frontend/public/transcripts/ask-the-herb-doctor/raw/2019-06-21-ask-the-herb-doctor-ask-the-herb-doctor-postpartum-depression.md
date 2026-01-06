@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Postpartum Depression"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-06-21"
+audio_url: "https://www.toxinless.com/kmud-190621-postpartum-depression.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: f72ee273-a572-4903-a4fe-466549ef3ac7
+---
 
 ## Transcript
 

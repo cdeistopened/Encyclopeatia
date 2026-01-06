@@ -1,3 +1,15 @@
+---
+title: "Jodellefit: Stress and Your Health"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: "2019-04-27"
+audio_url: "https://www.toxinless.com/jf-190427-stress-health.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ab81ba16-e821-426c-8758-9b45ff01f2b7
+---
 
 ## Transcript
 

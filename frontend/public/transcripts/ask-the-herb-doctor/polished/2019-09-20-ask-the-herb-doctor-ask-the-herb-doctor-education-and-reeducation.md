@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Education and Reeducation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-09-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190920-education-reeducation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 0a235e18-4d9e-48cd-a337-4423c905a52c
+raw_source: "[[ask-the-herb-doctor/raw/2019-09-20-ask-the-herb-doctor-ask-the-herb-doctor-education-and-reeducation]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who perhaps have never listened to the show, we talk about a wide range of topics related to health, alternative health, and uncovering some of the lies. That is part of this evening's program.

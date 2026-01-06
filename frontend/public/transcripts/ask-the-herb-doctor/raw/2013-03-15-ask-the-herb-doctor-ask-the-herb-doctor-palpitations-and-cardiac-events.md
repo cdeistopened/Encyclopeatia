@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Palpitations and Cardiac Events"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-03-15"
+audio_url: "https://www.toxinless.com/kmud-130315-palpitations-and-cardiac-events.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 05f08ebb-aa58-4cae-82cc-e63c179712bc
+---
 
 ## Transcript
 

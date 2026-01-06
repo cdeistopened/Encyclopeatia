@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Continuing Research on Urea"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-06-19"
+audio_url: "https://www.toxinless.com/kmud-150619-continuing-research-on-urea.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 10dd1a6e-7e57-45d0-a089-ebd8f8fd401e
+---
 
 ## Transcript
 

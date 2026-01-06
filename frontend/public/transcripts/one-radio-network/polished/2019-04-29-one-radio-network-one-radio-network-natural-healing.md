@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Natural Healing"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-04-29
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190429-natural-healing.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: d098e231-df25-4f79-9498-22e6d7802fb0
+raw_source: "[[one-radio-network/raw/2019-04-29-one-radio-network-one-radio-network-natural-healing]]"
+---
 ## Introduction
 
 **Patrick Timpone:** Dr. Ray Peat is a PhD in biology from the University of Oregon, with a specialization in physiology. He has taught at schools all over the place, including the University of Oregon, Urbana College, Montana State University, and the National College of Naturopathic Medicine. He started years ago with progesterone-related hormones in 1968 and has been working on both the practical and theoretical aspects of this work for a very long time. Dr. Peat, good morning.

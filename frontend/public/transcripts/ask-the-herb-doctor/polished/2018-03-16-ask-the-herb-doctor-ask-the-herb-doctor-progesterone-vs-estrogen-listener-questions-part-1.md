@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Progesterone vs Estrogen, Listener Questions (Part 1)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-03-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180316-progesterone-vs-estrogen-listener-questions.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4b981c6a-5bec-4f3b-bfce-a79fdf6465d3
+raw_source: "[[ask-the-herb-doctor/raw/2018-03-16-ask-the-herb-doctor-ask-the-herb-doctor-progesterone-vs-estrogen-listener-questions-part-1]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. We are very pleased to have Dr. Raymond Peat with us. For those in the area, the number is 707-923-3911. For those outside the area, the 800 number is 1-800-568-3723.

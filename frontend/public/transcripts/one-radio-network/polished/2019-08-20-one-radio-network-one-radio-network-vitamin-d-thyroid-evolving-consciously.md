@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Vitamin D, Thyroid, Evolving Consciously"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-08-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190820-vitamin-d-thyroid-evolving-consciously.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 50bd490a-6a75-4c36-9142-0c6e4f909b77
+raw_source: "[[one-radio-network/raw/2019-08-20-one-radio-network-one-radio-network-vitamin-d-thyroid-evolving-consciously]]"
+---
 ## Introduction
 
 **Patrick Timpone:** We're happy to tell you that Dr. Peat says, "Yeah, I can come on once a month." We're going to do the third Tuesday, and that's today. Dr. Raymond Peat, PhD, University of Oregon. His specialization is in physiology. He started his work with hormones back in 1968 and wrote his dissertation in 1972, in which he outlined his ideas on progesterone and the hormones closely related to it. Dr. Peat, are you there?

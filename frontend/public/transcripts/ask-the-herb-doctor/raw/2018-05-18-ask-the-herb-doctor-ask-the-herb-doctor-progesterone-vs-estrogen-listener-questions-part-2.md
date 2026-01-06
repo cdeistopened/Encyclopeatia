@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Progesterone vs Estrogen, Listener Questions (Part 2)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-05-18"
+audio_url: "https://www.toxinless.com/kmud-180518-progesterone-vs-estrogen-listener-questions-part2.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 1b75e259-f9f7-43ce-8f2d-de2684db0b00
+---
 
 ## Transcript
 

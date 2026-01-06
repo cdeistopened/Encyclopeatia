@@ -1,4 +1,16 @@
-# Introduction: The CIA, Art, and Linguistics
+---
+title: "#67: Weaponized Art and Language  |  Iron Overload  |  Ant Physiology  |  PTH  |  Lactic Acid with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 67
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 0301b0d3-4cff-415e-a54b-2dee8939a4bc
+raw_source: "[[Generative Energy/#67： Weaponized Art and Language ｜ Iron Overload ｜ Ant Physiology ｜ PTH ｜ Lactic Acid with Ray Peat]]"
+---# Introduction: The CIA, Art, and Linguistics
 
 **Danny Roddy:** Okay, hello everybody. Welcome to the show. I just interrupted Ray, and he was talking about the CIA and art. Ray, go ahead and reiterate whatever you were going to say before I interrupted you.
 

@@ -1,4 +1,16 @@
-# Introduction
+---
+title: "Talking with Ray Peat [Generative Energy #19]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 19
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: a56d28eb-4440-478a-b3ea-1b2f28dce653
+raw_source: "[[Generative Energy/Talking with Ray Peat [Generative Energy #19]]]"
+---# Introduction
 
 **Danny Roddy:** Hello everyone, I'm Danny Roddy, and today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this hour-long episode, we'll talk about Ray's interest in nutrition, the lead-up to writing his 1973 book, *Nutrition for Women*, and his latest newsletter, "Mushrooms, Observations, and Interpretations."
 

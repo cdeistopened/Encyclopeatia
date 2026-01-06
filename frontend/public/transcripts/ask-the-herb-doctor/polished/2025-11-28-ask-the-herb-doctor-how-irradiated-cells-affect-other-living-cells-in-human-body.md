@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor How irradiated cells affect other living cells in human body"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-11-29
+speakers:
+  - Dr. Raymond Peat
+id: c7794b92-a593-41f5-9836-e511183db17a
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-how-irradiated-cells-affect-other-living-cells-in-human-body]]"
+---
 ## Introduction to Holistic vs. Mechanistic Medicine
 
 **Andrew Murray:** Welcome to this month's edition of Ask Your Herb Doctor. It's March 18, 2022. You're listening to Ask Your Herb Doctor on KMUD. Callers are invited to call in with questions related to this month's continuing topic of mTOR and a further discussion of holistic versus mechanistic approaches to the treatment of disease. Without further ado, let's introduce Dr. Raymond Peat, who once again is joining us. Dr. Peat, are you with us?

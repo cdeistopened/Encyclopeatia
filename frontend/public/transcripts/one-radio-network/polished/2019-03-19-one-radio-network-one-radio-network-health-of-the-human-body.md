@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Health of the Human Body"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-03-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190319-health-of-the-human-body.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 839dde53-aaeb-489e-8ce2-a4f5fe7c7add
+raw_source: "[[one-radio-network/raw/2019-03-19-one-radio-network-one-radio-network-health-of-the-human-body]]"
+---
 ## Introduction
 
 **Patrick Timpone:** Dr. Raymond Peat has been kind enough to come on the show from time to time the last few months. He has a PhD in Biology from the University of Oregon with a specialization in physiology. He has taught at the University of Oregon, Urbana College, Montana State University, National College of Naturopathic Medicine, and others. He started his work with progesterone and related hormones in 1968. His website is RayPeat.com. Good morning, Dr. Peat.

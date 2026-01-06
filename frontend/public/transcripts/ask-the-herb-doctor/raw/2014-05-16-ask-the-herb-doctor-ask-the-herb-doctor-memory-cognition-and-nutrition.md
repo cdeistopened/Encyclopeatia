@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Memory, Cognition and Nutrition"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-05-16"
+audio_url: "https://www.toxinless.com/kmud-140516-memory-cognition-and-nutrition.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e7b3d5a5-8450-4d1e-b02e-08051886857b
+---
 
 ## Transcript
 

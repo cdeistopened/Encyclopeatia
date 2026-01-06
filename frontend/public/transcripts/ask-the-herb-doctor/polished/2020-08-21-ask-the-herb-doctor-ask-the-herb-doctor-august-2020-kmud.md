@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: August 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2020-08-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-200821.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 058428ce-6b8c-4a8e-895e-c67b060c51d4
+raw_source: "[[ask-the-herb-doctor/raw/2020-08-21-ask-the-herb-doctor-ask-the-herb-doctor-august-2020-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. It is August 21, 2020. You are invited to call in with any questions about the continuing dialogue, facts, and science around the pandemic and COVID-19. We are going to bring out that this is not conspiracy; we always look to the facts, and we will provide links for everything we discuss so people can find the information for themselves.

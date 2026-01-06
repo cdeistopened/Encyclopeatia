@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Autoimmune and Movement Disorders"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2012-05-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-120518-autoimmune-and-movement.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 94750d85-0c0a-4407-bf39-51a67e1f3011
+raw_source: "[[politics-and-science/raw/2012-05-18-politics-and-science-politics-science-autoimmune-and-movement-disorders]]"
+---
 ## Introduction
 
 **John Barkhausen:** Hello and welcome to Politics and Science. I'm John Barkhausen, your host, and today we're going to talk about some autoimmune diseases and movement disorder dysfunctions. I'm intrigued by them not only because I have friends that are suffering from these, but also because the medical world offers so little knowledge about the diseases and so little hope or practical knowledge in terms of treatment.

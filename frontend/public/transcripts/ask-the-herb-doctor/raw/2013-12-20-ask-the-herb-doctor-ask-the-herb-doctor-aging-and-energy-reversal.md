@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Aging and Energy Reversal"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-12-20"
+audio_url: "https://www.toxinless.com/kmud-131220-aging-and-energy-reversal.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 90a7b889-9c5c-434e-9a0e-619cf1015195
+polished_version: "[[ask-the-herb-doctor/polished/2013-12-20-ask-the-herb-doctor-ask-the-herb-doctor-aging-and-energy-reversal]]"
+---
 
 ## Transcript
 

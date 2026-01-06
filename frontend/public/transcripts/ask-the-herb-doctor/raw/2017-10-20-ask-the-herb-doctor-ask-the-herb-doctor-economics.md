@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Economics"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-10-20"
+audio_url: "https://www.toxinless.com/kmud-171020-economics.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: f3480154-2590-4c81-b2e1-2e9b428cef68
+---
 
 ## Transcript
 

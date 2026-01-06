@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Diabetes I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-02-21"
+audio_url: "https://www.toxinless.com/kmud-140221-diabetes.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 49d74a8c-5cc5-4724-abf2-16efd4b6ae93
+---
 
 ## Transcript
 

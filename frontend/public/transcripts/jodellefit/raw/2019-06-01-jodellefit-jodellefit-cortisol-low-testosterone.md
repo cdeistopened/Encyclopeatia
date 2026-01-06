@@ -1,3 +1,15 @@
+---
+title: "Jodellefit: Cortisol, Low Testosterone"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: "2019-06-01"
+audio_url: "https://www.toxinless.com/jf-190601-cortisol-low-testosterone.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3ad9ccd3-906f-45ff-b873-ac97d0e7966b
+---
 
 ## Transcript
 

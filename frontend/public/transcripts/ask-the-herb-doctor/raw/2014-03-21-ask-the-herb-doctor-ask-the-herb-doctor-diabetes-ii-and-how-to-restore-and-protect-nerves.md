@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Diabetes II and How to Restore and Protect Nerves"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-03-21"
+audio_url: "https://www.toxinless.com/kmud-140321-how-to-restore-and-protect-nerves.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: bc4c5fe8-843e-4845-bec4-8f5e31eb37fc
+---
 
 ## Transcript
 

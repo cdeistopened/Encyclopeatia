@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Evolution"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2015-03-04"
+audio_url: "https://www.toxinless.com/polsci-150304-evolution.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 503effbb-ea66-4597-a3e3-a51d2a1a5b1e
+polished_version: "[[politics-and-science/polished/2015-03-04-politics-and-science-politics-science-evolution]]"
+---
 
 ## Transcript
 

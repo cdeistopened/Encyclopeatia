@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Thyroid and Polyunsaturated Fatty Acids"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2008-07-01"
+audio_url: "https://www.toxinless.com/kmud-080701-thyroid-and-polyunsaturated-fatty-acids.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 1bd69bc4-fb7c-467f-a742-ee41a4dd2508
+polished_version: "[[ask-the-herb-doctor/polished/2008-07-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-and-polyunsaturated-fatty-acids]]"
+---
 
 ## Transcript
 

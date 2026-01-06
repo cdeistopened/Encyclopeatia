@@ -1,3 +1,16 @@
+---
+title: "Butter Living Podcast: A Casual Conversation with Ray Peat"
+feed: "Toxinless Forum"
+show: "Butter Living Podcast"
+date_published: 2019-07-22
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/blp-190722-a-casual-conversation-with-ray-peat.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: c9a63ec8-0d2e-48bb-b7ab-38e05b77cf6b
+raw_source: "[[butter-living-podcast/raw/2019-07-22-butter-living-podcast-butter-living-podcast-a-casual-conversation-with-ray-peat]]"
+---
 ## Introduction
 
 **David Butterworth:** Welcome to Butter Living. I'm David Butterworth, and this is a podcast about health and about getting back to our playful roots. On today's show, we will be speaking with a PhD, endocrinologist, artist, and a person who I think is an incredible synthesizer of knowledge. A man who seems to have painted an elaborate and coherent picture of biology in a way that I haven't seen before. His name is Raymond Peat.

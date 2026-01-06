@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Endocrinology (Part 1): Parkinson's"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-03-17"
+audio_url: "https://www.toxinless.com/kmud-170317-endocrinology-part1-parkinsons.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 73591c67-0072-4340-9de7-6c0c7bbe8db5
+---
 
 ## Transcript
 

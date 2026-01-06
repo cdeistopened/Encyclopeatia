@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Skin Cancer Part 3"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-01-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190118-skin-cancer-3.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 917b5892-c068-43b2-81a2-9761c9644c90
+raw_source: "[[ask-the-herb-doctor/raw/2019-01-18-ask-the-herb-doctor-ask-the-herb-doctor-skin-cancer-part-3]]"
+---
 # Ask Your Herb Doctor: Skin Cancer, Cholesterol, and Viral Immunity
 
 **Host:** Andrew Murray

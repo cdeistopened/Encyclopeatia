@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Learned Helplessness, Nervous System and Thyroid Questionaire"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-09-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130920-learned-helplessness-nervous-system-thyroid-questionaire.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 74c68c7e-cbae-4b67-921b-90d4d8724c52
+raw_source: "[[ask-the-herb-doctor/raw/2013-09-20-ask-the-herb-doctor-ask-the-herb-doctor-learned-helplessness-nervous-system-and-thyroid-questionaire]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome once again to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. My wife and I are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with clients about a wide range of conditions, and we manufacture our own certified organic herb extracts.

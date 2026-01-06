@@ -1,4 +1,16 @@
-## Introduction: Bacon, Nitrates, and Allergens
+---
+title: "#74: Vaccine Shedding  |  Progesterone and Thyroid  |  Immunology, Ideology, and Power with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 74
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 7f535180-e806-400e-8133-0397227af2eb
+raw_source: "[[Generative Energy/#74： Vaccine Shedding ｜ Progesterone and Thyroid ｜ Immunology, Ideology, and Power with Ray Peat]]"
+---## Introduction: Bacon, Nitrates, and Allergens
 
 **Danny Roddy:** One, and we're live. Georgi Dinkov, Ray Peat. Ray, how are you? It's been two months, feels like forever. Catch us up on everything that's going on with you.
 

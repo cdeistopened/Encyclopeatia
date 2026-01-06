@@ -1,4 +1,16 @@
-# Abiotic Oil and the Origin of Life
+---
+title: "#41: Body Temperature  |  mRNA Vaccines  |  Vernadsky's Evolution  |  The CIA's Weaponized Culture"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 41
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 7d5823a7-778b-497c-806c-bc950003c002
+raw_source: "[[Generative Energy/#41： Body Temperature ｜ mRNA Vaccines ｜ Vernadsky's Evolution ｜ The CIA's Weaponized Culture]]"
+---# Abiotic Oil and the Origin of Life
 
 **Danny Roddy:** This guy, Tom—what's his last name? He's the one considered to have invented the abiotic oil theory, at least for Western chemistry.
 

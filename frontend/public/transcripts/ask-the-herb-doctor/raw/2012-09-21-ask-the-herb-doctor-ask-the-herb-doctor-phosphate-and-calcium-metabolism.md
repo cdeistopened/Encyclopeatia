@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Phosphate and Calcium Metabolism"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-09-21"
+audio_url: "https://www.toxinless.com/kmud-120921-phosphate-and-calcium-metabolism.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 90ea4c28-25aa-4a90-b5d0-4d2af2b7b45b
+---
 
 ## Transcript
 

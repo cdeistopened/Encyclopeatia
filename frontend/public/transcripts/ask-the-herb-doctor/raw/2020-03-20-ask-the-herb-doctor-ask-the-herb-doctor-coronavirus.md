@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Coronavirus"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2020-03-20"
+audio_url: "https://www.toxinless.com/kmud-200320-coronavirus.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4c35daf6-542a-49fb-89f9-ecad315d90a3
+---
 
 ## Transcript
 

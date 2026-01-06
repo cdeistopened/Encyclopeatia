@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Vibrations/Frequencies Part 2"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2020-02-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-200221-frequencies-vibrations-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: dd9d9ff2-b726-4034-b149-e1e814ca06ed
+raw_source: "[[ask-the-herb-doctor/raw/2020-02-21-ask-the-herb-doctor-ask-the-herb-doctor-vibrations-frequencies-part-2]]"
+---
 # Ask Your Herb Doctor – February 2020
 
 ## Introduction

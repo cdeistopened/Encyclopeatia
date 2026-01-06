@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Sugar Myths II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-10-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/kmud-111021-sugar-myths-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 98994eb7-325e-419d-a86c-3ef8e2c8760f
+raw_source: "[[ask-the-herb-doctor/raw/2011-10-21-ask-the-herb-doctor-ask-the-herb-doctor-sugar-myths-ii]]"
+---
 ## Introduction
 
 **Andrew Murray:** Hi and welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Autoimmune and Movement Disorders"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2012-05-18"
+audio_url: "https://www.toxinless.com/polsci-120518-autoimmune-and-movement.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 42571f6b-9142-4b08-ba5b-869d0df1b27e
+polished_version: "[[politics-and-science/polished/2012-05-18-politics-and-science-politics-science-autoimmune-and-movement-disorders]]"
+---
 
 ## Transcript
 

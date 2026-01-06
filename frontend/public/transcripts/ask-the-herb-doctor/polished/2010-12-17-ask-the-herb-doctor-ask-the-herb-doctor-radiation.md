@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Radiation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2010-12-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-101217-radiation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a0f21ec2-4d4f-4fd3-9af6-7261959c97b7
+raw_source: "[[ask-the-herb-doctor/raw/2010-12-17-ask-the-herb-doctor-ask-the-herb-doctor-radiation]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray, and Sarah will join us in the studio shortly. For those of you who have never listened to our shows, we are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicine and dietary advice.

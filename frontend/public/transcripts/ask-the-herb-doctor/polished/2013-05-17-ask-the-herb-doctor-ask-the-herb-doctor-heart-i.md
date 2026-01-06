@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Heart I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-05-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130517-heart-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ac3933bf-3a8a-47ac-9b94-29d3e21aa71f
+raw_source: "[[ask-the-herb-doctor/raw/2013-05-17-ask-the-herb-doctor-ask-the-herb-doctor-heart-i]]"
+---
 # Introduction
 
 **Andrew Murray:** Hi and welcome to this month's Ask Your Herb Doctor. This month is a slightly different format. My wife, who normally joins us on the show, is not with me as we had a beautiful baby girl last month. So, we're going to run the show tonight with Dr. Raymond Peat. He is going to share his wisdom on the subject of heart failure and hormones.

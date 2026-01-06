@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Nitric Oxide, Nitrates, Nitrites, and Fluoride"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-12-18"
+audio_url: "https://www.toxinless.com/kmud-151218-nitric-oxide-nitrates-nitrites-fluoride.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 14c7722f-1c59-4b59-b84f-6890fcc6a57d
+---
 
 ## Transcript
 

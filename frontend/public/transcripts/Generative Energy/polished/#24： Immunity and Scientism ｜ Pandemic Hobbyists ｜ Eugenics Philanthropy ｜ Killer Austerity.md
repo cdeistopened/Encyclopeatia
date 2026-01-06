@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#24: Immunity and Scientism  |  Pandemic Hobbyists  |  Eugenics Philanthropy  |  Killer Austerity"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 24
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 83f040f9-534b-4d80-8dcc-d87fbe3736c1
+raw_source: "[[Generative Energy/#24： Immunity and Scientism ｜ Pandemic Hobbyists ｜ Eugenics Philanthropy ｜ Killer Austerity]]"
+---## Introduction
 
 **Danny Roddy:** Okay, we are live on YouTube. Ray Peat, Georgi Dinkov. Ray, I interrupted you. You were saying some really important, critical things and I want to get those on record. I was asking you initially about China, Brzezinski, the Rockefeller Technocratic Society. You were mentioning Event 201, Fort Detrick, and the culmination of larger global plans pushing society in a specific direction that has been talked about for a long time.
 

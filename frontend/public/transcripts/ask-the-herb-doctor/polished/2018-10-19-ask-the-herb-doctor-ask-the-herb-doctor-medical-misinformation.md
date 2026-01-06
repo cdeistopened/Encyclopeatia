@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Medical Misinformation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-10-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-181019-medical-misinformation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ea2e0353-b336-4f27-a2be-f373002b540e
+raw_source: "[[ask-the-herb-doctor/raw/2018-10-19-ask-the-herb-doctor-ask-the-herb-doctor-medical-misinformation]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. Every third Friday of the month from 7:00 to 8:00 PM, I do a health-related topic, and we are very pleased to have Dr. Raymond Peat join us. He has been a long-term guest of the show.

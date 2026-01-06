@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Positive Thinking, Sleep, and Repair"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-06-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180615-positive-thinking-sleep-repair.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: d21ea47f-a259-43fc-b7b6-b42f6ae6ef51
+raw_source: "[[ask-the-herb-doctor/raw/2018-06-15-ask-the-herb-doctor-ask-the-herb-doctor-positive-thinking-sleep-and-repair]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. Every third Friday of the month, from 7:30 until 8:00 PM, we hold a call-in show where people ask questions related to the topic of the month.

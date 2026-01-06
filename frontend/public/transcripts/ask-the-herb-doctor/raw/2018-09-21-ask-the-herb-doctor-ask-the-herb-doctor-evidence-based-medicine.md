@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Evidence Based Medicine"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-09-21"
+audio_url: "https://www.toxinless.com/kmud-180921-evidence-based-medicine.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 7aad3ed5-e44e-48c3-9c31-4cf2ddd4f3db
+---
 
 ## Transcript
 

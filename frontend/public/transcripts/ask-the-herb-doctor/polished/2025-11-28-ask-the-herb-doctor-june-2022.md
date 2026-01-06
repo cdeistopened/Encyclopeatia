@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor June 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-11-29
+speakers:
+  - Dr. Raymond Peat
+id: 022d3a51-fe22-471f-9a86-eb051c836c5e
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-june-2022]]"
+---
 ## Introduction
 
 **Andrew Murray:** Well, good evening and welcome to *Ask Your Herb Doctor*. This is June 17th, 2022. My name's Andrew Murray.

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Reductionist Science (excerpt)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2008-09-18"
+audio_url: "https://www.toxinless.com/polsci-080918-reductionist-science.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 58ee283a-8fb2-4594-b9f1-2af7b8819341
+polished_version: "[[politics-and-science/polished/2008-09-18-politics-and-science-politics-science-reductionist-science-excerpt]]"
+---
 
 ## Transcript
 

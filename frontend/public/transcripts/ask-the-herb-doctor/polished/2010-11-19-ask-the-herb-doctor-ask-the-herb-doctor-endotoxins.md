@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Endotoxins"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2010-11-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-101119-endotoxins.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 611d2d87-27e1-446a-a094-977fecdef543
+raw_source: "[[ask-the-herb-doctor/raw/2010-11-19-ask-the-herb-doctor-ask-the-herb-doctor-endotoxins]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month’s *Ask Your Herb Doctor*. My name is Andrew Murray.

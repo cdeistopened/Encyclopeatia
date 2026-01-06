@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: Listener Q&A: Calories, Cortisol, Cellulite, Exercise, Ephedra & More"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: 2019-11-12
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/jf-191112-listener-qa.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ee215291-1c96-4395-9702-5016e75c5482
+raw_source: "[[jodellefit/raw/2019-11-12-jodellefit-jodellefit-listener-q-a-calories-cortisol-cellulite-exercise-ephedra-more]]"
+---
 ## Introduction
 
 **Jodelle:** Well, welcome to the Get Fit with Jodelle Show. I am super stoked because it's time for another mind-blowing episode with Dr. Raymond Peat. Dr. Peat and I decided to do listener questions today, so I can hardly wait to hear his responses to some really great questions that people put up on Facebook. Dr. Peat, I appreciate you because, once again, I'm so honored beyond words to have you with me. Thank you so much. Are you ready for this slew of questions?

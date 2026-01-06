@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Longevity"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-10-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-141017-longevity.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 53b12b35-dee3-4ad9-a87d-92773f5ccb48
+raw_source: "[[ask-the-herb-doctor/raw/2014-10-17-ask-the-herb-doctor-ask-the-herb-doctor-longevity]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. I'm a licensed medical herbalist. Every third Friday of the month, we have a topic that we choose to open up, and once again, I'm very pleased to have Dr. Raymond Peat share his wisdom and expertise. At the end of the show, listeners are invited to call in with any questions related or unrelated to this month's subject of longevity.

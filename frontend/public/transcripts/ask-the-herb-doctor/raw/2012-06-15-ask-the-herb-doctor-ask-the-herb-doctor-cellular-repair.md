@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Cellular Repair"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-06-15"
+audio_url: "https://www.toxinless.com/kmud-120615-cellular-repair.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: de54b8f5-a1b7-41ab-a322-1d0d46cf143d
+---
 
 ## Transcript
 

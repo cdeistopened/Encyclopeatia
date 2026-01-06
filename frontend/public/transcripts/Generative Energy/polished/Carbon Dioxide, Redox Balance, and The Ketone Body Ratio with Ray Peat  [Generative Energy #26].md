@@ -1,4 +1,16 @@
-## Introduction: May Wan Ho and Liquid Crystals
+---
+title: "Carbon Dioxide, Redox Balance, and The Ketone Body Ratio with Ray Peat  [Generative Energy #26]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 26
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 99312fe0-805d-4a2a-b454-6956de98c844
+raw_source: "[[Generative Energy/Carbon Dioxide, Redox Balance, and The Ketone Body Ratio with Ray Peat  [Generative Energy #26]]]"
+---## Introduction: May Wan Ho and Liquid Crystals
 
 **Danny Roddy:** Today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this hour-long episode, we'll talk about the passing of May Wan Ho, Vladimir Vernadsky, carbon dioxide, the NAD+ to NADH ratio, new and old hormones, thyroid brands, how Ray makes his coffee, and so much more.
 

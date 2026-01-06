@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing Cholesterol and Saturated Fats"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: e96d0411-0333-43e2-a2a4-a85e94b93407
+raw_source: "[[Ray Peat - Toxinless Forum/eastwest-healing/raw/2025-11-28-eastwest-healing-cholesterol-and-saturated-fats]]"
+---
 # EastWest Healing: Cholesterol and Saturated Fats
 **Guest:** Dr. Raymond Peat
 **Hosts:** Josh Rubin (Jeannie Rubin is absent for this episode)

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Food Additives"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2009-10-01"
+audio_url: "https://www.toxinless.com/kmud-091001-food-additives.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: b0a866fa-6ee5-4652-bf97-af1a383dc69b
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Fukujima II, Serotonin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-04-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110415-fukujima-and-serotonin.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 3a0a2974-b716-45d3-9b9f-e4a856e52918
+raw_source: "[[ask-the-herb-doctor/raw/2011-04-15-ask-the-herb-doctor-ask-the-herb-doctor-fukujima-ii-serotonin]]"
+---
 # Ask Your Herb Doctor: Fukushima, Serotonin, and Medical Misconceptions
 
 **Host:** Andrew Murray

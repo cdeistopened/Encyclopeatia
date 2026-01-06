@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Allergy"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-03-18"
+audio_url: "https://www.toxinless.com/kmud-160318-allergy.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: faa717dc-fab1-44e6-bf61-5f57db200076
+---
 
 ## Transcript
 

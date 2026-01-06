@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Current Trends on Nitric Oxide"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-10-16"
+audio_url: "https://www.toxinless.com/kmud-151016-current-trends-nitric-oxide.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 01463256-c70c-4fe4-be04-96c5a56d3bff
+---
 
 ## Transcript
 

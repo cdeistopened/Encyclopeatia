@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Pollution"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-05-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190517-pollution.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 92e5f6c4-8137-4411-876b-b1e87921f554
+raw_source: "[[ask-the-herb-doctor/raw/2019-05-17-ask-the-herb-doctor-ask-the-herb-doctor-pollution]]"
+---
 # Ask Your Herb Doctor: Environmental Pollution, Cancer, and Metabolic Health
 
 ## Introduction

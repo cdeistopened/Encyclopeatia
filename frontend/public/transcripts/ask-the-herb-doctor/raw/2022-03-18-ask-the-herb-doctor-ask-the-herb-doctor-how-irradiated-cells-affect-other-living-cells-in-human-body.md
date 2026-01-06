@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: How irradiated cells affect other living cells in human body"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2022-03-18"
+audio_url: "https://www.toxinless.com/kmud-220318-how-irradiated-cells-affect-other-living-cells-in-human-body.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e0935f60-3e13-44e2-80d9-bd672b232cf5
+---
 
 ## Transcript
 

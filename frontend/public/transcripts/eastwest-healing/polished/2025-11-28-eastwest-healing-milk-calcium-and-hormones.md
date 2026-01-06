@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing Milk, Calcium and Hormones"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 936557e9-0155-4183-9fa4-981e14b42eb8
+raw_source: "[[Ray Peat - Toxinless Forum/eastwest-healing/raw/2025-11-28-eastwest-healing-milk-calcium-and-hormones]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome everyone. This is Josh Rubin from East West Healing and Performance. Jeannie and Ray will be joining us in a couple of minutes. It's been a little bit of trouble getting Ray back on, but I think the break was good and we have a good show ahead of us on milk, calcium, and hormones.

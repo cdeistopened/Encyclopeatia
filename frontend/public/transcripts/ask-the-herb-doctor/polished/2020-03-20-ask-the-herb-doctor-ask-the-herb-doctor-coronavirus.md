@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Coronavirus"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2020-03-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-200320-coronavirus.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: dc45d3b0-b3cb-407d-91b5-5c7b039077e6
+raw_source: "[[ask-the-herb-doctor/raw/2020-03-20-ask-the-herb-doctor-ask-the-herb-doctor-coronavirus]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to the March 20, 2020 edition of *Ask Your Herb Doctor*. You are invited to call in with questions related to this month's very specific topic: the worldwide frenzy surrounding the coronavirus. Dr. Raymond Peat is joining us, and he is bringing a very interesting mental shift to how we are looking at this.

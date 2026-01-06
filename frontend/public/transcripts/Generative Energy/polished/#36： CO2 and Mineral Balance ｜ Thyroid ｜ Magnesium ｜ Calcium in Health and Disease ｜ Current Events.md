@@ -1,4 +1,16 @@
-## Introduction: Caffeine and Steroids
+---
+title: "#36: CO2 and Mineral Balance  |  Thyroid  |  Magnesium  |  Calcium in Health and Disease  |  Current Events"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 36
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: bdaadc1d-9380-4199-9edf-29f7b35c8411
+raw_source: "[[Generative Energy/#36： CO2 and Mineral Balance ｜ Thyroid ｜ Magnesium ｜ Calcium in Health and Disease ｜ Current Events]]"
+---## Introduction: Caffeine and Steroids
 
 **Danny Roddy:** Okay, and we're live. Georgi Dinkov, Ray Peat. Georgi, I won't interrupt. Go ahead and ask your question.
 

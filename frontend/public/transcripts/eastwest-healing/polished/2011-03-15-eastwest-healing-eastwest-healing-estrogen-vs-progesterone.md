@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Estrogen vs Progesterone"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-03-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110315-estrogen-vs-progesterone.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 72328af7-b8ed-40d7-9a33-53491afcce8e
+raw_source: "[[eastwest-healing/raw/2011-03-15-eastwest-healing-eastwest-healing-estrogen-vs-progesterone]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome to Holistic Living. We have Ray Peat on every month, and we want to say thank you to him. Before we introduce Ray, I want to mention that Ray's approach is not just an approach; it's a philosophy and a science. It is a science of how the body works—its biochemistry, biology, and physiology. It's not an "outside-in" type of diet like Paleolithic dieting or vegetarianism. It's based on the science of how the body works.

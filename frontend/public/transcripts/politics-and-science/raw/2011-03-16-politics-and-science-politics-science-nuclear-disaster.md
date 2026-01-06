@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Nuclear Disaster"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2011-03-16"
+audio_url: "https://www.toxinless.com/polsci-110316-nuclear-disaster.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 7327164b-5ccd-4d63-bb80-cfaf4d27d7c7
+polished_version: "[[politics-and-science/polished/2011-03-16-politics-and-science-politics-science-nuclear-disaster]]"
+---
 
 ## Transcript
 

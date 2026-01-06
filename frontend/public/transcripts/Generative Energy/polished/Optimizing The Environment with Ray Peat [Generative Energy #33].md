@@ -1,4 +1,16 @@
-## Introduction: Energy, Structure, and Environment
+---
+title: "Optimizing The Environment with Ray Peat [Generative Energy #33]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 33
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 375be823-f392-411a-9ad2-cfb0bd050ca2
+raw_source: "[[Generative Energy/Optimizing The Environment with Ray Peat [Generative Energy #33]]]"
+---## Introduction: Energy, Structure, and Environment
 
 **Danny Roddy:** I loved your quote, "Without a realistic view of where you are, you can't expect to go anywhere." I thought of not only optimizing the environment, but also thinking about how you formed as an individual from your early life to now. A lot of times I'll be talking to somebody and they'll say, "My health problem started a year ago," or "It started two years ago." Then you talk to them more and realize things have been happening their whole life, unraveling this relationship with stress.
 

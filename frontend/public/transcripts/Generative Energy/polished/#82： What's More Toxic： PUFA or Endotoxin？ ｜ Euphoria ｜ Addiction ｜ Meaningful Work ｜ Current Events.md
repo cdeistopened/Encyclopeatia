@@ -1,4 +1,16 @@
-## Introduction: Ukraine, Russia, and the Empire
+---
+title: "#82: What's More Toxic: PUFA or Endotoxin?  |  Euphoria  |  Addiction  |  Meaningful Work  |  Current Events"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 82
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 88314ae4-3870-417e-b42c-f48efb282de9
+raw_source: "[[Generative Energy/#82： What's More Toxic： PUFA or Endotoxin？ ｜ Euphoria ｜ Addiction ｜ Meaningful Work ｜ Current Events]]"
+---## Introduction: Ukraine, Russia, and the Empire
 
 **Danny Roddy:** Okay, Generative Energy number 82 with Ray Peat and Georgi Dinkov. Ray, you were just saying you were reading about the war. To the chagrin of everybody that hated the last time we talked about this stuff, I do want to talk about Ukraine and Russia once again. Give us an update on your point of view, everything you've learned or that has transpired since then, and where you think this is all heading.
 

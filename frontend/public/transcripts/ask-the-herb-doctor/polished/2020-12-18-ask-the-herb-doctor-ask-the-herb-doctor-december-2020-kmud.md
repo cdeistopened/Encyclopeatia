@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: December 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2020-12-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-201218.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f3150f1f-5041-4f45-975f-67051f63ebd9
+raw_source: "[[ask-the-herb-doctor/raw/2020-12-18-ask-the-herb-doctor-ask-the-herb-doctor-december-2020-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** You're listening to KMUD Garberville, 91.1 FM. This is *Ask Your Herb Doctor*. My name is Andrew Murray.

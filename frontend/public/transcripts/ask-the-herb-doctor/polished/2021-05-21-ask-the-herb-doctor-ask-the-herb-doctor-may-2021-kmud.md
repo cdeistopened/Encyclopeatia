@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: May 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-05-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-210521.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 95c8e303-4e38-4cc7-9d08-204466360dbb
+raw_source: "[[ask-the-herb-doctor/raw/2021-05-21-ask-the-herb-doctor-ask-the-herb-doctor-may-2021-kmud]]"
+---
 # Ask Your Herb Doctor: Mitochondria, Immunity, and Natural Resistance
 
 **Hosts:** Andrew Murray & Sarah Johanneson Murray

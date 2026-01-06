@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Vaccination I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-06-20"
+audio_url: "https://www.toxinless.com/kmud-140620-vaccination.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 8372fb5a-f66c-478a-a29e-e5bd9aab3ab7
+---
 
 ## Transcript
 

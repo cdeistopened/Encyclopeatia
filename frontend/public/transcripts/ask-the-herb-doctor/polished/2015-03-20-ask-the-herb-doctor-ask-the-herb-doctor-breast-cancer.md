@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Breast Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-03-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150320-breast-cancer.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 415bcd92-d951-4753-abba-4876d5d9a4ed
+raw_source: "[[ask-the-herb-doctor/raw/2015-03-20-ask-the-herb-doctor-ask-the-herb-doctor-breast-cancer]]"
+---
 ## Introduction
 
 **Andrew Murray:** A very good evening to you all. This is *Ask Your Herb Doctor*. This month’s subject is going to be about breast cancer. In the last couple of months, I've been approached by a startling number of people that have either known someone who's going through breast cancer treatment or I've met people that have been dying of breast cancer. It has prompted me to bring this subject up again.

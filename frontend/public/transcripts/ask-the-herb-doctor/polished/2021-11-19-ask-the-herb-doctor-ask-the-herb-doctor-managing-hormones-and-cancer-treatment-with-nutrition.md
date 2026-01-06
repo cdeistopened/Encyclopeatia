@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Managing hormones and cancer treatment with nutrition"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-11-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/kmud-211119-managing-hormones-and-cancer-treatment-with-nutrition.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 9549c484-ce14-496e-9b00-22fe6980db43
+raw_source: "[[ask-the-herb-doctor/raw/2021-11-19-ask-the-herb-doctor-ask-the-herb-doctor-managing-hormones-and-cancer-treatment-with-nutrition]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

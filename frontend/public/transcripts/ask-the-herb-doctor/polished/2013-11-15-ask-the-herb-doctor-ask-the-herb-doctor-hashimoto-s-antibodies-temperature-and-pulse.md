@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Hashimoto's, Antibodies, Temperature and Pulse "
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-11-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-131115-hashimotos.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 073c654f-edad-4df0-9d1a-87753ad656fd
+raw_source: "[[ask-the-herb-doctor/raw/2013-11-15-ask-the-herb-doctor-ask-the-herb-doctor-hashimoto-s-antibodies-temperature-and-pulse]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month’s *Ask Your Herb Doctor*. My name is Andrew Murray. My wife and I are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with clients about a wide range of conditions, herbal medicines, and dietary advice.

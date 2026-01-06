@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Female Hormones / Progesterone"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-01-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180119-female-hormones-progesterone.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 7dd84d1b-0f02-449f-b76f-fa9f97446dbc
+raw_source: "[[ask-the-herb-doctor/raw/2018-01-19-ask-the-herb-doctor-ask-the-herb-doctor-female-hormones-progesterone]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who perhaps have never listened to the show, we run every third Friday of the month from 7:00 till 8:00 PM. We invite callers to call in with questions related to the month's subject. The toll-free number is 1-800-568-3723.

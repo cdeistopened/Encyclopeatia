@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Hashimoto's, Antibodies, Temperature and Pulse "
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-11-15"
+audio_url: "https://www.toxinless.com/kmud-131115-hashimotos.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: dc85f183-e6e7-41b2-b624-948ed264830b
+---
 
 ## Transcript
 

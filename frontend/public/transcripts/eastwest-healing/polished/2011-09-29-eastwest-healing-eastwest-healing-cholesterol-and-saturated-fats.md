@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Cholesterol and Saturated Fats"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-09-29
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110929-cholesterol-and-saturated-fats.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 581911a2-fde1-413b-b18c-769c9d941d39
+raw_source: "[[eastwest-healing/raw/2011-09-29-eastwest-healing-eastwest-healing-cholesterol-and-saturated-fats]]"
+---
 ## Introduction
 
 **Josh Rubin:** Today we are hosting a great show with Dr. Raymond Peat. The show is on cholesterol and saturated fats, so we will cover why cholesterol is so important, why doctors try to lower it, why our physiology needs it, and what it means if it is high or low. We will also discuss why the right types of saturated fats are so important in our diet. Dr. Peat, could you give a brief history of who you are and where you come from?

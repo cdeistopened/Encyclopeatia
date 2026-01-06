@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: Insulin Resistance, Vegans, Low Cortisol, Bone Broth, and Coconut"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: 2020-01-16
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/jf-200116-insulin-resistance-vegans-low-cortisol.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 99d386f7-8afe-4112-a44d-0f3c1a1f3ec1
+raw_source: "[[jodellefit/raw/2020-01-16-jodellefit-jodellefit-insulin-resistance-vegans-low-cortisol-bone-broth-and-coconut]]"
+---
 ## Introduction
 
 **Jodelle:** Welcome to the Get Fit with Jodelle show. I am Jodelle, and Dr. Peat has honored us with his presence on the podcast yet again. It’s a treat, Dr. Peat. Thank you. What is new in your world currently?

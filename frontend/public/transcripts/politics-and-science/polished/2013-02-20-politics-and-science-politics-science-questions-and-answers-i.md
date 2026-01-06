@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Questions and Answers I"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2013-02-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-130220-questions-and-answers.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f166ce56-0008-47ba-b795-486585deacb9
+raw_source: "[[politics-and-science/raw/2013-02-20-politics-and-science-politics-science-questions-and-answers-i]]"
+---
 ## Introduction
 
 **John Barkhausen:** Thank you very much for joining me and us this afternoon. You have a degree in biology with a specialty in physiology. Do you want to add anything to that besides being a science historian?

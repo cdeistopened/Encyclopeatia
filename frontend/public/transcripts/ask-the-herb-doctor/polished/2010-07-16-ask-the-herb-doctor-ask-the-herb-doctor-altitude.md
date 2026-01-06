@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Altitude"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2010-07-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-100716-altitude.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: cee71849-d57b-430e-95ae-41ea7d852a79
+raw_source: "[[ask-the-herb-doctor/raw/2010-07-16-ask-the-herb-doctor-ask-the-herb-doctor-altitude]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

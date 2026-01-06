@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Thyroid, Metabolism and Coconut Oil"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2008-08-01"
+audio_url: "https://www.toxinless.com/kmud-080801-thyroid-metabolism-and-coconut-oil.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 1fec1ace-2b1e-404d-8104-d44d2a26ffbd
+---
 
 ## Transcript
 

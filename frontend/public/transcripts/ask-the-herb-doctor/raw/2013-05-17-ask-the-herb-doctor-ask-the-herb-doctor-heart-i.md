@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Heart I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-05-17"
+audio_url: "https://www.toxinless.com/kmud-130517-heart-1.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: c103022e-cae7-4ba5-8a81-922e0d03819a
+---
 
 ## Transcript
 

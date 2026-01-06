@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Antioxidants"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-10-19"
+audio_url: "https://www.toxinless.com/kmud-121019-antioxidants.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ab1a663b-e10f-4f21-a278-0bc37248f883
+---
 
 ## Transcript
 

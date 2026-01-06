@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Questions and Answers I"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-07-12"
+audio_url: "https://www.toxinless.com/ewh-110712-q-and-a-1.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 559ea121-4d56-4378-9193-77737e7f320d
+---
 
 ## Transcript
 

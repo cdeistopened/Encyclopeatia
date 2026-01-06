@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Mitochondria, GABA, Herbs, and More"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-04-15"
+audio_url: "https://www.toxinless.com/kmud-160415-mitochondria-gaba-herbs.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 573994d9-029f-4525-a29b-b015f9c88ca6
+---
 
 ## Transcript
 

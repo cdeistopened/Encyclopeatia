@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: On The Origin of Life"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2000-01-02"
+audio_url: "https://www.toxinless.com/polsci-000102-origin-of-life.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: bc593f92-19ff-4da9-b3e7-3f3779003393
+polished_version: "[[politics-and-science/polished/2000-01-02-politics-and-science-politics-science-on-the-origin-of-life]]"
+---
 
 ## Transcript
 

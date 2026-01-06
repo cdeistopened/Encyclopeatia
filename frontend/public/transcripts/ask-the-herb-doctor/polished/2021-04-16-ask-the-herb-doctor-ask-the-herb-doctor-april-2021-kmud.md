@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: April 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-04-16
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-210416.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 75c8fa04-4532-430f-8ba5-2a447be3eb61
+raw_source: "[[ask-the-herb-doctor/raw/2021-04-16-ask-the-herb-doctor-ask-the-herb-doctor-april-2021-kmud]]"
+---
 # Ask Your Herb Doctor: Epigenetics, Stress, and Energy
 
 ## Introduction

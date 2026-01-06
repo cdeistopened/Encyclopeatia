@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Milk"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-08-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110819-milk.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 6014d2ff-e8a1-4362-8fdf-cd0b6a648fce
+raw_source: "[[ask-the-herb-doctor/raw/2011-08-19-ask-the-herb-doctor-ask-the-herb-doctor-milk]]"
+---
 ## Introduction
 
 **Andrew Murray:** Good evening and welcome to Ask Your Herb Doctor. My name is Andrew Murray.

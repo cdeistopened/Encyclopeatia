@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Thinking Outside the Box - New Cancer Treatments"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-08-15"
+audio_url: "https://www.toxinless.com/kmud-140815-thinking-outside-the-box-new-cancer-treatments.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 748fe868-dc86-4cfc-b7e8-4e9db77caee6
+---
 
 ## Transcript
 

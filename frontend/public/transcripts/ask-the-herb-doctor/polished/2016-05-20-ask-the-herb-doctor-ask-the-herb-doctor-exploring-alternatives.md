@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Exploring Alternatives"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-05-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-160520-exploring-alternatives.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 23b9102b-df51-46bc-ae0d-6d9ffaa192df
+raw_source: "[[ask-the-herb-doctor/raw/2016-05-20-ask-the-herb-doctor-ask-the-herb-doctor-exploring-alternatives]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

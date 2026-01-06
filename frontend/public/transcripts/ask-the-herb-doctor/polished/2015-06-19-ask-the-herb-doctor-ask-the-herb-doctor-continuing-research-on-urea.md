@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Continuing Research on Urea"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-06-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150619-continuing-research-on-urea.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4a11213a-f8bc-47e4-99e3-1faca41bc5ba
+raw_source: "[[ask-the-herb-doctor/raw/2015-06-19-ask-the-herb-doctor-ask-the-herb-doctor-continuing-research-on-urea]]"
+---
 ## Introduction
 
 **Andrew Murray:** My name is Andrew Murray.

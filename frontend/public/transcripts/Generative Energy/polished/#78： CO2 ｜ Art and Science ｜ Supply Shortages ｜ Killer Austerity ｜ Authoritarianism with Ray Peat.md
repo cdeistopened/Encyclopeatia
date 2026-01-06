@@ -1,4 +1,16 @@
-## Geopolitics, Ukraine, and the CDC
+---
+title: "#78: CO2  |  Art and Science  |  Supply Shortages  |  Killer Austerity  |  Authoritarianism with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 78
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: ccf81fcf-633e-41f8-bc3a-583bfbefaaa1
+raw_source: "[[Generative Energy/#78： CO2 ｜ Art and Science ｜ Supply Shortages ｜ Killer Austerity ｜ Authoritarianism with Ray Peat]]"
+---## Geopolitics, Ukraine, and the CDC
 
 **Danny Roddy:** We're live with Georgi Dinkov and Raymond Peat. We're just catching up with Ray about Mexico. Last time we talked, Ray, I don't think the CDC had come out and said that masks were basically useless. I don't think they had admitted the PCR test was useless. Now with this whole Russia-Ukraine situation, is there any way to synthesize this into something that makes sense from your point of view?
 

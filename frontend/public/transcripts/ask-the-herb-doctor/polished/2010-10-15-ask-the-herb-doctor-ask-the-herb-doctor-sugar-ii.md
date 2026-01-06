@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Sugar II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2010-10-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-101015-sugar-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 326b4bf1-a4a6-438d-8db1-7c050af0f9cf
+raw_source: "[[ask-the-herb-doctor/raw/2010-10-15-ask-the-herb-doctor-ask-the-herb-doctor-sugar-ii]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

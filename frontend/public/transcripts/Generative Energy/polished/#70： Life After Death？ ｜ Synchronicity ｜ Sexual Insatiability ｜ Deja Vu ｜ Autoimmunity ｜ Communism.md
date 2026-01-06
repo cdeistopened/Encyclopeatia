@@ -1,4 +1,16 @@
-## Introduction and Global Politics
+---
+title: "#70: Life After Death?  |  Synchronicity  |  Sexual Insatiability  |  Deja Vu  |  Autoimmunity  |  Communism"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 70
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 01ed88f4-840e-4385-a04b-45ce6e8338b8
+raw_source: "[[Generative Energy/#70： Life After Death？ ｜ Synchronicity ｜ Sexual Insatiability ｜ Deja Vu ｜ Autoimmunity ｜ Communism]]"
+---## Introduction and Global Politics
 
 **Danny Roddy:** Welcome to Generative Energy Podcast #70. Ray Peat, Georgi Dinkov. Ray, I just interrupted you, but we were talking before about your take on Australia? I thought you had an interesting take that I really haven't heard before.
 

@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Milk, Calcium and Hormones"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-06-03"
+audio_url: "https://www.toxinless.com/ewh-110603-milk-calcium-and-hormones.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ebcc5881-0ea3-4791-90a9-0ecd37927424
+---
 
 ## Transcript
 

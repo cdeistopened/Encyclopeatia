@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Weight Gain"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-02-15"
+audio_url: "https://www.toxinless.com/kmud-130215-weight-gain.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 2ced6b9d-2e5d-4271-bcb5-ea602d760798
+---
 
 ## Transcript
 

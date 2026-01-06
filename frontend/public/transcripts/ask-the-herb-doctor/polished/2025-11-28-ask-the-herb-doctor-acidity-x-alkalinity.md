@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor Acidity X Alkalinity"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-11-30
+speakers:
+  - Dr. Raymond Peat
+id: a3b82f55-e28b-4afc-9c07-bc97ecf841ef
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-acidity-x-alkalinity]]"
+---
 ## Introduction
 
 **Andrew Murray:** You're listening to *Ask Your Herb Doctor* on KMUD Garberville. From 7:30 until the end of the show at 8:00, you are invited to call in with any questions related or unrelated to this month's subject of alkalinity versus acidity with reference to disease. We are very welcome to have Dr. Raymond Peat to share his wisdom and expertise with us for this next hour. Dr. Peat, are you there?

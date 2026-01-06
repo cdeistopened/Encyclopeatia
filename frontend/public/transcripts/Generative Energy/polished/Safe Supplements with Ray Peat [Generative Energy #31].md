@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "Safe Supplements with Ray Peat [Generative Energy #31]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 31
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: f1716019-0cf2-4a07-b19f-496a0a4e5948
+raw_source: "[[Generative Energy/Safe Supplements with Ray Peat [Generative Energy #31]]]"
+---## Introduction
 
 **Danny Roddy:** Hello everyone, I'm Danny Roddy, and today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this episode, we'll talk about the benefits and risks of various commercial pharmaceuticals and supplements.
 

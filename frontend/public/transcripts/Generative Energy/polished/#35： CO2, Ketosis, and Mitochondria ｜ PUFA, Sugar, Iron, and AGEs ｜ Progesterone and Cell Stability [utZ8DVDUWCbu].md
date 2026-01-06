@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#35: CO2, Ketosis, and Mitochondria  |  PUFA, Sugar, Iron, and AGEs  |  Progesterone and Cell Stability [utZ8DVDUWCbu]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 35
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: fcbbe751-fa47-4177-a6ce-716799d93816
+raw_source: "[[Generative Energy/#35： CO2, Ketosis, and Mitochondria ｜ PUFA, Sugar, Iron, and AGEs ｜ Progesterone and Cell Stability [utZ8DVDUWCbu]]]"
+---## Introduction
 
 **Danny Roddy:** Okay, and we're live. Georgi Dinkov, Raymond Peat, thank you guys so much for joining us. Ray, how are you doing? And Georgi Dinkov, how are you?
 

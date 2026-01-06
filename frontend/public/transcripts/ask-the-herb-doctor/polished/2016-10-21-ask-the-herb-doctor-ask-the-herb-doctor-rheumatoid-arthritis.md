@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Rheumatoid Arthritis"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-10-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/kmud-161021-rheumatoid-arthritis.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b7a98e2b-9448-49db-849b-9513022028e1
+raw_source: "[[ask-the-herb-doctor/raw/2016-10-21-ask-the-herb-doctor-ask-the-herb-doctor-rheumatoid-arthritis]]"
+---
 ## Introduction
 
 **Andrew Murray:** Good evening and welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

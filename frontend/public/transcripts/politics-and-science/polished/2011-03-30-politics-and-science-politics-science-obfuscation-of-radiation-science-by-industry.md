@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Obfuscation of Radiation Science by Industry"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2011-03-30
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-110330-obfuscation-of-radiation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 800f7403-22bf-4512-b131-ec41d04bdd20
+raw_source: "[[politics-and-science/raw/2011-03-30-politics-and-science-politics-science-obfuscation-of-radiation-science-by-industry]]"
+---
 ## Introduction
 
 **John Barkhausen:** I believe I have Dr. Raymond Peat here. This is Politics and Science on the 30th of March 2011. Dr. Peat is a physiologist and an endocrinologist from Eugene, Oregon, and has a website with a lot of excellent articles, mostly about physiology, at raypeat.com. Ray, thanks so much for coming on Politics and Science again.

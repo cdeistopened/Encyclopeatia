@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: August 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2020-08-21"
+audio_url: "https://www.toxinless.com/kmud-200821.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 9c9f5263-6b47-4d83-b6ab-52edce221b5d
+---
 
 ## Episode Breakdown
 

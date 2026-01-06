@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Misconceptions relating to Serotonin and Melatonin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2011-05-21"
+audio_url: "https://www.toxinless.com/kmud-110521-misconceptions-relating-to-serotonin-and-melatonin.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4baf85b5-8a31-45af-9ec6-758dc47df44b
+---
 
 ## Transcript
 

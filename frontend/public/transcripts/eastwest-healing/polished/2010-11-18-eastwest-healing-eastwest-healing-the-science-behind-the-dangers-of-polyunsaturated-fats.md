@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: The Science Behind The Dangers of Polyunsaturated Fats"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2010-11-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-101118-the-science-behind-the-dangers-of-polyunsaturated-fats.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 925345b0-b64a-4627-a9f2-f8d64c059f0a
+raw_source: "[[eastwest-healing/raw/2010-11-18-eastwest-healing-eastwest-healing-the-science-behind-the-dangers-of-polyunsaturated-fats]]"
+---
 ## Introduction
 
 **Josh Rubin:** Hey everyone, this is Josh Rubin and Jeannie from Holistic Living. Today we are talking to Dr. Raymond Peat. He is a researcher, an educator, and an artist. A lot of what he teaches and preaches definitely goes against the grain.

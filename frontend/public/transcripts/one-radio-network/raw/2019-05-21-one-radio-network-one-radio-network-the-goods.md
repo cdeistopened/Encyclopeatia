@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: The Goods"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-05-21"
+audio_url: "https://www.toxinless.com/orn-190521-the-goods.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3ed62945-1982-45cf-9a24-06ee6a9946c8
+---
 
 ## Transcript
 

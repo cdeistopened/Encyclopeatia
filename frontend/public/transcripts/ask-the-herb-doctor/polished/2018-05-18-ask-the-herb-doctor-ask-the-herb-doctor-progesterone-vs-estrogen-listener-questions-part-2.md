@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Progesterone vs Estrogen, Listener Questions (Part 2)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-05-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180518-progesterone-vs-estrogen-listener-questions-part2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: dde5b465-c8d5-4715-a172-5f979652b7e5
+raw_source: "[[ask-the-herb-doctor/raw/2018-05-18-ask-the-herb-doctor-ask-the-herb-doctor-progesterone-vs-estrogen-listener-questions-part-2]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. This month’s topic is a roundup of where we left off in March discussing progesterone and estrogen. I want to dissect that a little more with facts and arguments refuting the "facts" about how positive estrogen is and how negative progesterone is.

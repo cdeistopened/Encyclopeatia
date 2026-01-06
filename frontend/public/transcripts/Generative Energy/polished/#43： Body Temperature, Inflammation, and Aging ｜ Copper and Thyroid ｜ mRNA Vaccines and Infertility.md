@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#43: Body Temperature, Inflammation, and Aging  |  Copper and Thyroid  |  mRNA Vaccines and Infertility"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 43
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 0ef7b0ca-263e-4d87-8b07-b7134e585fa0
+raw_source: "[[Generative Energy/#43： Body Temperature, Inflammation, and Aging ｜ Copper and Thyroid ｜ mRNA Vaccines and Infertility]]"
+---## Introduction
 
 **Danny Roddy:** Thank you guys for joining us. Raymond Peat, Georgi Dinkov. Ray, how are you? How are things in Eugene, Oregon?
 

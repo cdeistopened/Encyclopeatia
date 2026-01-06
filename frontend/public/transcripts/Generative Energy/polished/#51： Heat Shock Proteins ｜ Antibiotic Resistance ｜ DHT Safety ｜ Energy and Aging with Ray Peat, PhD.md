@@ -1,4 +1,16 @@
-# Introduction: Technical Difficulties and Newsletter Topics
+---
+title: "#51: Heat Shock Proteins  |  Antibiotic Resistance  |  DHT Safety  |  Energy and Aging with Ray Peat, PhD"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 51
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: d0c0760f-5fa4-47b4-b2ae-7624d38307e1
+raw_source: "[[Generative Energy/#51： Heat Shock Proteins ｜ Antibiotic Resistance ｜ DHT Safety ｜ Energy and Aging with Ray Peat, PhD]]"
+---# Introduction: Technical Difficulties and Newsletter Topics
 
 **Danny Roddy:** Hey everyone, we just wrapped up live stream number 51 with Ray Peat. We had issues with bandwidth and the sound is popping, so it is imperfect, but I stitched together the silence and I thought the content was excellent.
 

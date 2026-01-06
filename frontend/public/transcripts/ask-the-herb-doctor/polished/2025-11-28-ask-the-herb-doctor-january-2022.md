@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor January 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 17910a5b-e2f7-4eb7-bd5a-32095ca833ca
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-january-2022]]"
+---
 # Ask Your Herb Doctor: MSG, Excitotoxicity, and Health Q&A
 
 **Host:** Andrew Murray

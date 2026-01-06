@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Steiner Schools and Education"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-11-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-151120-steiner-schools-and-education.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ad56f921-53e3-4c62-96de-08cb7aa269c0
+raw_source: "[[ask-the-herb-doctor/raw/2015-11-20-ask-the-herb-doctor-ask-the-herb-doctor-steiner-schools-and-education]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

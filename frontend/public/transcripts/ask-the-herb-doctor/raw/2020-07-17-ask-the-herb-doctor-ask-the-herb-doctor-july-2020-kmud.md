@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: July 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2020-07-17"
+audio_url: "https://www.toxinless.com/kmud-200717.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 647ee868-911e-4e6f-aebe-ed7fb7100f44
+---
 
 ## Episode Breakdown
 

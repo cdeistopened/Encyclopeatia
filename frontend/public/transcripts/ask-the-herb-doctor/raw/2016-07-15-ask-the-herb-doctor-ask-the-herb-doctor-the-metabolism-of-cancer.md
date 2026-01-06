@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: The Metabolism of Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-07-15"
+audio_url: "https://www.toxinless.com/kmud-160715-the-metabolism-of-cancer.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 224bdbb7-937e-446b-a82e-28d561133e00
+---
 
 ## Transcript
 

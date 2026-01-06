@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Menopause, Estrogen, Thyroid, Coronavirus, and Glaucoma"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2020-02-17"
+audio_url: "https://www.toxinless.com/orn-200217-menopause-estrogen-thyroid-coronavirus-glaucoma.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: a010ac05-9dac-4aa2-87bb-d833b3e73f1d
+polished_version: "[[one-radio-network/polished/2020-02-17-one-radio-network-one-radio-network-menopause-estrogen-thyroid-coronavirus-and-glaucoma]]"
+---
 
 ## Transcript
 

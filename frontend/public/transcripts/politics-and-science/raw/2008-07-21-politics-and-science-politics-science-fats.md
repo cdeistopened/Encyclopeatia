@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Fats"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2008-07-21"
+audio_url: "https://www.toxinless.com/polsci-080721-fats.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ac938697-b030-4e51-9945-cd5e24fada17
+polished_version: "[[politics-and-science/polished/2008-07-21-politics-and-science-politics-science-fats]]"
+---
 
 ## Transcript
 

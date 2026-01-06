@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Female Hormones / Progesterone"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-01-19"
+audio_url: "https://www.toxinless.com/kmud-180119-female-hormones-progesterone.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 86e2136a-a4d2-4910-b9b9-f73fb310ba51
+---
 
 ## Transcript
 

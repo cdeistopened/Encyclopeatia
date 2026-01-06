@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Patrick Timpone: Dr. Peat Answers Questions Regarding Health, Diet and Nutrition Part 2"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2014-01-01
+date_transcribed: 2025-12-02
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/orn-140101-nutrition-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ef99eae1-dc2a-4c9d-866d-1b7b460ff78a
+raw_source: "[[one-radio-network/raw/2014-01-01-one-radio-network-one-radio-network-patrick-timpone-dr-peat-answers-questions-regarding-health-die]]"
+---
 ## Cloudy Urine and Diet
 
 **Patrick Timpone:** What does cloudy urine indicate? Is it the body wasting calcium or a yeast infection?

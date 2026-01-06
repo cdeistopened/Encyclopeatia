@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Biochemical Health"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2015-03-11
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-150311-biochemical-health.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ab776059-640f-40e1-862c-e00277d8bb31
+raw_source: "[[politics-and-science/raw/2015-03-11-politics-and-science-politics-science-biochemical-health]]"
+---
 ## Introduction
 
 **John Barkhausen:** Today we're going to be talking about human health and the physiological implications of some of the chemical processes that happen in the body, namely reduction and oxidation. My guest today is Dr. Raymond Peat. He has a PhD in biology and a specialty in physiology. Ray, do you want to add anything to that?

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: On The Back of a Tiger"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-07-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150717-on-the-back-of-a-tiger.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 471b50dc-5fa1-4a46-ba63-d58da40126ce
+raw_source: "[[ask-the-herb-doctor/raw/2015-07-17-ask-the-herb-doctor-ask-the-herb-doctor-on-the-back-of-a-tiger]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to *Ask Your Herb Doctor*. My name is Andrew Murray.

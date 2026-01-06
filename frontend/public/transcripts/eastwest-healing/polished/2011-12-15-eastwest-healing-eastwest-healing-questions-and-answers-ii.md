@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Questions and Answers II"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-12-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-111215-q-and-a-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ed2b9ab2-d698-4625-9cf1-f5494401da4b
+raw_source: "[[eastwest-healing/raw/2011-12-15-eastwest-healing-eastwest-healing-questions-and-answers-ii]]"
+---
 ## Introduction
 
 **Josh Rubin:** All right everyone, welcome to today's show with Ray Peat, Ph.D. I want to thank everyone once again for tuning into our show every month. Last month's show with Lita Lee was great, so if you didn't have a chance to listen to that, go to our Blog Talk Radio show and check that out.

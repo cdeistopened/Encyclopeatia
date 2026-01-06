@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "The CIA's Mighty Wurlitzer with Ray Peat [Generative Energy #32]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 32
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 68321d90-36ec-4a29-8db9-1ef38789e9ae
+raw_source: "[[Generative Energy/The CIA's Mighty Wurlitzer with Ray Peat [Generative Energy #32]]]"
+---## Introduction
 
 **Danny Roddy:** Hello everyone, I'm Danny Roddy of DannyRoddy.com, and today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this hour-long episode, we'll talk about the creation of the CIA and its primary role in shaping U.S. culture through painting, music, language, literature, economics, philosophy, religion, social activism, and politics.
 

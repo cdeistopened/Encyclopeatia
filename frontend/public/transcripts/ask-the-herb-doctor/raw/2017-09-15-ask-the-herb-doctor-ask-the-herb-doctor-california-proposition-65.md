@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: California Proposition 65"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-09-15"
+audio_url: "https://www.toxinless.com/kmud-170915-california-proposition-65.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: a75d1f4f-bcb1-40c5-a2c7-f36e1b9626a3
+---
 
 ## Transcript
 

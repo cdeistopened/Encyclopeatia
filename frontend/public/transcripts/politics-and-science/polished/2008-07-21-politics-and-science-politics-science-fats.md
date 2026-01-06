@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Fats"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2008-07-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-080721-fats.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 74864b54-6065-4f50-b6a3-40817838315e
+raw_source: "[[politics-and-science/raw/2008-07-21-politics-and-science-politics-science-fats]]"
+---
 ## Introduction
 
 **John Barkhausen:** My guest today on Politics and Science is Raymond Peat, endocrinologist and physiologist from Eugene, Oregon. Ray, how are you today?

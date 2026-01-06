@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Empiricism vs Dogmatic Modeling"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2008-07-24
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-080724-dogmatism-in-science.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 251540a7-402a-472d-a625-973296bc6a7a
+raw_source: "[[politics-and-science/raw/2008-07-24-politics-and-science-politics-science-empiricism-vs-dogmatic-modeling]]"
+---
 ## Introduction
 
 **John Barkhausen:** We are speaking with Dr. Raymond Peat out in Eugene, Oregon. He's an endocrinologist and physiologist who has written a lot of books about health, nutrition, and science, and publishes *Ray Peat's Newsletter*. You can find him on the web at raypeat.com.

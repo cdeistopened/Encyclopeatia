@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: October 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2020-10-16
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-201016.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b91aa5ed-f578-4535-923c-773c57dc83a2
+raw_source: "[[ask-the-herb-doctor/raw/2020-10-16-ask-the-herb-doctor-ask-the-herb-doctor-october-2020-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. It's October 16, 2020. My name is Andrew Murray.

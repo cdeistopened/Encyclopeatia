@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Inflammation"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-01-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110118-inflammation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 03a9108e-5740-4a1d-a42e-6db70b560833
+raw_source: "[[eastwest-healing/raw/2011-01-18-eastwest-healing-eastwest-healing-inflammation]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome back to a brand new season of Holistic Living with Josh and Jeannie Rubin. We are really excited this year to launch a series of shows with our one and only Dr. Raymond Peat from RayPeat.com. Today, we are going to be talking about inflammation: his view on where it comes from, what is involved, and what in our environment and bodies creates it. Our goal this year is to give everyone an education, whether you are a practitioner or a layperson. We feel Ray can offer a lot of insight into your physiology. We want to start from the basework and move up to solutions. Jeannie has Ray on the line. Hi, Ray. How are you doing?

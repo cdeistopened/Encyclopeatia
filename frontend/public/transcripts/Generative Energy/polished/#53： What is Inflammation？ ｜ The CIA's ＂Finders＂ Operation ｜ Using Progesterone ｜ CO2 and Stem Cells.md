@@ -1,4 +1,16 @@
-## Economics, Inflation, and Social Control
+---
+title: "#53: What is Inflammation?  |  The CIA's \"Finders\" Operation  |  Using Progesterone  |  CO2 and Stem Cells"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 53
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 615855b2-ec2f-4864-bcd0-bee91203414a
+raw_source: "[[Generative Energy/#53： What is Inflammation？ ｜ The CIA's ＂Finders＂ Operation ｜ Using Progesterone ｜ CO2 and Stem Cells]]"
+---## Economics, Inflation, and Social Control
 
 **Danny Roddy:** Georgi Dinkov and Ray Peat, thank you guys for joining us today. Ray, can you continue on that thought? We were talking about Bitcoin, inflation, and the general price increase of goods.
 

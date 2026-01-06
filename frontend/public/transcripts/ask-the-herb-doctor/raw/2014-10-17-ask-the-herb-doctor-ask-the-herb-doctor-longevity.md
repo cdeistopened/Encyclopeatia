@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Longevity"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-10-17"
+audio_url: "https://www.toxinless.com/kmud-141017-longevity.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 440b60b0-e145-4c76-b13a-0e116e005a2a
+---
 
 ## Transcript
 

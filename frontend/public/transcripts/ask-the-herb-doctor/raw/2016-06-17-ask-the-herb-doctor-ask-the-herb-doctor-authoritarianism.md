@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Authoritarianism"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-06-17"
+audio_url: "https://www.toxinless.com/kmud-160617-authoritarianism.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 58c7c8fc-47ba-42d1-a70e-1ad20d03fb47
+---
 
 ## Transcript
 

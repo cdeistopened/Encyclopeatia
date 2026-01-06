@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#27: Thyroid Function & Pulse Rate  |  Weaponized Culture  |  Finasteride as an \"Insane Decision\""
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 27
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 0d7800f8-b27f-42b6-ad63-c48b801f08f0
+raw_source: "[[Generative Energy/#27： Thyroid Function & Pulse Rate ｜ Weaponized Culture ｜ Finasteride as an ＂Insane Decision＂]]"
+---## Introduction
 
 **Danny Roddy:** We're live. Thank you guys so much for bearing with us, we had slight technical difficulties. Ray Peat and Georgi Dinkov, this is our third episode. Thank you guys so much for joining me. Ray, these episodes are really special, so I sincerely appreciate you joining us. How are you?
 

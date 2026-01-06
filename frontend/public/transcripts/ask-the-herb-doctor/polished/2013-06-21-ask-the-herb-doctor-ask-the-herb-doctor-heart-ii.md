@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Heart II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-06-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130621-heart-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 528bcfb4-4574-422f-ae88-10f11f6bbeae
+raw_source: "[[ask-the-herb-doctor/raw/2013-06-21-ask-the-herb-doctor-ask-the-herb-doctor-heart-ii]]"
+---
 ## Introduction: Saturated Fats and Heart Health
 
 **Andrew Murray:** Welcome to the show. I am Andrew Murray, a licensed medical herbalist. My co-host, Sarah Johanneson Murray, is currently at home with our new baby. Tonight, we are joined by Dr. Raymond Peat to discuss the heart and his recent article, "The Cancer Matrix."

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor February 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 49ee86d2-62bf-4507-866e-eb6243a1ea77
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-february-2022]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's edition of Ask Your Herb Doctor. My name is Andrew Murray.

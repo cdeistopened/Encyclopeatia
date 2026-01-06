@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Endocrinology (Part 3)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-05-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-170519-endocrinology-part3.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f98163f7-5077-4b7f-910e-b85679e154b3
+raw_source: "[[ask-the-herb-doctor/raw/2017-05-19-ask-the-herb-doctor-ask-the-herb-doctor-endocrinology-part-3]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. Sarah is not with us tonight, so we're doing the show with Dr. Raymond Peat as a regular guest, continuing the last two months' topic of the endocrine system.

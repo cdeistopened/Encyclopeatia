@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Carbon Monoxide"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-01-18"
+audio_url: "https://www.toxinless.com/kmud-130118-carbon-monoxide.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: da664d95-7aaf-4579-b0d2-d2c587efc856
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Diabetes I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-02-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140221-diabetes.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a2a0eea2-1660-4709-a520-502cb2d66f58
+raw_source: "[[ask-the-herb-doctor/raw/2014-02-21-ask-the-herb-doctor-ask-the-herb-doctor-diabetes-i]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who perhaps have never listened to the shows, which run every third Friday of the month from 7:00 till 8:00 PM, my wife and I are both licensed medical herbalists who trained in England and graduated there with a degree in herbal medicine. We run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicines and dietary advice.

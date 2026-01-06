@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Antioxidants"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-10-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-121019-antioxidants.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ace3a521-63b7-4089-bf47-8faeaa964396
+raw_source: "[[ask-the-herb-doctor/raw/2012-10-19-ask-the-herb-doctor-ask-the-herb-doctor-antioxidants]]"
+---
 ## Introduction: Antioxidants and Myths
 
 **Andrew Murray:** Welcome. Every third Friday of the month we produce a program called *Ask Your Herb Doctor*. We are very pleased to have Dr. Raymond Peat join us on the show to share his wisdom. This month's subject is antioxidants: some of the myths about them, what they really do, how they are helpful, and how the history of antioxidants has been skewed. Our current understanding has been misled by manufacturers and other parties.

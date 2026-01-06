@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: The Goods"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-05-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190521-the-goods.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 73312b9c-64fb-4a0c-956d-053b6ead7e96
+raw_source: "[[one-radio-network/raw/2019-05-21-one-radio-network-one-radio-network-the-goods]]"
+---
 ## Introduction: Milk and Natural Toxins
 
 **Patrick Timpone:** Hello, Dr. Peat. Good morning. How are things with you, sir?

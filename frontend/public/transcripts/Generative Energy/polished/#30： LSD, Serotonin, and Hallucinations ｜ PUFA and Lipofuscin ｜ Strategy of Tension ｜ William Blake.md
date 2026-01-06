@@ -1,4 +1,16 @@
-# Generative Energy Podcast: Science, Society, and Bioenergetics
+---
+title: "#30: LSD, Serotonin, and Hallucinations  |  PUFA and Lipofuscin  |  Strategy of Tension  |  William Blake"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 30
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 837c9b1f-92f1-4944-bcf3-0357b859afc0
+raw_source: "[[Generative Energy/#30： LSD, Serotonin, and Hallucinations ｜ PUFA and Lipofuscin ｜ Strategy of Tension ｜ William Blake]]"
+---# Generative Energy Podcast: Science, Society, and Bioenergetics
 
 ## Introduction and Scientific Nobel Prizes
 

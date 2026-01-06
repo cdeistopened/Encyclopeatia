@@ -1,4 +1,16 @@
-## Introduction: Borders and Civil Liberties
+---
+title: "#32: Hormonal Imprinting  |  Fake History  |  Aristotelian Philosophy  |  Marx, Lenin, Stalin, and Lysenko"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 32
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 2680d48e-bc99-4485-bcb5-ae8814bbbe90
+raw_source: "[[Generative Energy/#32： Hormonal Imprinting ｜ Fake History ｜ Aristotelian Philosophy ｜ Marx, Lenin, Stalin, and Lysenko]]"
+---## Introduction: Borders and Civil Liberties
 
 **Danny Roddy:** We're talking about borders. Ray, do you want to back up and rehash the first part of that conversation? That was pretty interesting. I think you mentioned that some federal police, other than the National Guard, were involved in the Portland violence.
 

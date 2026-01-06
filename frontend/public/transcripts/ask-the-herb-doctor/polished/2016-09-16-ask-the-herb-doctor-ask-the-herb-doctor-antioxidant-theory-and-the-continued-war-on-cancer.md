@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Antioxidant Theory and the Continued War on Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-09-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-160916-antioxidant-theory-and-continued-war-on-cancer.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: c47c1e3e-0168-42a1-b2e3-ae163ff95532
+raw_source: "[[ask-the-herb-doctor/raw/2016-09-16-ask-the-herb-doctor-ask-the-herb-doctor-antioxidant-theory-and-the-continued-war-on-cancer]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

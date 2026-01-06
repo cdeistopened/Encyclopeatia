@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Cancer Treatment"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-02-17"
+audio_url: "https://www.toxinless.com/kmud-120217-cancer-treatment.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: effca47f-7e9e-4ae5-a088-f11369e57d9b
+---
 
 ## Transcript
 

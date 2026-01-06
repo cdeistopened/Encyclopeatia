@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Viruses"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-03-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190315-viruses.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 7d4c6758-a2af-4d52-b832-ce8513f6b623
+raw_source: "[[ask-the-herb-doctor/raw/2019-03-15-ask-the-herb-doctor-ask-the-herb-doctor-viruses]]"
+---
 ## Introduction
 
 **Andrew Murray:** It is the third Friday of the month. I'm very pleased to introduce Dr. Raymond Peat onto the live show. We are inviting callers to ask questions related to this month's topic, which is the antiviral activity of medicinal plants and their constituents, and how Dr. Peat interprets antiviral activity. It's not always a straightforward antiviral activity, but rather a host response that is often the remedy or the provoking factor which stimulates the immune system into defense. Dr. Peat, thanks so much for joining us. As always, I'd like to start the show off by asking you to introduce yourself and give a rundown of your professional and academic background.

@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#64: Life  |  Energy  |  Estrogen  |  Fibrosis  |  Calcification  |  Process Theology  |  Altruism with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 64
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: d892e3ee-1bda-49c2-b20a-1e904bd86de3
+raw_source: "[[Generative Energy/#64： Life ｜ Energy ｜ Estrogen ｜ Fibrosis ｜ Calcification ｜ Process Theology ｜ Altruism with Ray Peat]]"
+---## Introduction
 
 **Danny Roddy:** Guys, welcome to the show. Ray Peat, Georgi Dinkov. Georgi, I interrupted you. Go ahead, what were you going to say?
 

@@ -1,3 +1,16 @@
+---
+title: "[RELEASED 2019] Politics & Science: Digestion"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2010-04-26"
+audio_url: "https://www.toxinless.com/polsci-100426-digestion.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 6a2f3145-8677-441e-8419-63704a318a06
+polished_version: "[[politics-and-science/polished/2010-04-26-politics-and-science-released-2019-politics-science-digestion]]"
+---
 
 ## Transcript
 

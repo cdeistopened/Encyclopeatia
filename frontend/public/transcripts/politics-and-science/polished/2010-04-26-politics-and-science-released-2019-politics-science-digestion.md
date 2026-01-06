@@ -1,3 +1,16 @@
+---
+title: "[RELEASED 2019] Politics & Science: Digestion"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2010-04-26
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-100426-digestion.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4ccbc012-5939-4587-bcad-42bc1a98d480
+raw_source: "[[politics-and-science/raw/2010-04-26-politics-and-science-released-2019-politics-science-digestion]]"
+---
 ## Introduction
 
 **John Barkhausen:** Welcome to Politics and Science. I'm your host, John Barkhausen. This week we continue with another archive interview recorded on April 26, 2010, with Dr. Raymond Peat. He is a physiologist living in Eugene, Oregon, who has been studying health and the history of science for his entire life. Today’s interview concerns human digestion: how it works, how it affects us, and the psychological and physical repercussions of good and healthy digestion.

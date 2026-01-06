@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Glycemia, Starch and Sugar in context"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-04-27"
+audio_url: "https://www.toxinless.com/ewh-110427-glycemia-starch-and-sugar-in-context.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 8c4d9552-63a8-410a-bc6e-ec7c2ad30f4e
+---
 
 ## Transcript
 

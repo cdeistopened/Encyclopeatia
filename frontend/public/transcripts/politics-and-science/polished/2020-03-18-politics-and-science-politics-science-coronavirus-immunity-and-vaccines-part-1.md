@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Coronavirus, immunity, and vaccines (Part 1)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2020-03-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-200318-coronavirus-immunity-vaccines-part1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: d9819f29-f13f-4b8e-990f-2141fdb4f45f
+raw_source: "[[politics-and-science/raw/2020-03-18-politics-and-science-politics-science-coronavirus-immunity-and-vaccines-part-1]]"
+---
 ## Introduction
 
 **John Barkhausen:** Politics and Science is live today for a change. I'm very honored to have Dr. Raymond Peat back on the line. I'm going to use the same bio I had for you years ago, which is that you have a PhD in biology from the University of Oregon with a specialization in physiology. I also consider you a science historian and ombudsman. I've wanted to get you on again because you're interesting to hear on any subject, and we particularly have this weird emergency going on that has everybody spinning: the COVID-19 pandemic. I wanted to get your take on that, talk about the science behind pandemics and viruses, and maybe cover vaccines. What do you think is going on right now?

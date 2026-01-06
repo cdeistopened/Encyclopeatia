@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Inflammation II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2011-02-18"
+audio_url: "https://www.toxinless.com/kmud-110218-inflammation-2.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 05a2d4e7-ae7e-4c8b-a301-f25d0e7c70d4
+---
 
 ## Transcript
 

@@ -1,4 +1,16 @@
-## Introduction and Nutrition Philosophy
+---
+title: "#58: Bioenergetic Nutrition Continued  |  Authoritarianism  |  Intention and Learning with Ray Peat, PhD"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 58
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 435051a5-c660-410b-9063-6305ce64859f
+raw_source: "[[Generative Energy/#58： Bioenergetic Nutrition Continued ｜ Authoritarianism ｜ Intention and Learning with Ray Peat, PhD]]"
+---## Introduction and Nutrition Philosophy
 
 **Danny Roddy:** Okay, normally I would say Georgi Dinkov and Ray Peat, but we only have Ray today. Georgi, hopefully he'll come and we'll work him into what's going on, but it's just going to be a chat between Ray and I. How are you, Ray?
 

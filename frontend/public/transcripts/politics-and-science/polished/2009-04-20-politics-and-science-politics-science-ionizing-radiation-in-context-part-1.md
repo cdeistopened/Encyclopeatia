@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Ionizing Radiation in Context Part 1"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2009-04-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-090420-radiation-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f62b4d72-14c9-46dc-91b8-d23c924d3da5
+raw_source: "[[politics-and-science/raw/2009-04-20-politics-and-science-politics-science-ionizing-radiation-in-context-part-1]]"
+---
 ## Introduction
 
 **John Barkhausen:** Good afternoon everyone, and welcome to another edition of Politics and Science. Today kicks off a new series about radiation. We'll be discussing nuclear ionizing radiation, focusing on its use in our culture and weighing its potential usefulness in relation to its costs to our health and environment. I'm very happy to have on the show again Dr. Raymond Peat, an endocrinologist, physiologist, and science historian from Eugene, Oregon. You can find more information about Ray Peat on his website, raypeat.com. Ray, welcome back.

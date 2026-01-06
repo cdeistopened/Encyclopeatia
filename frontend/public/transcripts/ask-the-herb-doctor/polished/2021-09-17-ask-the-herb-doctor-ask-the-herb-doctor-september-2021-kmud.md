@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: September 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-09-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-210917.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 3e2d34cc-ce76-4588-9d66-050ac1ca4892
+raw_source: "[[ask-the-herb-doctor/raw/2021-09-17-ask-the-herb-doctor-ask-the-herb-doctor-september-2021-kmud]]"
+---
 ## Introduction
 
 **Michael McCaskill:** The regular hosts, Andrew and Sarah, aren't here yet. I have Dr. Peat online. We thought we were just going to do a random show, but we will open the lines. Dr. Peat, why don't you give a little bit of background?

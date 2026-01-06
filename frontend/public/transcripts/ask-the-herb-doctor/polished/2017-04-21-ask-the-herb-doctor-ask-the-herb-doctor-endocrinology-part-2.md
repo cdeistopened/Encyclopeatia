@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Endocrinology (Part 2)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-04-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-170421-endocrinology-part2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b6327e00-e727-4532-97f8-98e81fac51e6
+raw_source: "[[ask-the-herb-doctor/raw/2017-04-21-ask-the-herb-doctor-ask-the-herb-doctor-endocrinology-part-2]]"
+---
 # Ask Your Herb Doctor: Endocrinology Part II
 
 ## Introduction

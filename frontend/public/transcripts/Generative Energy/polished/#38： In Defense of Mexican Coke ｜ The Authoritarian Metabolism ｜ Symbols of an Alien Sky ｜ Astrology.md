@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#38: In Defense of Mexican Coke  |  The Authoritarian Metabolism  |  Symbols of an Alien Sky  |  Astrology"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 38
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 042d4d98-dc24-43f0-a9b3-51420d48cb73
+raw_source: "[[Generative Energy/#38： In Defense of Mexican Coke ｜ The Authoritarian Metabolism ｜ Symbols of an Alien Sky ｜ Astrology]]"
+---## Introduction
 
 **Danny Roddy:** Georgi Dinkov, Ray Peat, how are you guys? Thank you for joining us. Georgi, how are you?
 

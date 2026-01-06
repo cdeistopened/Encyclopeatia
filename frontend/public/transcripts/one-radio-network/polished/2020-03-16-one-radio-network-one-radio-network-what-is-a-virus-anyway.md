@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: What is a virus anyway?"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2020-03-16
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-200316-what-is-a-virus-anyway.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 98c9d0e3-8ac8-4ee9-acbb-93eac16a2d00
+raw_source: "[[one-radio-network/raw/2020-03-16-one-radio-network-one-radio-network-what-is-a-virus-anyway]]"
+---
 ## Introduction and the Nature of Viruses
 
 **Patrick Timpone:** Welcome to part two of our show. Dr. Raymond Peat is on the show with us on the third Monday of each month. He has a PhD and has been at this for 40 or 45 years. Dr. Peat, good morning. I was asking you off the air, but let's dig into this. We just had a guest talking about the idea that viruses like measles and herpes are already in our bodies. The root canal people we've had on have proven through biology and peer-reviewed studies that when they open up these infected root canals, they find things ranging from herpes to syphilis—stuff that is already in the body. Does any of that balance with your perspective?

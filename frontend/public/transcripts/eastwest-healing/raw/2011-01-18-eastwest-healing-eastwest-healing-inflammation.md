@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Inflammation"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-01-18"
+audio_url: "https://www.toxinless.com/ewh-110118-inflammation.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 7009cd53-abcd-4731-b74b-ea688183a279
+---
 
 ## Transcript
 

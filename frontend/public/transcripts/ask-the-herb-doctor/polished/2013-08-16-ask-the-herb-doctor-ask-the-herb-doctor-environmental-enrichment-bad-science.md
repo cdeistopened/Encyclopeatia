@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Environmental Enrichment - Bad Science"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-08-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130816-environmental-enrichment.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a8ade926-d53e-4630-9d51-c08c01a3f31e
+raw_source: "[[ask-the-herb-doctor/raw/2013-08-16-ask-the-herb-doctor-ask-the-herb-doctor-environmental-enrichment-bad-science]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. Sarah is not joining me today. We are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with clients about a wide range of conditions and manufacture our own certified organic herb extracts.

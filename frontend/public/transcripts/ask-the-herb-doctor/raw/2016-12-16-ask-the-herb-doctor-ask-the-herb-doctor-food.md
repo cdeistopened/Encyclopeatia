@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Food"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-12-16"
+audio_url: "https://www.toxinless.com/kmud-161216-food.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: c8646f1a-f0c7-4a0b-af04-07e76e2c8df0
+---
 
 ## Transcript
 

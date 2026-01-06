@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Particles"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-04-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190419-particles.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 98c62bef-6b90-4d62-9ef5-4ef099fa0122
+raw_source: "[[ask-the-herb-doctor/raw/2019-04-19-ask-the-herb-doctor-ask-the-herb-doctor-particles]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. We are going to discuss antiviral herbs, nanoparticles and their negative health effects, and articles surrounding polyunsaturated fats and cancer incidence. The tide is slowly turning, and as Dr. Peat has been famously quoted in the past, "A lie gets around the world quicker than truth can tie up her shoelaces." We are very welcome to have Dr. Peat join us.

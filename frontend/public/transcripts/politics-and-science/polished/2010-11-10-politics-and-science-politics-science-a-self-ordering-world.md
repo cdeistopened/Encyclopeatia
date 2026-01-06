@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: A Self Ordering World"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2010-11-10
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-101110-self-ordering-world.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ed61e5ab-b934-4676-86ce-ea81c89caed3
+raw_source: "[[politics-and-science/raw/2010-11-10-politics-and-science-politics-science-a-self-ordering-world]]"
+---
 ## Introduction
 
 **John Barkhausen:** My guest today is Dr. Raymond Peat, and I'm happy to have him back again. We're going to talk about your recent newsletter entitled "How Do You Know? Students, Patients, and Discovery." The scope of the newsletter is enormous. It ranges from discussing a unifying, self-ordering principle concerning the nature of the universe, and talks about how the same principle is reflected in our learning processes, in our culture, and in all other functional, goal-directed systems in our world.

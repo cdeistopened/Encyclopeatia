@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Top Contrarian on Health"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-12-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-191217-top-contrarian-on-health.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 213fdd35-6153-45b3-9463-81edb6c9421e
+raw_source: "[[one-radio-network/raw/2019-12-17-one-radio-network-one-radio-network-top-contrarian-on-health]]"
+---
 ## Introduction
 
 **Patrick Timpone:** On the third Tuesday of each month, we're honored to have Dr. Ray Peat, PhD, University of Oregon, with his specialization in physiology. He started his work on hormones in 1968 and his dissertation was in 1972. He has been working in this field ever since. He has taught at the university level and writes many different articles. Dr. Ray Peat is in Oregon.

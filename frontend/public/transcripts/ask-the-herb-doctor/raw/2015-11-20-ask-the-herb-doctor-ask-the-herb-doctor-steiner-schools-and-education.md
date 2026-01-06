@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Steiner Schools and Education"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-11-20"
+audio_url: "https://www.toxinless.com/kmud-151120-steiner-schools-and-education.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: f6c950b2-69b8-48d0-85b8-1e1f1ad83130
+---
 
 ## Transcript
 

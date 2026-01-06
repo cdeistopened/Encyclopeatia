@@ -1,3 +1,15 @@
+---
+title: "ELUV: Effects of Stress and Trauma on the Body"
+feed: "Toxinless Forum"
+show: "ELUV"
+date_published: "2014-01-01"
+audio_url: "https://www.toxinless.com/eluv-140101-effects-of-stress-and-trauma-on-the-body.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 6fcd6bef-9077-43e3-8f47-f8e2532bd406
+---
 
 ## Transcript
 

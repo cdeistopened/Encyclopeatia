@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Dementia and Progesterone"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-12-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-121221-dementia-progesterone.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 898ed2f2-b438-49a8-8227-7c6b7ed8b6a7
+raw_source: "[[ask-the-herb-doctor/raw/2012-12-21-ask-the-herb-doctor-ask-the-herb-doctor-dementia-and-progesterone]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

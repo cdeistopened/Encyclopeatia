@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Reductionist Science (excerpt)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2008-09-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-080918-reductionist-science.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f0fa8f40-57e3-463f-851e-b416ce3b891e
+raw_source: "[[politics-and-science/raw/2008-09-18-politics-and-science-politics-science-reductionist-science-excerpt]]"
+---
 ## The Dogma of Inert Matter
 
 **John Barkhausen:** You even said in one of your newsletters that the engineering, genetic dogma school of science thought memory was a function of brain cells dying—like holes being punched in an IBM computer card. They were postulating that that is how you remember things.

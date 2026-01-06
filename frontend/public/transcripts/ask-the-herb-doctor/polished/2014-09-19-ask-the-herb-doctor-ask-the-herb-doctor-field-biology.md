@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Field Biology"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-09-19
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140919-field-biology.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 009dd03c-4879-4f36-a0dd-9293ca9430e3
+raw_source: "[[ask-the-herb-doctor/raw/2014-09-19-ask-the-herb-doctor-ask-the-herb-doctor-field-biology]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who perhaps have never listened to the shows, which run every third Friday of the month from 7:00 till 8:00 PM, my wife and I are both licensed medical herbalists who trained in England and graduated there with a master's degree in herbal medicine. We run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicines and dietary advice.

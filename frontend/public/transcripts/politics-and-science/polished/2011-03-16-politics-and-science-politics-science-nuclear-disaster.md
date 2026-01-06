@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Nuclear Disaster"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2011-03-16
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-110316-nuclear-disaster.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 999fa2b7-5c98-41d6-b3f4-53fdc9569bf9
+raw_source: "[[politics-and-science/raw/2011-03-16-politics-and-science-politics-science-nuclear-disaster]]"
+---
 ## Introduction
 
 **John Barkhausen:** We are talking to Maggie Gunderson today. This is Politics and Science on the 16th of March, 2011. Today we're discussing the nuclear catastrophe happening in Japan. Maggie Gunderson is founder and president of Fairewinds Associates and a freelance paralegal specializing in environmental nuclear safety and energy litigation in federal and state administrative law hearings. You worked in the nuclear industry for a while, right, Maggie? As did your husband, Arnie.

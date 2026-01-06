@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: The Precautionary Principle (Part 2)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-02-17"
+audio_url: "https://www.toxinless.com/kmud-170217-the-precautionary-principle-part2.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: eec5a5aa-4497-4942-8350-110447d31ca8
+---
 
 ## Transcript
 

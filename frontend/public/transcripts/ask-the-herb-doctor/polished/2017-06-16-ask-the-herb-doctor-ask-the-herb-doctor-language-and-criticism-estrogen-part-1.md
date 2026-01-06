@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Language and Criticism, Estrogen (Part 1)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-06-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-170616-language-criticism-estrogen.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: edd69324-fe9e-4a48-82b3-b87dcc970e25
+raw_source: "[[ask-the-herb-doctor/raw/2017-06-16-ask-the-herb-doctor-ask-the-herb-doctor-language-and-criticism-estrogen-part-1]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's Ask Your Herb Doctor. My name is Andrew Murray.

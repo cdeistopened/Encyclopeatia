@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Cancer Treatment"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-02-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-120217-cancer-treatment.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 6c69f0d4-a65d-4de2-8f7b-74a7e996b361
+raw_source: "[[ask-the-herb-doctor/raw/2012-02-17-ask-the-herb-doctor-ask-the-herb-doctor-cancer-treatment]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

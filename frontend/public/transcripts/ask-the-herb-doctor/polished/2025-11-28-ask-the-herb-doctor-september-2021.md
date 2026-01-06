@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor September 2021"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 9eeb6c35-2172-47b4-a7ab-3fc9d29c430e
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-september-2021]]"
+---
 ## Introduction
 
 **Michael McCaskill:** The Herb Doctors aren't here yet, so this is your engineer, Michael McCaskill. We are having a special show tonight where we're just going to be having an open call-in session to ask Dr. Peat your questions. Dr. Peat, could you give a tiny bit of background?

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Hair loss, Inflammation, Osteoporosis"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-07-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110715-hair-loss-inflammation-osteoporosis.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 9d2e1c1d-0655-4d83-82dc-13417d8eccb0
+raw_source: "[[ask-the-herb-doctor/raw/2011-07-15-ask-the-herb-doctor-ask-the-herb-doctor-hair-loss-inflammation-osteoporosis]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Thinking Outside the Box - New Cancer Treatments"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-08-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140815-thinking-outside-the-box-new-cancer-treatments.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 9cf78e97-73e7-4f2e-b187-eaeae182378e
+raw_source: "[[ask-the-herb-doctor/raw/2014-08-15-ask-the-herb-doctor-ask-the-herb-doctor-thinking-outside-the-box-new-cancer-treatments]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who have never listened to the shows, we are licensed medical herbalists. We trained and graduated in England with a master's degree in herbal medicine, and we run a clinic in Garberville, California, where we consult with clients about a wide range of conditions.

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Vaccination I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-06-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140620-vaccination.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4448a69d-2100-40f7-b9aa-be9afb92f696
+raw_source: "[[ask-the-herb-doctor/raw/2014-06-20-ask-the-herb-doctor-ask-the-herb-doctor-vaccination-i]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who have never listened to the shows, we are both licensed medical herbalists who trained in England and graduated there with a degree in herbal medicine. We run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicines and dietary advice.

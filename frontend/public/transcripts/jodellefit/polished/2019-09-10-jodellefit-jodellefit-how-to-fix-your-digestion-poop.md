@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: How to Fix Your Digestion & Poop"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: 2019-09-10
+date_transcribed: 2025-12-02
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/jf-190910-how-to-fix-your-digestion-poop.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 8f462fbb-2761-42c2-91ef-133c2d315f80
+raw_source: "[[jodellefit/raw/2019-09-10-jodellefit-jodellefit-how-to-fix-your-digestion-poop]]"
+---
 ## Introduction
 
 **Jodelle:** Welcome to the Get Fit with Jodelle podcast. I am happy to have Dr. Ray Peat with me here today. Dr. Peat is my go-to source for all things nutrition and health. He has a PhD in biology and has taught at many renowned schools regarding nutrition and women's health. You can learn more about him by visiting raypeat.com.

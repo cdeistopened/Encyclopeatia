@@ -1,3 +1,16 @@
+---
+title: "ELUV: Effects of Stress and Trauma on the Body"
+feed: "Toxinless Forum"
+show: "ELUV"
+date_published: 2014-01-01
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/eluv-140101-effects-of-stress-and-trauma-on-the-body.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 8861bd89-1aaa-4e30-b8df-272f20e9fabf
+raw_source: "[[eluv/raw/2014-01-01-eluv-eluv-effects-of-stress-and-trauma-on-the-body]]"
+---
 ## Introduction
 
 **ELUV:** Tonight we have special guest Dr. Raymond Peat, who has a PhD in biology from the University of Oregon with a specialization in physiology. He has taught at several universities, including the University of Oregon, Montana State University, the National College of Naturopathic Medicine, and Blake College. He also conducts private nutritional counseling. Today we are speaking with him about the effects of stress and trauma on the body.

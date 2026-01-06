@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Two Hour Fundraiser II"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2012-02-22
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-120222-fundraiser-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: fe196f70-7416-4699-9b49-5ff25e954a7a
+raw_source: "[[politics-and-science/raw/2012-02-22-politics-and-science-politics-science-two-hour-fundraiser-ii]]"
+---
 ## The "Dead Universe" Theory in Biology
 
 **John Barkhausen:** We have a caller. Justin, go ahead.

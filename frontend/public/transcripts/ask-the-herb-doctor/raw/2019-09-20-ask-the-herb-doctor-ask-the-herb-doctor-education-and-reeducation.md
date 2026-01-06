@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Education and Reeducation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-09-20"
+audio_url: "https://www.toxinless.com/kmud-190920-education-reeducation.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 52fa1178-8c07-446b-ba97-b9a252527a27
+---
 
 ## Transcript
 

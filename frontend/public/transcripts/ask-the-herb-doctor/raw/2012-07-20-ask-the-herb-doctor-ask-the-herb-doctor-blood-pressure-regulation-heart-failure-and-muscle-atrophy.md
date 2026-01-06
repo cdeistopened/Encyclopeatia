@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Blood Pressure Regulation, Heart Failure, and Muscle Atrophy"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-07-20"
+audio_url: "https://www.toxinless.com/kmud-120720-blood-pressure-regulation-heart-failure-muscle-atrophy.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 78c95a30-ef9a-4eb7-a862-288393853c89
+---
 
 ## Transcript
 

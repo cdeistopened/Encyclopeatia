@@ -1,3 +1,15 @@
+---
+title: "It's Rainmaking Time: Life Supporting Substances"
+feed: "Toxinless Forum"
+show: "Its Rainmaking Time"
+date_published: "2011-07-04"
+audio_url: "https://www.toxinless.com/rainmaking-110704-life-supporting-substances.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: df8d40cd-7376-4617-a70e-ecc76417d459
+---
 
 ## Transcript
 

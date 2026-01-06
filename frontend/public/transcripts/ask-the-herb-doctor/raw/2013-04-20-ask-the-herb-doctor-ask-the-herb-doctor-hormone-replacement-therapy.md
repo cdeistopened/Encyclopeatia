@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Hormone Replacement Therapy"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-04-20"
+audio_url: "https://www.toxinless.com/kmud-130420-hormone-replacement-therapy.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ae6deeec-af95-4de7-9adf-1d49062168d8
+---
 
 ## Transcript
 

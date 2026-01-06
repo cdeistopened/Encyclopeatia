@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Uses of Urea"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-02-20"
+audio_url: "https://www.toxinless.com/kmud-150220-uses-of-urea.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 922d1d7b-cd7f-4043-9d41-e75ce99dddaf
+---
 
 ## Transcript
 

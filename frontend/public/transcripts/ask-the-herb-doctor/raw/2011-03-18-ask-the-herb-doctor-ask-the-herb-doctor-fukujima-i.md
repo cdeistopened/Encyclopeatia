@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Fukujima I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2011-03-18"
+audio_url: "https://www.toxinless.com/kmud-110318-fukujima.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e3d2bc97-7c29-4d3a-8068-10ec82001643
+---
 
 ## Transcript
 

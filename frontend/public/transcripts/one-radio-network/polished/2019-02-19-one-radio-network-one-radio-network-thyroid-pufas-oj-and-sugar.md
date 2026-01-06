@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Thyroid, PUFAs, OJ, and Sugar"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-02-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190219-thyroid-pufas-oj-sugar.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 2ca54dc2-5b4f-4e16-8937-71a77d2edce5
+raw_source: "[[one-radio-network/raw/2019-02-19-one-radio-network-one-radio-network-thyroid-pufas-oj-and-sugar]]"
+---
 ## Introduction and Scientific Writing
 
 **Patrick Timpone:** Welcome to hour two. Dr. Raymond Peat has a PhD in biology from the University of Oregon, specializing in physiology. He has taught at schools like the University of Oregon, Urbana College, Montana State University, National College of Naturopathic Medicine, and the Universidad Veracruzana in Mexico. He started his work with progesterone and related hormones in 1968. His website is RayPeat.com. Good morning, Dr. Peat.

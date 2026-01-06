@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Exploring Alternatives"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-05-20"
+audio_url: "https://www.toxinless.com/kmud-160520-exploring-alternatives.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 587df1f9-a802-461d-becd-7c3da1c06a34
+---
 
 ## Transcript
 

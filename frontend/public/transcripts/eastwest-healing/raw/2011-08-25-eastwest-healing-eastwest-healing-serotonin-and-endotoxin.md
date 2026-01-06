@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing Serotonin and Endotoxin"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-08-24"
+audio_url: "https://www.toxinless.com/ewh-110825-serotonin-and-endotoxin.mp3"
+date_transcribed: 2025-11-28
+speakers:
+  - Dr. Raymond Peat
+status: raw
+
+id: cb04b035-127e-4ae0-a1f0-e15d0fe1daaf
+---
 
 ## Episode Information
 

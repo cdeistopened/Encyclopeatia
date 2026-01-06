@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: Fascinating Insights Into Mr. Thyroid"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-09-17"
+audio_url: "https://www.toxinless.com/orn-190917-mr-thyroid.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 19c849df-a7e0-476f-99ba-92e130727fe8
+---
 
 ## Transcript
 

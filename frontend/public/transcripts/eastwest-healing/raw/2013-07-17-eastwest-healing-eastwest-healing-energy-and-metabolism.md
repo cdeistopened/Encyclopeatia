@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Energy and Metabolism"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2013-07-17"
+audio_url: "https://www.toxinless.com/ewh-130717-energy-and-metabolism.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 36b93c4e-a487-4593-8a77-d62b03d29b5a
+---
 
 ## Transcript
 

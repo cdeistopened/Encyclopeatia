@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Environmental Enrichment - Bad Science"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-08-16"
+audio_url: "https://www.toxinless.com/kmud-130816-environmental-enrichment.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 52ba6f31-eb2d-46c6-8a36-686c265d387e
+---
 
 ## Transcript
 

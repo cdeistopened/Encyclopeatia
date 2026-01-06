@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Energy Production, Diabetes and Saturated Fats"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-11-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-111118-energy-production-diabetes-saturated-fats.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 7a07ef4a-7cd8-4061-a3a3-eaf876f8a10b
+raw_source: "[[ask-the-herb-doctor/raw/2011-11-18-ask-the-herb-doctor-ask-the-herb-doctor-energy-production-diabetes-and-saturated-fats]]"
+---
 ## Introduction
 
 **Andrew Murray:** Hi and welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

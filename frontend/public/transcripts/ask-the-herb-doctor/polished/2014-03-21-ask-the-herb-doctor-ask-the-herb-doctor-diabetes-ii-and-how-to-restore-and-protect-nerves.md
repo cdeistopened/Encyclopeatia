@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Diabetes II and How to Restore and Protect Nerves"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-03-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140321-how-to-restore-and-protect-nerves.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 23e66200-ea94-4bf6-abb7-d67461af79fa
+raw_source: "[[ask-the-herb-doctor/raw/2014-03-21-ask-the-herb-doctor-ask-the-herb-doctor-diabetes-ii-and-how-to-restore-and-protect-nerves]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. My wife and I are both licensed medical herbalists. We trained in England, graduated there with a master's degree in herbal medicine, and we now run a clinic in Garberville where we consult with clients about a wide range of conditions.

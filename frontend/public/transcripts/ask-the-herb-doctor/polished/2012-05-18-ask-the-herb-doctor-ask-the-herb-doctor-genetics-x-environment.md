@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Genetics X Environment"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-05-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-120518-genetics-x-environment.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 3f009bf2-ae33-45c6-8d02-2655f92d9fac
+raw_source: "[[ask-the-herb-doctor/raw/2012-05-18-ask-the-herb-doctor-ask-the-herb-doctor-genetics-x-environment]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

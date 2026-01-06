@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Longevity and Nootropics"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-08-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150821-longevity-and-nootropics.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 8d55e8f4-eea4-475f-ac74-599a87dabe62
+raw_source: "[[ask-the-herb-doctor/raw/2015-08-21-ask-the-herb-doctor-ask-the-herb-doctor-longevity-and-nootropics]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this evening's *Ask Your Herb Doctor*. My name is Andrew Murray.

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: On The Origin of Life"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2000-01-02
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-000102-origin-of-life.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 775ff159-6a69-49e1-97ff-147806b9ba8a
+raw_source: "[[politics-and-science/raw/2000-01-02-politics-and-science-politics-science-on-the-origin-of-life]]"
+---
 ## Introduction
 
 **John Barkhausen:** Hello and welcome to Politics and Science. I'm your host, John Barkhausen. Today we are dipping back into the archives to a show from the 1999–2000 time period. This is a philosophical discussion with Dr. Raymond Peat talking about the origins of life. The work of Lamarck, Darwin, and Vernadsky appear in this show.

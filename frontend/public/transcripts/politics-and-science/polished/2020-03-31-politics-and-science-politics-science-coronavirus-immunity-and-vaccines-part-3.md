@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Coronavirus, immunity, and vaccines (Part 3)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2020-03-31
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-200331-coronavirus-immunity-vaccines-part3.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 1a271db7-e316-4e1e-a100-9d824a863872
+raw_source: "[[politics-and-science/raw/2020-03-31-politics-and-science-politics-science-coronavirus-immunity-and-vaccines-part-3]]"
+---
 ## Introduction
 
 **John Barkhausen:** Welcome to Politics and Science. This week we're having Ray Peat, physiologist and science historian from Eugene, Oregon, back on the show. We're going to be talking about the unfolding coronavirus crisis here in the United States and around the world. This was recorded on March 31, 2020. Ray has a PhD from the University of Oregon and specialized in physiology and hormones. Is that correct, Ray?

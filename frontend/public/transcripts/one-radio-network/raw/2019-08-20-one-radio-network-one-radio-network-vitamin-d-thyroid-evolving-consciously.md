@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: Vitamin D, Thyroid, Evolving Consciously"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-08-20"
+audio_url: "https://www.toxinless.com/orn-190820-vitamin-d-thyroid-evolving-consciously.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: bcf15225-0e18-49f1-b613-8212bc6bfbea
+---
 
 ## Transcript
 

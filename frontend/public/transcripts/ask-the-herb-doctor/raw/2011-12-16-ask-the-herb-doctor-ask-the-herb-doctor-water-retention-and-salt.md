@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Water Retention and Salt"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2011-12-16"
+audio_url: "https://www.toxinless.com/kmud-111216-water-retention-salt.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: f7890b1c-aaf8-47de-aec6-5fe32b400375
+---
 
 ## Transcript
 

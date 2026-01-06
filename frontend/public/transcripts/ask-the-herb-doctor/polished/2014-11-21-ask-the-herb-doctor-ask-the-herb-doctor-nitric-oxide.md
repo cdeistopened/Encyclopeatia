@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Nitric Oxide"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-11-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-141121-nitric-oxide.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 82be203b-7c43-41fa-a7b0-8ad9fd23db3d
+raw_source: "[[ask-the-herb-doctor/raw/2014-11-21-ask-the-herb-doctor-ask-the-herb-doctor-nitric-oxide]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to Ask Your Herb Doctor on KMUD Garberville, 91.1 FM. My name is Andrew Murray. For those of you who have perhaps never listened to the show, which runs every third Friday of the month from 7:00 till 8:00 PM, I'm a licensed medical herbalist. My wife and I run a clinic in Garberville where we consult with clients about a wide range of conditions and recommend herbal medicines and dietary advice.

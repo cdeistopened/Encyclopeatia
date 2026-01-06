@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: May 2022 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2022-05-20
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-220520.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 45ed7ed0-f1c7-4986-8613-c367fc0a957d
+raw_source: "[[ask-the-herb-doctor/raw/2022-05-20-ask-the-herb-doctor-ask-the-herb-doctor-may-2022-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's May 2022 edition of Ask Your Herb Doctor. My name is Andrew Murray. Sarah is not joining us this evening, but she will be back next month. It is a beautiful spring evening here in Garberville and Humboldt County—warm, clear, and bright.

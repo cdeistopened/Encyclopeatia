@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Suppression of Cancer Tru eatments"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2001-01-02"
+audio_url: "https://www.toxinless.com/polsci-010102-suppression-of-cancer.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 07d66b92-89d4-40a1-b84f-daa390e47da0
+polished_version: "[[politics-and-science/polished/2001-01-02-politics-and-science-politics-science-suppression-of-cancer-tru-eatments]]"
+---
 
 ## Transcript
 

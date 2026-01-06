@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Field Biology"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-09-19"
+audio_url: "https://www.toxinless.com/kmud-140919-field-biology.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: db91529b-ae4d-49e6-8643-8cd8cf55f5fb
+---
 
 ## Transcript
 

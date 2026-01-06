@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Critical Thinking in Academia"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-08-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180817-critical-thinking-in-academia.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a66826d2-71da-412d-b3cf-8ceec5392879
+raw_source: "[[ask-the-herb-doctor/raw/2018-08-17-ask-the-herb-doctor-ask-the-herb-doctor-critical-thinking-in-academia]]"
+---
 ## Introduction: Glyphosate and Celiac Disease
 
 **Andrew Murray:** Welcome to this month’s edition of *Ask Your Herb Doctor*. We invite callers to phone in with questions about the topic of the month, or if they have other questions related to Dr. Peat's expertise. I’d like to stay on topic because I know people really enjoy listening to Dr. Peat's wisdom.

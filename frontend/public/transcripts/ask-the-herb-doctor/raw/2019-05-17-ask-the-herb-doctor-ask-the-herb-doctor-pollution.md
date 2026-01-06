@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Pollution"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-05-17"
+audio_url: "https://www.toxinless.com/kmud-190517-pollution.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 023caf74-1c0a-48f7-a8aa-2477ec36b923
+---
 
 ## Transcript
 

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Viruses"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-03-15"
+audio_url: "https://www.toxinless.com/kmud-190315-viruses.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 93c804d7-c741-44b0-8730-8a3575f25063
+---
 
 ## Transcript
 

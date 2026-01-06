@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: December 2020 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2020-12-18"
+audio_url: "https://www.toxinless.com/kmud-201218.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 76ee1ac2-c50e-4b12-9e30-8fca2f71e4ce
+---
 
 ## Transcript
 

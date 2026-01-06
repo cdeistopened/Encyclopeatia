@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Particles"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-04-19"
+audio_url: "https://www.toxinless.com/kmud-190419-particles.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ad85dcbe-ef86-4950-bb33-b73afad98539
+---
 
 ## Transcript
 

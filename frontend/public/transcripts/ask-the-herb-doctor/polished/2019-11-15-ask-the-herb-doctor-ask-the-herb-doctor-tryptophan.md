@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Tryptophan"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-11-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-191115-tryptophan.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 676e1050-ef99-41a1-8f98-e439ce77d533
+raw_source: "[[ask-the-herb-doctor/raw/2019-11-15-ask-the-herb-doctor-ask-the-herb-doctor-tryptophan]]"
+---
 # Ask Your Herb Doctor: Inflammation, Serotonin, and Cholesterol
 
 **Andrew Murray:** Welcome to this month's Ask Your Herb Doctor. My name is Andrew Murray. Dr. Raymond Peat joins us, as he has for several years now. Tonight, we are discussing the continuing topics of serotonin, inflammation, oxidants, and antioxidants. The number to reach us is 707-923-3911.

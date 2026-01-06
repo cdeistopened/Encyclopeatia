@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: The Thyroid"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-02-22
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110222-the-thryoid.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 91d06803-2cbd-4874-a22a-d6ae97ba0b89
+raw_source: "[[eastwest-healing/raw/2011-02-22-eastwest-healing-eastwest-healing-the-thyroid]]"
+---
 ## Introduction
 
 **Josh Rubin:** Hey everyone, this is Josh Rubin from East West Healing and Performance. Welcome to our Blog Talk Radio show. Today we are going to have Dr. Raymond Peat on again. He has a PhD in Biology from the University of Oregon and specializes in physiology. He started most of his work studying progesterone and hormones back in 1968. Since then, he has been working on practical and theoretical aspects of hormones and the thyroid. The bottom line is the guy is a genius; his work is cutting edge, probably 80 years ahead of its time. We’re going to be talking about the thyroid today. Let's get him on the show. Ray, are you there?

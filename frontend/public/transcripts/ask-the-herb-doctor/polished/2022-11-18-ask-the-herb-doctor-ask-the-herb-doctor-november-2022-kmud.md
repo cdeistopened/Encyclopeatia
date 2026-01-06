@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: November 2022 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2022-11-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-221118.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 829c837e-30fc-4897-b72c-64872c43de8f
+raw_source: "[[ask-the-herb-doctor/raw/2022-11-18-ask-the-herb-doctor-ask-the-herb-doctor-november-2022-kmud]]"
+---
 ## Introduction
 
 **Radio Host:** Andrew and Sarah haven't arrived, and Dr. Peat isn't answering the phone. However, I have a recording of Dr. Ray Peat from the *Strong Sistas* YouTube channel. I’m going to play that now. They are discussing foods to prioritize versus foods to avoid.

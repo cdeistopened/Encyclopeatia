@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Acidity X Alkalinity"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "unknown"
+audio_url: ""
+date_transcribed: 2025-11-28
+speakers:
+  - Dr. Raymond Peat
+status: raw
+
+id: f21179bc-0c63-424c-a368-0851c43e2b10
+---
 
 # Ask the Herb Doctor: Acidity X Alkalinity
 

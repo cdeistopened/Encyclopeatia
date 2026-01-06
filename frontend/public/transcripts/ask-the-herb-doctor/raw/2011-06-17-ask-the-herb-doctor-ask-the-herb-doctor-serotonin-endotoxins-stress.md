@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Serotonin, Endotoxins, Stress"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2011-06-17"
+audio_url: "https://www.toxinless.com/kmud-110617-serotonin-endotoxins-stress.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 7c3414f6-1861-46fe-b658-34ec742450d1
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "ELUV: Good Fats"
+feed: "Toxinless Forum"
+show: "ELUV"
+date_published: 2008-09-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/eluv-080918-fats.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 91c91e8f-8016-4449-9afb-37fbfdd98455
+raw_source: "[[eluv/raw/2008-09-18-eluv-eluv-good-fats]]"
+---
 ## Introduction
 
 **ELUV:** This is the Ultrasound Show and my name is ELUV. We're going to be speaking with Dr. Raymond Peat, who has a PhD in biology from the University of Oregon. He specializes in physiology and has taught at several universities, including the University of Oregon, Urbana College, Montana State University, and the National College of Naturopathic Medicine. He also conducts private nutritional counseling. We're going to be speaking with him about the benefits of good oils, with a focus on coconut oil.

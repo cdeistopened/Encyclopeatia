@@ -1,3 +1,16 @@
+---
+title: "Voice of America: Water"
+feed: "Toxinless Forum"
+show: "Voice of America"
+date_published: "2013-09-09"
+audio_url: "https://www.toxinless.com/voiceofamerica-130909-water.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: a0a0e01e-8e38-4234-b0cd-70d342398f91
+polished_version: "[[voice-of-america/polished/2013-09-09-voice-of-america-voice-of-america-water]]"
+---
 
 ## Transcript
 

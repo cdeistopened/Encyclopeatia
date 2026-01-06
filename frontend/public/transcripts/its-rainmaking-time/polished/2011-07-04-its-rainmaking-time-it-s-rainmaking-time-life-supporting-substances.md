@@ -1,3 +1,16 @@
+---
+title: "It's Rainmaking Time: Life Supporting Substances"
+feed: "Toxinless Forum"
+show: "Its Rainmaking Time"
+date_published: 2011-07-04
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/rainmaking-110704-life-supporting-substances.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 823ca82d-39fc-44fd-866d-e8e6d09e6366
+raw_source: "[[its-rainmaking-time/raw/2011-07-04-its-rainmaking-time-it-s-rainmaking-time-life-supporting-substances]]"
+---
 ## Introduction
 
 **Kim Greenhouse:** Ladies and gentlemen, welcome to It's Rainmaking Time. This is Kim Greenhouse, and I have invited Raymond Peat, Ph.D., who has a background in biology from the University of Oregon and specializes in physiology. He has taught at the University of Oregon, Urbana College, Montana State University, the National College of Naturopathic Medicine, and in Mexico. He has written many papers on physiological chemistry and physics. His key idea is that energy and structure are interdependent at every level.

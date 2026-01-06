@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Genetics X Environment"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2012-05-18"
+audio_url: "https://www.toxinless.com/kmud-120518-genetics-x-environment.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 563ec436-e2bf-4d08-b86d-c7b70ace9445
+---
 
 ## Transcript
 

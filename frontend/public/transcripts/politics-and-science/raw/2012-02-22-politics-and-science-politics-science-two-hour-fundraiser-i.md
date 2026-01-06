@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Two Hour Fundraiser I"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2012-02-22"
+audio_url: "https://www.toxinless.com/polsci-120222-fundraiser-1.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 39c2e512-8e48-4bba-bca7-71d73d7ef280
+polished_version: "[[politics-and-science/polished/2012-02-22-politics-and-science-politics-science-two-hour-fundraiser-i]]"
+---
 
 ## Transcript
 

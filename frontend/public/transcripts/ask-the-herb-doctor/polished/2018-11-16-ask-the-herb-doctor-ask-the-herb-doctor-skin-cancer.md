@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Skin Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-11-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-181116-skin-cancer.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 90765952-6ddd-4c31-8ed8-e1eed09634aa
+raw_source: "[[ask-the-herb-doctor/raw/2018-11-16-ask-the-herb-doctor-ask-the-herb-doctor-skin-cancer]]"
+---
 # Ask Your Herb Doctor: Skin Cancer, Vitamin D, and Cholesterol
 
 **Andrew Murray:** Welcome to Ask Your Herb Doctor. This month we are discussing skin cancers, treatment approaches, and prevention strategies. We have Dr. Raymond Peat with us this evening. He has been joining us for nearly ten years, and we are always pleased to have his wisdom because he comes from an era before financial interests steamrolled the way things are understood now. Dr. Peat, for those who have never heard you, would you give an outline of your academic and professional background?

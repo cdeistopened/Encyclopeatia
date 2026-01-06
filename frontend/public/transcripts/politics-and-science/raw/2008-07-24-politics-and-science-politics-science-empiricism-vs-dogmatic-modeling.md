@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Empiricism vs Dogmatic Modeling"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2008-07-24"
+audio_url: "https://www.toxinless.com/polsci-080724-dogmatism-in-science.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 322a4e56-0c0c-42bf-b935-423b3c2fada5
+polished_version: "[[politics-and-science/polished/2008-07-24-politics-and-science-politics-science-empiricism-vs-dogmatic-modeling]]"
+---
 
 ## Transcript
 

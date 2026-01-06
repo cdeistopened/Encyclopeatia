@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: On The Back of a Tiger"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-07-17"
+audio_url: "https://www.toxinless.com/kmud-150717-on-the-back-of-a-tiger.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 96c7a77f-0ef4-44f9-a784-18e5ed7eb6ef
+---
 
 ## Transcript
 

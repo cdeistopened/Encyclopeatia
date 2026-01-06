@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Vaccination II"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-07-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140718-vaccination-2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b36b811b-7329-4076-9a29-f9a8efc6f568
+raw_source: "[[ask-the-herb-doctor/raw/2014-07-18-ask-the-herb-doctor-ask-the-herb-doctor-vaccination-ii]]"
+---
 ## Introduction
 
 **Andrew Murray:** You're invited to call in with any questions related or unrelated to this month's Part 2 subject of vaccinations. Safety and efficacy are in question. Once again, I'll be introducing Dr. Raymond Peat to the show. He has some new information regarding facts shown from about 2002 through to now—fairly recent revelations about parts of the vaccination process which are probably more questionable than ever.

@@ -1,4 +1,16 @@
-## Introduction: The State of the World
+---
+title: "#47: The Power Elite  |  Vaccines  |  Hair Loss  |  UFOs  |  Surviving The Great Reset with Ray Peat, PhD"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 47
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 43e06b5d-fcdc-4d88-b6bb-22813af90668
+raw_source: "[[Generative Energy/#47： The Power Elite ｜ Vaccines ｜ Hair Loss ｜ UFOs ｜ Surviving The Great Reset with Ray Peat, PhD]]"
+---## Introduction: The State of the World
 
 **Danny Roddy:** Ray Peat, Georgi Dinkov, how are you guys? Ray, how are you first of all? And Georgi Dinkov?
 

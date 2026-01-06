@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Cholesterol is an Important Molecule"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2008-12-01"
+audio_url: "https://www.toxinless.com/kmud-081201-cholesterol-is-an-important-molecule.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: b2244e79-ba11-4009-889c-5851dc4987b9
+---
 
 ## Transcript
 

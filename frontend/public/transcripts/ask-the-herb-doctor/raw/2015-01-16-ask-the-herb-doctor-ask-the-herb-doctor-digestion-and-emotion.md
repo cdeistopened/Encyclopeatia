@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Digestion and Emotion"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-01-16"
+audio_url: "https://www.toxinless.com/kmud-150116-digestion-and-emotion.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 718a2d4e-ab24-4c37-9663-762010f48b0d
+---
 
 ## Transcript
 

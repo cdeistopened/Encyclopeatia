@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: How to Fix Your Digestion & Poop"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: "2019-09-10"
+audio_url: "https://www.toxinless.com/jf-190910-how-to-fix-your-digestion-poop.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 066092ae-d780-46cc-91dc-f3e1fef057d6
+polished_version: "[[jodellefit/polished/2019-09-10-jodellefit-jodellefit-how-to-fix-your-digestion-poop]]"
+---
 
 ## Transcript
 

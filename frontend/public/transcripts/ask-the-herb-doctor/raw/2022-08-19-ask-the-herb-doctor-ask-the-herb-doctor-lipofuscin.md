@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Lipofuscin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2022-08-19"
+audio_url: "https://www.toxinless.com/kmud-220819-lipofuscin.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e44ae833-c0be-4e39-a7e9-43fd2d92bd95
+---
 
 ## Transcript
 

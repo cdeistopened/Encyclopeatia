@@ -10,181 +10,129 @@ interface Episode {
   duration?: string;
   audioUrl: string | null;
   speakers: string[];
-  filePath: string; // polished file path (default)
-  rawFilePath?: string; // raw file path if available
+  filePath: string | null;
+  rawFilePath: string | null;
 }
 
-const TRANSCRIPTS_DIR = path.join(__dirname, "../../transcripts");
+const TRANSCRIPTS_DIR = path.join(__dirname, "../public/transcripts");
 const OUTPUT_FILE = path.join(__dirname, "../public/episodes.json");
-const CONTENT_DIR = path.join(__dirname, "../public/transcripts");
 
-// Get all polished files (primary)
-function getPolishedFiles(dir: string): Map<string, string> {
-  const files = new Map<string, string>();
+interface TranscriptFile {
+  show: string;
+  filename: string;
+  type: "polished" | "raw";
+  fullPath: string;
+  relativePath: string;
+}
 
-  function walk(currentDir: string, parentDirName?: string) {
-    const entries = fs.readdirSync(currentDir, { withFileTypes: true });
-    for (const entry of entries) {
-      const fullPath = path.join(currentDir, entry.name);
-      if (entry.isDirectory()) {
-        if (!entry.name.startsWith("_") && entry.name !== "polished-gemini-2.5") {
-          walk(fullPath, entry.name);
-        }
-      } else if (entry.name.endsWith(".md") && !entry.name.startsWith("_")) {
-        // Check if parent directory is "polished"
-        if (parentDirName === "polished") {
-          const relativePath = path.relative(TRANSCRIPTS_DIR, fullPath).replace(/\\/g, "/");
-          const parts = relativePath.split("/");
-          if (parts.length >= 3 && parts[1] === "polished") {
-            const key = `${parts[0]}/${parts[2]}`;
-            files.set(key, fullPath);
-          }
-        }
+function getAllTranscriptFiles(dir: string): TranscriptFile[] {
+  const files: TranscriptFile[] = [];
+
+  const shows = fs.readdirSync(dir, { withFileTypes: true })
+    .filter(d => d.isDirectory() && !d.name.startsWith("_") && !d.name.startsWith("."));
+
+  for (const show of shows) {
+    const showPath = path.join(dir, show.name);
+    
+    for (const type of ["polished", "raw"] as const) {
+      const typePath = path.join(showPath, type);
+      if (!fs.existsSync(typePath)) continue;
+      
+      const mdFiles = fs.readdirSync(typePath)
+        .filter(f => f.endsWith(".md") && !f.startsWith("_"));
+      
+      for (const filename of mdFiles) {
+        const fullPath = path.join(typePath, filename);
+        const relativePath = `${show.name}/${type}/${filename}`;
+        files.push({ show: show.name, filename, type, fullPath, relativePath });
       }
     }
   }
 
-  walk(dir);
   return files;
 }
 
-// Get all raw files
-function getRawFiles(dir: string): Map<string, string> {
-  const files = new Map<string, string>();
+function parseEpisodeFromFile(file: TranscriptFile): Partial<Episode> | null {
+  try {
+    const content = fs.readFileSync(file.fullPath, "utf-8");
+    const { data } = matter(content);
 
-  function walk(currentDir: string, parentDirName?: string) {
-    const entries = fs.readdirSync(currentDir, { withFileTypes: true });
-    for (const entry of entries) {
-      const fullPath = path.join(currentDir, entry.name);
-      if (entry.isDirectory()) {
-        if (!entry.name.startsWith("_")) {
-          walk(fullPath, entry.name);
-        }
-      } else if (entry.name.endsWith(".md") && !entry.name.startsWith("_")) {
-        // Check if parent directory is "raw"
-        if (parentDirName === "raw") {
-          const relativePath = path.relative(TRANSCRIPTS_DIR, fullPath).replace(/\\/g, "/");
-          const parts = relativePath.split("/");
-          if (parts.length >= 3 && parts[1] === "raw") {
-            const key = `${parts[0]}/${parts[2]}`;
-            files.set(key, fullPath);
-          }
-        }
-      }
-    }
+    if (!data.title && !data.show) return null;
+
+    return {
+      title: data.title || path.basename(file.filename, ".md"),
+      show: data.show || file.show,
+      date: data.date_published || data.date || "",
+      duration: data.duration || undefined,
+      audioUrl: data.audio_url || null,
+      speakers: data.speakers || [],
+    };
+  } catch (error) {
+    return null;
   }
-
-  walk(dir);
-  return files;
 }
 
-function slugify(filePath: string): string {
-  const relativePath = path.relative(TRANSCRIPTS_DIR, filePath);
-  return relativePath
-    .replace(/\.md$/, "")
+function createSlug(show: string, filename: string): string {
+  const base = filename.replace(/\.md$/, "");
+  return `${show}/${base}`
     .replace(/[^a-zA-Z0-9-/]/g, "-")
     .replace(/-+/g, "-")
     .toLowerCase();
 }
 
-function parseEpisode(filePath: string, rawFilePath?: string): Episode | null {
-  try {
-    const content = fs.readFileSync(filePath, "utf-8");
-    const { data, content: body } = matter(content);
-
-    // Skip files without proper frontmatter
-    if (!data.title && !data.show) {
-      return null;
-    }
-
-    const slug = slugify(filePath);
-    const polishedPath = path.relative(TRANSCRIPTS_DIR, filePath);
-    const rawPath = rawFilePath ? path.relative(TRANSCRIPTS_DIR, rawFilePath) : undefined;
-
-    return {
-      slug,
-      title: data.title || path.basename(filePath, ".md"),
-      show: data.show || "Unknown",
-      date: data.date_published || data.date || "",
-      duration: data.duration || undefined,
-      audioUrl: data.audio_url || null,
-      speakers: data.speakers || [],
-      filePath: polishedPath,
-      rawFilePath: rawPath,
-    };
-  } catch (error) {
-    console.error(`Error parsing ${filePath}:`, error);
-    return null;
-  }
-}
-
-function copyTranscriptContent(filePath: string, outputPath: string) {
-  const content = fs.readFileSync(filePath, "utf-8");
-  const { content: body } = matter(content);
-
-  const outputDir = path.dirname(outputPath);
-  fs.mkdirSync(outputDir, { recursive: true });
-  fs.writeFileSync(outputPath, body);
-}
-
 async function main() {
-  console.log("Building episode index...");
+  console.log("Building episode index from public/transcripts...");
 
-  // Check if we need to rebuild (exists and recent enough, skip)
-  if (fs.existsSync(OUTPUT_FILE)) {
-    const stats = fs.statSync(OUTPUT_FILE);
-    const hoursSinceBuild = (Date.now() - stats.mtime.getTime()) / (1000 * 60 * 60);
+  const allFiles = getAllTranscriptFiles(TRANSCRIPTS_DIR);
+  console.log(`Found ${allFiles.length} total transcript files`);
+
+  const episodeMap = new Map<string, Episode>();
+
+  for (const file of allFiles) {
+    const key = `${file.show}/${file.filename}`;
     
-    // For development, use existing file if it's less than 24 hours old
-    if (process.env.NODE_ENV === 'development' || hoursSinceBuild < 24) {
-      console.log("Using existing episodes.json (recent build)");
-      const existingEpisodes = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
-      console.log(`Existing episodes.json has ${existingEpisodes.length} episodes`);
-      return;
+    if (!episodeMap.has(key)) {
+      const metadata = parseEpisodeFromFile(file);
+      if (!metadata) continue;
+
+      episodeMap.set(key, {
+        slug: createSlug(file.show, file.filename),
+        title: metadata.title!,
+        show: metadata.show!,
+        date: metadata.date!,
+        duration: metadata.duration,
+        audioUrl: metadata.audioUrl!,
+        speakers: metadata.speakers!,
+        filePath: null,
+        rawFilePath: null,
+      });
+    }
+
+    const episode = episodeMap.get(key)!;
+    if (file.type === "polished") {
+      episode.filePath = file.relativePath;
+    } else {
+      episode.rawFilePath = file.relativePath;
     }
   }
 
-  const polishedFiles = getPolishedFiles(TRANSCRIPTS_DIR);
-  const rawFiles = getRawFiles(TRANSCRIPTS_DIR);
-  
-  console.log(`Found ${polishedFiles.size} polished files`);
-  console.log(`Found ${rawFiles.size} raw files`);
-
-  const episodes: Episode[] = [];
-
-  // Ensure output directories exist
-  fs.mkdirSync(CONTENT_DIR, { recursive: true });
-
-  // Process polished files (primary)
-  for (const [key, polishedPath] of polishedFiles) {
-    const rawPath = rawFiles.get(key);
-    
-    const episode = parseEpisode(polishedPath, rawPath);
-    if (episode) {
-      episodes.push(episode);
-      
-      // Copy polished content
-      const polishedOutputPath = path.join(CONTENT_DIR, episode.filePath);
-      copyTranscriptContent(polishedPath, polishedOutputPath);
-      
-      // Copy raw content if available
-      if (rawPath && episode.rawFilePath) {
-        const rawOutputPath = path.join(CONTENT_DIR, episode.rawFilePath);
-        copyTranscriptContent(rawPath, rawOutputPath);
-      }
-    }
-  }
-
-  // Sort by date, newest first
-  episodes.sort((a, b) => {
-    if (!a.date) return 1;
-    if (!b.date) return -1;
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
+  const episodes = Array.from(episodeMap.values())
+    .sort((a, b) => {
+      if (!a.date) return 1;
+      if (!b.date) return -1;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(episodes, null, 2));
+  
+  const polishedCount = episodes.filter(e => e.filePath).length;
+  const rawCount = episodes.filter(e => e.rawFilePath).length;
+  const bothCount = episodes.filter(e => e.filePath && e.rawFilePath).length;
+  
   console.log(`Generated index with ${episodes.length} episodes`);
-  console.log(`Output: ${OUTPUT_FILE}`);
+  console.log(`  - ${polishedCount} have polished transcripts`);
+  console.log(`  - ${rawCount} have raw transcripts`);
+  console.log(`  - ${bothCount} have both`);
 }
 
 main().catch(console.error);

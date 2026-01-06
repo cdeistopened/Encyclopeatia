@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor The hormones behind inflammation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 2e26b073-ba51-4032-9363-9b1c21ce22e3
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-the-hormones-behind-inflammation]]"
+---
 # Ask Your Herb Doctor: The Hormones Behind Inflammation
 
 **Host:** Andrew Murray

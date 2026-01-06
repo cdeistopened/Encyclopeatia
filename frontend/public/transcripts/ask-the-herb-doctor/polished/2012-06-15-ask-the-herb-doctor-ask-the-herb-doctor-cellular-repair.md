@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Cellular Repair"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-06-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-120615-cellular-repair.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 2bc56e02-e302-42cd-b03e-c446f990f446
+raw_source: "[[ask-the-herb-doctor/raw/2012-06-15-ask-the-herb-doctor-ask-the-herb-doctor-cellular-repair]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome once again to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

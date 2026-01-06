@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Menopause, Estrogen, Thyroid, Coronavirus, and Glaucoma"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2020-02-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-200217-menopause-estrogen-thyroid-coronavirus-glaucoma.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f3241df0-a3f0-4b19-9ec8-8f3e55424cae
+raw_source: "[[one-radio-network/raw/2020-02-17-one-radio-network-one-radio-network-menopause-estrogen-thyroid-coronavirus-and-glaucoma]]"
+---
 ## Introduction
 
 **Patrick Timpone:** We are back with our second show this morning. It is the third Monday of the month, so Dr. Ray Peat is here. He is a PhD from the University of Oregon, specializing in physiology. He started working with hormones back in 1968, wrote his dissertation in 1972, and talks a lot about progesterone and hormones. His main thesis is that energy and structure are independent at every level. Dr. Peat, good morning to you, sir.

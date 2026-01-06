@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Authoritarianism"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-06-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-160617-authoritarianism.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 33dcae78-1816-4132-bc75-724039a9225d
+raw_source: "[[ask-the-herb-doctor/raw/2016-06-17-ask-the-herb-doctor-ask-the-herb-doctor-authoritarianism]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to *Ask Your Herb Doctor* on KMUD 91.1 FM. My name is Andrew Murray.

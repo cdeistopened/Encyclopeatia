@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Inflammation I"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2011-01-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-110121-inflammation-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 0788a0b9-dd1d-4664-8da5-d06041022393
+raw_source: "[[ask-the-herb-doctor/raw/2011-01-21-ask-the-herb-doctor-ask-the-herb-doctor-inflammation-i]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

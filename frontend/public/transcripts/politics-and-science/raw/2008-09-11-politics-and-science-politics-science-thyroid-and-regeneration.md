@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Thyroid and Regeneration"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2008-09-11"
+audio_url: "https://www.toxinless.com/polsci-080911-thyroid-and-regeneration.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 93abc3f2-abfe-4468-ab0e-5a96c2a39c9e
+polished_version: "[[politics-and-science/polished/2008-09-11-politics-and-science-politics-science-thyroid-and-regeneration]]"
+---
 
 ## Transcript
 

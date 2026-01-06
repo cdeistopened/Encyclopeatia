@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Questions and Answers I"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2013-02-20"
+audio_url: "https://www.toxinless.com/polsci-130220-questions-and-answers.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3382d949-8346-40cb-a23e-d940c3619300
+polished_version: "[[politics-and-science/polished/2013-02-20-politics-and-science-politics-science-questions-and-answers-i]]"
+---
 
 ## Transcript
 

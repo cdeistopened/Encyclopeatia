@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#85: Protein Restriction  |  Lidocaine for Hair Loss?  |  Brain Size, Intelligence & Symptom Recognition"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 85
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 8039c3e6-53a6-471b-a41a-1cd45325b24d
+raw_source: "[[Generative Energy/#85： Protein Restriction ｜ Lidocaine for Hair Loss？ ｜ Brain Size, Intelligence & Symptom Recognition]]"
+---## Introduction
 
 **Danny Roddy:** Okay, Generative Energy number 85, and we have Ray Peat and Georgi Dinkov on the line. Ray, how are you?
 

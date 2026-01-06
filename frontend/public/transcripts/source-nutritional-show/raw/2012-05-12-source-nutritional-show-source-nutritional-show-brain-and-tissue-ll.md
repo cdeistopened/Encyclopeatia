@@ -1,3 +1,16 @@
+---
+title: "Source Nutritional Show: Brain and Tissue ll"
+feed: "Toxinless Forum"
+show: "Source Nutritional Show"
+date_published: "2012-05-12"
+audio_url: "https://www.toxinless.com/sourcenutritional-120512-brain-and-tissue-2.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 54b70308-8a97-411d-8d3c-8fe0af747308
+polished_version: "[[source-nutritional-show/polished/2012-05-12-source-nutritional-show-source-nutritional-show-brain-and-tissue-ll]]"
+---
 
 ## Transcript
 

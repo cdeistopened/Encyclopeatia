@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Food"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-12-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-161216-food.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: d05eed32-8bfa-4730-b408-6a2a4b847e0e
+raw_source: "[[ask-the-herb-doctor/raw/2016-12-16-ask-the-herb-doctor-ask-the-herb-doctor-food]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to tonight's *Ask Your Herb Doctor*. My name is Andrew Murray.

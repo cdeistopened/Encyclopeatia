@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Energetic Interactions of Ionizing and Non-ionizing Radiation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-11-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-121116-energetic-interactions-ionizing-and-non-ionizing-radiation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b8105459-0c9a-41ca-bba6-e0e4e15f2a0c
+raw_source: "[[ask-the-herb-doctor/raw/2012-11-16-ask-the-herb-doctor-ask-the-herb-doctor-energetic-interactions-of-ionizing-and-non-ionizing-radiatio]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

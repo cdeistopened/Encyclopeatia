@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Hot flashes, Night Sweats, the Relationship to Stress, Aging, PMS, Sugar Metabolism"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2012-08-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-120817-hot-flashes-night-sweats-relationship-to-stress-aging-p-m-sand-sugar-metabolism.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 7167b4e8-4adc-4338-add9-4064bdaee0bd
+raw_source: "[[ask-the-herb-doctor/raw/2012-08-17-ask-the-herb-doctor-ask-the-herb-doctor-hot-flashes-night-sweats-the-relationship-to-stress-aging-pm]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

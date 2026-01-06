@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Diagnosis"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-12-15
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-171215-diagnosis.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b2b0dd3a-333a-4da1-acba-3cdaafbb9357
+raw_source: "[[ask-the-herb-doctor/raw/2017-12-15-ask-the-herb-doctor-ask-the-herb-doctor-diagnosis]]"
+---
 ## Introduction
 
 **Andrew Murray:** Good evening and welcome to this evening's *Ask Your Herb Doctor*. My name is Andrew Murray. For those of you who have just tuned in for the first time, we hold a monthly discussion on various topics with Dr. Raymond Peat, using his wealth of expertise to add to what may or may not be known.

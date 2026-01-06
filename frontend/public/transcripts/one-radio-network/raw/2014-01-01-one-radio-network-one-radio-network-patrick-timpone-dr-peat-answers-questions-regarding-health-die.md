@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Patrick Timpone: Dr. Peat Answers Questions Regarding Health, Diet and Nutrition Part 2"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2014-01-01"
+audio_url: "https://www.toxinless.com/orn-140101-nutrition-2.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 139e6592-1515-4bc0-b171-696642f5aac4
+polished_version: "[[one-radio-network/polished/2014-01-01-one-radio-network-one-radio-network-patrick-timpone-dr-peat-answers-questions-regarding-health-die]]"
+---
 
 ## Transcript
 

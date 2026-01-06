@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: January 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-01-15
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-210115.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 7b31e055-5dc6-464c-9eae-a0501f3b8733
+raw_source: "[[ask-the-herb-doctor/raw/2021-01-15-ask-the-herb-doctor-ask-the-herb-doctor-january-2021-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to *Ask Your Herb Doctor*. My name is Andrew Murray.

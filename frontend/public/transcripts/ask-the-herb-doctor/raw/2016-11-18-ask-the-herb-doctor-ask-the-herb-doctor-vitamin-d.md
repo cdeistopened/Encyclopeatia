@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Vitamin D"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-11-18"
+audio_url: "https://www.toxinless.com/kmud-161118-vitamin-d.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: b31a3ad0-834b-4f77-93e9-cbff80e36ff7
+---
 
 ## Transcript
 

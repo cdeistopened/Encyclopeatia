@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Food Additives"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2009-10-01
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-091001-food-additives.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a0f8c900-06a9-4bd3-91ee-124fe3bc30a9
+raw_source: "[[ask-the-herb-doctor/raw/2009-10-01-ask-the-herb-doctor-ask-the-herb-doctor-food-additives]]"
+---
 # Food Additives and Ingredients
 
 **Andrew Murray:** We are finishing up last month's discussion on food additives and the detrimental health effects of ingredients that may not be listed on labels. In England, they have fairly strict food laws where everything has to be disclosed, whereas in America, a certain percentage of food ingredients legally don't have to be detailed.

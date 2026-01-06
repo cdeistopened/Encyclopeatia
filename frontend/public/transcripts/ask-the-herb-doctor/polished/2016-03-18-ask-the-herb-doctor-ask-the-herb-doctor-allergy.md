@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Allergy"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-03-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-160318-allergy.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f93a200e-6804-45a3-86e9-8e61074246e5
+raw_source: "[[ask-the-herb-doctor/raw/2016-03-18-ask-the-herb-doctor-ask-the-herb-doctor-allergy]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to the show. You're listening to *Ask Your Herb Doctor* on KMUD Garberville. My name is Andrew Murray. My wife is not here this evening, but we are both licensed medical herbalists who graduated in England with a master's degree in herbal medicine. We advise clients with a wide range of conditions using herbal, dietary, and lifestyle advice.

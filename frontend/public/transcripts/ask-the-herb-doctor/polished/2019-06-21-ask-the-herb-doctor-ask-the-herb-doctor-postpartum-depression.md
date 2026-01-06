@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Postpartum Depression"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2019-06-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-190621-postpartum-depression.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f6808c83-dc6e-46cb-aa42-bcae032f9638
+raw_source: "[[ask-the-herb-doctor/raw/2019-06-21-ask-the-herb-doctor-ask-the-herb-doctor-postpartum-depression]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to Ask Your Herb Doctor. This month’s topic covers postpartum depression, steroid hormones, and new drugs with dangerous consequences. As always, Dr. Raymond Peat is here to bring his science-based wisdom to these subjects. Dr. Peat, thanks for joining us.

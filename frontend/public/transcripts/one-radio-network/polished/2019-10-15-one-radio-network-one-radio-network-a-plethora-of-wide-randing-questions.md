@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: A Plethora of Wide-Randing Questions"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-10-15
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-191015-plethora-of-wide-ranging-questions.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 6cfd47f2-99ac-46ef-89ac-aba9e90902bb
+raw_source: "[[one-radio-network/raw/2019-10-15-one-radio-network-one-radio-network-a-plethora-of-wide-randing-questions]]"
+---
 ## Introduction
 
 **Patrick Timpone:** It is the third Tuesday on One Radio Network, and Dr. Raymond Peat has graciously agreed to come visit, take your questions, and kick around his research. He started long ago with a PhD from the University of Oregon, specializing in physiology. He started working on hormones in 1968 and wrote his dissertation in 1972, in which he outlined his ideas on progesterone and hormones closely related to it. The main thesis is that energy and structure are interdependent at every level. Dr. Peat, good morning.

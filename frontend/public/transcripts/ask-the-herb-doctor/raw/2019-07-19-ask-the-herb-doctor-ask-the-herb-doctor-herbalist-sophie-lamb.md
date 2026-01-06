@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Herbalist Sophie Lamb"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2019-07-19"
+audio_url: "https://www.toxinless.com/kmud-190719-herbalist-sophie-lamb.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 71bce58a-c931-40fb-b3d0-848f9203d7dd
+---
 
 ## Transcript
 

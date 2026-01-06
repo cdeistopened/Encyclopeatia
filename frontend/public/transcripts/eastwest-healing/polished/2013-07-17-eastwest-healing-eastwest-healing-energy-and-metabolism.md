@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing: Energy and Metabolism"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2013-07-17
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-130717-energy-and-metabolism.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 02a8a8e1-a672-4376-9443-3192eb90888d
+raw_source: "[[eastwest-healing/raw/2013-07-17-eastwest-healing-eastwest-healing-energy-and-metabolism]]"
+---
 ## Introduction
 
 **Josh Rubin:** Welcome everyone to our new episode of Holistic Living. Today we are talking about energy metabolism. We have Dr. Raymond Peat back on the show. For those of you who don't know who he is, Ray got his PhD in biology from the University of Oregon with a specialization in physiology. He has taught in many schools, from the University of Oregon to Montana State University and the National College of Naturopathic Medicine. He also does private nutritional counseling. He started his work with progesterone and related hormones in 1968. Ray, is there anything you want to add about what you are currently working on?

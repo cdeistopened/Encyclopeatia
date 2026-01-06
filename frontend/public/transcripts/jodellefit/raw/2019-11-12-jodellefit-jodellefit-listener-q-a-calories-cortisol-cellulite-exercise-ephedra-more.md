@@ -1,3 +1,15 @@
+---
+title: "Jodellefit: Listener Q&A: Calories, Cortisol, Cellulite, Exercise, Ephedra & More"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: "2019-11-12"
+audio_url: "https://www.toxinless.com/jf-191112-listener-qa.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 302dce0f-2d65-4412-8781-e2dfff3a7dcd
+---
 
 ## Transcript
 

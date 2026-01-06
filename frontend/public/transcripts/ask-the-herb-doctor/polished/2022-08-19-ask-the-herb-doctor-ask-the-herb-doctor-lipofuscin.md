@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Lipofuscin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2022-08-19
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-220819-lipofuscin.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f72829af-19c7-4a68-b05c-4725966ebfdc
+raw_source: "[[ask-the-herb-doctor/raw/2022-08-19-ask-the-herb-doctor-ask-the-herb-doctor-lipofuscin]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's August 19, 2022 edition of Ask Your Herb Doctor. My name is Andrew Murray.

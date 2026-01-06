@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: May 2021 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2021-05-21"
+audio_url: "https://www.toxinless.com/kmud-210521.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 77cc0923-be0b-4034-b11d-d20a1a4403b9
+---
 
 ## Transcript
 

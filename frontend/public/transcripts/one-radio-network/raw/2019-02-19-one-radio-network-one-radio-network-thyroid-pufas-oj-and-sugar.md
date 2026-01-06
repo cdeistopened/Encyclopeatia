@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: Thyroid, PUFAs, OJ, and Sugar"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-02-19"
+audio_url: "https://www.toxinless.com/orn-190219-thyroid-pufas-oj-sugar.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 2cf4db2d-a231-4fd7-b0df-14b5dc224081
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Hope For Health: Hope for Health: Thyroid"
+feed: "Toxinless Forum"
+show: "Other"
+date_published: 2008-10-31
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kkvv-081031-ray-peat.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4959c8f9-8a8a-4778-9594-d8713336d033
+raw_source: "[[other/raw/2008-10-31-other-hope-for-health-hope-for-health-thyroid]]"
+---
 ## Introduction
 
 **Dr. Dan Royal:** Hello and welcome to Hope for Health. I'm Dr. Dan Royal. Hope for Health is brought to you by New Hope Medical Center. We invite you now to enjoy this informative program on health alternatives. Today's guest is a researcher and expert in the area of female hormones. He received his doctorate of philosophy in endocrine physiology and biochemistry from the University of Oregon in 1972. He has taught courses in endocrinology, physiology, the brain, and aging at such schools as the National College of Naturopathic Medicine and the University of Oregon. He is the author of several books, including *Progesterone in Orthomolecular Medicine* and *Nutrition for Women*. He also has a monthly newsletter which he's been writing since 1980. His name is Dr. Raymond Peat. Dr. Peat, welcome.

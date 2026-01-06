@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor April 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: bd77ca45-5fab-46fd-8d35-1f94af4586ef
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-april-2022]]"
+---
 # Ask Your Herb Doctor: COVID-19 Vaccines, Authoritarianism, and Mass Formation
 
 **Host:** Andrew Murray

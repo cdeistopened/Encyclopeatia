@@ -3,6 +3,8 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 
+const TRANSCRIPTS_DIR = path.join(process.cwd(), "public", "transcripts");
+
 export async function GET(
   request: Request,
   context: { params: Promise<{ slug: string }> }
@@ -11,12 +13,10 @@ export async function GET(
   const decodedSlug = decodeURIComponent(slug);
 
   try {
-    // Load episodes data
     const episodesPath = path.join(process.cwd(), "public", "episodes.json");
     const episodesData = await fs.readFile(episodesPath, "utf-8");
     const episodes = JSON.parse(episodesData);
 
-    // Find the episode
     const episodeInfo = episodes.find((ep: any) => ep.slug === decodedSlug);
     
     if (!episodeInfo) {
@@ -26,46 +26,33 @@ export async function GET(
       );
     }
 
-    // Read the transcript file
-    const transcriptPath = path.join(
-      process.cwd(),
-      "..",
-      "transcripts",
-      episodeInfo.filePath
-    );
-
     let transcript = "";
     let hasRawTranscript = false;
     let rawTranscript = "";
 
-    try {
-      const fileContent = await fs.readFile(transcriptPath, "utf-8");
-      const { content, data } = matter(fileContent);
-      transcript = content;
-
-      // Check if raw transcript exists
-      if (episodeInfo.rawFilePath) {
-        const rawPath = path.join(
-          process.cwd(),
-          "..",
-          "transcripts",
-          episodeInfo.rawFilePath
-        );
-        try {
-          const rawContent = await fs.readFile(rawPath, "utf-8");
-          const { content: rawText } = matter(rawContent);
-          rawTranscript = rawText;
-          hasRawTranscript = true;
-        } catch (err) {
-          // Raw file doesn't exist, that's okay
-        }
-      }
-    } catch (err) {
-      // If transcript file is missing, still return episode info
-      transcript = "";
+    if (episodeInfo.filePath) {
+      const transcriptPath = path.join(TRANSCRIPTS_DIR, episodeInfo.filePath);
+      try {
+        const fileContent = await fs.readFile(transcriptPath, "utf-8");
+        const { content } = matter(fileContent);
+        transcript = content;
+      } catch (err) {}
     }
 
-    // Return combined data
+    if (episodeInfo.rawFilePath) {
+      const rawPath = path.join(TRANSCRIPTS_DIR, episodeInfo.rawFilePath);
+      try {
+        const rawContent = await fs.readFile(rawPath, "utf-8");
+        const { content: rawText } = matter(rawContent);
+        rawTranscript = rawText;
+        hasRawTranscript = true;
+        
+        if (!transcript) {
+          transcript = rawText;
+        }
+      } catch (err) {}
+    }
+
     const episodeData = {
       ...episodeInfo,
       transcript,

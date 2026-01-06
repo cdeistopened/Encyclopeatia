@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Memory, Cognition and Nutrition"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2014-05-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-140516-memory-cognition-and-nutrition.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 19c3fbad-d97a-4cab-a0a6-54921d29bfa1
+raw_source: "[[ask-the-herb-doctor/raw/2014-05-16-ask-the-herb-doctor-ask-the-herb-doctor-memory-cognition-and-nutrition]]"
+---
 # Introduction
 
 **Andrew Murray:** Thanks so much for joining us. This is *Ask Your Herb Doctor* on KMUD Garberville. My name is Andrew Murray. My wife and I are both licensed medical herbalists; we trained in England, graduated with a master's degree in herbal medicine, and run a clinic in Garberville where we consult with clients about a wide range of conditions.

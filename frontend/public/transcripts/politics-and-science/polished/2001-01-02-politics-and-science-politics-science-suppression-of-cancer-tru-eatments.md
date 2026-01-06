@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Suppression of Cancer Tru eatments"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2001-01-02
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-010102-suppression-of-cancer.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 082a7004-7409-47aa-ba63-be2363b4ac63
+raw_source: "[[politics-and-science/raw/2001-01-02-politics-and-science-politics-science-suppression-of-cancer-tru-eatments]]"
+---
 ## Introduction
 
 **John Barkhausen:** Hello and welcome to Politics and Science. I'm your host, John Barkhausen. Today we feature an archive of my interview with Dr. Raymond Peat, recorded circa 2001. In the show, he discusses the remarkable story of Dr. Stevan Durovic and his cancer treatment known as Krebiozen. He also covers the heroic but ultimately fruitless efforts by Dr. Andrew C. Ivy, who was at the time one of America's most prominent scientists. Dr. Ivy attempted to give this promising treatment the clinical testing that its positive findings warranted.

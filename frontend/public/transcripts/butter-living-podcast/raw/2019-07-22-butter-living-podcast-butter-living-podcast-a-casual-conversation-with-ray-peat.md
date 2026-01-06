@@ -1,3 +1,15 @@
+---
+title: "Butter Living Podcast: A Casual Conversation with Ray Peat"
+feed: "Toxinless Forum"
+show: "Butter Living Podcast"
+date_published: "2019-07-22"
+audio_url: "https://www.toxinless.com/blp-190722-a-casual-conversation-with-ray-peat.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 73fe8c1c-6530-4a31-a9ec-087c2fa36488
+---
 
 ## Transcript
 

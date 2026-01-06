@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Evolution"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2015-03-04
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-150304-evolution.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: e445eb56-cc2e-45af-ae03-e5595bcc880b
+raw_source: "[[politics-and-science/raw/2015-03-04-politics-and-science-politics-science-evolution]]"
+---
 ## Introduction
 
 **John Barkhausen:** This is *Politics and Science* and I'm your host, John Barkhausen. This is a special extended interview with Ray Peat, done on the 4th of March, 2015, from the studios of WMRW. The subject was evolution and Lamarck, although that hardly gets mentioned. Ray Peat has a PhD in biology and a specialty in physiology. Ray, if you wouldn't mind, maybe you could introduce yourself a little more.

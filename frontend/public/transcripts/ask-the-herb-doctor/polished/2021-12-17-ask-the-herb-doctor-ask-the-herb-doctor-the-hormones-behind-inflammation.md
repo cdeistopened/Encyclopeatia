@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: The hormones behind inflammation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2021-12-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-211217-the-hormones-behind-inflammation.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 281e622b-6d47-4869-bddb-fdd1f4056851
+raw_source: "[[ask-the-herb-doctor/raw/2021-12-17-ask-the-herb-doctor-ask-the-herb-doctor-the-hormones-behind-inflammation]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome back to Ask Your Herb Doctor. Every month we have a guest speaker, and that guest speaker is the faithful, ever-reliable, factual, and informative Dr. Raymond Peat. This month is no exception. Dr. Peat is joining us to discuss the continuing subject of cancer with reference to autoimmunity and estrogen. Dr. Peat, thanks so much for joining us. For those who perhaps haven't read anything you've written or heard you speak, would you explain your academic and professional background?

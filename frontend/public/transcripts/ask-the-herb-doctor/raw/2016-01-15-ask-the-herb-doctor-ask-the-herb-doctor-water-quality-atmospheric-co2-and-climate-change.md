@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Water Quality, Atmospheric CO2, and Climate Change"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2016-01-15"
+audio_url: "https://www.toxinless.com/kmud-160115-water-quality-atmospheric-co2-climate-change.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 06123ce4-52fe-46b4-b8d5-970fc68bea72
+---
 
 ## Transcript
 

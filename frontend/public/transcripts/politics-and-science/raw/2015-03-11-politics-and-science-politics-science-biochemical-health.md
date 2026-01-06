@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Biochemical Health"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2015-03-11"
+audio_url: "https://www.toxinless.com/polsci-150311-biochemical-health.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 6d69e604-37c8-4cb8-8ff1-a0064141c9ad
+polished_version: "[[politics-and-science/polished/2015-03-11-politics-and-science-politics-science-biochemical-health]]"
+---
 
 ## Transcript
 

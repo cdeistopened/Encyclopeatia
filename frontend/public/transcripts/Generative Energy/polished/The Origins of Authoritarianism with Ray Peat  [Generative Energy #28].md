@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "The Origins of Authoritarianism with Ray Peat  [Generative Energy #28]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 28
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 6392ed97-3850-45ed-b453-894356f83bbf
+raw_source: "[[Generative Energy/The Origins of Authoritarianism with Ray Peat  [Generative Energy #28]]]"
+---## Introduction
 
 **Danny Roddy:** Hello everyone, I'm Danny Roddy of DannyRoddy.com and today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this episode, we'll talk about the history and origins of authoritarianism and how the philosophy is baked into our cultural, political, and medical systems.
 

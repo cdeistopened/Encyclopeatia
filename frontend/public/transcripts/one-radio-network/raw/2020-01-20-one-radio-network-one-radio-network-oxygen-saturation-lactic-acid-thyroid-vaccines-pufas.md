@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: Oxygen Saturation, Lactic Acid, Thyroid, Vaccines, PUFAs"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2020-01-20"
+audio_url: "https://www.toxinless.com/orn-200120-oxygen-saturation-lactic-acid-thyroid-vaccines-pufas.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: edf533b5-b60f-4fc2-8b69-ca6265ee3c7a
+---
 
 ## Transcript
 

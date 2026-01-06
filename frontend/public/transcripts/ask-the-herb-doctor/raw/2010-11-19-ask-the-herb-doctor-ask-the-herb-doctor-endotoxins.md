@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Endotoxins"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2010-11-19"
+audio_url: "https://www.toxinless.com/kmud-101119-endotoxins.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 2a7dc23d-b3ef-4f9d-b883-be1aa9daba80
+---
 
 ## Transcript
 

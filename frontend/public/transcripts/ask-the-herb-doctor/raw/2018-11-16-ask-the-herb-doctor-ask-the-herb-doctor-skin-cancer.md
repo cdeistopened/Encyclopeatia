@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Skin Cancer"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-11-16"
+audio_url: "https://www.toxinless.com/kmud-181116-skin-cancer.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4f7a69e4-36db-410b-80b0-4a2e3fdc0fea
+---
 
 ## Transcript
 

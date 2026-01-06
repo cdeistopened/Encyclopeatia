@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: William Blake and Art's Relationship to Science"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2014-02-26
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-140226-william-blake.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: aab96a54-67f3-4d07-9e1a-6dfccbd39a49
+raw_source: "[[politics-and-science/raw/2014-02-26-politics-and-science-politics-science-william-blake-and-art-s-relationship-to-science]]"
+---
 ## Introduction
 
 **John Barkhausen:** Welcome to Politics and Science. I am your host, John Barkhausen. This is a special edition starting an hour early with Dr. Raymond Peat. Dr. Peat has a PhD in biology and has specialized in physiology. Ray, are you there?

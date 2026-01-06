@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: You Are What You Eat (2009)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2009-08-01"
+audio_url: "https://www.toxinless.com/kmud-090801-you-are-what-you-eat.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: b44ff5f9-cedb-4149-8c17-b60a12eb9cb6
+---
 
 ## Transcript
 

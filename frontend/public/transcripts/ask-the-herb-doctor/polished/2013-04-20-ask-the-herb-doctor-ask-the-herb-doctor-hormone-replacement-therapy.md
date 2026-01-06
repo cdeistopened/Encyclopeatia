@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Hormone Replacement Therapy"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-04-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130420-hormone-replacement-therapy.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 120a1d28-8d82-4467-9d57-b927d7c1801f
+raw_source: "[[ask-the-herb-doctor/raw/2013-04-20-ask-the-herb-doctor-ask-the-herb-doctor-hormone-replacement-therapy]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's Ask Your Herb Doctor. My name is Andrew Murray.

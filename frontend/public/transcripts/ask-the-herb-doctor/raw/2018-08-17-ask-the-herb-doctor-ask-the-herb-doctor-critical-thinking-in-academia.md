@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Critical Thinking in Academia"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-08-17"
+audio_url: "https://www.toxinless.com/kmud-180817-critical-thinking-in-academia.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 041c3a5d-69cc-4384-b656-80ec486d4ebf
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Language and Criticism, Estrogen (Part 2)"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2017-07-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-170721-language-criticism-estrogen-part2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: df7e5796-7a0f-4e46-9bc7-5851fa58350a
+raw_source: "[[ask-the-herb-doctor/raw/2017-07-21-ask-the-herb-doctor-ask-the-herb-doctor-language-and-criticism-estrogen-part-2]]"
+---
 # Ask Your Herb Doctor: The Estrogen Industry & Progesterone
 
 ## Introduction

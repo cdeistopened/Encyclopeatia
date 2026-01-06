@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "Calcium, Phosphate, Authoritarianism, Eugenics & CIA Spymaster Allen Dulles with Ray Peat [GE #34]"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 34
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 7cf6e6f9-1539-49f7-aaf5-98f4fe14090b
+raw_source: "[[Generative Energy/Calcium, Phosphate, Authoritarianism, Eugenics & CIA Spymaster Allen Dulles with Ray Peat [GE #34]]]"
+---## Introduction
 
 **Danny Roddy:** Hello everyone, I'm Danny Roddy, and today I'm talking with painter, philosopher, and biologist, Raymond Peat. In this hour-long episode, we'll talk about calcium as the cause and solution to many health problems, why an excess of phosphorus is a serious source of stress, libertarianism, the power elite's obsession with eugenics, and the prominent role of CIA fascist spymaster, Allen Dulles, in shaping the world we live in today.
 

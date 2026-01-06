@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Questions and Answers"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2014-01-17"
+audio_url: "https://www.toxinless.com/kmud-140117-questions-and-answers.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 4cfff577-7e82-4f4b-8d32-602ca8c2a6a1
+---
 
 ## Transcript
 

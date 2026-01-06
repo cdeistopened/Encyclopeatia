@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Evidence Based Medicine"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2018-09-21
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-180921-evidence-based-medicine.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: b8a22bbe-ffb8-4568-86a3-c0b76cff5020
+raw_source: "[[ask-the-herb-doctor/raw/2018-09-21-ask-the-herb-doctor-ask-the-herb-doctor-evidence-based-medicine]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this September 2018 edition of *Ask Your Herb Doctor*. We are a free speech, free enterprise station funded by you, the public. Last month, we discussed critical thinking and cover-ups. We are an independent program, and often you will listen to people exposing things you have likely never heard of before. It is very important to have free speech; it is one of the bedrocks of the American Declaration of Independence and the Constitution.

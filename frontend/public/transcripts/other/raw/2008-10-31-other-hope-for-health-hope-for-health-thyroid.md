@@ -1,3 +1,16 @@
+---
+title: "Hope For Health: Hope for Health: Thyroid"
+feed: "Toxinless Forum"
+show: "Other"
+date_published: "2008-10-31"
+audio_url: "https://www.toxinless.com/kkvv-081031-ray-peat.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: c41ea132-cada-4d2f-9281-a77e34776412
+polished_version: "[[other/polished/2008-10-31-other-hope-for-health-hope-for-health-thyroid]]"
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: Stress and Your Health"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: 2019-04-27
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/jf-190427-stress-health.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 469b741f-7138-4235-8d11-10e9f868f181
+raw_source: "[[jodellefit/raw/2019-04-27-jodellefit-jodellefit-stress-and-your-health]]"
+---
 ## Introduction
 
 **Jodelle:** Welcome to the Get Fit with Jodelle show. I am so excited to have Dr. Raymond Peat with me today. He has a PhD in Biology from the University of Oregon, specializing in physiology. He has taught at the University of Oregon, Urbana College, Montana State University, National College of Naturopathic Medicine, Universidad Veracruzana, the Universidad Autónoma del Estado de México, and Blake College.

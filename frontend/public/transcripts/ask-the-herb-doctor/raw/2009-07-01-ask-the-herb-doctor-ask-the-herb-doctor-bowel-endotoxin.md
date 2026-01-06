@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Bowel Endotoxin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2009-07-01"
+audio_url: "https://www.toxinless.com/kmud-090701-bowel-endotoxin.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: d9a70aa4-8e01-4639-9e2c-cfb6526e5acb
+polished_version: "[[ask-the-herb-doctor/polished/2009-07-01-ask-the-herb-doctor-ask-the-herb-doctor-bowel-endotoxin]]"
+---
 
 ## Transcript
 

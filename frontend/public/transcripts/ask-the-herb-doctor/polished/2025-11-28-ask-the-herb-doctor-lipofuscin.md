@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor Lipofuscin"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-12-01
+speakers:
+  - Dr. Raymond Peat
+id: 9f4925c4-9d76-4f7c-b7b4-d40318a55d2e
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-lipofuscin]]"
+---
 # Ask Your Herb Doctor: Lipofuscin and Polyunsaturated Fatty Acids (PUFAs)
 
 **Host:** Andrew Murray

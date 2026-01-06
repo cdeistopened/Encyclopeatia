@@ -1,3 +1,16 @@
+---
+title: "It's Rainmaking Time: Energy-Protective Materials"
+feed: "Toxinless Forum"
+show: "Its Rainmaking Time"
+date_published: 2014-06-02
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/rainmaking-140602-energy-protective-materials.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: ad995568-b58c-4d25-b494-4dcfe935f92d
+raw_source: "[[its-rainmaking-time/raw/2014-06-02-its-rainmaking-time-it-s-rainmaking-time-energy-protective-materials]]"
+---
 ## Introduction
 
 **Kim Greenhouse:** Ladies and gentlemen, welcome to It's Rainmaking Time. This is Kim Greenhouse, and it is an extraordinary honor to welcome Dr. Raymond Peat, who is an expert in the area of naturopathic medicine, nutrition, and physiology. He has a PhD in biology from the University of Oregon and specializes in physiology. He has taught at the University of Oregon, Urbana College, Montana State University, National College of Naturopathic Medicine, Universidad Veracruzana, the Universidad Autónoma del Estado de México, and Blake College.

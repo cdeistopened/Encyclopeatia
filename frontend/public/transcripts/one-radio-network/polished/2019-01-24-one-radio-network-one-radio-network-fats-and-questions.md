@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Fats and Questions"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-01-24
+date_transcribed: 2025-12-02
+date_polished: 2025-12-04
+audio_url: "https://www.toxinless.com/orn-190124-fats-and-questions.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 2bbdb4ed-7ed7-4a74-95d8-a23e5e2b4b9f
+raw_source: "[[one-radio-network/raw/2019-01-24-one-radio-network-one-radio-network-fats-and-questions]]"
+---
 ## Introduction
 
 **Patrick Timpone:** Adam Bergstrom is a good friend and great researcher. He is on our show several times a month and knows a lot about the work of Dr. Ray Peat. Adam, are you there?

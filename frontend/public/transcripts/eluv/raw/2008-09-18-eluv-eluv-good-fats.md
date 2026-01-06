@@ -1,3 +1,15 @@
+---
+title: "ELUV: Good Fats"
+feed: "Toxinless Forum"
+show: "ELUV"
+date_published: "2008-09-18"
+audio_url: "https://www.toxinless.com/eluv-080918-fats.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 1845bc03-611c-4808-ab62-77b19c95cede
+---
 
 ## Transcript
 

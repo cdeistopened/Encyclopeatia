@@ -1,4 +1,16 @@
-## Climate, Metabolism, and Migration
+---
+title: "#55: Bioenergetic Nutrition Basics  |  \"The Ray Peat Diet\"  |  Appetite and Metabolism with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 55
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 6bbf4e6b-6ae1-415d-a3ed-e569b4493b95
+raw_source: "[[Generative Energy/#55： Bioenergetic Nutrition Basics ｜ ＂The Ray Peat Diet＂ ｜ Appetite and Metabolism with Ray Peat]]"
+---## Climate, Metabolism, and Migration
 
 **Danny Roddy:** I was asking Ray about Florida and Texas. Maybe we can start there and then go into the question Georgi just asked, because I think all this stuff is super important. Ray, what is your take on Florida and Texas being these places in the U.S. that are backing down from the COVID hysteria?
 

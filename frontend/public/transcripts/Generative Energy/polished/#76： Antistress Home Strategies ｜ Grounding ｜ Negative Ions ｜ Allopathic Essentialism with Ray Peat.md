@@ -1,4 +1,16 @@
-# Generative Energy Podcast: 2021 Year in Review
+---
+title: "#76: Antistress Home Strategies  |  Grounding  |  Negative Ions  |  Allopathic Essentialism with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 76
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 4e649252-a75f-4779-9dc0-4d801e2ac308
+raw_source: "[[Generative Energy/#76： Antistress Home Strategies ｜ Grounding ｜ Negative Ions ｜ Allopathic Essentialism with Ray Peat]]"
+---# Generative Energy Podcast: 2021 Year in Review
 
 ## Introduction: Financial Preparedness
 

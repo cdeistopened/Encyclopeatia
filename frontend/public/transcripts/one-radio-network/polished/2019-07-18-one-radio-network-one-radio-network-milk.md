@@ -1,3 +1,16 @@
+---
+title: "One Radio Network: Milk"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: 2019-07-18
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/orn-190718-milk.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: de182b7e-c364-46a1-9b94-ecbe4dc1b2b4
+raw_source: "[[one-radio-network/raw/2019-07-18-one-radio-network-one-radio-network-milk]]"
+---
 ## Introduction
 
 **Patrick Timpone:** We're going to have fun now. We are talking to Dr. Ray Peat, and it is great to have him on the show again. We've been inviting him about once a month, and he keeps saying yes. He is a renowned nutritional counselor. He acquired a PhD from the University of Oregon with a specialization in physiology. He started his work on hormones in 1968 and wrote his dissertation in 1972, where he outlined his ideas on progesterone and hormones. Closely related to this, his main thesis is that energy and structure are independent at every level. Dr. Ray Peat, good morning, sir. How are you?

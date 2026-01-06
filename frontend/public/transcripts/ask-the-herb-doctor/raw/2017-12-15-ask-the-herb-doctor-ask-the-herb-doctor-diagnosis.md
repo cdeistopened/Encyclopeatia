@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Diagnosis"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2017-12-15"
+audio_url: "https://www.toxinless.com/kmud-171215-diagnosis.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3733117a-4132-40fd-ae3c-36840c1b8bf7
+---
 
 ## Transcript
 

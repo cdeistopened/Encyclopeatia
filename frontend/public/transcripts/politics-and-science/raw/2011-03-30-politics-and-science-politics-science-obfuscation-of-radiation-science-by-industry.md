@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Obfuscation of Radiation Science by Industry"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2011-03-30"
+audio_url: "https://www.toxinless.com/polsci-110330-obfuscation-of-radiation.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: a9af0245-715b-45ef-8c32-89b41e16043f
+polished_version: "[[politics-and-science/polished/2011-03-30-politics-and-science-politics-science-obfuscation-of-radiation-science-by-industry]]"
+---
 
 ## Transcript
 

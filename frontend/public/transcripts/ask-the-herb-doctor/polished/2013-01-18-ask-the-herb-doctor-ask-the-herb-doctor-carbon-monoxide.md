@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Carbon Monoxide"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2013-01-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-130118-carbon-monoxide.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 4da9a3f6-332f-4a05-8229-7d09b9648655
+raw_source: "[[ask-the-herb-doctor/raw/2013-01-18-ask-the-herb-doctor-ask-the-herb-doctor-carbon-monoxide]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray.

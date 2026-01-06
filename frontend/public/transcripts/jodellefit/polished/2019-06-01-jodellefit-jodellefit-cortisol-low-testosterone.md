@@ -1,3 +1,16 @@
+---
+title: "Jodellefit: Cortisol, Low Testosterone"
+feed: "Toxinless Forum"
+show: "Jodellefit"
+date_published: 2019-06-01
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/jf-190601-cortisol-low-testosterone.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: a2bfd215-03f9-42c4-baa0-085e7f9b5ed4
+raw_source: "[[jodellefit/raw/2019-06-01-jodellefit-jodellefit-cortisol-low-testosterone]]"
+---
 ## Introduction
 
 **Jodelle:** I am pleased to have Dr. Peat on with me again today. For those of you who have not familiarized yourself yet with Dr. Raymond Peat, you can check him out at RayPeat.com. We're going to be talking today about testosterone and high cortisol. I wanted to touch on this because I am seeing a lot of clients coming in with their blood work showing too high of cortisol and too low of testosterone—even women. I think it's a pretty important topic. Dr. Peat, how long have you been learning and teaching on this?

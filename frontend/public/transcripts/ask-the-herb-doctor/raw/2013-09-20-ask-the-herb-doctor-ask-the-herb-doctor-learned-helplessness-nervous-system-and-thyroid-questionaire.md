@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Learned Helplessness, Nervous System and Thyroid Questionaire"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-09-20"
+audio_url: "https://www.toxinless.com/kmud-130920-learned-helplessness-nervous-system-thyroid-questionaire.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 8778af3f-eb0a-4aba-b4a5-9983378c98ab
+---
 
 ## Transcript
 

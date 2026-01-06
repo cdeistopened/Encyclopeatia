@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Food Quality"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2012-01-07"
+audio_url: "https://www.toxinless.com/polsci-120107-food-quality.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 0833ced6-9f2d-45f1-ba52-a39638ff5088
+polished_version: "[[politics-and-science/polished/2012-01-07-politics-and-science-politics-science-food-quality]]"
+---
 
 ## Transcript
 

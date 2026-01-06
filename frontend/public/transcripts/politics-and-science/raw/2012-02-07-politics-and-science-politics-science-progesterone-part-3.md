@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Progesterone Part 3"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2012-02-07"
+audio_url: "https://www.toxinless.com/polsci-120207-progesterone-3.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 0013bfa2-eeda-451d-bd8d-289a60037879
+polished_version: "[[politics-and-science/polished/2012-02-07-politics-and-science-politics-science-progesterone-part-3]]"
+---
 
 ## Transcript
 

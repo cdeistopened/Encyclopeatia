@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Vitamin D"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2016-11-18
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-161118-vitamin-d.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f40b0599-c694-4c1c-a8e0-671bf70185c2
+raw_source: "[[ask-the-herb-doctor/raw/2016-11-18-ask-the-herb-doctor-ask-the-herb-doctor-vitamin-d]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. Sarah won't be with us this month, but she will be back in December. We are both licensed medical herbalists who trained in England. We run a clinic in Garberville where we consult with patients about a wide range of conditions, recommending herbs, supplements, and nutritional counseling.

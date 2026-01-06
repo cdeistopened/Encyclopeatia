@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Heart III"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2013-07-19"
+audio_url: "https://www.toxinless.com/kmud-130719-heart-3.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 208d339e-e4a8-4a7e-916c-e077cf4e66d7
+---
 
 ## Transcript
 

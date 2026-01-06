@@ -1,3 +1,16 @@
+---
+title: "EastWest Healing Serotonin and Endotoxin"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: 2011-08-24
+date_transcribed: 2025-11-28
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/ewh-110825-serotonin-and-endotoxin.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: f92941a5-7036-4399-8585-90fd309559c4
+raw_source: "[[eastwest-healing/raw/2011-08-25-eastwest-healing-eastwest-healing-serotonin-and-endotoxin]]"
+---
 ## Introduction
 
 **Josh Rubin:** What up everyone? This is Josh Rubin and Jeannie Rubin of Holistic Living. We're here today to share our radio show with Dr. Raymond Peat. Today's show is on serotonin and endotoxin distress. Ray Peat is a teacher, educator, and researcher, and today he is going to school us on these topics. How are you doing, Ray?

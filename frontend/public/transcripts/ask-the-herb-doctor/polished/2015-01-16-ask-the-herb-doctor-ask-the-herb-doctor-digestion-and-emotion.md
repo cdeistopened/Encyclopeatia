@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Digestion and Emotion"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-01-16
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150116-digestion-and-emotion.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 2f0f1dc6-a366-4405-91e5-aa14be658d32
+raw_source: "[[ask-the-herb-doctor/raw/2015-01-16-ask-the-herb-doctor-ask-the-herb-doctor-digestion-and-emotion]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's and this New Year's *Ask Your Herb Doctor*. Happy New Year everybody. My name is Andrew Murray. For those of you who perhaps have never listened to the shows, I'm a licensed naturopathic doctor who trained in England and graduated there with a degree in herbal medicine. We run a clinic in Garberville where I consult with clients about a wide range of conditions and recommend herbal medicine and dietary advice.

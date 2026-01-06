@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Coronavirus, immunity, and vaccines (Part 1)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: "2020-03-18"
+audio_url: "https://www.toxinless.com/polsci-200318-coronavirus-immunity-vaccines-part1.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: ae347fed-8351-4a58-865f-bbec3e29b230
+polished_version: "[[politics-and-science/polished/2020-03-18-politics-and-science-politics-science-coronavirus-immunity-and-vaccines-part-1]]"
+---
 
 ## Transcript
 

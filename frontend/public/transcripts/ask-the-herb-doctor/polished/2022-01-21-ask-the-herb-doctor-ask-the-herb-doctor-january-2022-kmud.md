@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: January 2022 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2022-01-21
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-220121.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 55fec069-560d-414d-b150-71727c203457
+raw_source: "[[ask-the-herb-doctor/raw/2022-01-21-ask-the-herb-doctor-ask-the-herb-doctor-january-2022-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to the January 21, 2022 edition of Ask Your Herb Doctor. My name is Andrew Murray.

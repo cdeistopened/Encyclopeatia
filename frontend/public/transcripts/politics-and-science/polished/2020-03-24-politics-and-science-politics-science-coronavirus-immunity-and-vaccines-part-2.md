@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Coronavirus, immunity, and vaccines (Part 2)"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2020-03-24
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-200324-coronavirus-immunity-vaccines-part2.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 8abef7c1-ac45-4eeb-a8f9-46d62682542d
+raw_source: "[[politics-and-science/raw/2020-03-24-politics-and-science-politics-science-coronavirus-immunity-and-vaccines-part-2]]"
+---
 ## Introduction
 
 **John Barkhausen:** Hey and welcome to Politics and Science. I'm your host, John Barkhausen. This week we return to part two of our conversation with Dr. Raymond Peat. This was recorded on March 24, 2020, and we are discussing the Coronavirus COVID-19, which has caused a lockdown in the United States in many areas due to its expected high contagion rate and potentially serious mortality rate.

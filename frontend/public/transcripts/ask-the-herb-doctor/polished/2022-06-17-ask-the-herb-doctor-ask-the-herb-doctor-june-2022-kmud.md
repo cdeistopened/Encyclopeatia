@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: June 2022 KMUD"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2022-06-17
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-220617.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 1312dc01-6819-40a0-8864-87efb0f5819f
+raw_source: "[[ask-the-herb-doctor/raw/2022-06-17-ask-the-herb-doctor-ask-the-herb-doctor-june-2022-kmud]]"
+---
 ## Introduction
 
 **Andrew Murray:** Good evening and welcome to *Ask Your Herb Doctor*. This is June 17, 2022. My name is Andrew Murray.

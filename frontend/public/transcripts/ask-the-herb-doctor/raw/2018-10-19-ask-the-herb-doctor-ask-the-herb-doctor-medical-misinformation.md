@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Medical Misinformation"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-10-19"
+audio_url: "https://www.toxinless.com/kmud-181019-medical-misinformation.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 15a84e12-ed7f-43af-82cc-9489a28ec80f
+---
 
 ## Transcript
 

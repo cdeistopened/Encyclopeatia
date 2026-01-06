@@ -1,3 +1,16 @@
+---
+title: "Ask the Herb Doctor: Uses of Urea"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: 2015-02-20
+date_transcribed: 2025-12-03
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/kmud-150220-uses-of-urea.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 186d83a3-87cd-4f10-a1f4-41268a1f1200
+raw_source: "[[ask-the-herb-doctor/raw/2015-02-20-ask-the-herb-doctor-ask-the-herb-doctor-uses-of-urea]]"
+---
 ## Introduction
 
 **Andrew Murray:** Hi and good evening to this month's *Ask Your Herb Doctor*. My name is Andrew Murray. I'm a licensed medical herbalist who trained in England and graduated there with a master's degree in herbal medicine.

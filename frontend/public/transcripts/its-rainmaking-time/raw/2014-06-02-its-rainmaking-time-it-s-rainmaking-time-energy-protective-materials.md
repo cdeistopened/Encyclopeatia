@@ -1,3 +1,15 @@
+---
+title: "It's Rainmaking Time: Energy-Protective Materials"
+feed: "Toxinless Forum"
+show: "Its Rainmaking Time"
+date_published: "2014-06-02"
+audio_url: "https://www.toxinless.com/rainmaking-140602-energy-protective-materials.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 96114eec-ccdf-4dcf-98ad-e1d16fd8ccd2
+---
 
 ## Transcript
 

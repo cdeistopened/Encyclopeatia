@@ -1,4 +1,16 @@
-## Ukraine, Russia, and the Geopolitical Landscape
+---
+title: "#80: World War 3  |  Heavy Metals  |  Progesterone for Hair Loss  |  T3 to T4 Thyroid Ratio with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 80
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: 9ec5e6dd-b854-44cf-80cb-f1b6c92384ff
+raw_source: "[[Generative Energy/#80： World War 3 ｜ Heavy Metals ｜ Progesterone for Hair Loss ｜ T3 to T4 Thyroid Ratio with Ray Peat]]"
+---## Ukraine, Russia, and the Geopolitical Landscape
 
 **Danny Roddy:** We were just talking about Mexico, but what I really wanted to discuss is everything that has happened recently. Last time we spoke, the Russia-Ukraine situation was just coming to a head. Can you unpack it for us? What do you think is going on?
 

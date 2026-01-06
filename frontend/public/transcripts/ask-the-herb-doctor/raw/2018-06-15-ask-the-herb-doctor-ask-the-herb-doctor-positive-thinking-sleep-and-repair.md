@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Positive Thinking, Sleep, and Repair"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2018-06-15"
+audio_url: "https://www.toxinless.com/kmud-180615-positive-thinking-sleep-repair.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e7801f9d-b124-45d5-94bb-b224ed1e63d5
+---
 
 ## Transcript
 

@@ -1,3 +1,16 @@
+---
+title: "Politics & Science: Progesterone Part 1"
+feed: "Toxinless Forum"
+show: "Politics and Science"
+date_published: 2012-01-22
+date_transcribed: 2025-12-02
+date_polished: 2025-12-03
+audio_url: "https://www.toxinless.com/polsci-120122-progesterone-1.mp3"
+speakers:
+  - Dr. Raymond Peat
+id: 29f47253-b26b-4d6c-9ff9-f5f4bbe88eee
+raw_source: "[[politics-and-science/raw/2012-01-22-politics-and-science-politics-science-progesterone-part-1]]"
+---
 ## Introduction
 
 **John Barkhausen:** Hi, everyone. The following show with Dr. Raymond Peat was recorded on January 22, 2012. It's about progesterone. Welcome to *Politics and Science*. I'm your host, John Barkhausen. Today, once again, I'm delighted to say that Ray Peat is here to join me. Dr. Peat has a PhD in biology and has done extensive research in the fields of physiology and endocrinology. Is that enough, Ray?

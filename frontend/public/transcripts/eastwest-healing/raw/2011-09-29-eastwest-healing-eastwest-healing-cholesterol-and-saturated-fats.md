@@ -1,3 +1,15 @@
+---
+title: "EastWest Healing: Cholesterol and Saturated Fats"
+feed: "Toxinless Forum"
+show: "EastWest Healing"
+date_published: "2011-09-29"
+audio_url: "https://www.toxinless.com/ewh-110929-cholesterol-and-saturated-fats.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 2abe5564-75fe-430b-997e-4c361d96528c
+---
 
 ## Transcript
 

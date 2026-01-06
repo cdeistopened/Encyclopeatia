@@ -1,3 +1,16 @@
+---
+title: "World Puja: Foundational Hormones"
+feed: "Toxinless Forum"
+show: "World Puja"
+date_published: "2012-11-23"
+audio_url: "https://www.toxinless.com/wp-121123-foundational-hormones.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 75c04b43-f8bb-4f2e-9045-2f0a00e26c18
+polished_version: "[[world-puja/polished/2012-11-23-world-puja-world-puja-foundational-hormones]]"
+---
 
 ## Transcript
 

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor May 2022"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: unknown
+date_transcribed: 2025-11-28
+date_polished: 2025-11-29
+speakers:
+  - Dr. Raymond Peat
+id: 81bc6924-f3a7-44d3-9e90-2ed0a4eaaa1f
+raw_source: "[[Ray Peat - Toxinless Forum/ask-the-herb-doctor/raw/2025-11-28-ask-the-herb-doctor-may-2022]]"
+---
 ## Introduction
 
 **Andrew Murray:** Welcome to this month's May 2022 edition of Ask Your Herb Doctor. Sarah is not joining us this evening, but next month she'll be back. It is a beautiful spring evening, warm and clear. We are very pleased to have Dr. Raymond Peat join us with his expertise.

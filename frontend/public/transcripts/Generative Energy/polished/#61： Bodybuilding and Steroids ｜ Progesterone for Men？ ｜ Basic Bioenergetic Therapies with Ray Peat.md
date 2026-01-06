@@ -1,4 +1,16 @@
-## Introduction
+---
+title: "#61: Bodybuilding and Steroids  |  Progesterone for Men?  |  Basic Bioenergetic Therapies with Ray Peat"
+feed: "Generative Energy Podcast"
+show: "Generative Energy"
+episode: 61
+date_polished: 2025-12-04
+speakers:
+  - Danny Roddy
+  - Dr. Raymond Peat
+  - Georgi Dinkov
+id: afbfab07-e696-4660-b1b4-8778fe683df6
+raw_source: "[[Generative Energy/#61： Bodybuilding and Steroids ｜ Progesterone for Men？ ｜ Basic Bioenergetic Therapies with Ray Peat]]"
+---## Introduction
 
 **Danny Roddy:** Georgi Dinkov, Ray Peat. Guys, thank you so much for joining us today. We're just going to rifle through a bunch of questions, but before we do that, how are you, Ray?
 

@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: California SB 277 / Degradation of the Food Supply"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-05-15"
+audio_url: "https://www.toxinless.com/kmud-150515-california-sb-277-degradation-of-the-food-supply.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: b6bc585e-8962-4f8c-b470-457df41ae8c1
+---
 
 ## Transcript
 

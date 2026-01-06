@@ -1,3 +1,15 @@
+---
+title: "One Radio Network: Milk"
+feed: "Toxinless Forum"
+show: "One Radio Network"
+date_published: "2019-07-18"
+audio_url: "https://www.toxinless.com/orn-190718-milk.mp3"
+date_transcribed: "2025-12-02"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: e7b3744b-ace8-4472-acc1-cf22f98e63d0
+---
 
 ## Transcript
 

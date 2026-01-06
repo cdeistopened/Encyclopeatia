@@ -1,3 +1,15 @@
+---
+title: "Ask the Herb Doctor: Longevity and Nootropics"
+feed: "Toxinless Forum"
+show: "Ask the Herb Doctor"
+date_published: "2015-08-21"
+audio_url: "https://www.toxinless.com/kmud-150821-longevity-and-nootropics.mp3"
+date_transcribed: "2025-12-03"
+speakers:
+  - Dr. Raymond Peat
+status: raw
+id: 3ccc5c3c-0d25-442f-85cf-87775ce18212
+---
 
 ## Transcript
 
