@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { spawn } from "child_process";
-import path from "path";
+import { GoogleGenerativeAI } from "@google/generative-ai";
+import { searchTranscripts, ServerSearchResult } from "@/lib/serverSearch";
 
 interface RAGSource {
   text: string;
@@ -20,9 +20,32 @@ interface RAGResponse {
   query: string;
 }
 
+function extractRelevantSection(fullText: string, query: string, maxChars = 2000): string {
+  const queryWords = query.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+  const textLower = fullText.toLowerCase();
+  
+  let bestIndex = 0;
+  for (const word of queryWords) {
+    const idx = textLower.indexOf(word);
+    if (idx !== -1) {
+      bestIndex = idx;
+      break;
+    }
+  }
+  
+  const start = Math.max(0, bestIndex - 200);
+  const end = Math.min(fullText.length, start + maxChars);
+  
+  let section = fullText.slice(start, end);
+  if (start > 0) section = "..." + section;
+  if (end < fullText.length) section = section + "...";
+  
+  return section;
+}
+
 export async function POST(request: NextRequest) {
   try {
-    const { question, limit = 12, show } = await request.json();
+    const { question, limit = 15 } = await request.json();
 
     if (!question || typeof question !== "string") {
       return NextResponse.json(
@@ -31,99 +54,75 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Path to the RAG system
-    const ragDir = path.resolve(process.cwd(), "../backend/rag");
-    const venvPython = path.join(ragDir, "venv/bin/python");
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "GEMINI_API_KEY not configured" },
+        { status: 500 }
+      );
+    }
 
-    // Build the Python script to run
-    const pythonScript = `
-import sys
-import json
-sys.path.insert(0, "${ragDir}")
-from inference import RayPeatRAG
+    const searchResults = searchTranscripts(question, limit);
 
-rag = RayPeatRAG()
-response = rag.ask(
-    question=${JSON.stringify(question)},
-    limit=${limit},
-    show=${show ? JSON.stringify(show) : "None"}
-)
-
-def filepath_to_slug(filepath):
-    """Convert filepath to frontend slug format."""
-    import os
-    parts = filepath.split(os.sep)
-    for i, part in enumerate(parts):
-        if part in ('polished', 'raw') and i > 0:
-            filename = os.path.splitext(parts[-1])[0]
-            return f"{parts[i-1]}/{part}/{filename}"
-    return os.path.splitext(os.path.basename(filepath))[0]
-
-# Convert to JSON-serializable format
-result = {
-    "answer": response.answer,
-    "query": response.query,
-    "sources": [
-        {
-            "text": s.text[:500] + "..." if len(s.text) > 500 else s.text,
-            "section_header": s.section_header,
-            "section_anchor": s.section_anchor,
-            "episode_title": s.episode_title,
-            "episode_id": filepath_to_slug(s.metadata.get("filepath", "")) if s.metadata.get("filepath") else s.episode_id,
-            "show": s.show,
-            "date_published": s.date_published,
-            "audio_url": s.audio_url,
-            "score": s.score
-        }
-        for s in response.sources
-    ]
-}
-print(json.dumps(result))
-`;
-
-    // Execute Python script
-    const result = await new Promise<RAGResponse>((resolve, reject) => {
-      const pythonProcess = spawn(venvPython, ["-c", pythonScript], {
-        cwd: ragDir,
-        env: { ...process.env },
+    if (searchResults.length === 0) {
+      return NextResponse.json({
+        answer: "I couldn't find any relevant information in the transcripts for that question. Try rephrasing or asking about a different topic.",
+        sources: [],
+        query: question,
       });
+    }
 
-      let stdout = "";
-      let stderr = "";
-
-      pythonProcess.stdout.on("data", (data) => {
-        stdout += data.toString();
-      });
-
-      pythonProcess.stderr.on("data", (data) => {
-        stderr += data.toString();
-      });
-
-      pythonProcess.on("close", (code) => {
-        if (code !== 0) {
-          console.error("Python stderr:", stderr);
-          reject(new Error(`Python process exited with code ${code}: ${stderr}`));
-          return;
-        }
-
-        try {
-          // Find the JSON in stdout (skip any logging output)
-          const lines = stdout.trim().split("\n");
-          const jsonLine = lines[lines.length - 1];
-          const parsed = JSON.parse(jsonLine);
-          resolve(parsed);
-        } catch (e) {
-          console.error("Failed to parse Python output:", stdout);
-          reject(new Error("Failed to parse RAG response"));
-        }
-      });
-
-      pythonProcess.on("error", (err) => {
-        reject(err);
-      });
+    const contextParts = searchResults.map((result, i) => {
+      const section = extractRelevantSection(result.text, question);
+      return `[Source ${i + 1}] ${result.title} (${result.show})\n${section}`;
     });
 
-    return NextResponse.json(result);
+    const context = contextParts.join("\n\n---\n\n");
+
+    const prompt = `You are an AI research assistant helping users understand Ray Peat's views on health and biology. 
+
+Based ONLY on the transcript excerpts below, synthesize a comprehensive answer to the user's question. 
+
+GUIDELINES:
+- Be direct and factual - state what Ray Peat believes and why
+- Explain the underlying mechanisms when mentioned
+- Reference specific shows/episodes when citing claims
+- If the transcripts don't fully answer the question, say so
+- Keep the response focused and well-organized (2-4 paragraphs)
+- Do not make up information not present in the sources
+
+TRANSCRIPT EXCERPTS:
+${context}
+
+USER QUESTION: ${question}
+
+ANSWER:`;
+
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+
+    const result = await model.generateContent(prompt);
+    const answer = result.response.text();
+
+    const sources: RAGSource[] = searchResults.slice(0, 8).map((r) => ({
+      text: extractRelevantSection(r.text, question, 500),
+      section_header: "Transcript excerpt",
+      section_anchor: "",
+      episode_title: r.title,
+      episode_id: r.slug,
+      show: r.show,
+      date_published: r.date || null,
+      audio_url: null,
+      score: r.score,
+    }));
+
+    const response: RAGResponse = {
+      answer,
+      sources,
+      query: question,
+    };
+
+    return NextResponse.json(response);
   } catch (error) {
     console.error("RAG API error:", error);
     return NextResponse.json(
