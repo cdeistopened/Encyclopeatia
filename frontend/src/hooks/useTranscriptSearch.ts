@@ -112,7 +112,7 @@ export function useTranscriptSearch(): UseTranscriptSearchReturn {
   const search = useCallback((query: string): SearchResult[] => {
     if (!miniSearchRef.current || !query.trim()) return [];
 
-    const results = miniSearchRef.current.search(query, { limit: 50 });
+    const results = miniSearchRef.current.search(query).slice(0, 50);
     
     return results.map((result) => {
       const doc = documentsRef.current.get(result.id);
