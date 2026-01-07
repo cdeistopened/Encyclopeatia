@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePlayer } from "@/contexts/PlayerContext";
 import type { Episode } from "@/lib/types";
 import { SHOWS, getAllShows, getShow } from "@/data/shows";
+import { useTranscriptSearch, SearchResult } from "@/hooks/useTranscriptSearch";
 
 export default function PodcastBrowser() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
@@ -17,6 +18,22 @@ export default function PodcastBrowser() {
   const [view, setView] = useState<"shows" | "episodes">("shows");
 
   const { play, currentEpisode, isPlaying } = usePlayer();
+  const { search: fullTextSearch, isReady: searchReady, isLoading: searchLoading } = useTranscriptSearch();
+  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+
+  useEffect(() => {
+    if (!search.trim() || !searchReady) {
+      setSearchResults([]);
+      setIsSearching(false);
+      return;
+    }
+
+    setIsSearching(true);
+    const results = fullTextSearch(search);
+    setSearchResults(results);
+    setIsSearching(false);
+  }, [search, searchReady, fullTextSearch]);
 
   useEffect(() => {
     fetch("/episodes.json")
@@ -51,16 +68,27 @@ export default function PodcastBrowser() {
     return Array.from(yearSet).sort((a, b) => b - a);
   }, [episodes]);
 
-  // Filter and sort episodes
+  const episodeMap = useMemo(() => {
+    const map = new Map<string, Episode>();
+    episodes.forEach(ep => map.set(ep.slug, ep));
+    return map;
+  }, [episodes]);
+
   const filteredEpisodes = useMemo(() => {
+    if (search.trim() && searchResults.length > 0) {
+      return searchResults
+        .map(result => episodeMap.get(result.slug))
+        .filter((ep): ep is Episode => ep !== undefined)
+        .filter(ep => !selectedShow || ep.show === selectedShow)
+        .filter(ep => !selectedYear || (ep.date && new Date(ep.date).getFullYear() === selectedYear));
+    }
+
     let result = [...episodes];
 
-    // Filter by show
     if (selectedShow) {
       result = result.filter((ep) => ep.show === selectedShow);
     }
 
-    // Filter by year
     if (selectedYear) {
       result = result.filter((ep) => {
         if (!ep.date) return false;
@@ -68,17 +96,6 @@ export default function PodcastBrowser() {
       });
     }
 
-    // Filter by search
-    if (search) {
-      const searchLower = search.toLowerCase();
-      result = result.filter(
-        (ep) =>
-          ep.title.toLowerCase().includes(searchLower) ||
-          ep.show.toLowerCase().includes(searchLower)
-      );
-    }
-
-    // Sort
     result.sort((a, b) => {
       if (sortBy === "date") {
         const dateA = a.date ? new Date(a.date).getTime() : 0;
@@ -92,7 +109,12 @@ export default function PodcastBrowser() {
     });
 
     return result;
-  }, [episodes, selectedShow, selectedYear, search, sortBy, sortOrder]);
+  }, [episodes, episodeMap, selectedShow, selectedYear, search, searchResults, sortBy, sortOrder]);
+
+  const getSnippetForEpisode = (slug: string): string | null => {
+    const result = searchResults.find(r => r.slug === slug);
+    return result?.snippet || null;
+  };
 
   const handlePlay = (episode: Episode) => {
     if (episode.audioUrl) {
@@ -349,13 +371,21 @@ export default function PodcastBrowser() {
             <div className="p-8">
               {/* Search and Sort Controls */}
               <div className="flex gap-4 mb-6 items-center">
-                <input
-                  type="search"
-                  placeholder="Search episodes..."
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  className="flex-1 max-w-md px-4 py-2 bg-paper border-2 border-ink focus:border-primary focus:shadow-hard-sm transition-all"
-                />
+                <div className="flex-1 max-w-md relative">
+                  <input
+                    type="search"
+                    placeholder={searchReady ? "Search inside transcripts..." : "Loading search..."}
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    disabled={!searchReady}
+                    className="w-full px-4 py-2 pr-10 bg-paper border-2 border-ink focus:border-primary focus:shadow-hard-sm transition-all disabled:opacity-50"
+                  />
+                  {(searchLoading || isSearching) && (
+                    <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted animate-spin">
+                      progress_activity
+                    </span>
+                  )}
+                </div>
 
                 <select
                   value={sortBy}
@@ -375,10 +405,17 @@ export default function PodcastBrowser() {
               </div>
 
               {/* Results Count */}
-              <div className="mb-4 font-mono text-xs text-ink-muted">
-                Showing {filteredEpisodes.length} episodes
-                {selectedShow && ` from ${selectedShow}`}
-                {selectedYear && ` in ${selectedYear}`}
+              <div className="mb-4 font-mono text-xs text-ink-muted flex items-center gap-2">
+                <span>
+                  Showing {filteredEpisodes.length} episodes
+                  {selectedShow && ` from ${selectedShow}`}
+                  {selectedYear && ` in ${selectedYear}`}
+                </span>
+                {search.trim() && searchResults.length > 0 && (
+                  <span className="bg-primary/20 text-primary px-2 py-0.5 rounded">
+                    Full-text search
+                  </span>
+                )}
               </div>
 
               {/* Episode List */}
@@ -437,6 +474,11 @@ export default function PodcastBrowser() {
                               </span>
                             )}
                           </div>
+                          {search.trim() && getSnippetForEpisode(episode.slug) && (
+                            <p className="mt-2 text-sm text-ink-muted line-clamp-2 italic">
+                              {getSnippetForEpisode(episode.slug)}
+                            </p>
+                          )}
                         </div>
 
                         {/* Read Button */}

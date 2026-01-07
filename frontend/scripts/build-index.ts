@@ -14,8 +14,18 @@ interface Episode {
   rawFilePath: string | null;
 }
 
+interface SearchDocument {
+  id: string;
+  slug: string;
+  title: string;
+  show: string;
+  date: string;
+  transcriptText: string;
+}
+
 const TRANSCRIPTS_DIR = path.join(__dirname, "../public/transcripts");
 const OUTPUT_FILE = path.join(__dirname, "../public/episodes.json");
+const SEARCH_INDEX_FILE = path.join(__dirname, "../public/search-index.json");
 
 interface TranscriptFile {
   show: string;
@@ -52,20 +62,35 @@ function getAllTranscriptFiles(dir: string): TranscriptFile[] {
   return files;
 }
 
-function parseEpisodeFromFile(file: TranscriptFile): Partial<Episode> | null {
+interface ParsedTranscript {
+  metadata: Partial<Episode>;
+  textContent: string;
+}
+
+function parseEpisodeFromFile(file: TranscriptFile): ParsedTranscript | null {
   try {
-    const content = fs.readFileSync(file.fullPath, "utf-8");
-    const { data } = matter(content);
+    const rawContent = fs.readFileSync(file.fullPath, "utf-8");
+    const { data, content } = matter(rawContent);
 
     if (!data.title && !data.show) return null;
 
+    const cleanedContent = content
+      .replace(/^#+\s+.*/gm, "")
+      .replace(/\*\*[^*]+\*\*:/g, "")
+      .replace(/\[.*?\]\(.*?\)/g, "")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+
     return {
-      title: data.title || path.basename(file.filename, ".md"),
-      show: data.show || file.show,
-      date: data.date_published || data.date || "",
-      duration: data.duration || undefined,
-      audioUrl: data.audio_url || null,
-      speakers: data.speakers || [],
+      metadata: {
+        title: data.title || path.basename(file.filename, ".md"),
+        show: data.show || file.show,
+        date: data.date_published || data.date || "",
+        duration: data.duration || undefined,
+        audioUrl: data.audio_url || null,
+        speakers: data.speakers || [],
+      },
+      textContent: cleanedContent,
     };
   } catch (error) {
     return null;
@@ -87,25 +112,43 @@ async function main() {
   console.log(`Found ${allFiles.length} total transcript files`);
 
   const episodeMap = new Map<string, Episode>();
+  const searchDocMap = new Map<string, SearchDocument>();
 
   for (const file of allFiles) {
     const key = `${file.show}/${file.filename}`;
     
     if (!episodeMap.has(key)) {
-      const metadata = parseEpisodeFromFile(file);
-      if (!metadata) continue;
+      const parsed = parseEpisodeFromFile(file);
+      if (!parsed) continue;
 
+      const slug = createSlug(file.show, file.filename);
+      
       episodeMap.set(key, {
-        slug: createSlug(file.show, file.filename),
-        title: metadata.title!,
-        show: metadata.show!,
-        date: metadata.date!,
-        duration: metadata.duration,
-        audioUrl: metadata.audioUrl!,
-        speakers: metadata.speakers!,
+        slug,
+        title: parsed.metadata.title!,
+        show: parsed.metadata.show!,
+        date: parsed.metadata.date!,
+        duration: parsed.metadata.duration,
+        audioUrl: parsed.metadata.audioUrl!,
+        speakers: parsed.metadata.speakers!,
         filePath: null,
         rawFilePath: null,
       });
+
+      searchDocMap.set(key, {
+        id: slug,
+        slug,
+        title: parsed.metadata.title!,
+        show: parsed.metadata.show!,
+        date: parsed.metadata.date!,
+        transcriptText: parsed.textContent,
+      });
+    } else if (file.type === "polished") {
+      const parsed = parseEpisodeFromFile(file);
+      if (parsed) {
+        const existing = searchDocMap.get(key)!;
+        existing.transcriptText = parsed.textContent;
+      }
     }
 
     const episode = episodeMap.get(key)!;
@@ -123,16 +166,21 @@ async function main() {
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
 
+  const searchDocs = Array.from(searchDocMap.values());
+
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(episodes, null, 2));
+  fs.writeFileSync(SEARCH_INDEX_FILE, JSON.stringify(searchDocs));
   
   const polishedCount = episodes.filter(e => e.filePath).length;
   const rawCount = episodes.filter(e => e.rawFilePath).length;
   const bothCount = episodes.filter(e => e.filePath && e.rawFilePath).length;
+  const totalSearchChars = searchDocs.reduce((sum, d) => sum + d.transcriptText.length, 0);
   
   console.log(`Generated index with ${episodes.length} episodes`);
   console.log(`  - ${polishedCount} have polished transcripts`);
   console.log(`  - ${rawCount} have raw transcripts`);
   console.log(`  - ${bothCount} have both`);
+  console.log(`Generated search index: ${searchDocs.length} documents, ${(totalSearchChars / 1024 / 1024).toFixed(1)}MB text`);
 }
 
 main().catch(console.error);
