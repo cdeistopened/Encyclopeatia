@@ -15,7 +15,7 @@ export default function PodcastBrowser() {
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [sortBy, setSortBy] = useState<"date" | "title">("date");
   const [sortOrder, setSortOrder] = useState<"desc" | "asc">("desc");
-  const [view, setView] = useState<"shows" | "episodes">("shows");
+  const [view, setView] = useState<"shows" | "episodes">("episodes");
 
   const { play, currentEpisode, isPlaying } = usePlayer();
   const { search: fullTextSearch, isReady: searchReady, isLoading: searchLoading } = useTranscriptSearch();
@@ -186,16 +186,6 @@ export default function PodcastBrowser() {
             <div className="mb-6">
               <div className="flex gap-2">
                 <button
-                  onClick={() => setView("shows")}
-                  className={`flex-1 py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
-                    view === "shows"
-                      ? "bg-primary border-ink text-ink shadow-hard-sm"
-                      : "bg-paper border-ink/30 hover:border-ink"
-                  }`}
-                >
-                  Shows
-                </button>
-                <button
                   onClick={() => setView("episodes")}
                   className={`flex-1 py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
                     view === "episodes"
@@ -204,6 +194,16 @@ export default function PodcastBrowser() {
                   }`}
                 >
                   Episodes
+                </button>
+                <button
+                  onClick={() => setView("shows")}
+                  className={`flex-1 py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
+                    view === "shows"
+                      ? "bg-primary border-ink text-ink shadow-hard-sm"
+                      : "bg-paper border-ink/30 hover:border-ink"
+                  }`}
+                >
+                  Shows
                 </button>
               </div>
             </div>
