@@ -10,6 +10,7 @@ export default function Home() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { play, currentEpisode, isPlaying } = usePlayer();
 
@@ -97,6 +98,7 @@ export default function Home() {
               EncycloPEATia
             </h1>
           </Link>
+          {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 items-center">
             <Link
               href="/podcasts"
@@ -105,16 +107,56 @@ export default function Home() {
               ARCHIVE
             </Link>
             <Link
-              href="/encyclopedia"
+              href="/wiki"
               className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
             >
-              ENCYCLOPEDIA
+              WIKI
             </Link>
             <Link href="/ask" className="btn-primary">
               ASK PEAT
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 -mr-2"
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-2xl">
+              {mobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t-2 border-ink bg-surface">
+            <nav className="flex flex-col p-4 gap-2">
+              <Link
+                href="/podcasts"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                ARCHIVE
+              </Link>
+              <Link
+                href="/wiki"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                WIKI
+              </Link>
+              <Link
+                href="/ask"
+                onClick={() => setMobileMenuOpen(false)}
+                className="btn-primary text-center"
+              >
+                ASK PEAT
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       <main className="max-w-7xl mx-auto px-6">
@@ -289,20 +331,20 @@ export default function Home() {
               </span>
             </Link>
 
-            {/* Encyclopedia */}
+            {/* Wiki */}
             <Link
-              href="/encyclopedia"
+              href="/wiki"
               className="group bg-surface border-2 border-ink p-6 shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 transition-all"
             >
               <span className="material-symbols-outlined text-4xl text-primary mb-4 block group-hover:rotate-12 transition-transform">
                 auto_stories
               </span>
-              <h3 className="font-serif text-xl font-bold mb-2">Encyclopedia</h3>
+              <h3 className="font-serif text-xl font-bold mb-2">Wiki</h3>
               <p className="text-ink-muted text-sm mb-4">
                 Explore substances, conditions, and concepts from a bioenergetic lens.
               </p>
               <span className="font-mono text-xs font-bold text-primary uppercase flex items-center gap-1">
-                Browse Entries
+                Browse Articles
                 <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
                   arrow_forward
                 </span>

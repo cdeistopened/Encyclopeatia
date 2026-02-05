@@ -16,6 +16,8 @@ export default function PodcastBrowser() {
   const [sortBy, setSortBy] = useState<"date" | "title">("date");
   const [sortOrder, setSortOrder] = useState<"desc" | "asc">("desc");
   const [view, setView] = useState<"shows" | "episodes">("episodes");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const { play, currentEpisode, isPlaying } = usePlayer();
   const { search: fullTextSearch, isReady: searchReady, isLoading: searchLoading } = useTranscriptSearch();
@@ -61,8 +63,11 @@ export default function PodcastBrowser() {
   const years = useMemo(() => {
     const yearSet = new Set<number>();
     episodes.forEach((ep) => {
-      if (ep.date) {
-        yearSet.add(new Date(ep.date).getFullYear());
+      if (ep.date && ep.date.trim()) {
+        const year = new Date(ep.date).getFullYear();
+        if (!isNaN(year)) {
+          yearSet.add(year);
+        }
       }
     });
     return Array.from(yearSet).sort((a, b) => b - a);
@@ -158,6 +163,7 @@ export default function PodcastBrowser() {
               EncycloPEATia
             </h1>
           </Link>
+          {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 items-center">
             <Link
               href="/podcasts"
@@ -166,21 +172,166 @@ export default function PodcastBrowser() {
               ARCHIVE
             </Link>
             <Link
-              href="/encyclopedia"
+              href="/wiki"
               className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
             >
-              ENCYCLOPEDIA
+              WIKI
             </Link>
             <Link href="/ask" className="btn-primary">
               ASK PEAT
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 -mr-2"
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-2xl">
+              {mobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t-2 border-ink bg-surface">
+            <nav className="flex flex-col p-4 gap-2">
+              <Link
+                href="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                HOME
+              </Link>
+              <Link
+                href="/podcasts"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink bg-primary"
+              >
+                ARCHIVE
+              </Link>
+              <Link
+                href="/wiki"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                WIKI
+              </Link>
+              <Link
+                href="/ask"
+                onClick={() => setMobileMenuOpen(false)}
+                className="btn-primary text-center"
+              >
+                ASK PEAT
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
+      {/* Mobile Filters Button */}
+      <div className="md:hidden p-4 border-b-2 border-ink bg-surface flex gap-2">
+        <button
+          onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
+          className="flex-1 flex items-center justify-center gap-2 py-2 px-4 font-mono text-xs font-bold uppercase border-2 border-ink bg-paper hover:bg-primary transition-colors"
+        >
+          <span className="material-symbols-outlined text-base">filter_list</span>
+          Filters
+          {(selectedShow || selectedYear) && (
+            <span className="bg-primary text-ink px-1.5 rounded-full text-[10px]">
+              {(selectedShow ? 1 : 0) + (selectedYear ? 1 : 0)}
+            </span>
+          )}
+        </button>
+        <div className="flex gap-1">
+          <button
+            onClick={() => setView("episodes")}
+            className={`py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
+              view === "episodes" ? "bg-primary border-ink" : "bg-paper border-ink/30"
+            }`}
+          >
+            List
+          </button>
+          <button
+            onClick={() => setView("shows")}
+            className={`py-2 px-3 font-mono text-xs font-bold uppercase border-2 transition-all ${
+              view === "shows" ? "bg-primary border-ink" : "bg-paper border-ink/30"
+            }`}
+          >
+            Shows
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Filters Drawer */}
+      {mobileFiltersOpen && (
+        <div className="md:hidden border-b-2 border-ink bg-surface p-4">
+          {/* Shows Filter */}
+          <div className="mb-4">
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-2">
+              Filter by Show
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => { setSelectedShow(null); setMobileFiltersOpen(false); }}
+                className={`px-3 py-1 text-xs font-mono border-2 ${
+                  !selectedShow ? "bg-primary border-ink" : "bg-paper border-ink/30"
+                }`}
+              >
+                All
+              </button>
+              {Array.from(showCounts.entries())
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 6)
+                .map(([name]) => (
+                  <button
+                    key={name}
+                    onClick={() => { setSelectedShow(name); setMobileFiltersOpen(false); }}
+                    className={`px-3 py-1 text-xs font-mono border-2 truncate max-w-[120px] ${
+                      selectedShow === name ? "bg-primary border-ink" : "bg-paper border-ink/30"
+                    }`}
+                  >
+                    {name}
+                  </button>
+                ))}
+            </div>
+          </div>
+
+          {/* Years Filter */}
+          <div>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted mb-2">
+              Filter by Year
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => { setSelectedYear(null); setMobileFiltersOpen(false); }}
+                className={`px-3 py-1 text-xs font-mono border-2 ${
+                  !selectedYear ? "bg-primary border-ink" : "bg-paper border-ink/30"
+                }`}
+              >
+                All
+              </button>
+              {years.slice(0, 8).map((year) => (
+                <button
+                  key={year}
+                  onClick={() => { setSelectedYear(year); setMobileFiltersOpen(false); }}
+                  className={`px-3 py-1 text-xs font-mono border-2 ${
+                    selectedYear === year ? "bg-primary border-ink" : "bg-paper border-ink/30"
+                  }`}
+                >
+                  {year}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="flex">
-        {/* Sidebar - Filters */}
-        <aside className="w-72 border-r-2 border-ink min-h-[calc(100vh-5rem)] bg-surface">
+        {/* Sidebar - Filters (Desktop Only) */}
+        <aside className="hidden md:block w-72 border-r-2 border-ink min-h-[calc(100vh-5rem)] bg-surface">
           <div className="p-6">
             {/* View Toggle */}
             <div className="mb-6">

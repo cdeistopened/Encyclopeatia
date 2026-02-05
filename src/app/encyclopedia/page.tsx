@@ -70,6 +70,8 @@ export default function EncyclopediaBrowser() {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<"mentions" | "name">("mentions");
   const [verdictFilter, setVerdictFilter] = useState<Set<string>>(new Set());
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -179,13 +181,13 @@ export default function EncyclopediaBrowser() {
             <span className="material-symbols-outlined text-6xl text-primary mb-4 block">
               auto_stories
             </span>
-            <h2 className="font-serif text-2xl font-bold mb-4">Encyclopedia Coming Soon</h2>
+            <h2 className="font-serif text-2xl font-bold mb-4">Browse the Wiki</h2>
             <p className="text-ink-muted mb-6">
-              The encyclopedia feature requires the knowledge graph backend to be running.
-              This feature is under development.
+              Explore Ray Peat's ideas on metabolism, hormones, nutrition, and health
+              through our comprehensive wiki articles.
             </p>
-            <Link href="/" className="btn-primary">
-              Back to Home
+            <Link href="/wiki" className="btn-primary">
+              Browse Wiki
             </Link>
           </div>
         </div>
@@ -219,7 +221,47 @@ export default function EncyclopediaBrowser() {
               ASK PEAT
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 -mr-2"
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-2xl">
+              {mobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t-2 border-ink bg-surface">
+            <nav className="flex flex-col p-4 gap-2">
+              <Link
+                href="/podcasts"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                ARCHIVE
+              </Link>
+              <Link
+                href="/encyclopedia"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink bg-ink text-white"
+              >
+                ENCYCLOPEDIA
+              </Link>
+              <Link
+                href="/ask"
+                onClick={() => setMobileMenuOpen(false)}
+                className="btn-primary text-center"
+              >
+                ASK PEAT
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       <main className="flex-grow w-full max-w-7xl mx-auto px-6 pt-8 md:pt-12 pb-16">
@@ -247,9 +289,106 @@ export default function EncyclopediaBrowser() {
           </div>
         </div>
 
+        {/* Mobile Filters Button */}
+        <div className="lg:hidden mb-6">
+          <button
+            onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
+            className="w-full flex items-center justify-center gap-2 py-3 px-4 font-mono text-sm font-bold uppercase border-2 border-ink bg-surface hover:bg-ink hover:text-white transition-all"
+          >
+            <span className="material-symbols-outlined text-base">filter_list</span>
+            Filters & Categories
+            <span className="material-symbols-outlined text-base">
+              {mobileFiltersOpen ? "expand_less" : "expand_more"}
+            </span>
+          </button>
+        </div>
+
+        {/* Mobile Filters Drawer */}
+        {mobileFiltersOpen && (
+          <div className="lg:hidden mb-6 border-2 border-ink bg-surface p-4 space-y-6">
+            {/* Categories */}
+            <div>
+              <h3 className="font-mono font-bold text-sm uppercase tracking-widest border-b-2 border-ink pb-2 mb-4">
+                Categories
+              </h3>
+              <ul className="space-y-2 font-mono text-sm">
+                <li>
+                  <button
+                    onClick={() => setSelectedCategory(null)}
+                    className={`w-full flex items-center justify-between group transition-colors ${
+                      !selectedCategory ? "text-ink font-bold" : "text-ink-muted hover:text-ink"
+                    }`}
+                  >
+                    <span>All Entries</span>
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      !selectedCategory ? "bg-ink text-white" : "group-hover:bg-ink/10"
+                    }`}>
+                      {(data?.stats?.total_entities || 0).toLocaleString()}
+                    </span>
+                  </button>
+                </li>
+                {CATEGORY_ORDER.map((cat) => {
+                  const config = CATEGORY_CONFIG[cat];
+                  const count = categoryCounts[cat] || 0;
+                  const isActive = selectedCategory === cat;
+                  return (
+                    <li key={cat}>
+                      <button
+                        onClick={() => setSelectedCategory(cat)}
+                        className={`w-full flex items-center justify-between group transition-colors ${
+                          isActive ? "text-ink font-bold" : "text-ink-muted hover:text-ink"
+                        }`}
+                      >
+                        <span className="flex items-center gap-2">
+                          <span className="material-symbols-outlined text-base">{config.icon}</span>
+                          {config.label}
+                        </span>
+                        <span className={`text-xs px-2 py-0.5 rounded-full ${
+                          isActive ? "bg-ink text-white" : "group-hover:bg-ink/10"
+                        }`}>
+                          {count.toLocaleString()}
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            {/* Verdict Filter */}
+            <div>
+              <h3 className="font-mono font-bold text-sm uppercase tracking-widest border-b-2 border-ink pb-2 mb-4">
+                Filter by Verdict
+              </h3>
+              <div className="space-y-3">
+                {["Pro-Metabolic", "Anti-Metabolic", "Contextual"].map((verdict) => (
+                  <label key={verdict} className="flex items-center gap-3 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={verdictFilter.has(verdict)}
+                      onChange={() => toggleVerdictFilter(verdict)}
+                      className="w-5 h-5 border-2 border-ink text-primary focus:ring-0 focus:ring-offset-0 bg-paper cursor-pointer rounded-none"
+                    />
+                    <span className="font-mono text-sm group-hover:text-primary transition-colors">
+                      {verdict}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <button
+              onClick={() => setMobileFiltersOpen(false)}
+              className="w-full py-2 font-mono text-xs font-bold uppercase border-2 border-ink bg-ink text-white hover:bg-primary hover:text-ink transition-all"
+            >
+              Apply Filters
+            </button>
+          </div>
+        )}
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Sidebar */}
-          <aside className="lg:col-span-3 space-y-8">
+          {/* Sidebar - hidden on mobile */}
+          <aside className="hidden lg:block lg:col-span-3 space-y-8">
             {/* Categories */}
             <div className="border-2 border-ink bg-surface p-6 shadow-hard-sm">
               <h3 className="font-mono font-bold text-sm uppercase tracking-widest border-b-2 border-ink pb-2 mb-4">

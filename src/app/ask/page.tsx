@@ -40,6 +40,21 @@ const SAMPLE_SUBJECTS = [
   "Understanding estrogen dominance",
 ];
 
+const THINKING_PHRASES = [
+  "Consulting the archives...",
+  "Searching 770+ transcripts...",
+  "Cross-referencing newsletters...",
+  "Pondering cellular respiration...",
+  "Considering the bioenergetic angle...",
+  "Checking the endocrine implications...",
+  "Evaluating mitochondrial factors...",
+  "Reviewing metabolic pathways...",
+  "Synthesizing research findings...",
+  "Connecting the physiological dots...",
+  "Examining hormonal interplay...",
+  "Contemplating oxidative metabolism...",
+];
+
 function formatEmailDate(): string {
   const now = new Date();
   return now.toLocaleDateString("en-US", {
@@ -62,7 +77,24 @@ export default function AskPeatPage() {
   const [selectedEmail, setSelectedEmail] = useState<Email | null>(null);
   const [view, setView] = useState<"compose" | "inbox">("compose");
   const [emailValidated, setEmailValidated] = useState(false);
+  const [thinkingPhrase, setThinkingPhrase] = useState(THINKING_PHRASES[0]);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const emailIdRef = useRef(0);
+
+  // Cycle through thinking phrases while loading
+  useEffect(() => {
+    if (!isLoading) return;
+
+    const interval = setInterval(() => {
+      setThinkingPhrase(prev => {
+        const currentIndex = THINKING_PHRASES.indexOf(prev);
+        const nextIndex = (currentIndex + 1) % THINKING_PHRASES.length;
+        return THINKING_PHRASES[nextIndex];
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [isLoading]);
 
   // Check if user has provided email before
   useEffect(() => {
@@ -106,7 +138,10 @@ export default function AskPeatPage() {
     try {
       const response = await fetch("/api/ask", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-User-Email": userEmail,
+        },
         body: JSON.stringify({ question: body, limit: 12 }),
       });
 
@@ -151,6 +186,7 @@ export default function AskPeatPage() {
               EncycloPEATia
             </h1>
           </Link>
+          {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 items-center">
             <Link
               href="/podcasts"
@@ -159,16 +195,63 @@ export default function AskPeatPage() {
               ARCHIVE
             </Link>
             <Link
-              href="/encyclopedia"
+              href="/wiki"
               className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
             >
-              ENCYCLOPEDIA
+              WIKI
             </Link>
             <Link href="/ask" className="btn-primary">
               ASK PEAT
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 -mr-2"
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-2xl">
+              {mobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t-2 border-ink bg-surface">
+            <nav className="flex flex-col p-4 gap-2">
+              <Link
+                href="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                HOME
+              </Link>
+              <Link
+                href="/podcasts"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                ARCHIVE
+              </Link>
+              <Link
+                href="/wiki"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                WIKI
+              </Link>
+              <Link
+                href="/ask"
+                onClick={() => setMobileMenuOpen(false)}
+                className="btn-primary text-center"
+              >
+                ASK PEAT
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
@@ -343,7 +426,7 @@ I have a question about..."
                             <span className="material-symbols-outlined text-base animate-spin">
                               progress_activity
                             </span>
-                            Sending...
+                            <span className="min-w-[200px] text-left">{thinkingPhrase}</span>
                           </>
                         ) : (
                           <>

@@ -278,10 +278,10 @@ export default function EpisodePage({
               ARCHIVE
             </Link>
             <Link
-              href="/encyclopedia"
+              href="/wiki"
               className="font-mono text-sm font-medium hover:text-primary transition-colors"
             >
-              ENCYCLOPEDIA
+              WIKI
             </Link>
           </nav>
         </div>
@@ -566,7 +566,7 @@ export default function EpisodePage({
             Back to Archive
           </Link>
           <Link
-            href="/encyclopedia"
+            href="/wiki"
             className="flex items-center gap-2 font-mono text-sm font-bold hover:text-primary transition-colors"
           >
             Browse Encyclopedia
