@@ -1,97 +1,208 @@
 ---
 title: "Pregnenolone"
 category: "substances/hormones"
-tier: "anchor"
-mentions: 511
-aliases: []
 tags:
   - ray-peat
   - substances-hormones
-  - anchor-article
-created: 2026-01-14
-updated: 2026-02-04
+created: 2026-04-09
 status: complete
 ---
 
 # Pregnenolone
 
-Pregnenolone is the first steroid hormone the body makes from [[cholesterol]]—the biochemical mother of [[progesterone]], [[DHEA]], [[cortisol]], [[testosterone]], and [[estrogen]]. In Ray Peat's framework, it is far more than a precursor. Pregnenolone is itself a potent neuroprotective, anti-inflammatory, and memory-enhancing substance, concentrated in the brain at levels roughly ten times higher than in the blood. As Peat explained in a [[2012-12-21-ask-the-herb-doctor-ask-the-herb-doctor-dementia-and-progesterone|2012 episode on dementia and progesterone]], "The brain is one of the biggest steroid-forming glands. Brain concentrations of pregnenolone, DHEA, and progesterone are about ten times higher than blood levels." When pregnenolone production declines—as it does with [[aging]], [[hypothyroidism]], and [[PUFA]] accumulation—the entire downstream cascade of protective steroids falls with it.
+Pregnenolone is the mother steroid. Every protective hormone the body synthesizes, including [[progesterone]], [[dhea|DHEA]], [[testosterone]], and the [[cortisol]] the body produces under stress, begins as pregnenolone, the first molecule the mitochondrion makes when it strips the side chain from [[cholesterol]]. The ordering is not incidental. Pregnenolone sits one step upstream of progesterone, two steps upstream of the androgens, and at the origin of the entire defensive steroid cascade that Ray Peat spent sixty years cataloging. It was also his personal favorite substance. "When I was buying pregnenolone from the Syntex factory in Mexico, 1984-5, to test its safety I ate a kilogram of it during a year, 3000 to 4000 milligrams per day," he wrote in an [[pregnenolone|email on pregnenolone]]. "I didn't detect any side effects at all, except that my skin, that had been sagging over my eyes and on my neck, firmed up." Few Peat recommendations were more personally field-tested than the one for this molecule.
 
-## Synthesis: Where It Comes From
+The industrial history matches the biological story. Pregnenolone was isolated as early as 1934, but the drug industry lost interest almost immediately. The first tests, Peat recounted in his [[progesterone-pregnenolone-dhea-three-youth-associated-hormones|"Progesterone, Pregnenolone & DHEA" (2006)]] newsletter, "were done on healthy young animals, and since these animals were already producing large amounts of pregnenolone (in the brain, adrenal glands, and gonads), additional pregnenolone had no effect." It looked inert. When the 1940s trials finally used sick and stressed subjects, the substance revealed a wide range of beneficial actions, but by then the pharmaceutical industry had committed to the patentable synthetic variants that would become the corticosteroid and progestin drug classes. Pregnenolone's problem, from a business standpoint, was precisely its virtue. It occurs naturally, cannot be patented, and has no single specific action that can be marketed as a cure for any condition. It just keeps the body's protective machinery supplied with substrate.
 
-Pregnenolone synthesis requires three inputs: [[cholesterol]], [[thyroid]] hormone, and [[vitamin A]]. Thyroid and vitamin A activate the enzymes in mitochondria that cleave the side chain of cholesterol to produce pregnenolone. When any of these inputs is deficient, pregnenolone production drops—and with it, the production of every protective steroid downstream.
+## From Cholesterol to the Cascade
 
-As Peat wrote in his emails, "Thyroid hormone, vitamin A, and cholesterol support the formation of pregnenolone, and the well nourished body is able to make large adjustments in these, to minimize the need for cortisol." This sentence captures the entire framework: adequate pregnenolone production allows the body to favor protective steroids (progesterone, DHEA) over the catabolic cortisol that the body resorts to when pregnenolone is scarce.
+The synthesis of pregnenolone is the rate-limiting step in all steroid production, and it takes place inside the mitochondrion. Peat described the reaction in his [[multiple-sclerosis-and-other-hormone-related-brain-syndromes|"Multiple Sclerosis and Other Hormone-Related Brain Syndromes" (1993)]] newsletter: "The rate-regulating step in steroid synthesis involves the entry of cholesterol into the mitochondria, where the heme-enzyme P-450scc then removes the side-chain of cholesterol (by introducing oxygen atoms), to produce pregnenolone." The enzyme cuts six carbons from cholesterol and installs the 21-carbon backbone that defines the steroid hormones. Being less fat-soluble than cholesterol, pregnenolone leaves the mitochondrion once formed, which means it cannot feedback-inhibit its own production. If anything, as Peat noted in [[steroids-thyroid|"Steroids & Thyroid"]], "it seems to stimulate its own synthesis."
 
-The common occurrence of declining pregnenolone in middle age reflects not an inherent aging process but the convergence of thyroid suppression (from accumulated PUFA), cholesterol reduction (from statins or low-fat diets), and vitamin A deficiency. As Peat noted, "It's common to become deficient in pregnenolone and DHEA in the 40s"—the same decade when thyroid function typically declines and estrogen dominance peaks.
+Two cofactors make the conversion possible: [[thyroid]] hormone and [[vitamin-a|vitamin A]]. Without both, the reaction stalls. "Vitamin A is the main cofactor for the thyroid to be able to turn cholesterol into those hormones," Peat explained in a [[2012-11-23-world-puja-world-puja-foundational-hormones|2012 *World Puja* interview on foundational hormones]]. "If your metabolic rate is high, your Vitamin A requirement is very high because you will be producing large amounts of pregnenolone and progesterone, which uses up Vitamin A." A deficiency in either cofactor shows up as unusually high serum cholesterol, because the cholesterol has nowhere to go. In the [[2019-06-01-jodellefit-jodellefit-cortisol-low-testosterone|2019 *JodelleFit* episode on cortisol and low testosterone]], Peat stated the diagnostic plainly: "Cholesterol is converted pretty massively into pregnenolone and the other protective steroids if you have Vitamin A and thyroid hormone adequately. But if you're deficient in either of those, the cholesterol will rise in your blood."
 
-## The "Pregnenolone Steal" Myth
+The conclusion inverts standard cardiology. High cholesterol, on Peat's reading, is not a disease to be suppressed with statins but a signal that the body is trying to make protective steroids it currently cannot synthesize. Supplementing pregnenolone directly, as Peat often recommended, bypasses the bottleneck. "If you're limited in your ability to turn cholesterol into those hormones, taking pregnenolone bypasses that bottleneck. You can sometimes see a tremendous improvement in a person's ability to cope when they take just a little bit of pregnenolone." The cholesterol problem resolves not because cholesterol has been lowered but because its intended downstream product has been supplied.
 
-The functional medicine concept of "pregnenolone steal"—the idea that chronic stress diverts pregnenolone away from progesterone and toward cortisol—captures a real observation but misrepresents the mechanism. The body does shift steroid production toward cortisol during stress, but this is not because a fixed pool of pregnenolone is being "stolen."
+Bacterial endotoxin and iron-stimulated lipid peroxidation interfere with the same conversion from the other direction. Mitochondrial respiration is required for P450scc to function, and anything that damages the respiratory chain suppresses pregnenolone synthesis at its source. This is why Peat treated the aging decline as a mitochondrial problem rather than a glandular one. The machinery of synthesis sits inside every cell that can respire.
 
-Peat's correction was that the problem is inadequate total production, not competitive diversion. When thyroid, cholesterol, and vitamin A are adequate, the body produces enough pregnenolone to supply both the protective and the stress pathways generously. The "steal" only appears when production is already compromised. Providing more raw material—through thyroid support, adequate cholesterol, and nutritional optimization—resolves the apparent competition without needing to suppress cortisol directly.
+## The Brain as a Steroid Factory
 
-## Neuroprotection and Memory
+The highest concentration of pregnenolone in the body is not found in the adrenal glands or gonads. It is found in the brain. Glial cells called oligodendrocytes, the same cells that wrap myelin around the axons of the central nervous system, are major steroid producers in their own right. "The steroid produced by the oligodendrocytes is pregnenolone, which is known to have a profound anti-stress action, and which appears to be the main brain-protective steroid," Peat wrote in the 1993 newsletter. These cells have receptors sensitive to stress and to Valium, and when a neuron is injured or fatigued, the surrounding oligodendrocytes cluster around it. Peat proposed that this clustering "could represent an adaptive attempt to provide pregnenolone to injured nerve cells."
 
-Pregnenolone's concentration in the brain at ten times blood levels reflects its functional importance there. Military research in the 1940s found that pregnenolone improved worker performance, and subsequent research demonstrated its effects on memory, learning, and stress tolerance.
+Myelin itself, traditionally described as electrical insulation, may be a less central function of these cells than their role as local steroid factories. "If the adrenal cortex were inside the heart, it would be obvious to ask whether its hormones aren't important for the heart's function. Since the oligodendrocytes are steroid-synthesizers, it seems obvious to ask whether their production of pregnenolone in response to stress or fatigue isn't relevant to the conduction processes of the nerves they surround." The interpretation reframes multiple sclerosis: the loss of myelin is simultaneously the loss of the local pregnenolone supply, and the excitotoxic injury that follows reflects neurons starved of their steroid protection. In old age, the brain's pregnenolone concentration "falls to about 5% of their level in youth," leaving the brain exposed to the destructive action of cortisol.
 
-In a [[2012-11-23-world-puja-world-puja-foundational-hormones|2012 episode on foundational hormones]], Peat discussed how the absence of supposedly "essential" fatty acids actually improved fetal learning and memory—because the real cognitive protectors are the saturated fats and steroid hormones, pregnenolone chief among them. The brain's high pregnenolone concentration supports memory consolidation, neuronal stability, and resistance to excitotoxic damage.
+## Memory, Mood, and the GABA System
 
-[[Estrogen]] directly opposes pregnenolone's neuroprotective effects. As Peat explained in his dementia discussion, "Estrogen damages mitochondria and blocks cholesterol-to-steroid conversion"—the exact pathway that produces pregnenolone. Rising estrogen with age thus creates a double deficit: more neuronal damage and less of the substance that repairs it.
+The brain effects of supplemental pregnenolone show up quickly, often within minutes. "When aging rats are given a supplement of pregnenolone, it immediately improves their memory and general performance," Peat wrote in the 2006 newsletter. Wartime factory studies referenced in the [[2011-07-04-its-rainmaking-time-it-s-rainmaking-time-life-supporting-substances|2011 *It's Rainmaking Time* episode]] found that workers given pregnenolone "produced more and coped better with boring work." Peat added his own observation: "I've seen depressed men become happy and productive within 15 minutes of taking it."
 
-## Selye's "Catatoxic" Steroids
+The subjective effect was consistent enough that Peat used the same phrase across venues. "People feel a mood of resilience and an ability to confront challenges." The language is deliberately modest, but the underlying claim is not. Pregnenolone, by quieting the stress response at its source, produces a state in which difficulties feel manageable. It is not euphoria. It is the absence of the background cortisol-driven anxiety that most people over 45, in Peat's estimation, have come to mistake for their baseline personality.
 
-[[Hans Selye]] classified pregnenolone and progesterone as "catatoxic" steroids—substances that help the body destroy and eliminate toxins rather than merely tolerating them. As Peat recounted in a [[2012-01-29-politics-and-science-politics-and-science-progesterone-part-2|2012 episode on progesterone]], Selye found that these steroids enhanced the body's detoxification capacity, accelerating the clearance of drugs, environmental chemicals, and endogenous waste products.
+The mechanism runs through the GABA system. In [[2011-09-29-eastwest-healing-eastwest-healing-cholesterol-and-saturated-fats|the 2011 *EastWest Healing* episode]], Peat drew the parallel to benzodiazepines: "Progesterone and pregnenolone act on the GABA receptor system. Pregnenolone is basically a stabilizer at all levels of cells in the brain. Its effect is to imitate Valium, telling your pituitary that the stress is under control and to stop producing so much cortisol." Valium potentiates GABA's inhibitory action at the GABA-A receptor. Pregnenolone and its metabolites do the same thing endogenously, producing the calming, anti-anxiety, anti-seizure effects that benzodiazepines mimic, without the dependence, tolerance, and cognitive impairment. Peat described early experiments in which "animals given a huge dose of pregnenolone were more normal after the dose than they were before, even if they had been stressed."
 
-This catatoxic function connects to pregnenolone's broader protective role. Rather than merely opposing stress hormones, pregnenolone actively supports the body's ability to process and eliminate the substances that cause stress. A well-nourished body with adequate pregnenolone production handles environmental toxins, dietary irritants, and metabolic waste products efficiently—substances that accumulate and cause chronic problems when pregnenolone is deficient.
+The effect extends into dementia reversal. Peat's 1993 newsletter contains the case of "a biologist friend of mine who was about 85 [and] became very senile. His wife started giving him thyroid, progesterone, DHEA and pregnenolone, and within a few days his mental clarity had returned. He continued to be mentally active until he was 89, when his wife interfered with his access to the hormones." Peat returned to similar cases repeatedly. "I've seen demented people become normal in days with thyroid, progesterone, and pregnenolone." The brain syndromes conventional medicine treats as irreversible decline responded to a combination Peat regarded as simple substrate replacement for the protective steroids the aging body had stopped producing.
 
-## Relationship to Cortisol
+## The Protective Cascade and the Cortisol Shield
 
-Pregnenolone and [[cortisol]] are linked through their shared precursor pathway, but their effects are largely opposite. Cortisol is catabolic—it breaks down tissue to maintain blood sugar. Pregnenolone is stabilizing—it supports cellular structure, membrane integrity, and mitochondrial function without tissue destruction.
+In the [[2019-06-01-jodellefit-jodellefit-cortisol-low-testosterone|2019 *JodelleFit* episode]], Peat laid out the inventory of the cascade pregnenolone heads: "The first barrier to harm is the group of steroids: pregnenolone, progesterone, DHEA, and testosterone. All of these have broadly overlapping protective effects that protect your energy apparatus and sensory apparatus, keeping things stable and working. Injury simply doesn't happen when you have a great abundance of those things. You can run a marathon or swim in ice water and do all sorts of things that could kill a more fragile person."
 
-As Peat recommended in his emails, "Pregnenolone can always be used with thyroid to guarantee an easy adrenal response"—meaning that providing pregnenolone alongside thyroid support ensures the adrenals can respond to stress without the destructive cortisol elevation that occurs when pregnenolone is depleted. This avoids the Cushing's-like symptoms that supplemental cortisol (Cortef) can produce.
+The implication is that "stress" is not a property of situations but of the body's capacity to absorb them. A well-supplied person does not experience most stressors as stressful. "If you're really well supplied with pregnenolone and its derivatives down to testosterone, you've got endurance, so you don't experience stress." When the supply fails, even trivial challenges provoke emergency responses. "Just walking can be a stress. Breathing harder, you will shift over to the lactic acid metabolism." The shift to lactic acid metabolism is the biochemical signature of the failure: cells that should be running on oxidative respiration fall back to fermentation because the protective hormones that maintain mitochondrial function are no longer there to support it.
 
-The practical implication is that pregnenolone supplementation addresses "adrenal fatigue" more safely than hydrocortisone—it provides the raw material the adrenals need without the catabolic side effects of cortisol itself.
+This is why Peat recommended pregnenolone specifically as an anti-cortisol intervention. The 2006 newsletter made the distinction between supplementation in health and in stress: "In a healthy young person or animal, taking even a large dose of pregnenolone has no hormone-like or drug-like action at all. It is unique in this way. But if the animal or person is under stress, and producing more cortisone than usual, taking pregnenolone causes the cortisone to come down to the normal level." A 30-year-old producing 30-50 mg of his own pregnenolone daily will feel nothing from an additional 30 mg supplement. A 65-year-old running chronically elevated cortisol will feel the cortisol drop.
 
-## Practical Supplementation
+## The Pregnenolone Steal, Rebutted
 
-Peat provided specific guidance on pregnenolone use in his emails and interviews:
+Functional medicine popularized a mechanical model called the "pregnenolone steal," which holds that chronic stress shunts pregnenolone toward cortisol production, leaving insufficient substrate for the other downstream hormones and explaining why stressed people have low DHEA and testosterone. Peat regarded this as a misreading of steroid synthesis. "It would be interesting to know who started that," he wrote in an email. "It's a mechanical way of thinking about physiology that ignores the things that really matter. Thyroid hormone, vitamin A, and cholesterol support the formation of pregnenolone, and the well nourished body is able to make large adjustments in these, to minimize the need for cortisol."
 
-**Form matters.** "Pregnenolone doesn't dissolve well in vitamin E," Peat noted. "It's more economical orally as powder." Unlike progesterone, which absorbs well dissolved in vitamin E, pregnenolone works adequately as an oral powder—typically placed under the tongue or mixed with food.
+The error is in treating pregnenolone as a fixed pool that can be "stolen" from. Each steroidogenic cell synthesizes its own pregnenolone on demand from cholesterol, and the amount produced scales with substrate and cofactor availability. The apparent "steal" is not a redistribution of existing pregnenolone but a failure of synthesis in the tissues that need it, while the adrenal cortex continues producing cortisol from its own local supply. The bottleneck is cofactor availability, not substrate theft.
 
-**Dosing is flexible.** Peat recommended different doses for different situations. For general support, modest doses (10-50mg) suffice. For specific therapeutic purposes—post-testosterone-use recovery, cognitive support, adrenal exhaustion—higher doses (100mg or more) may be appropriate. In one email, he recommended "100mg of pregnenolone and 5mg of DHEA" for testicular recovery after exogenous testosterone use.
+Peat's response to the practical question ("so what reduces cortisol?") was that pregnenolone itself does, by signaling to the pituitary that the stress demand is being met. In the [[2013-12-20-ask-the-herb-doctor-ask-the-herb-doctor-aging-and-energy-reversal|2013 *Ask the Herb Doctor* episode on aging and energy reversal]], he specified the downstream consequence: "Cortisol is a major activator of aromatase. The function of pregnenolone is to lower the excess cortisol and prevent the overstimulation of [[aromatase]]." Every milligram of cortisol reduction pregnenolone produces is also a reduction in the enzyme converting testosterone to [[estrogen]] throughout the body. The chain runs pregnenolone to cortisol to aromatase to estrogen, and breaking it at the cortisol step breaks it at every subsequent step.
 
-**Gender considerations.** For women, Peat preferred pregnenolone over DHEA because "it converts to either progesterone or DHEA according to need"—allowing the body to direct it toward whichever pathway is most deficient. Men can use both, with DHEA at modest doses (5-10mg) alongside pregnenolone.
+## The Kilogram Experiment
 
-**The body's own production is preferable.** "Normally the body makes enough from sugar-to-cholesterol conversion with thyroid and vitamin A," Peat explained, "but supplementation is needed when poisoned or depleted." The first priority is always restoring the conditions for endogenous production—thyroid support, adequate cholesterol, vitamin A, reduced PUFA—with supplementation filling the gap while those foundations are rebuilt.
+Peat's personal safety testing of pregnenolone is one of the more remarkable self-experiments in modern physiology literature. He discovered the substance's value in 1984, he told Kim Greenhouse in the *Rainmaking Time* episode, while traveling. "I had been experimenting with progesterone and DHEA in vitamin E. I got very sick on a trip where I didn't have my vitamin E mixture. I took a pinch of plain pregnenolone powder, and in 30 or 40 minutes, all my symptoms disappeared." The speed of the effect prompted him to buy a kilogram from Syntex in Mexico and use it over a year to establish its safety margin.
 
-**Monitoring.** Cortisol tests can help gauge pregnenolone's effects. As Peat noted, "Cortisol tests help judge doses of things that lower it: pregnenolone, progesterone, aspirin, sugar, thyroid, calcium." Declining cortisol while symptoms improve suggests that pregnenolone is successfully providing the substrate that reduces the body's reliance on cortisol.
+The dose averaged 3,000 to 4,000 milligrams per day, roughly 100 times the amount he later recommended to others. "I felt great. I could eat anything I wanted, and my metabolism was ideally regulated. The only reason I didn't keep it up was that it's very expensive." The measurable effects at three grams per day were not noticeably different from the effects at 30 milligrams, which he took as evidence that the substance has a ceiling of action rather than a dose-response curve extending into toxicity. The only changes he noticed at the gram-per-day level were cosmetic: "the main side effects were that it tightened up loose skin, made me look younger, and prevented migraine-like symptoms."
 
-## Interactions with Nitric Oxide
+The practical takeaway for clinical use was that normal doses (100 to 400 mg) were effectively as safe as the gram-level doses and did not carry the risks associated with DHEA supplementation. Peat had stopped recommending DHEA after one case of liver enlargement and elevated estrogen, and pregnenolone replaced it for most indications. "Several years ago I stopped giving people DHEA because they felt so good they would keep taking more and more until one person enlarged his liver and had the estrogen level of a teenage girl. I shifted to recommending almost everyone use pregnenolone instead." The logic was precise: pregnenolone has no direct hormonal action of its own, its metabolites are downstream steroids that the body produces in titrated response to need, and the feedback through the GABA and HPA systems self-limits the response. There is, Peat maintained, no mechanism by which supplemental pregnenolone could push a healthy system out of balance.
 
-An underappreciated mechanism of pregnenolone suppression involves [[nitric oxide]], which Peat identified as a harmful stress mediator. In a [[2014-06-20-ask-the-herb-doctor-ask-the-herb-doctor-vaccination-i|2014 episode]], he explained that "nitric oxide turns off steroid synthesis starting with pregnenolone in white blood cells." Serotonin, histamine, and nitric oxide—all inflammatory mediators—suppress the very beginning of the protective steroid cascade.
+Commercial capsules sometimes contained irritating excipients. Peat's workaround was to dissolve the powder in warm [[vitamin-e|vitamin E]], let it settle, and use only the pregnenolone that went into solution. The same solubility trick he had used for progesterone worked for pregnenolone, and the combination amplified the effect because vitamin E is itself a mitochondrial protector and steroid-sparing agent.
 
-This means that chronic inflammation does not merely consume pregnenolone through increased cortisol demand; it actively shuts down pregnenolone production. Anti-inflammatory strategies (reducing PUFA, supporting thyroid, using aspirin) thus support pregnenolone levels both by reducing demand and by restoring production.
+## The Emphysema Case and the Face-Lifting Effect
+
+One of Peat's most vivid clinical anecdotes involved an 82-year-old friend with emphysema. "I gave him an average of 500mg a day. Two weeks later, his skin color was normal, and he was walking around the city showing me projects, whereas before he could hardly stand up." The mechanism drew on pregnenolone's effects on connective tissue and respiratory function. In the 2006 newsletter, Peat described a "face-lifting" action, "produced by improved circulation to the skin, and by an actual contraction of some muscle-like cells in the skin. A similar effect can improve joint mobility in arthritis, tissue elasticity in the lungs, and even eyesight."
+
+The elasticity effect traces back to a general principle. Connective tissues become "waterlogged and inert" when deprived of energy and under the influence of estrogen. "Pregnenolone helps them contract and return to normal conformation," he said in the *Rainmaking Time* episode. In the lungs, the consequence is restoration of elastic recoil, which is what an emphysema patient needs and precisely what conventional bronchodilators cannot provide. The same tissue-contracting action that tightens aged facial skin loosens the fluid retention in failing lungs, improves joint mobility in arthritis, and may account for reports of improved vision in some patients. Many studies, Peat noted, "have shown it to be protective of 'fibrous tissues' in general, and in this connection it was proven to prevent the tumors that can be caused by estrogen."
+
+## Practical Use
+
+Peat's dosing was modest by the standards of his own self-experiment. A reasonable first dose was 100 mg, roughly the size of an aspirin tablet, though "some people seem to need as much as 1 g/day." One such dose "keeps acting for about a week, as absorption continues along the intestine, and as it is 'recycled' in the body. Part of this long lasting effect is because it improves the body's ability to produce its own pregnenolone."
+
+The self-sustaining quality matters clinically. Unlike cortisol, which suppresses the body's own production when supplemented, pregnenolone stimulates its own synthesis. Russian researchers, Peat noted, "found that giving isolated mitochondria pregnenolone would structurally restore damaged mitochondria and allow them to begin producing more pregnenolone. There is a positive feedback: you give it some, and it makes more." A few doses can restore endogenous production, after which the supplementation can be discontinued. This is why Peat often presented pregnenolone not as a permanent replacement but as a way to unstick a metabolism that had lost the capacity to maintain its own protective steroid supply.
+
+The need for high doses was itself a marker of dysfunction elsewhere. When "a large amount of pregnenolone above one gram daily is needed to lower the pulse and make one feel good and relaxed," the requirement reflected inflammation and thyroid insufficiency. "Reducing sources of inflammation (for me it was grains and starches mostly) as well as regulating thyroid can take the place of the pregnenolone."
+
+For women asking whether pregnenolone could substitute for progesterone in treating PMS and cycle complaints, Peat was careful to distinguish the two. "Pregnenolone doesn't have the direct hormonal effects, but it's the precursor, and by stopping exaggerated stress reactions it is likely to help." Pregnenolone will not replace progesterone for acute uterine symptoms, but it will address the underlying stress component. And unlike high-dose progesterone, which can sedate, pregnenolone has no anesthetic action at any dose. "A large dose of progesterone is an anesthetic. Pregnenolone doesn't have those anesthetic actions, so you can take it without that side effect." The two substances are complementary, and many of Peat's correspondents used them together.
+
+The practical rule Peat returned to most often was that "older people are more likely to feel an effect from pregnenolone, than are young people." This is the biological expression of the principle that pregnenolone only shows up where it is needed. A young body producing 30 mg of its own will get nothing from 30 mg supplemented. An older body producing a fraction of that will get the difference delivered to wherever cortisol is running unchecked. What feels like a gradual restoration of resilience and cognitive clarity is, mechanically, the restoration of the protective steroid shield every organ was supposed to carry into old age.
 
 ## See Also
 
-- [[progesterone]] - The primary downstream protective steroid
-- [[DHEA]] - The adrenal androgen derived from pregnenolone
-- [[cortisol]] - The catabolic steroid that competes for the same precursors
-- [[cholesterol]] - The raw material for pregnenolone synthesis
-- [[thyroid]] - Required for the cholesterol-to-pregnenolone conversion
-- [[vitamin A]] - Co-factor in pregnenolone synthesis
-- [[Hans Selye]] - Classified pregnenolone as "catatoxic"
-- [[stress]] - What pregnenolone protects against
-- [[estrogen]] - Opposes pregnenolone's protective effects
+- [[progesterone]] - The direct downstream product; pregnenolone's nearest metabolic partner
+- [[cholesterol]] - The raw material from which pregnenolone is made
+- [[thyroid]] - Required for the P450scc enzyme to convert cholesterol to pregnenolone
+- [[vitamin-a|Vitamin A]] - The cofactor that activates steroidogenesis
+- [[cortisol]] - The catabolic stress hormone that pregnenolone reliably lowers
+- [[dhea|DHEA]] - The downstream steroid pregnenolone replaced in Peat's recommendations
+- [[testosterone]] - Further downstream in the protective cascade
+- [[estrogen]] - Lowered indirectly via the cortisol-aromatase path
+- [[aromatase]] - The enzyme activated by cortisol and opposed by pregnenolone's cortisol-lowering action
+- [[vitamin-e|Vitamin E]] - Pregnenolone's carrier solvent and mitochondrial protective partner
+- [[aspirin]] - Complementary anti-inflammatory and anti-estrogen tool
+- [[hypothyroidism]] - The condition that most reliably blocks pregnenolone synthesis
+
+<!-- BACKLINKS:START -->
+## Referenced by
+
+- [[aging|concepts/aging]] — …sed. The full mechanism is at [[estrogen]], [[progesterone]], [[cortisol]], and [[pregnenolone]].  **Step 7. Calcium dysregulation.** With……
+- [[blood-sugar|concepts/blood-sugar]] — …t]] — the operational protocol - [[serotonin]] — rises when blood sugar falls - [[pregnenolone]], [[progesterone]] — the protective……
+- [[conditional-reflex|concepts/conditional-reflex]] — …r learned helplessness: T3, sugar, salt, light, [[progesterone]] (in women) and [[pregnenolone]]/[[dhea]] (in both sexes), environmental……
+- [[free-fatty-acids|concepts/free-fatty-acids]] — …ally inhibiting the phospholipase that liberates arachidonic acid. [[DHEA]] and [[pregnenolone]] provide additional protective opposition……
+- [[hormesis|concepts/hormesis]] — …greens, gelatin, daylight, warmth, sleep, [[carbon-dioxide]], [[progesterone]], [[pregnenolone]], [[aspirin]], niacinamide, coffee — the……
+- [[inflammation|concepts/inflammation]] — …that restores the antiestrogen pool depleted by midlife. For men under stress, [[pregnenolone]] (which converts to progesterone among other……
+- [[learned-helplessness|concepts/learned-helplessness]] — …permeability of the gut wall, and further depletes the protective steroid pool ([[pregnenolone]], [[progesterone]], [[dhea]]). The system……
+- [[memory|concepts/memory]] — …against any structural-deposit reading. Full mechanism at [[progesterone]] and [[pregnenolone]].  **Methylene blue.** At low doses (1–4 mg……
+- [[stress|concepts/stress]] — …erone]] — the original anti-stress steroid Peat restored to Selye's framework - [[pregnenolone]] — the precursor pool whose depletion marks……
+- [[anxiety-depression|conditions/anxiety-depression]] — …ortisol, anti-fatty-acid; the depression-relevant uses of a 130-year-old drug - [[pregnenolone]] — precursor steroid; the 1983……
+- [[cancer-treatment-iatrogenesis|conditions/cancer/cancer-treatment-iatrogenesis]] — …r](../../sources/newsletters/taxol-yew-and-cancer.md); see [[progesterone]] and [[pregnenolone]]).  Peat's verdict, from 1992: "At best,……
+- [[estrogen-and-cancer|conditions/cancer/estrogen-and-cancer]] — …g Ovaries, Not the Eggs*]]", "[[cancer]]", "[[estrogen]]", "[[progesterone]]", "[[pregnenolone]]", "[[warburg-effect]]", "[[lactic-acid]]",……
+- [[cold-flu|conditions/cold-flu]] — …[aspirin]]", "[[vitamin-d]]", "[[vitamin-a]]", "[[thyroid]]", "[[endotoxin]]", "[[pregnenolone]]", "[[progesterone]]", "[[carrot-salad]]",……
+- [[hypothyroidism|conditions/hypothyroidism]] — …etabolic failure, and because cholesterol is the precursor to [[progesterone]], [[pregnenolone]], [[DHEA]], and other protective hormones,……
+- [[menopause|conditions/menopause]] — …- [[carrot|raw carrot]] — daily endotoxin-and-estrogen-clearance intervention - [[pregnenolone]] — parent neurosteroid - [[dhea]] — adrenal……
+- [[multiple-sclerosis|conditions/multiple-sclerosis]] — …rone]]", "[[estrogen]]", "[[progesterone]]", "[[pufa]]", "[[hypothyroidism]]", "[[pregnenolone]]", "[[serotonin]]", "[[aspirin]]",……
+- [[post-finasteride-syndrome|conditions/post-finasteride-syndrome]] — …air-loss]]", "[[hair-loss-protocol]]", "[[progesterone]]", "[[testosterone]]", "[[pregnenolone]]", "[[dhea]]", "[[thyroid]]",……
+- [[serotonin-syndrome|conditions/serotonin-syndrome]] — …mall doses of thyroid (sixth or fourth of a Cynoplus tablet), [[progesterone]], [[pregnenolone]], [[diphenhydramine]] (Benadryl), and……
+- [[faq|faq]] — …downstream hormones directly. Buy a brand without soy oil filler. Full picture: [[pregnenolone]] + [[progesterone]] + [[dhea]] +……
+- [[glossary|glossary]] — …erived; precursor to progesterone, DHEA, cortisol; framework-staple supplement. [[pregnenolone]] (3,542w)  **Progesterone** — anti-stress……
+- [[aromatase|mechanisms/aromatase]] — …thyroidism, simultaneously increases local estrogen production. The function of [[pregnenolone]], as Peat explained, "is to lower the……
+- [[detoxification|mechanisms/detoxification]] — …otherwise inert lipid-soluble molecules. The same enzyme family that activates [[pregnenolone]] from [[cholesterol]] also detoxifies……
+- [[fibrosis|mechanisms/fibrosis]] — …-of-inflammation-change-with-aging|*Regeneration and Degeneration*]]). For men, [[pregnenolone]] carries similar effects with less……
+- [[mitochondria|mechanisms/mitochondria]] — …lowing fast enough that few of them leak.  The supporting interventions follow. [[Pregnenolone]] "is formed from cholesterol in the……
+- [[hans-selye|people/hans-selye]] — …nce" that Peat was protecting was specifically the role of [[progesterone]] and [[pregnenolone]] — steroids made in the adrenal cortex (and……
+- [[acne-protocol|protocols/acne-protocol]] — …an empty stomach), when thyroid is adequate, when sleep is protected, and when [[pregnenolone]] (50–100 mg/day) is available as raw……
+- [[anxiety-depression-protocol|protocols/anxiety-depression-protocol]] — …y-depression]]"   - "[[progesterone]]"   - "[[thyroid]]"   - "[[aspirin]]"   - "[[pregnenolone]]"   - "[[cyproheptadine]]"   -……
+- [[beverages-ranked|protocols/beverages-ranked]] — …e full mechanism lives at [[alcohol]], including the remarkable case studies of [[pregnenolone]] and [[progesterone]] reversing alcohol……
+- [[brain-orthomolecular-protocol|protocols/brain-orthomolecular-protocol]] — …in the protocol - [[progesterone]] — the central neurosteroid in the protocol - [[pregnenolone]] — the parent neurosteroid for both sexes -……
+- [[cancer-protocol|protocols/cancer-protocol]] — …— bag breathing, altitude - [[baking-soda]] — hyperosmotic-fluid intervention - [[pregnenolone]] — upstream steroidogenic substrate -……
+- [[dementia-protocol|protocols/dementia-protocol]] — …progest-e]] — the vitamin-E-based progesterone Peat referenced for absorption - [[pregnenolone]] — the parent neurosteroid that supports……
+- [[diabetes-protocol|protocols/diabetes-protocol]] — …temperature-tracking]]", "[[niacinamide]]", "[[aspirin]]", "[[progesterone]]", "[[pregnenolone]]", "[[dhea]]", "[[coconut-oil]]",……
+- [[fertility|protocols/fertility]] — …arries vitamin A, the cofactor without which cholesterol cannot be converted to [[pregnenolone]], [[progesterone]], and [[testosterone]].……
+- [[hair-loss-protocol|protocols/hair-loss-protocol]] — …essed signal destructive to follicles - [[prolactin]] — proximate executioner - [[pregnenolone]] — preferred precursor - [[endotoxin]] —……
+- [[heart-disease-protocol|protocols/heart-disease-protocol]] — …s proxy - [[reverse-t3]] — inactive metabolite for thyroid lab interpretation - [[pregnenolone]] — upstream steroid precursor - [[dhea]] —……
+- [[immune-protocol|protocols/immune-protocol]] — …the winter immune problem; compensating with longer sleep helps. - **A pinch of [[pregnenolone]] daily** (~50 mg sublingual) is what Peat……
+- [[menopause-protocol|protocols/menopause-protocol]] — …ated vasomotor mechanism page - [[progest-e]] — Peat's tocopherol formulation - [[pregnenolone]] — parent neurosteroid for the……
+- [[osteoporosis-protocol|protocols/osteoporosis-protocol]] — …hyroid-recovery]]", "[[bag-breathing]]", "[[menopause-protocol]]", "[[dhea]]", "[[pregnenolone]]", "[[parathyroid-hormone]]",……
+- [[pcos-protocol|protocols/pcos-protocol]] — …men whose progesterone production is slow to return on thyroid plus diet alone, [[pregnenolone]] 50 to 200 mg daily with food provides……
+- [[post-finasteride-syndrome-protocol|protocols/post-finasteride-syndrome-protocol]] — …elve-to-twenty-four-month restoration sequence built around upstream substrate ([[pregnenolone]], [[progesterone]], thyroid) rather than……
+- [[peat-applied-doses|references/peat-applied-doses]] — …t that my skin, that had been sagging over my eyes and on my neck, firmed up." ([[pregnenolone|Pregnenolone]]) - "Sometimes at first a few……
+- [[topic-arcs|sequences/topic-arcs]] — …instability — track the luteal phase, postpartum window, and perimenopause. 6. [[pregnenolone]] — the mother steroid. The molecule……
+- [[protein|substances/amino-acids/protein]] — …ns (A, D, E, K2), choline, cholesterol as raw material for [[progesterone]] and [[pregnenolone]], and a balanced amino acid profile. The……
+- [[alcohol|substances/beverages/alcohol]] — …sm for thirteen years while unhappy in his work. Peat suspected a deficiency in [[pregnenolone]], the master precursor hormone from which……
+- [[cholesterol|substances/cholesterol]] — …ect protector is only the first half of the story. It is also the precursor for [[pregnenolone]], which becomes progesterone and [[DHEA]],……
+- [[caffeine|substances/drugs/caffeine]] — …affeine belongs to a small family of structural stabilizers — [[progesterone]], [[pregnenolone]], [[carbon-dioxide]], [[thyroid]] hormone —……
+- [[cyproheptadine|substances/drugs/cyproheptadine]] — …|anti-depressants correspondence]], placing them alongside [[progesterone]] and [[pregnenolone]] in his standard wean-off protocol.……
+- [[naltrexone|substances/drugs/naltrexone]] — …at treated as the load-bearing intervention for women with autoimmune disease - [[pregnenolone]] — the brain-protective neurosteroid that……
+- [[progest-e|substances/drugs/progest-e]] — …rone]] - [[vitamin-e]] - [[estrogen]] - [[thyroid]] - [[cortisol]] - [[PUFA]] - [[pregnenolone]] - [[DHEA]]…
+- [[coconut-oil|substances/fats/coconut-oil]] — …a balanced diet, lowers cholesterol to normal by promoting its conversion into [[pregnenolone]]." Rather than the suppressive……
+- [[mead-acid|substances/fats/mead-acid]] — …eps the desaturases active. [[Progesterone]] and the other protective steroids ([[pregnenolone]], [[DHEA]]) support the hormonal……
+- [[eggs|substances/foods/eggs]] — …is the intact biology of the egg: yolk cholesterol as the raw material for the [[pregnenolone]] and [[progesterone]] a healthy metabolism……
+- [[fructose|substances/foods/fructose]] — …liver, properly fueled with fructose, can produce the cholesterol that becomes [[pregnenolone]], [[progesterone]], and other protective……
+- [[oats|substances/foods/oats]] — …rol is a protective substance, essential for the synthesis of [[progesterone]], [[pregnenolone]], [[DHEA]], and other steroids that defend……
+- [[shrimp|substances/foods/shrimp]] — …decades. In Peat's framework, this is an asset. Cholesterol is the precursor to [[pregnenolone]], [[progesterone]], [[DHEA]],……
+- [[sucrose|substances/foods/sucrose]] — …production of protective steroid hormones. [[Cholesterol]] is the precursor of [[pregnenolone]], [[progesterone]], and every other hormone……
+- [[aldosterone|substances/hormones/aldosterone]] — …on-sarcopenia-etc|"When Energy Fails"]]). Mechanism detail at [[progesterone]]. [[Pregnenolone]] enters one step upstream: "Pregnenolone……
+- [[allopregnanolone|substances/hormones/allopregnanolone]] — …inasteride, brexanolone, prozac, hormones] sources:   - "[[progesterone]]"   - "[[pregnenolone]]"   - "[[pms]]"   -……
+- [[cortisol|substances/hormones/cortisol]] — …ts destructive potential is determined by its ratio to the protective steroids: [[pregnenolone]], progesterone, [[DHEA]], and……
+- [[dhea|substances/hormones/dhea]] — …the protective steroid cascade that begins with [[cholesterol]], moves through [[pregnenolone]], and branches into [[progesterone]] and……
+- [[dht|substances/hormones/dht]] — …gnanolone]]", "[[progesterone]]", "[[estrogen]]", "[[aromatase]]", "[[dhea]]", "[[pregnenolone]]", "[[thyroid]]", "[[prolactin]]"]……
+- [[dopamine|substances/hormones/dopamine]] — …- [[alpha-synuclein]] - [[substantia-nigra]] - [[nitric-oxide]] - [[aspirin]] - [[pregnenolone]] - [[allopregnenolone]]…
+- [[insulin|substances/hormones/insulin]] — …- [[pyruvate-dehydrogenase]] - [[niacinamide]] - [[glucagon]] - [[aspirin]] - [[pregnenolone]] - [[DHEA]] - [[GLUT5]] - [[beta-cells]] -……
+- [[progesterone|substances/hormones/progesterone]] — …steroids are made.  The adrenal cortex starts with cholesterol, converts it to [[pregnenolone]], and then converts pregnenolone to……
+- [[testosterone|substances/hormones/testosterone]] — …s to the family of protective, anti-stress steroids alongside [[progesterone]], [[pregnenolone]], and [[dhea|DHEA]]. Peat's……
+- [[thyroid|substances/hormones/thyroid]] — …or the rapid conversion of cholesterol into steroid hormones: [[progesterone]], [[pregnenolone]], [[DHEA]], and the other protective……
+- [[magnesium|substances/minerals/magnesium]] — …renal or gonadal steroids, will suffer stress symptoms. Using a supplement like [[pregnenolone]] will make them tolerate the thyroid more……
+- [[README|substances/README]] — …olone]], [[dht]], [[serotonin]], [[dopamine]], [[melatonin]], [[testosterone]], [[pregnenolone]], [[dhea]], [[aldosterone]], [[crh]],……
+- [[vitamin-a|substances/vitamins/vitamin-a]] — …erone]] - The steroid vitamin A helps produce, which in turn spares vitamin A - [[pregnenolone]] - The immediate downstream product of the……
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 
-- [[2012-12-21-ask-the-herb-doctor-ask-the-herb-doctor-dementia-and-progesterone|Dementia and Progesterone]] (KMUD, 2012)
-- [[2012-01-22-politics-and-science-politics-and-science-progesterone-part-1|Progesterone Part 1]] (Politics & Science, 2012)
-- [[2012-01-29-politics-and-science-politics-and-science-progesterone-part-2|Progesterone Part 2]] (Politics & Science, 2012)
-- [[2012-11-23-world-puja-world-puja-foundational-hormones|Foundational Hormones]] (World Puja, 2012)
-- [[2014-06-20-ask-the-herb-doctor-ask-the-herb-doctor-vaccination-i|Vaccination I]] (KMUD, 2014)
-- [[2017-06-16-ask-the-herb-doctor-ask-the-herb-doctor-language-and-criticism-estrogen-part-1|Language and Criticism: Estrogen Part 1]] (KMUD, 2017)
-- Ray Peat emails on pregnenolone, cortisol, DHEA, and testosterone
-- Ray Peat Newsletter: "Money, Progesterone, and Life"
+### Newsletters and Articles
+
+- [[progesterone-pregnenolone-dhea-three-youth-associated-hormones|"Progesterone, Pregnenolone & DHEA"]] (Ray Peat Newsletter, 2006) - Primary reference on pregnenolone's functions, history, and clinical use
+- [[multiple-sclerosis-and-other-hormone-related-brain-syndromes|"Multiple Sclerosis and Other Hormone-Related Brain Syndromes"]] (Ray Peat Newsletter, 1993) - Oligodendrocytes, brain steroidogenesis, P450scc, and senile plaques
+- [[brain-aging|"Brain Aging"]] (Townsend Letter, 1992) - Mitochondrial conversion and the aging decline
+- [[steroids-thyroid|"Steroids & Thyroid"]] - Biosynthesis pathway, GABA modulation, and dosing notes
+- [[solving-some-of-the-problems-of-aging|"Solving Some of the Problems of Aging"]] - Mitochondrial restoration and protective steroid cascade
+
+### Transcripts
+
+- [[2012-11-23-world-puja-world-puja-foundational-hormones|*World Puja* on foundational hormones (2012)]] - Cholesterol bypass and the kilogram experiment
+- [[2011-07-04-its-rainmaking-time-it-s-rainmaking-time-life-supporting-substances|*It's Rainmaking Time* on life-supporting substances (2011)]] - The 1984 discovery story and the emphysema case
+- [[2011-09-29-eastwest-healing-eastwest-healing-cholesterol-and-saturated-fats|*EastWest Healing* on cholesterol and saturated fats (2011)]] - GABA system, Valium analogy, mitochondrial restoration
+- [[2019-06-01-jodellefit-jodellefit-cortisol-low-testosterone|*JodelleFit* on cortisol and low testosterone (2019)]] - Protective steroid cascade and the cholesterol diagnostic
+- [[2013-12-20-ask-the-herb-doctor-ask-the-herb-doctor-aging-and-energy-reversal|*Ask the Herb Doctor* on aging and energy reversal (2013)]] - Pregnenolone steal rebuttal
+
+### Email Exchanges
+
+- [[pregnenolone|Ray Peat email exchanges on pregnenolone]] - Dosing, impurity handling, pregnenolone steal theory rebuttal, safety
+
+## Discovered Entities
+
+Entities referenced in this article that may not yet have their own page in the vault:
+
+- [[p450scc]]
+- [[oligodendrocytes]]
+- [[syntex]]
+- [[allopregnanolone]]
+- [[lactic-acid-metabolism]]
+- [[endotoxin]]

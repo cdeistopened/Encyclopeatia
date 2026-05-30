@@ -1,63 +1,221 @@
 ---
 title: "Coconut Oil"
 category: "substances/fats"
-mentions: 482
-aliases: ["MCT oil", "medium chain triglycerides"]
 tags:
   - ray-peat
   - substances-fats
-created: 2026-01-14
-updated: 2026-02-04
+  - thyroid
+  - metabolism
+  - saturated-fat
+  - weight-loss
+  - anti-pufa
+created: 2026-04-08
 status: complete
 ---
 
 # Coconut Oil
 
-The agricultural industry discovered coconut oil's metabolic properties decades before Ray Peat began recommending it—and promptly abandoned it for exactly those properties. As Peat recounted in a [[2008-07-21-politics-and-science-politics-and-science-july-2008|2008 discussion]], feeding coconut oil to livestock "stimulated animals' appetites and metabolic rates, causing them to eat more but gain less weight." The industry wanted cheap weight gain, not expensive lean animals, so it switched to unsaturated fats—fish oil, linseed oil, cottonseed oil—which slowed metabolism and fattened animals efficiently. The very quality that made coconut oil unprofitable for the meat industry makes it valuable for human health.
+Ray Peat devoted a full newsletter to coconut oil in 2006 and returned to it in nearly every interview he gave across three decades. No other single fat occupied as much of his attention, and the reasons compound: coconut oil is simultaneously a thyroid-protective food, an anti-obesity agent, an antioxidant, a PUFA antagonist, a liver protectant, a brain nutrient, and an antiseptic. Where mainstream nutrition treated it as a heart-attack risk because of its saturated fat content, Peat treated it as one of the most therapeutically versatile foods available. "Butter and coconut oil are really the only very safe fats," he told listeners in a [[2009-04-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-polyunsaturated-fats-and-oils|2009 episode on thyroid and oils]]. "Beef fat, lamb fat, butter, and coconut oil have only maybe 2% polyunsaturated fat."
 
-## Why Medium Chain Fats Are Different
+## The Feedlot Discovery: How Coconut Oil Was Suppressed
 
-Coconut oil's unique metabolic behavior comes from its fatty acid length. Most dietary fats are long-chain fatty acids (16-18 carbons) that require carnitine transport to enter [[mitochondria]] for oxidation. Coconut oil's medium-chain fatty acids (6, 8, 10, and 12 carbons) bypass this system entirely. As Peat explained in an interview on cholesterol and [[saturated fat]], coconut oil's shorter fatty acids "can be handled in mitochondria without the carnitine transport system. They oxidize as easily as [[glucose]] and interfere with the anti-metabolic effects of unsaturated fats."
+The origin story of coconut oil's banishment from the American food supply is one Peat and his interviewers told repeatedly, because it contains the central irony of twentieth-century nutrition. In the 1940s, as Andrew Murray recounted in the [[2008-08-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-metabolism-and-coconut-oil|2008 thyroid and coconut oil episode]], "farmers wanted to increase the animals' weight in the last six or eight weeks of life. They started using coconut oil, a cheap, imported tropical saturated fat. Lo and behold, rather than gaining weight, the animals actually lost weight." The farmers switched to [[seed-oils|corn and soy oil]], and the animals fattened on schedule.
 
-This direct mitochondrial entry means coconut oil is metabolized more like a carbohydrate than a fat. The medium-chain fatty acids are rapidly oxidized for energy rather than being stored in adipose tissue or incorporated into cell membranes. As Peat described, eating coconut oil works "as if you are giving a [[thyroid]] supplement"—it increases oxidative metabolism by providing fuel that burns cleanly and immediately.
+Peat elaborated on this in his coconut oil newsletter: "In the 1940s, farmers attempted to use cheap coconut oil for fattening their animals, but they found that it made them lean, active and hungry." The seed-oil industry seized on this moment. As Peat described it, "the highly unsaturated seed oils had the opposite effect, of producing a rapid fattening of the animal, while decreasing feed consumption, so by 1950 corn and soybeans were widely considered to be optimal feeds for maximizing profits in the production of meat animals." The animals got fat; the seed-oil industry got rich; and coconut oil—the fat that made animals lean—was marketed as dangerous.
 
-## Exempt from the Randle Cycle
+The suppression was deliberate and thorough. Peat wrote that "if the seed-oil industry can eliminate major corporate food products that have used coconut oil for a hundred years, they certainly have the power to prevent dealers from selling a book that would affect their market more seriously." Oreo cookies, Ritz crackers, potato chip producers, and movie theater popcorn makers were all pressured into switching away from coconut oil, despite the shorter shelf life of the replacement oils requiring "large amounts of preservatives."
 
-The [[Randle cycle]]—the mechanism by which long-chain fatty acids block glucose oxidation—is central to Peat's understanding of [[diabetes]] and metabolic disease. Coconut oil is largely exempt from this problem. As Peat explained in email exchanges on the Randle cycle, "Eating coconut oil increases oxidative metabolism, partly because of the shorter fatty acids that are more quickly oxidized, like sugar."
+## Thyroid Protection: The Central Mechanism
 
-Where long-chain [[PUFA|polyunsaturated fats]] inhibit pyruvate dehydrogenase and trap cells in [[lactic acid]] production, coconut oil's medium-chain fats do not trigger this blockade. They compete with stored PUFA for oxidation, effectively displacing the anti-metabolic unsaturated fats from the mitochondrial fuel stream. This is why Peat recommended coconut oil specifically during the process of reducing tissue PUFA stores—it provides metabolic fuel while counteracting the effects of the PUFA being mobilized from storage.
+The most important property of coconut oil in Peat's framework is its ability to oppose the anti-thyroid effects of [[polyunsaturated-fats|PUFA]]. The mechanism is direct competition. As Peat explained in a 2011 interview: "On an even shorter scale, coconut oil, with its short-chain saturated fatty acids, competes with the inhibiting unsaturated fats that are always tending to circulate in the body acting as a brake on the thyroid. The coconut oil short-chain fats compete against the inhibitors, momentarily liberating a higher thyroid function. That only lasts a couple of hours for a tablespoon of coconut oil."
 
-## Anti-Thyroid Blockade
+This is why Peat recommended coconut oil with every meal rather than as a single daily dose. In a later episode, he quantified the practical advice: "Since the unsaturated fats are poisoning your energy-producing system and blocking thyroid action, usually you can notice your metabolic rate speed up when you take a tablespoon of coconut oil. That only lasts for an hour or so. So if you do it with each meal, you're getting, in effect, thyroid support throughout the day."
 
-The most practical application of coconut oil in Peat's framework is as a counter to [[PUFA]]'s anti-thyroid effects. As he stated in an [[2011-03-15-east-west-healing-east-west-healing-estrogen-vs-progesterone-and-the-warburg-effect|2011 interview]], "The main thing interfering with thyroid function is polyunsaturated fats. You can block that very quickly with coconut oil."
+The thyroid-protective effect operates through multiple pathways. Peat identified at least four points at which PUFA blocks thyroid function: secretion from the gland, transport in the bloodstream, conversion of T4 to the active T3 form, and the tissue response to the hormone. Coconut oil's short-chain fatty acids, because they don't require the [[carnitine]] transport system to enter the mitochondria, are metabolized preferentially—effectively occupying the oxidative machinery before the longer-chain unsaturated fats can reach it and do their damage.
 
-PUFA interfere with thyroid at every level—blocking release of thyroid hormone from the gland, inhibiting its transport in the blood, and impairing its action at the cellular receptor. Coconut oil's saturated medium-chain fats displace PUFA from these interference points, allowing whatever thyroid hormone is available to function more effectively. For someone transitioning away from a high-PUFA diet, coconut oil provides immediate metabolic support while the slower process of depleting tissue PUFA stores proceeds over months and years.
+The scale of the effect was not trivial. G. W. Crile, whom Peat cited in his newsletter, "found that the metabolic rate of people in Yucatan, where coconut is a staple food, averaged 25% higher than that of people in the United States." In a tropical climate where the adaptive tendency would be to lower metabolic rate, this 25% elevation pointed directly to the dietary factor.
 
-## Weight Loss and PUFA Detoxification
+## Weight Loss Without Caloric Restriction
 
-Peat's weight loss recommendations frequently included coconut oil—not as a calorie-restriction tool but as a metabolic accelerator. As he wrote in email exchanges, "A small amount of coconut oil with each meal will increase the ability to oxidize fat, by momentarily stopping the anti-thyroid effect of the PUFA."
+The anti-obesity properties of coconut oil were among its most consistent effects across the animal literature. Peat described a landmark study in his newsletter: "At the end of their lives, the animals' obesity increased directly in proportion to the ratio of unsaturated oil to coconut oil in their diet, and was not related to the total amount of fat they had consumed. That is, animals which ate just a little pure unsaturated oil were fat, and animals which ate a lot of coconut oil were lean."
 
-The mechanism is straightforward: when stored PUFA are released during lipolysis (triggered by [[stress]], fasting, or exercise), they suppress thyroid function and slow metabolism—the body's response to what it perceives as a threat. Coconut oil at meals interrupts this anti-thyroid effect, keeping metabolic rate high enough to continue oxidizing the released fats rather than re-storing them.
+The mechanism connects to the Randle cycle and to thyroid function. Peat explained in his newsletter that "the ability of some of the medium chain saturated fatty acids to inhibit the liver's formation of fat very likely synergizes with the pro-thyroid effect, in allowing energy to be used, rather than stored. When fat isn't formed from carbohydrate, the sugar is available for use, or for storage as glycogen." The downstream effect on stress hormones matters too: "Shifting from unsaturated fats in foods to coconut oil involves several anti-stress processes, reducing our need for the adrenal hormones."
 
-This explains the paradox of the livestock industry's observation: animals on coconut oil ate more but weighed less. Higher metabolic rate meant more energy was dissipated as heat rather than deposited as fat. The same principle applies to humans, provided the underlying thyroid function is adequate to support the increased metabolic demand.
+Peat experienced this himself. In his newsletter, he described beginning to use coconut oil and observing his weight drop from 185 pounds—where it had been stable for 25 years—to 175 over six months, despite adding approximately 200-250 calories per day as coconut oil. "I found that eating more coconut oil lowered my weight another few pounds, and eating less caused it to increase."
 
-## Alzheimer's and Brain Fuel
+Callers to the KMUD show confirmed the pattern. In the [[2008-08-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-metabolism-and-coconut-oil|2008 episode]], one caller reported: "I started eating coconut oil three or four years ago and lost about 20 pounds." Andrew Murray contextualized it: "It is a thermogenic product. It increases your body's metabolism and oxygen consumption."
 
-The brain's vulnerability to fuel deprivation connects coconut oil to neurological conditions. As Peat discussed in a [[2011-07-04-its-rainmaking-time-its-rainmaking-time-july-2011|2011 interview]], coconut oil's medium-chain triglycerides were being used to treat [[Alzheimer's disease]] because they provide an alternative fuel source for brain cells whose glucose metabolism has been impaired by the [[Warburg effect]]-like metabolic shift that characterizes neurodegeneration.
+In his email exchanges, Peat gave the practical dietary advice for weight loss: "It's the stored PUFA, released by stress or hunger, that slow metabolism. A small amount of coconut oil with each meal will increase the ability to oxidize fat, by momentarily stopping the antithyroid effect of the PUFA." He also recommended it alongside [[aspirin]] and [[niacinamide]] for their complementary effects on free fatty acid suppression.
 
-## See Also
+## The Antioxidant Function
 
-- [[saturated fat]] — The broader category coconut oil belongs to
-- [[PUFA]] — The anti-metabolic fats coconut oil counteracts
-- [[thyroid]] — The hormone whose function coconut oil supports
-- [[Randle cycle]] — The fatty acid-glucose competition coconut oil largely bypasses
-- [[metabolism]] — Directly increased by coconut oil's medium-chain fats
-- [[butter]] — Another protective saturated fat in Peat's framework
+Peat proposed a novel antioxidant mechanism for coconut oil that went beyond conventional vitamin-based antioxidant thinking. In his newsletter, he wrote: "Coconut oil that has been kept at room temperature for a year has been tested for rancidity, and showed no evidence of it." Since coconut oil does contain a small percentage of unsaturated fats that would normally oxidize, Peat reasoned that "the other (saturated) oils have an antioxidative effect: I suspect that the dilution keeps the unstable unsaturated fat molecules spatially separated from each other, so they can't interact in the destructive chain reactions that occur in other oils."
+
+This spatial-separation theory led to a broader claim: "It is well established that dietary coconut oil reduces our need for [[vitamin-e|vitamin E]], but I think its antioxidant role is more general than that, and it has both direct and indirect antioxidant activities." In his newsletter on [[age-pigment|age pigment]], he elaborated: "A supplement of vitamin E and coconut oil should have a significant effect on the rate of aging: the effect of coconut oil is to reduce the need for vitamin E, to act as a dilutional chain-breaker in free radical propagation, and to provide energy without contributing to the formation of age pigment."
+
+The practical implication was clear in a study Peat cited from the 1960s by Hartroft and Porta, who "showed that the 'age pigment' is produced in proportion to the ratio of oxidants to antioxidants, multiplied by the ratio of unsaturated oils to saturated oils." Adding coconut oil to the diet shifts both ratios favorably—it dilutes the unsaturated fats and provides a saturated substrate that doesn't generate peroxidation products.
+
+Peat connected this directly to skin aging: "Rabbit experiments, and studies of humans, showed that the amount of unsaturated oil in the diet strongly affects the rate at which aged, wrinkled skin develops. The unsaturated fat in the skin is a major target for the aging and carcinogenic effects of ultraviolet light." He offered a personal anecdote—meeting an elderly Filipino woman who "looked many years younger than her doddering old husband" and who cooked all her food in coconut oil three times daily. "Her apparent youth increased my interest in the effects of coconut oil."
+
+## Liver Protection
+
+The liver-protective properties of coconut oil were supported by specific research Peat cited repeatedly. Sarah Murray noted in the [[2008-08-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-metabolism-and-coconut-oil|2008 episode]] from their clinical experience: "A lot of clients have elevated liver enzymes, and when they start eating coconut oil, those enzymes come down."
+
+Peat supplied the mechanism: "A researcher on hepatitis and cirrhosis, Nanji, has shown for years that polyunsaturated fats injure the liver. I think it started with an Indian researcher noticing that in the butter regions of India, alcoholics didn't develop hepatitis or cirrhosis. He tested his observation experimentally, and coconut oil was protective against alcohol-induced liver damage." In his newsletter on diabetes, he noted that "in the 1940s, Houssay found that coconut oil protected animals from poison-induced diabetes, while a lard-based diet failed to protect them."
+
+The liver connection extends to cholesterol metabolism—a topic Peat used to reframe the entire cholesterol debate. He wrote that "coconut oil, added regularly to a balanced diet, lowers cholesterol to normal by promoting its conversion into [[pregnenolone]]." Rather than the suppressive cholesterol-lowering of seed oils (where "the liver defensively retains its cholesterol, rather than releasing it into the blood"), coconut oil enables the metabolically productive use of cholesterol to form protective hormones. "Everyone that I know who uses coconut oil regularly happens to have cholesterol levels of about 160, while eating mainly cholesterol rich foods (eggs, milk, cheese, meat, shellfish)."
+
+## Brain Development and Neuroprotection
+
+Peat placed particular emphasis on coconut oil's role in brain health. In his newsletter, he cited an experiment from around 1978: "Pregnant mice were given diets containing either coconut oil or unsaturated oil. Brain development was superior in the young mice whose mothers ate coconut oil." He attributed this partly to the thyroid connection—"because coconut oil supports thyroid function, and thyroid governs brain development, including myelination"—but noted that there may be a more direct mechanism, since "in 1980, experimenters demonstrated that young rats fed milk containing soy oil incorporated the oil directly into their brain cells, and had structurally abnormal brain cells as a result."
+
+For degenerative brain conditions, Peat cited emerging clinical work. In a discussion with Kim Greenhouse, he described how "a woman is using MCT (medium-chain triglycerides), which are extracted from coconut oil, combined with coconut oil to make it less irritating to the intestine. A lot of people are getting good results" with Alzheimer's patients. He connected this to a broader principle: "Previously, high saturated fat diets had been used to treat epilepsy, brain cancer, and degenerative liver diseases like hepatitis and cirrhosis."
+
+In his newsletter on multiple sclerosis, coconut oil appeared in the recommended nutritional protocol: "Nutritional supplements that might help to prevent or correct these brain syndromes include: Vitamin E and coconut oil; vitamin A; magnesium, sodium; thyroid which includes T3."
+
+## Immunological Properties
+
+One of the more striking facts Peat cited about coconut oil involved its use in hospital settings. In his newsletter, he wrote: "Immunosuppression was observed in patients who were being 'nourished' by intravenous emulsions of 'essential fatty acids,' and as a result coconut oil is used as the basis for intravenous fat feeding, except in organ-transplant patients. For those patients, emulsions of unsaturated oils are used specifically for their immunosuppressive effects."
+
+The contrast is pharmacologically precise: hospitals use coconut oil when they want patients to recover, and unsaturated oils when they want to suppress the immune system. Peat saw this as one of the clearest proofs that the mainstream classification of fats—saturated as dangerous, unsaturated as beneficial—was exactly backward.
+
+## Cancer
+
+The cancer connection runs through multiple mechanisms. Peat cited German research from the 1920s showing that "mice on a fat-free diet were practically free of cancer. Since then, many studies have demonstrated a very close association between consumption of unsaturated oils and the incidence of cancer." Albert Schweitzer's experience in tropical Africa provided a human parallel: "He said it was many years before he saw any cases of cancer, and he believed that the appearance of cancer was caused by the change to the European type of diet."
+
+Coconut oil's anti-cancer properties, in Peat's view, derive from its support of [[oxidative-metabolism|oxidative metabolism]]—the metabolic state that healthy cells require and cancer cells cannot sustain. By displacing PUFA, supporting thyroid function, and providing short-chain fatty acids that fuel mitochondrial respiration without generating [[lipid-peroxidation|lipid peroxidation]] products, coconut oil addresses the metabolic root of cancer as Peat understood it through the [[warburg-effect|Warburg effect]].
+
+## Practical Use: Form, Dosage, and Preparation
+
+Peat had specific preferences about the form of coconut oil. In his emails, he wrote: "I prefer hydrogenated" coconut oil, noting that the refining process removes allergenic proteins. Unrefined coconut oil "is allergenic for many people" because the proteins remain. He recommended filtering: "It's just filtered, usually through diatomaceous earth, to remove materials other than the fat; the main problem with the unfiltered oil is that it's allergenic."
+
+On dosage, his personal practice was about an ounce daily, taken with meals. The KMUD hosts typically recommended "3 tablespoons a day" for clients. Peat noted in his emails that for satiety, "coconut oil (I prefer hydrogenated) helps satiety, while tending to increase the metabolic rate."
+
+For cooking, coconut oil's extreme stability made it ideal. In his emails, he mentioned using it to re-fry bacon: "I fry the bacon to remove some of the fat, and then refry it in coconut oil, to remove most of the PUFA." For dental health: "Melting a little coconut oil in the mouth frequently during the day can be effective, because it's antiseptic." His ice cream recipe used "a cup of coconut oil" blended with egg, sugar, powdered milk, and flavoring—the high oil content preventing crystallization and eliminating the need for an ice cream machine.
+
+He also noted a physical response some people experience: "The first times I used it I smelled like a goat for several days, and even a small amount is enough for me to notice on my skin the next day." This goat-like odor from the short-chain fatty acids was also his reservation about isolated MCT oil fractions: "For a couple of days after I ate a small amount of a medium-chain triglyceride mixture, my skin oil emitted a rank, goaty smell."
+
+## MCT Oil vs. Whole Coconut Oil
+
+Peat was cautious about the fractionation of coconut oil into MCT products. In his newsletter, he warned against treating any complex natural food the way the drug industry treats raw materials—"as a raw material to be fractionated in the search for 'drug' products." He drew an analogy to amino acids: "The arguments made for aspartame, monosodium glutamate, aspartic acid, and tryptophan—that they are like the amino acids that make up natural proteins—are dangerously false. In the case of amino acids, balance is everything."
+
+Various coconut oil fractions were being marketed as treatments—"butyric acid to treat cancer, lauric and myristic acids to treat virus infections, and mixtures of medium-chain fats for weight loss"—but Peat preferred the whole oil: "In the absence of more precise knowledge, I think the whole natural product, used as a regular food, is the best way to protect health."
+
+## The Cholesterol Reframe
+
+Peat used coconut oil to dismantle the entire cholesterol-heart disease paradigm. The seed-oil industry's central claim—that unsaturated oils lower cholesterol and are therefore heart-protective—was, in his view, a misreading of a toxic effect. He wrote: "Large scale human studies have provided overwhelming evidence that whenever drugs, including the unsaturated oils, were used to lower serum cholesterol, mortality increased, from a variety of causes including accidents, but mainly from cancer."
+
+The real mechanism of cholesterol regulation, Peat argued, runs through the thyroid: "Since the 1930s, it has been clearly established that suppression of the thyroid raises serum cholesterol, while restoring the thyroid hormone brings cholesterol down to normal." Coconut oil lowers cholesterol not by suppressing its synthesis but "by promoting its conversion into pregnenolone"—the master precursor of protective hormones including [[progesterone]], DHEA, and the glucocorticoids. Blocking this conversion, as PUFA does by suppressing thyroid function, leaves cholesterol accumulating in the blood while simultaneously depriving the body of the hormones it was meant to become.
+
+He offered a corrective image to counter the "hard, white saturated fat" that people associated with arterial plaque: "After a bottle of safflower oil has been opened a few times, a few drops that get smeared onto the outside of the bottle begin to get very sticky, and hard to wash off. This property is why it is a valued base for paints and varnishes, but this varnish is chemically closely related to the age pigment that forms 'liver spots' on the skin, and similar lesions in the brain, heart, blood vessels, lenses of the eyes." The relevant image is not solid coconut oil but sticky, varnish-like oxidized seed oil.
+
+## The Randle Cycle and PUFA Competition
+
+The relationship between coconut oil and the [[randle-cycle|Randle cycle]] was a question Peat addressed directly in his email exchanges. When asked how coconut oil could protect against diabetes given that the Randle cycle describes inhibition of glucose oxidation by free fatty acids, Peat replied: "Relative to PUFA, yes. When the body contains a lot of PUFA, eating coconut oil increases oxidative metabolism, partly because of the shorter fatty acids that are more quickly oxidized, like sugar, and partly because it dilutes the PUFA which are blocking the enzymes."
+
+The short-chain fatty acids in coconut oil behave more like carbohydrates than like the long-chain fats that drive the Randle cycle. They are oxidized rapidly without competing with glucose for the same enzymatic pathways, while simultaneously displacing the PUFA that does compete. This is why coconut oil can be simultaneously a fat and a pro-glycolytic, pro-thyroid food—a paradox only if one thinks of all dietary fats as metabolically equivalent.
+
+## Serotonin and Stress
+
+In his newsletter on tryptophan and serotonin, Peat identified another mechanism through which coconut oil protects against [[stress]]. "The polyunsaturated oils interact closely with serotonin and tryptophan, and the short and medium chain saturated fatty acids have antihistamine and antiserotonin actions." Where unsaturated fats liberate [[serotonin]] from platelets and promote its synthesis in the brain—contributing to the stress-inflammation-learned helplessness cascade—the saturated fats in coconut oil block that liberation. "Saturated fats don't liberate serotonin, and some of them, such as capric acid found in coconut oil, relax blood vessels, while [[linoleic-acid|linoleic acid]] constricts blood vessels and promotes hypertension."
+
+The anti-stress effect cascades through blood sugar regulation. Peat wrote in his newsletter that "one of the most noticeable changes is the ability to go for several hours without eating, and to feel hungry without having symptoms of [[hypoglycemia]]." By maintaining oxidative metabolism and preventing the cortisol spikes that come from PUFA-induced mitochondrial dysfunction, coconut oil stabilizes the entire stress-hormone axis.
+
+## Water Structure and Lactic Acid
+
+In his newsletter on stress and water, Peat connected coconut oil to another of his foundational concepts—the reduction of [[lactic-acid|lactic acid]] production. "Short-chain fats are very soluble, and are quickly metabolized, so it is likely that coconut oil, which is rich in short and medium-chain fatty acids, will tend to decrease the production of lactic acid." Since lactic acid production signals a failure of oxidative metabolism—the same failure Peat associated with [[cancer]], [[aging]], and degenerative disease—coconut oil's ability to reduce it represents yet another pathway through which the oil supports the metabolic state Peat considered healthy.
+
+## Membrane Fluidity: Challenging the Mainstream Frame
+
+Peat took aim at the mainstream argument that unsaturated fats are necessary for "membrane fluidity." He acknowledged that unsaturated oils do increase fluidity—but argued that this "fluidity" often corresponds to cellular damage, not health. In his newsletter, he wrote: "It is probably true that in many cases the liquid unsaturated oils do increase 'membrane fluidity,' but it is now clear that in at least some of those cases the 'fluidity' corresponds to the chaos of a damaged cell protein structure."
+
+He cited evidence that "in some cells, such as the cells that line the air sacs of the lungs, cholesterol and one of the saturated fatty acids found in coconut oil can increase the fluidity of the cell surface"—demonstrating that saturated fats can fulfill the membrane-fluidity role without the oxidative damage that unsaturated fats bring.
+
+<!-- BACKLINKS:START -->
+## Referenced by
+
+- [[where-peat-evolved|articles/where-peat-evolved]] — …, peat-evolution, historiography] sources: ["[[darkness-water-osteoporosis]]", "[[coconut-oil]]", "[[aspirin-brain-and-cancer]]",……
+- [[free-fatty-acids|concepts/free-fatty-acids]] — …the latter.  ## What Free Fatty Acids Are  A dietary fat -- whether [[butter]], [[coconut-oil|coconut oil]], or corn oil -- consists of……
+- [[intermittent-fasting|concepts/intermittent-fasting]] — …free fatty acid problem during recovery included [[niacinamide]], [[aspirin]], [[coconut-oil|coconut oil]], and adequate [[thyroid]]……
+- [[cold-flu|conditions/cold-flu]] — …the CO2 build up reduces inflammation and produces much better outcomes."  - **[[coconut-oil]]** — short and medium chain saturated fats.……
+- [[diabetes|conditions/diabetes]] — …e]], [[orange-juice]], [[fruit]], [[fructose]] — the preferred sugar sources. - [[coconut-oil]] — Houssay's 1947 zero-mortality……
+- [[gallstones|conditions/gallstones]] — …roidism]]", "[[pufa]]", "[[cholesterol]]", "[[estrogen-detox]]", "[[butter]]", "[[coconut-oil]]", "[[carrot-salad]]", "[[aspirin]]",……
+- [[heart-disease|conditions/heart-disease]] — …The substitution targets are saturated animal fats (butter, ghee, beef tallow), [[coconut-oil|coconut oil]], and small amounts of olive……
+- [[hypothyroidism|conditions/hypothyroidism]] — …for at least a few years until they can change the composition of their body."  [[Coconut-oil|Coconut oil]] occupies a special position in……
+- [[kidney-disease|conditions/kidney-disease]] — …no fish oil supplements, no nut-heavy diets. Substitute saturated fats: butter, [[coconut-oil|coconut oil]], [[ghee]], [[tallow]]. Adipose……
+- [[obesity|conditions/obesity]] — …lism, peat-central, hub, iatrogenic, livestock-history, coconut-oil] sources: ["[[coconut-oil|*Coconut Oil*]]",……
+- [[leptin-resistance-and-set-point|conditions/obesity/leptin-resistance-and-set-point]] — …eating Cancer with Progesterone*]]", "[[sugar-issues|*Sugar Issues* (2012)]]", "[[coconut-oil|*Coconut Oil*]]", "[[obesity]]", "[[pufa]]",……
+- [[faq|faq]] — …uestion is downstream of the lifetime-PUFA question. Full picture: [[butter]] + [[coconut-oil]] + [[ghee]] + [[tallow]] + [[fats-ranked]] +……
+- [[glossary|glossary]] — …y saturated, MCT-rich, thyroid-supportive cooking fat; staple in the framework. [[coconut-oil]] (3,657w)  **Coffee** — caffeine + magnesium……
+- [[energy-production|mechanisms/energy-production]] — …partly uncouple the mitochondria when oxidized. Detail at [[saturated-fat]] and [[coconut-oil]]. - **[[aspirin|Aspirin]].** Mild uncoupler.……
+- [[randle-cycle|mechanisms/randle-cycle]] — …od are predominantly saturated--as they would be in a person eating [[butter]], [[coconut-oil|coconut oil]], and ruminant fat--the Randle……
+- [[ray-peat|people/ray-peat]] — …like [[diabetes-scleroderma-oils-and-hormones]], [[estrogen-and-osteoporosis]], [[coconut-oil]], [[fats-and-degeneration]], and……
+- [[anti-stress-diet|protocols/anti-stress-diet]] — …r preferred substrate. Saturated fat from milk, butter, cheese, beef, lamb, and [[coconut-oil]] supplies energy without the long-range……
+- [[brain-orthomolecular-protocol|protocols/brain-orthomolecular-protocol]] — …rotein activity, and providing an immediately oxidizable fat. Full mechanism at [[coconut-oil]]. Dose: 1-3 tablespoons daily.  **B12……
+- [[cancer-protocol|protocols/cancer-protocol]] — …] — upstream steroidogenic substrate - [[dhea]] — adrenal androgen, older men - [[coconut-oil]] — saturated-fat substitute for PUFA -……
+- [[core-diet-protocol|protocols/core-diet-protocol]] — …tmaxxing-cut]]"   - "[[morning-routine]]"   - "[[milk]]"   - "[[oranges]]"   - "[[coconut-oil]]"   - "[[gelatin]]"   - "[[carrot-salad]]"……
+- [[diabetes-protocol|protocols/diabetes-protocol]] — …inamide]]", "[[aspirin]]", "[[progesterone]]", "[[pregnenolone]]", "[[dhea]]", "[[coconut-oil]]", "[[orange-juice]]", "[[carrot-salad]]",……
+- [[fats-ranked|protocols/fats-ranked]] — …what ends up stored in adipose tissue for the next four years.  ## See Also  - [[coconut-oil|Coconut Oil]] - The fat Peat recommended most……
+- [[heart-disease-protocol|protocols/heart-disease-protocol]] — …ufa]] — the dietary substrate eliminated - [[carbon-dioxide]] — bag breathing - [[coconut-oil]] — saturated-fat substitute for PUFA oils -……
+- [[hypothyroid-recovery|protocols/hypothyroid-recovery]] — …lar membrane level, and helps with body temperature within hours of a dose. See [[coconut-oil]]. 5. **One heaping tablespoon of gelatin……
+- [[immune-protocol|protocols/immune-protocol]] — …drenal function without the pro-oxidant problems of synthetic ascorbic acid.  **[[Coconut-oil]] 1–3 tablespoons daily.** Short and……
+- [[morning-routine|protocols/morning-routine]] — …ggs, or stirred into oatmeal.  See [[aspirin]], [[vitamin-e]], [[thyroid]], and [[coconut-oil]].  ## The Sixty-Minute Rule  By the……
+- [[peatmaxxing-cut|protocols/peatmaxxing-cut]] — …# Coconut Oil as the Specific Weight Loss Lever  Peat devoted more attention to [[coconut-oil|coconut oil]] than to any other single fat,……
+- [[pufa-depletion|protocols/pufa-depletion]] — …-oil]], [[age-pigment]]), you should understand what you are replacing it with ([[coconut-oil]], [[anti-stress-diet]]), and you should……
+- [[weight-loss-protocol|protocols/weight-loss-protocol]] — …]]", "[[anti-stress-diet]]", "[[pufa-depletion]]", "[[hypothyroid-recovery]]", "[[coconut-oil]]", "[[weight-loss|email exchange on weight……
+- [[personas|sequences/personas]] — …d not the keto argument either. 15. [[saturated-fat]] — the rehabilitation. 16. [[coconut-oil]] — the practical intervention; medium-chain……
+- [[tryptophan|substances/amino-acids/tryptophan]] — …stricted, there is a sharp increase in serotonin secretion." He also noted that [[coconut-oil|coconut oil]]'s medium-chain saturated fatty……
+- [[carbon-dioxide|substances/carbon-dioxide]] — …|Randle cycle]]: sugar oxidation yields more CO2 per oxygen than fat oxidation. [[coconut-oil|Coconut oil]] occupies its own place in this……
+- [[aspirin|substances/drugs/aspirin]] — …cer - [[caffeine]] - Synergistic antiinflammatory and antilipolytic substance - [[coconut-oil|Coconut oil]] - Complementary PUFA antagonist……
+- [[butter|substances/fats/butter]] — …of acceptable fats, butter sits on the protective side of the ledger alongside [[coconut-oil|coconut oil]], beef fat, and lamb fat. It was……
+- [[cardiolipin|substances/fats/cardiolipin]] — …ubstrate in concentrations high enough to compete with the mobilized PUFA pool. [[Coconut-oil|Coconut oil]] and dairy fat in the human diet……
+- [[cocoa-butter|substances/fats/cocoa-butter]] — …f Peat's recommended fats has a distinct metabolic profile and practical niche. [[Coconut-oil|Coconut oil]] provides medium-chain fatty……
+- [[fish-oil|substances/fats/fish-oil]] — …nt," he summarized the alternative: "The fats that we synthesize from sugar, or [[coconut-oil|coconut oil]], or oleic acid, the omega-9……
+- [[ghee|substances/fats/ghee]] — …yunsaturated fats]]. It belongs in the same category as [[tallow]], butter, and [[coconut-oil|coconut oil]] -- fats that support rather……
+- [[lard|substances/fats/lard]] — …e this to [[tallow]], which holds its polyunsaturated content to roughly 4%, or [[coconut-oil|coconut oil]], which contains less than 2%.……
+- [[linoleic-acid|substances/fats/linoleic-acid]] — …ansition: "[[Niacinamide]] helps to lower free fatty acids... A small amount of [[coconut-oil|coconut oil]] with each meal will increase……
+- [[linoleic-acid.research|substances/fats/linoleic-acid.research]] — …e. - **Coconut Oil** — saturated fat antagonist to linoleic acid's effects. See [[coconut-oil]]. - **Estrogen** — synergistic with……
+- [[mead-acid|substances/fats/mead-acid]] — …is the necessary first step: eliminating seed oils, choosing low-PUFA fats like [[coconut-oil|coconut oil]], [[butter|butter]], and……
+- [[olive-oil|substances/fats/olive-oil]] — …neither condemned outright like the [[seed-oils]] nor embraced as a staple like [[coconut-oil]] and butter. Peat himself used olive oil,……
+- [[pufa|substances/fats/pufa]] — …aturated, are generally very safe (except when the animals have been poisoned). [[coconut-oil|Coconut oil]] is unique in its ability to……
+- [[saturated-fat|substances/fats/saturated-fat]] — …ed, stearic, palmitic, coconut, anti-pufa, peat-central] sources: ["[[pufa]]", "[[coconut-oil]]", "[[butter]]", "[[tallow]]",……
+- [[seed-oils|substances/fats/seed-oils]] — …ore absorption.  Peat's practical recommendation was straightforward: cook with [[coconut-oil]], butter from pasture-fed cows, or beef……
+- [[tallow|substances/fats/tallow]] — …monogastric animals like pigs or chickens, and places it alongside [[butter]], [[coconut-oil|coconut oil]], and [[cocoa-butter|cocoa……
+- [[avocado|substances/foods/avocado]] — …that matters is not avocado versus canola oil but avocado versus [[butter]] and [[coconut-oil]]. Butter is approximately 63% saturated fat……
+- [[banana|substances/foods/banana]] — …reen bananas can be redeemed through thorough cooking -- fried in [[butter]] or [[coconut-oil]], the heat gelatinizes the starch granules……
+- [[beef|substances/foods/beef]] — …red beef fat—is one of Peat's recommended cooking fats alongside [[butter]] and [[coconut-oil]]. Its high saturated fat content makes it……
+- [[carrot-salad|substances/foods/carrot-salad]] — …[[vegetables]] -- Most raw vegetables lack the carrot's antiseptic properties - [[coconut-oil]] -- One of the antimicrobial oils used in……
+- [[cheese|substances/foods/cheese]] — …E and salt as the safest supplements." Cheese eaten alongside fruit, eggs, and [[coconut-oil]] becomes part of a coherent metabolic……
+- [[chocolate|substances/foods/chocolate]] — …---a long-chain [[saturated-fat]] that Ray Peat placed alongside [[butter]] and [[coconut-oil]] in the small category of safe dietary fats.……
+- [[cream|substances/foods/cream]] — …'s digestive physiology. Cream, in his framework, belongs alongside [[butter]], [[coconut-oil]], and [[milk]] as a protective fat source……
+- [[eggs|substances/foods/eggs]] — …which in turn causes cortisol secretion. Eating fruit (or other carbohydrate), [[coconut-oil|coconut oil]], and salt at the same meal will……
+- [[fructose|substances/foods/fructose]] — …nthesis. Fructose addresses all three problems. As Peat wrote in his article on [[coconut-oil|coconut oil]]: "I encourage people to eat……
+- [[fruit|substances/foods/fruit]] — …at's read, is [[endotoxin]] load and bacterial overgrowth — a [[carrot-salad]], [[coconut-oil|coconut oil]], [[salt]], and ripe-fruit……
+- [[ice-cream|substances/foods/ice-cream]] — …r blood sugar emergencies, and formulated from scratch in his own kitchen using [[coconut-oil]], [[eggs]], and [[sugar]]. Ice cream, in……
+- [[lamb|substances/foods/lamb]] — …dered from the fat trimmings, is an excellent cooking fat. Like beef tallow and [[coconut-oil]], its saturated composition makes it……
+- [[milk|substances/foods/milk]] — …ted-fat decision lets you load saturated fat from cleaner sources — [[butter]], [[coconut-oil|coconut oil]], cheese — without raising the……
+- [[pork|substances/foods/pork]] — …n]]-like amino acid profile rich in [[glycine]] and proline. By heating them in [[coconut-oil]]--a highly saturated fat--and draining them,……
+- [[potatoes|substances/foods/potatoes]] — …the granules accessible to digestive enzymes. The fat -- ideally [[butter]] or [[coconut-oil]], the [[saturated-fat]] sources Peat……
+- [[powdered-milk|substances/foods/powdered-milk]] — …an egg (warmed to 40 degrees C) with a cup of sugar (also warmed) and a cup of [[coconut-oil]] until it's smoothly emulsified, and maybe……
+- [[shellfish|substances/foods/shellfish]] — …esh and simply prepared. Steaming, boiling, and light sauteing in [[butter]] or [[coconut-oil]] preserve their nutrient density without……
+- [[shrimp|substances/foods/shrimp]] — …pair naturally with the other foods Peat recommended: sauteed in [[butter]] or [[coconut-oil]], served alongside [[white rice]] or……
+- [[white-rice|substances/foods/white-rice]] — …erable to al dente preparations. - **Eat it with fat and protein.** [[Butter]], [[coconut-oil]], or other [[saturated-fat]] sources slow……
+- [[insulin|substances/hormones/insulin]] — …- Damages beta cells and drives insulin resistance through a separate pathway - [[coconut-oil]] - Protective against poison-induced……
+- [[progesterone|substances/hormones/progesterone]] — …a|Vitamin A]] - Required cofactor for progesterone synthesis from cholesterol - [[coconut-oil|Coconut oil]] - Saturated fat that supports……
+- [[thyroid|substances/hormones/thyroid]] — …eat told listeners.  **Coconut oil.** The saturated medium-chain fatty acids in [[coconut-oil|coconut oil]] support thyroid function by……
+- [[README|substances/README]] — …. - **fats/** — dietary and structural lipids. [[pufa]] is the central villain; [[coconut-oil]], [[butter]], [[ghee]], [[tallow]],……
+- [[vitamin-e|substances/vitamins/vitamin-e]] — …e, probably because of viscosity."  ## Coconut Oil as a Complement  Peat placed [[coconut-oil|coconut oil]] and vitamin E together as a……
+
+<!-- BACKLINKS:END -->
 
 ## Sources
 
-- [[2008-07-21-politics-and-science-politics-and-science-july-2008|July 2008]] (Politics and Science)
-- [[2011-03-15-east-west-healing-east-west-healing-estrogen-vs-progesterone-and-the-warburg-effect|Estrogen vs Progesterone and the Warburg Effect]] (East West Healing, 2011)
-- [[2011-07-04-its-rainmaking-time-its-rainmaking-time-july-2011|July 2011]] (It's Rainmaking Time)
-- East West Healing interviews on cholesterol and saturated fats
-- Ray Peat email exchanges on coconut oil, weight loss, and the Randle cycle
+Key sources on coconut oil in the Ray Peat corpus:
+- [[coconut-oil|"Coconut Oil" newsletter]] (2006) — Peat's most comprehensive single treatment of the topic
+- [[2008-08-01-ask-the-herb-doctor-ask-the-herb-doctor-thyroid-metabolism-and-coconut-oil|Ask the Herb Doctor: Thyroid, Metabolism and Coconut Oil]] (2008) — Dedicated episode
+- [[2008-09-18-eluv-eluv-good-fats|ELUV: Good Fats]] (2008) — Benefits of saturated oils
+- It's Rainmaking Time (2011) — Coconut oil's short-chain competition with PUFA
+- [[2022-08-19-ask-the-herb-doctor-ask-the-herb-doctor-lipofuscin|Ask the Herb Doctor: Lipofuscin and PUFAs]] (2022) — Adaptogenic properties of coconut oil
+- "Unsaturated Vegetable Oils: Toxic" newsletter — Coconut and olive oil as only safe vegetable oils
+- "Suitable Fats, Unsuitable Fats" newsletter — Feed industry history
+- "Coconut Oil" email topic — Practical use, sourcing, refining, allergenic concerns

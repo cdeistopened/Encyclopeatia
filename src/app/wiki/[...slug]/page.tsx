@@ -3,6 +3,7 @@
 import { useState, useEffect, use } from "react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { WikiNav, WikiFooter } from "@/components/WikiChrome";
 
 interface WikiArticle {
   slug: string;
@@ -13,93 +14,66 @@ interface WikiArticle {
   aliases?: string[];
   content: string;
   redirect?: string;
+  tldr?: string;
+  tags?: string[];
+  confidence?: string;
+  explored?: boolean;
+  sources?: string[];
 }
 
-// Convert wikilinks [[link]] or [[link|display]] to proper links
+const CATEGORY_CLASS: Record<string, string> = {
+  substances: "cat-substances",
+  concepts: "cat-concepts",
+  conditions: "cat-conditions",
+  mechanisms: "cat-mechanisms",
+  people: "cat-people",
+  protocols: "cat-protocols",
+  practices: "cat-practices",
+  articles: "cat-articles",
+};
+
+function slugifyHeading(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+function textOf(node: React.ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textOf).join("");
+  if (node && typeof node === "object" && "props" in node) {
+    const props = (node as { props?: { children?: React.ReactNode } }).props;
+    return textOf(props?.children);
+  }
+  return "";
+}
+
+// Convert wikilinks [[link]] or [[link|display]] to markdown links.
 function processWikilinks(content: string): string {
-  // Pattern matches [[link]] or [[link|display text]]
   return content.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (match, link, display) => {
     const linkText = display || link;
-    // Convert the link to a slug format
     const slug = link.toLowerCase().replace(/\s+/g, "-");
     return `[${linkText}](/wiki/${slug})`;
   });
 }
 
-// Get category info for styling
-function getCategoryInfo(category?: string): { label: string; color: string; icon: string } {
-  if (!category) return { label: "Article", color: "bg-gray-100", icon: "article" };
-
-  const cat = category.toLowerCase();
-  if (cat.includes("hormone")) return { label: "Hormone", color: "bg-pink-100", icon: "science" };
-  if (cat.includes("vitamin")) return { label: "Vitamin", color: "bg-orange-100", icon: "medication" };
-  if (cat.includes("mineral")) return { label: "Mineral", color: "bg-blue-100", icon: "diamond" };
-  if (cat.includes("food") || cat.includes("beverage")) return { label: "Food", color: "bg-green-100", icon: "restaurant" };
-  if (cat.includes("condition")) return { label: "Condition", color: "bg-red-100", icon: "healing" };
-  if (cat.includes("mechanism")) return { label: "Mechanism", color: "bg-purple-100", icon: "settings" };
-  if (cat.includes("concept")) return { label: "Concept", color: "bg-indigo-100", icon: "psychology" };
-  if (cat.includes("people") || cat.includes("person")) return { label: "Person", color: "bg-amber-100", icon: "person" };
-  if (cat.includes("drug")) return { label: "Drug", color: "bg-cyan-100", icon: "pill" };
-  if (cat.includes("fat")) return { label: "Fat", color: "bg-yellow-100", icon: "water_drop" };
-  if (cat.includes("amino")) return { label: "Amino Acid", color: "bg-teal-100", icon: "hub" };
-
-  return { label: category.split("/").pop() || "Article", color: "bg-gray-100", icon: "article" };
-}
-
-// Custom link component for wiki links
 function WikiLink({ href, children }: { href?: string; children?: React.ReactNode }) {
   if (!href) return <>{children}</>;
-
-  // Internal wiki links
+  const isEpisode =
+    href.includes("-ask-the-herb-doctor-") || href.includes("-eastwest-healing-") ||
+    href.includes("-generative-energy-") || href.includes("-one-radio-network-") ||
+    href.includes("-politics-and-science-");
+  if (isEpisode) {
+    return <Link href={`/episode/${href.replace("/wiki/", "")}`} className="wl wl-navy">{children}</Link>;
+  }
   if (href.startsWith("/wiki/")) {
-    return (
-      <Link
-        href={href}
-        className="text-primary hover:text-primary-dark underline decoration-primary/30 hover:decoration-primary transition-colors"
-      >
-        {children}
-      </Link>
-    );
+    return <Link href={href} className="wl">{children}</Link>;
   }
-
-  // Episode links (format: [[slug|title]])
-  if (href.includes("-ask-the-herb-doctor-") || href.includes("-eastwest-healing-") ||
-      href.includes("-generative-energy-") || href.includes("-one-radio-network-") ||
-      href.includes("-politics-and-science-")) {
-    // Extract show and construct episode URL
-    const episodeSlug = href.replace("/wiki/", "");
-    return (
-      <Link
-        href={`/episode/${episodeSlug}`}
-        className="text-accent hover:text-accent/80 underline decoration-accent/30 hover:decoration-accent transition-colors"
-      >
-        {children}
-      </Link>
-    );
-  }
-
-  // External links
   if (href.startsWith("http")) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:text-primary-dark underline"
-      >
-        {children}
-      </a>
-    );
+    return <a href={href} target="_blank" rel="noopener noreferrer" className="wl">{children}</a>;
   }
-
-  return <a href={href}>{children}</a>;
+  return <a href={href} className="wl">{children}</a>;
 }
 
-export default function WikiPage({
-  params,
-}: {
-  params: Promise<{ slug: string[] }>;
-}) {
+export default function WikiPage({ params }: { params: Promise<{ slug: string[] }> }) {
   const { slug: slugParts } = use(params);
   const slug = slugParts.join("/");
 
@@ -123,193 +97,140 @@ export default function WikiPage({
       });
   }, [slug]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-paper flex items-center justify-center">
-        <div className="text-center">
-          <span className="material-symbols-outlined text-5xl text-ink animate-pulse">
-            auto_stories
-          </span>
-          <p className="mt-4 font-mono text-sm text-ink-muted">Loading article...</p>
-        </div>
+  const Shell = ({ children }: { children: React.ReactNode }) => (
+    <div style={{ background: "#e8e4d8", minHeight: "100vh" }}>
+      <div className="page">
+        <WikiNav active="wiki" />
+        {children}
+        <WikiFooter />
       </div>
-    );
+    </div>
+  );
+
+  if (loading) {
+    return <Shell><div className="content"><p className="mono">Loading article…</p></div></Shell>;
   }
 
   if (error || !article) {
     return (
-      <div className="min-h-screen bg-paper flex items-center justify-center">
-        <div className="text-center">
-          <span className="material-symbols-outlined text-5xl text-accent">error</span>
-          <h2 className="font-serif text-2xl mt-4">Article Not Found</h2>
-          <p className="text-ink-muted mt-2">{error || "Unable to load article"}</p>
-          <Link href="/wiki" className="btn-primary mt-6 inline-flex">
-            Browse Wiki
-          </Link>
+      <Shell>
+        <div className="content" style={{ padding: 48 }}>
+          <h1 className="page-title" style={{ fontSize: 36 }}>Article not found</h1>
+          <p className="lede">{error || "Unable to load this article."}</p>
+          <Link href="/wiki" className="btn yellow">Browse the wiki</Link>
         </div>
-      </div>
+      </Shell>
     );
   }
 
-  // Handle redirects
   if (article.redirect) {
-    const redirectSlug = article.redirect
-      .replace(/\[\[|\]\]/g, "")
-      .toLowerCase()
-      .replace(/\s+/g, "-");
+    const redirectSlug = article.redirect.replace(/\[\[|\]\]/g, "").toLowerCase().replace(/\s+/g, "-");
     return (
-      <div className="min-h-screen bg-paper flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-ink-muted">Redirecting to {article.redirect}...</p>
-          <Link href={`/wiki/${redirectSlug}`} className="text-primary hover:underline">
-            Click here if not redirected
-          </Link>
+      <Shell>
+        <div className="content" style={{ padding: 48 }}>
+          <p className="lede">Redirecting to {article.redirect}…</p>
+          <Link href={`/wiki/${redirectSlug}`} className="wl">Click here if not redirected</Link>
         </div>
-      </div>
+      </Shell>
     );
   }
 
-  const categoryInfo = getCategoryInfo(article.category);
-  const processedContent = processWikilinks(article.content);
+  const categoryKey = article.slug.includes("/") ? article.slug.split("/")[0] : "";
+  const catClass = CATEGORY_CLASS[categoryKey] || "cat-articles";
+
+  // Strip a leading line that just echoes the title (common in vault sources),
+  // and a leading "# Title" H1, so the drop cap lands on the real opening line.
+  const bodyContent = article.content
+    .replace(/^\s*#\s+.+\n+/, "")
+    .replace(new RegExp(`^\\s*${article.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*\\n+`, "i"), "");
+  const processedContent = processWikilinks(bodyContent);
+
+  // Build TOC from H2 headings.
+  const toc = Array.from(article.content.matchAll(/^##\s+(.+)$/gm)).map((m) => ({
+    text: m[1].replace(/[*_`]/g, "").trim(),
+    id: slugifyHeading(m[1]),
+  }));
 
   return (
-    <div className="min-h-screen font-body antialiased">
-      {/* Header */}
-      <header className="w-full border-b-2 border-ink bg-paper sticky top-0 z-40">
-        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <span className="material-symbols-outlined text-2xl text-primary group-hover:rotate-12 transition-transform duration-300">
-              auto_stories
-            </span>
-            <h1 className="font-display text-xl font-bold tracking-tight text-ink">
-              EncycloPEATia
-            </h1>
-          </Link>
-          <nav className="flex gap-6 items-center">
-            <Link
-              href="/podcasts"
-              className="font-mono text-sm font-medium hover:text-primary transition-colors"
-            >
-              ARCHIVE
-            </Link>
-            <Link
-              href="/wiki"
-              className="font-mono text-sm font-medium text-primary"
-            >
-              WIKI
-            </Link>
-            <Link
-              href="/encyclopedia"
-              className="font-mono text-sm font-medium hover:text-primary transition-colors"
-            >
-              ENCYCLOPEDIA
-            </Link>
-          </nav>
-        </div>
-      </header>
-
-      <main className="max-w-4xl mx-auto px-6 py-8">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm font-mono text-ink-muted mb-6">
-          <Link href="/" className="hover:text-primary">Home</Link>
-          <span>/</span>
-          <Link href="/wiki" className="hover:text-primary">Wiki</Link>
-          {article.category && (
-            <>
-              <span>/</span>
-              <span className="text-ink-muted">{categoryInfo.label}</span>
-            </>
-          )}
-          <span>/</span>
-          <span className="text-ink">{article.title}</span>
-        </nav>
-
-        {/* Article Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <span className={`px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider ${categoryInfo.color}`}>
-              <span className="material-symbols-outlined text-sm align-middle mr-1">{categoryInfo.icon}</span>
-              {categoryInfo.label}
-            </span>
-            {article.status === "complete" && (
-              <span className="px-2 py-0.5 rounded text-xs font-mono bg-green-100 text-green-800">
-                Complete
-              </span>
-            )}
-            {article.status === "scaffold" && (
-              <span className="px-2 py-0.5 rounded text-xs font-mono bg-yellow-100 text-yellow-800">
-                Scaffold
-              </span>
-            )}
+    <Shell>
+      <div className="article-grid">
+        {/* Main column */}
+        <div className="article-main">
+          <div className="breadcrumb">
+            <Link href="/wiki">Wiki</Link>
+            {categoryKey && (<><span className="sep">/</span><Link href={`/wiki/category/${categoryKey}`}>{categoryKey}</Link></>)}
+            <span className="sep">/</span>
+            <span>{article.title}</span>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-4">
-            {article.title}
-          </h1>
+          <div className="article-cat-row">
+            <span className={`cat-tag ${catClass}`}>{article.category || categoryKey || "article"}</span>
+            {article.confidence && <span className="mono">confidence: {article.confidence}</span>}
+            {article.explored
+              ? <span className="cat-tag sm" style={{ background: "var(--teal)", color: "var(--paper)" }}>✓ reviewed</span>
+              : <span className="mono" style={{ opacity: 0.7 }}>unreviewed</span>}
+          </div>
 
+          <h1 className="page-title" style={{ fontSize: 52 }}>{article.title}</h1>
+          {article.tldr && <p className="lede">{article.tldr}</p>}
           {article.aliases && article.aliases.length > 0 && (
-            <p className="text-ink-muted font-mono text-sm">
-              Also known as: {article.aliases.join(", ")}
-            </p>
+            <p className="mono" style={{ marginBottom: 18 }}>Also known as: {article.aliases.join(", ")}</p>
           )}
 
-          {article.mentions && (
-            <p className="text-ink-muted font-mono text-sm mt-2">
-              <span className="material-symbols-outlined text-sm align-middle mr-1">format_quote</span>
-              {article.mentions.toLocaleString()} mentions in source material
-            </p>
+          <div className="article-body prose">
+            <ReactMarkdown
+              components={{
+                a: ({ href, children }) => <WikiLink href={href}>{children}</WikiLink>,
+                h2: ({ children }) => {
+                  const t = textOf(children);
+                  const ca = /counter-argument|data gap/i.test(t);
+                  return <h2 id={slugifyHeading(t)} className={ca ? "ca-head" : undefined}>{children}</h2>;
+                },
+                h3: ({ children }) => <h3 id={slugifyHeading(textOf(children))}>{children}</h3>,
+              }}
+            >
+              {processedContent}
+            </ReactMarkdown>
+          </div>
+        </div>
+
+        {/* Right rail */}
+        <aside className="right-rail-article">
+          {toc.length > 0 && (
+            <div className="neo toc-card">
+              <div className="head">On this page</div>
+              {toc.map((h) => (
+                <a key={h.id} href={`#${h.id}`} className="toc-link">{h.text}</a>
+              ))}
+            </div>
           )}
-        </div>
 
-        {/* Article Content */}
-        <article className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-ink prose-p:text-ink/90 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-primary prose-blockquote:bg-primary/5 prose-blockquote:py-1 prose-blockquote:not-italic prose-strong:text-ink prose-ul:text-ink/90 prose-li:marker:text-primary">
-          <ReactMarkdown
-            components={{
-              a: ({ href, children }) => <WikiLink href={href}>{children}</WikiLink>,
-              h2: ({ children }) => (
-                <h2 className="mt-10 mb-4 pb-2 border-b border-ink/10">{children}</h2>
-              ),
-              h3: ({ children }) => (
-                <h3 className="mt-8 mb-3">{children}</h3>
-              ),
-              blockquote: ({ children }) => (
-                <blockquote className="border-l-4 border-primary pl-4 py-2 my-6 bg-primary/5 rounded-r">
-                  {children}
-                </blockquote>
-              ),
-            }}
-          >
-            {processedContent}
-          </ReactMarkdown>
-        </article>
+          <div className="neo infobox">
+            <div className="head">Article</div>
+            <div className="ib-row"><span className="k">Category</span><span className="v">{article.category || categoryKey}</span></div>
+            {article.confidence && <div className="ib-row"><span className="k">Confidence</span><span className="v">{article.confidence}</span></div>}
+            <div className="ib-row"><span className="k">Reviewed</span><span className="v">{article.explored ? "Yes" : "Not yet"}</span></div>
+            {typeof article.mentions === "number" && (
+              <div className="ib-row"><span className="k">Mentions</span><span className="v">{article.mentions.toLocaleString()}</span></div>
+            )}
+            {article.sources && article.sources.length > 0 && (
+              <div className="ib-row"><span className="k">Sources</span><span className="v">{article.sources.length}</span></div>
+            )}
+            <div className="ib-row"><span className="k">Slug</span><span className="v" style={{ fontFamily: "var(--mono)", fontSize: 11 }}>{article.slug}</span></div>
+          </div>
 
-        {/* Back Navigation */}
-        <div className="mt-12 pt-8 border-t border-ink/10 flex justify-between items-center">
-          <Link
-            href="/wiki"
-            className="flex items-center gap-2 font-mono text-sm font-bold hover:text-primary transition-colors"
-          >
-            <span className="material-symbols-outlined">arrow_back</span>
-            Browse Wiki
-          </Link>
-          <Link
-            href="/encyclopedia"
-            className="flex items-center gap-2 font-mono text-sm font-bold hover:text-primary transition-colors"
-          >
-            Encyclopedia
-            <span className="material-symbols-outlined">arrow_forward</span>
-          </Link>
-        </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="border-t-2 border-ink mt-16 py-8">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="font-mono text-sm text-ink-muted">
-            EncycloPEATia Wiki - Community-driven Ray Peat encyclopedia
-          </p>
-        </div>
-      </footer>
-    </div>
+          {article.tags && article.tags.length > 0 && (
+            <div className="neo">
+              <div className="head" style={{ fontFamily: "var(--mono)", fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--ink-3)", marginBottom: 8 }}>Tags</div>
+              <div className="row-tight" style={{ flexWrap: "wrap", gap: 6 }}>
+                {article.tags.map((t) => (
+                  <span key={t} className="cat-tag sm" style={{ background: "var(--paper-2)", color: "var(--ink-2)" }}>{t}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </aside>
+      </div>
+    </Shell>
   );
 }

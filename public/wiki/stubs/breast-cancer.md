@@ -1,0 +1,15 @@
+---
+title: "Breast Cancer"
+tldr: "Stub — referenced across the wiki, full article pending."
+category: stub
+explored: false
+stub: true
+inbound_links: 34
+created: 2026-05-30
+---
+
+# Breast Cancer
+
+This page is a stub. **Breast Cancer** is referenced by 34 articles, but the full article has not been written yet.
+
+*Recorded for expansion 2026-05-30.*

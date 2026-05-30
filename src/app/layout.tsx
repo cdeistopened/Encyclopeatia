@@ -4,8 +4,8 @@ import { PlayerProvider } from "@/contexts/PlayerContext";
 import AudioPlayer from "@/components/AudioPlayer";
 
 export const metadata: Metadata = {
-  title: "EncycloPEATia - The Complete Ray Peat Archive",
-  description: "The definitive Ray Peat knowledge archive: 770+ podcast transcripts, newsletters, articles, and AI-powered search.",
+  title: "Ray Peat Wiki — An encyclopedia of Ray Peat's bioenergetic framework",
+  description: "An encyclopedia of Ray Peat's bioenergetic framework: 300+ interlinked articles on substances, mechanisms, and protocols, plus a searchable archive of podcast transcripts.",
 };
 
 export const viewport: Viewport = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className="min-h-screen antialiased bg-paper text-ink">
