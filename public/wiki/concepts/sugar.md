@@ -9,6 +9,14 @@ confidence: high
 created: 2026-05-27
 status: complete
 ---
+> ⚠️ **UNVERIFIED QUOTE SET — flagged 2026-07-29.** This article states below that its consolidated
+> quotations were drawn from `projects/the-ray-peat-diet/research/encyclopedias/ch04-sugar.md`.
+> **That file does not exist**, and a quoted sentence sourced the same way in
+> [[glucose]] was confirmed fabricated (zero corpus occurrences). Every quotation on this page must
+> be re-verified against a real corpus file before it is cited or lifted. Do not treat quotation
+> marks here as evidence.
+
+
 
 # Sugar
 
