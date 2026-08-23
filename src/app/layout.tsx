@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { PlayerProvider } from "@/contexts/PlayerContext";
 import AudioPlayer from "@/components/AudioPlayer";
+import BookPopup from "@/components/BookPopup";
 
 export const metadata: Metadata = {
   title: "Ray Peat Wiki — An encyclopedia of Ray Peat's bioenergetic framework",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <PlayerProvider>
           {children}
           <AudioPlayer />
+          <BookPopup />
         </PlayerProvider>
       </body>
     </html>

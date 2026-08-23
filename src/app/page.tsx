@@ -431,6 +431,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Disclaimer */}
+        <section aria-label="Disclaimer" className="border-t-2 border-ink bg-paper-dim">
+          <div className="py-5 px-6 flex flex-col md:flex-row items-start md:items-center gap-3 max-w-7xl mx-auto">
+            <span className="material-symbols-outlined text-primary shrink-0">info</span>
+            <p className="text-sm text-ink-muted leading-relaxed max-w-4xl">
+              <strong className="text-ink">This is not Ray Peat.</strong> Dr. Peat
+              (1935–2024) had no involvement with this site. Every answer and
+              article here is assembled exclusively from his published writings,
+              newsletters, and interviews — and every claim links back to its
+              source. Nothing here is individualized medical advice.{" "}
+              <a
+                href="https://raypeat.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium hover:underline"
+              >
+                RayPeat.com
+              </a>{" "}
+              and his books are always the primary sources.
+            </p>
+          </div>
+        </section>
+
         {/* Contribute */}
         <section className="py-12 border-t-2 border-ink">
           <div className="bg-surface border-2 border-ink p-8 md:p-10 shadow-hard">
