@@ -1,0 +1,51 @@
+{
+  "builtAt": "2026-08-23T06:14:10.452Z",
+  "totalChunks": 28282,
+  "byCollection": {
+    "transcript": 4486,
+    "newsletter": 4729,
+    "article": 6088,
+    "email": 387,
+    "book": 413,
+    "letter": 68,
+    "wiki": 12111
+  },
+  "parts": [
+    {
+      "file": "corpus-0.json.gz",
+      "chunks": 5222,
+      "bytes": 8828459,
+      "gzipBytes": 2330977
+    },
+    {
+      "file": "corpus-1.json.gz",
+      "chunks": 4467,
+      "bytes": 7463698,
+      "gzipBytes": 2430895
+    },
+    {
+      "file": "corpus-2.json.gz",
+      "chunks": 4736,
+      "bytes": 7373624,
+      "gzipBytes": 2374387
+    },
+    {
+      "file": "corpus-3.json.gz",
+      "chunks": 5273,
+      "bytes": 7404184,
+      "gzipBytes": 2206697
+    },
+    {
+      "file": "corpus-4.json.gz",
+      "chunks": 5200,
+      "bytes": 7404629,
+      "gzipBytes": 2256640
+    },
+    {
+      "file": "corpus-5.json.gz",
+      "chunks": 3384,
+      "bytes": 4840892,
+      "gzipBytes": 1467455
+    }
+  ]
+}

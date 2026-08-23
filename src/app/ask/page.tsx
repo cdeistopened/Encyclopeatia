@@ -14,6 +14,7 @@ interface RAGSource {
   date_published: string | null;
   audio_url: string | null;
   score: number;
+  url?: string | null;
 }
 
 interface RAGResponse {
@@ -526,30 +527,45 @@ I have a question about..."
                             <span className="material-symbols-outlined text-base">
                               attach_file
                             </span>
-                            Sources ({selectedEmail.sources.length} transcript references)
+                            Sources ({selectedEmail.sources.length} references)
                           </h4>
                           <div className="grid gap-2">
-                            {selectedEmail.sources.slice(0, 6).map((source, j) => (
-                              <Link
-                                key={j}
-                                href={`/episode/${source.episode_id}`}
-                                className="block p-3 bg-paper-dim border-2 border-ink/10 hover:border-primary hover:bg-primary/5 transition-all group"
-                              >
+                            {selectedEmail.sources.slice(0, 6).map((source, j) => {
+                              const href = source.url || (source.episode_id ? `/episode/${source.episode_id}` : null);
+                              const inner = (
                                 <div className="flex items-start justify-between gap-2">
                                   <div className="flex-1 min-w-0">
                                     <p className="font-medium text-sm truncate group-hover:text-primary transition-colors">
                                       {source.episode_title}
                                     </p>
                                     <p className="text-xs text-ink-muted mt-1">
-                                      Section: &quot;{source.section_header}&quot; • {source.show}
+                                      {source.section_header} • {source.show}
                                     </p>
                                   </div>
-                                  <span className="material-symbols-outlined text-ink-muted text-sm group-hover:text-primary transition-colors">
-                                    open_in_new
-                                  </span>
+                                  {href && (
+                                    <span className="material-symbols-outlined text-ink-muted text-sm group-hover:text-primary transition-colors">
+                                      open_in_new
+                                    </span>
+                                  )}
                                 </div>
-                              </Link>
-                            ))}
+                              );
+                              return href ? (
+                                <Link
+                                  key={j}
+                                  href={href}
+                                  className="block p-3 bg-paper-dim border-2 border-ink/10 hover:border-primary hover:bg-primary/5 transition-all group"
+                                >
+                                  {inner}
+                                </Link>
+                              ) : (
+                                <div
+                                  key={j}
+                                  className="block p-3 bg-paper-dim border-2 border-ink/10 group"
+                                >
+                                  {inner}
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       )}
