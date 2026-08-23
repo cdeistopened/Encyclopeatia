@@ -10,7 +10,13 @@ import { searchCorpus, type CorpusHit } from "./corpusSearch";
  */
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
-const MODEL = process.env.OPENROUTER_MODEL || "google/gemini-3.1-flash-lite";
+const MODEL = process.env.OPENROUTER_MODEL || "deepseek/deepseek-v4-flash";
+// SECURITY: request-supplied model override only when this env flag is set;
+// never enable in production or public users can spend our tokens.
+export function resolveModel(requested?: string | null): string {
+  if (requested && process.env.ASK_ALLOW_MODEL_OVERRIDE === "1") return requested;
+  return MODEL;
+}
 
 export interface EngineSource {
   text: string;
@@ -32,7 +38,10 @@ export class MissingKeyError extends Error {
   }
 }
 
-async function llm(messages: Array<{ role: string; content: string }>, opts?: { json?: boolean }): Promise<string> {
+async function llm(
+  messages: Array<{ role: string; content: string }>,
+  opts?: { json?: boolean; model?: string | null },
+): Promise<string> {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) throw new MissingKeyError();
 
@@ -49,7 +58,7 @@ async function llm(messages: Array<{ role: string; content: string }>, opts?: { 
         "X-Title": "EncycloPEATia Ask Dr. Peat",
       },
       body: JSON.stringify({
-        model: MODEL,
+        model: resolveModel(opts?.model),
         messages,
         temperature: opts?.json ? 0.2 : 0.7,
         max_tokens: opts?.json ? 400 : 1600,
@@ -91,13 +100,13 @@ Given a user question, output JSON {"queries": [...]} with 7-9 short search quer
 - Opposing things he warns about (e.g. polyunsaturated fat, estrogen, serotonin, fasting, starch)
 - One query per line of thought; no duplicates, no generic filler.`;
 
-async function generateSearchQueries(question: string): Promise<string[]> {
+async function generateSearchQueries(question: string, model?: string | null): Promise<string[]> {
   const raw = await llm(
     [
       { role: "system", content: QUERY_SYSTEM },
       { role: "user", content: `QUESTION: ${question}` },
     ],
-    { json: true },
+    { json: true, model },
   );
   const parsed = parseJsonLoose(raw) as { queries?: string[] } | string[] | null;
   let queries: string[] = [];
@@ -156,24 +165,25 @@ function formatPassages(passages: CorpusHit[]): string {
     .join("\n\n---\n\n");
 }
 
-async function synthesize(question: string, passages: CorpusHit[]): Promise<string> {
+async function synthesize(question: string, passages: CorpusHit[], model?: string | null): Promise<string> {
   const raw = await llm([
     { role: "system", content: SYNTH_SYSTEM },
     {
       role: "user",
       content: `SOURCE EXCERPTS FROM RAY PEAT'S CORPUS:\n\n${formatPassages(passages)}\n\nUSER QUESTION: ${question}\n\nANSWER AS DR. PEAT (with [n] citations):`,
     },
-  ]);
+  ], { model });
   return raw.trim();
 }
 
-// ---------- the agentic loop ----------
-
-export async function askDrPeat(question: string): Promise<{ answer: string; sources: EngineSource[] }> {
+export async function askDrPeat(
+  question: string,
+  modelOverride?: string | null,
+): Promise<{ answer: string; sources: EngineSource[] }> {
   const t0 = Date.now();
 
   // Round 1 — expand the question into corpus-native queries.
-  let queries = await generateSearchQueries(question);
+  let queries = await generateSearchQueries(question, modelOverride);
   if (!queries.length) queries = [question];
 
   let hits = runSearches(queries);
@@ -192,7 +202,7 @@ export async function askDrPeat(question: string): Promise<{ answer: string; sou
             content: `QUESTION: ${question}\nQueries already tried: ${queries.join(" | ")}\nDocuments found so far: ${titles}\n\nOutput 5 NEW, different search queries to fill the gaps.`,
           },
         ],
-        { json: true },
+        { json: true, model: modelOverride },
       );
       const parsed = parseJsonLoose(more) as { queries?: string[] } | null;
       const extra = (parsed?.queries || []).filter(Boolean).slice(0, 6);
@@ -211,7 +221,7 @@ export async function askDrPeat(question: string): Promise<{ answer: string; sou
       };
   }
 
-  const answer = await synthesize(question, top);
+  const answer = await synthesize(question, top, modelOverride);
   console.log(`[ask] "${question.slice(0, 60)}" -> ${queries.length}+ queries, ${top.length} chunks, ${Date.now() - t0}ms`);
 
   // Map cited chunks back to document-level sources, in citation order of appearance.

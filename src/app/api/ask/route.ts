@@ -28,8 +28,10 @@ function rateLimited(ip: string): boolean {
 export async function POST(request: NextRequest) {
   try {
     let question: unknown;
+    let modelOverride: string | null = null;
     try {
-      ({ question } = await request.json());
+      const body = await request.json();
+      ({ question, model: modelOverride } = body);
     } catch {
       return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
     }
@@ -53,7 +55,7 @@ export async function POST(request: NextRequest) {
     }
 
     const trimmed = question.trim();
-    const { answer, sources } = await askDrPeat(trimmed);
+    const { answer, sources } = await askDrPeat(trimmed, modelOverride);
 
     return NextResponse.json({ answer, sources, query: trimmed });
   } catch (error) {
