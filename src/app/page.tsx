@@ -171,9 +171,9 @@ export default function Home() {
               <span className="text-primary">Ray Peat</span> Archive
             </h1>
             <p className="font-body text-lg text-ink-muted leading-relaxed mb-8 max-w-xl">
-              770+ podcast transcripts, newsletters, and articles. Explore the
-              bioenergetic framework that changed how we think about metabolism,
-              hormones, and health.
+              A 300-page interlinked encyclopedia and 250+ interview transcripts,
+              with an AI that answers questions in Peat's own words — every claim
+              cited back to the source.
             </p>
 
             {/* Search */}
@@ -190,33 +190,91 @@ export default function Home() {
               </span>
             </div>
 
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-3 mb-8">
+              <Link href="/ask" className="btn-primary flex items-center gap-2">
+                <span className="material-symbols-outlined text-base">smart_toy</span>
+                Ask Dr. Peat
+              </Link>
+              <Link
+                href="/wiki"
+                className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-surface hover:bg-ink hover:text-white transition-all"
+              >
+                <span className="material-symbols-outlined text-base">auto_stories</span>
+                Browse the Wiki
+              </Link>
+            </div>
+
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-6 font-mono text-sm">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary">podcasts</span>
-                <span className="font-bold">770+</span>
+                <span className="font-bold">264</span>
                 <span className="text-ink-muted">Episodes</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary">description</span>
-                <span className="font-bold">143</span>
-                <span className="text-ink-muted">Newsletters</span>
+                <span className="material-symbols-outlined text-primary">auto_stories</span>
+                <span className="font-bold">300+</span>
+                <span className="text-ink-muted">Wiki articles</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary">article</span>
-                <span className="font-bold">96</span>
-                <span className="text-ink-muted">Articles</span>
+                <span className="material-symbols-outlined text-primary">smart_toy</span>
+                <span className="font-bold">28k</span>
+                <span className="text-ink-muted">Searchable passages</span>
               </div>
             </div>
           </div>
         </section>
 
+        {/* The Encyclopedia */}
+        <section className="py-12 border-t-2 border-ink">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="font-mono text-sm font-bold uppercase tracking-widest text-ink-muted flex items-center gap-2">
+              <span className="material-symbols-outlined">auto_stories</span>
+              The Encyclopedia
+            </h2>
+            <Link
+              href="/wiki"
+              className="font-mono text-xs font-bold text-primary hover:underline flex items-center gap-1"
+            >
+              View All
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[
+              { cat: "substances", label: "Substances", count: 178, color: "#e63946" },
+              { cat: "concepts", label: "Concepts", count: 61, color: "#1d3557" },
+              { cat: "conditions", label: "Conditions", count: 49, color: "#c9a227" },
+              { cat: "mechanisms", label: "Mechanisms", count: 31, color: "#0d9488" },
+              { cat: "protocols", label: "Protocols", count: 43, color: "#c96f2e" },
+              { cat: "people", label: "People", count: 17, color: "#7c3aed" },
+            ].map(({ cat, label, count, color }) => (
+              <Link
+                key={cat}
+                href={`/wiki/category/${cat}`}
+                className="group bg-surface border-2 border-ink p-4 shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 transition-all"
+              >
+                <span
+                  className="block w-8 h-1.5 mb-3 border border-ink"
+                  style={{ backgroundColor: color }}
+                />
+                <p className="font-serif text-lg font-bold leading-tight group-hover:text-primary transition-colors">
+                  {label}
+                </p>
+                <p className="font-mono text-xs text-ink-muted mt-1">{count} entries</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Featured Episodes */}
-        <section className="py-12">
+        <section className="py-12 border-t-2 border-ink">
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-mono text-sm font-bold uppercase tracking-widest text-ink-muted flex items-center gap-2">
               <span className="material-symbols-outlined">play_circle</span>
-              Featured Episodes
+              From the Interview Archive
             </h2>
             <Link
               href="/podcasts"
@@ -321,7 +379,7 @@ export default function Home() {
               </span>
               <h3 className="font-serif text-xl font-bold mb-2">Browse Archive</h3>
               <p className="text-ink-muted text-sm mb-4">
-                Filter by show, year, or search all 770+ episode transcripts.
+                Filter by show, year, or search all 264 episode transcripts.
               </p>
               <span className="font-mono text-xs font-bold text-primary uppercase flex items-center gap-1">
                 Explore
@@ -370,6 +428,42 @@ export default function Home() {
                 </span>
               </span>
             </Link>
+          </div>
+        </section>
+
+        {/* Contribute */}
+        <section className="py-12 border-t-2 border-ink">
+          <div className="bg-surface border-2 border-ink p-8 md:p-10 shadow-hard">
+            <div className="flex flex-col md:flex-row md:items-center gap-8">
+              <div className="flex-1">
+                <h2 className="font-serif text-3xl font-bold mb-3">Open source, openly editable</h2>
+                <p className="text-ink-muted leading-relaxed mb-4 max-w-2xl">
+                  The whole encyclopedia and every transcript is Markdown on GitHub.
+                  Clone it, point your AI agent at it, fix a speaker label, add a
+                  connection, write a missing entry — pull requests welcome.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/contribute" className="btn-primary flex items-center gap-2">
+                    <span className="material-symbols-outlined text-base">volunteer_activism</span>
+                    How to Contribute
+                  </Link>
+                  <a
+                    href="https://github.com/cdeistopened/raypeat-wiki"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-paper hover:bg-ink hover:text-white transition-all"
+                  >
+                    <span className="material-symbols-outlined text-base">code</span>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div className="md:w-80 shrink-0 bg-ink text-white p-4 font-mono text-xs overflow-x-auto border-2 border-ink">
+                <p className="text-primary mb-1"># read it with any agent</p>
+                <p>git clone https://github.com/</p>
+                <p className="pl-6">cdeistopened/raypeat-wiki.git</p>
+              </div>
+            </div>
           </div>
         </section>
 

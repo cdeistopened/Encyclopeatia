@@ -166,25 +166,17 @@ function walkMd(dir, cb) {
   }
 }
 
-// 2-6. sources/*
-const KB = "https://github.com/cdeistopened/raypeat-wiki/blob/main/knowledge-base";
-// The public KB holds a SUBSET of the local sources (pushed 2026-04-18). Link only
-// files that actually exist there; everything else cites unlinked.
-let kbFiles = {};
-try {
-  kbFiles = JSON.parse(fs.readFileSync(path.join(APP_DIR, "scripts", "kb-files.json"), "utf8"));
-} catch {
-  console.warn("kb-files.json missing — source links disabled (run: gh api repos/cdeistopened/raypeat-wiki/contents/knowledge-base/<dir> --paginate --jq '.[].name')");
-}
+// sources/* — OWNERSHIP POLICY (Charlie, 2026-08-23):
+//   newsletters + articles + newspaper-letters: Peat's property — NOT indexed,
+//     never mentioned on the site.
+//   emails: queryable, but every citation points to the ORIGINAL off-site source
+//     (raypeatemails.com via frontmatter source_url) — we don't host our copy.
+//   books: queryable for retrieval quality, unlinked (not ours to publish).
 const SOURCE_DIRS = [
-  ["newsletters", "newsletter", "newsletters"],
-  ["articles", "article", "articles"],
-  ["emails", "email", "emails"],
-  ["books", "book", null], // books deliberately excluded from the public knowledge base
-  ["newspaper-letters", "letter", "newspaper-letters"],
+  ["emails", "email", "original"],
+  ["books", "book", null],
 ];
-for (const [dirName, collection, kbDir] of SOURCE_DIRS) {
-  const inKb = new Set(kbDir ? kbFiles[kbDir] || [] : []);
+for (const [dirName, collection, mode] of SOURCE_DIRS) {
   const dir = path.join(ROOT, "sources", dirName);
   walkMd(dir, (f) => {
     const base = path.basename(f);
@@ -199,7 +191,7 @@ for (const [dirName, collection, kbDir] of SOURCE_DIRS) {
       date: meta.date || null,
       audioUrl: null,
       slug,
-      url: kbDir && inKb.has(`${slug}.md`) ? `${KB}/${kbDir}/${slug}.md` : null,
+      url: mode === "original" ? meta.source_url || null : null,
       filePath: path.relative(ROOT, f),
       body,
     });
