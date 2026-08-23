@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-23T06:14:10.452Z",
+  "builtAt": "2026-08-23T15:13:06.748Z",
   "totalChunks": 28282,
   "byCollection": {
     "transcript": 4486,
@@ -14,38 +14,38 @@
     {
       "file": "corpus-0.json.gz",
       "chunks": 5222,
-      "bytes": 8828459,
-      "gzipBytes": 2330977
+      "bytes": 8892308,
+      "gzipBytes": 2334505
     },
     {
       "file": "corpus-1.json.gz",
       "chunks": 4467,
-      "bytes": 7463698,
-      "gzipBytes": 2430895
+      "bytes": 7753812,
+      "gzipBytes": 2447517
     },
     {
       "file": "corpus-2.json.gz",
       "chunks": 4736,
-      "bytes": 7373624,
-      "gzipBytes": 2374387
+      "bytes": 7630869,
+      "gzipBytes": 2386069
     },
     {
       "file": "corpus-3.json.gz",
       "chunks": 5273,
-      "bytes": 7404184,
-      "gzipBytes": 2206697
+      "bytes": 7515771,
+      "gzipBytes": 2212890
     },
     {
       "file": "corpus-4.json.gz",
       "chunks": 5200,
-      "bytes": 7404629,
-      "gzipBytes": 2256640
+      "bytes": 7321396,
+      "gzipBytes": 2252490
     },
     {
       "file": "corpus-5.json.gz",
       "chunks": 3384,
-      "bytes": 4840892,
-      "gzipBytes": 1467455
+      "bytes": 4811280,
+      "gzipBytes": 1466100
     }
   ]
 }

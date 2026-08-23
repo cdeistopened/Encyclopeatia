@@ -46,7 +46,7 @@ async function llm(
   if (!key) throw new MissingKeyError();
 
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 55_000);
+  const timer = setTimeout(() => ctrl.abort(), 85_000);
   try {
     const res = await fetch(OPENROUTER_URL, {
       method: "POST",

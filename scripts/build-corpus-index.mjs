@@ -161,14 +161,24 @@ function walkMd(dir, cb) {
 }
 
 // 2-6. sources/*
+const KB = "https://github.com/cdeistopened/raypeat-wiki/blob/main/knowledge-base";
+// The public KB holds a SUBSET of the local sources (pushed 2026-04-18). Link only
+// files that actually exist there; everything else cites unlinked.
+let kbFiles = {};
+try {
+  kbFiles = JSON.parse(fs.readFileSync(path.join(APP_DIR, "scripts", "kb-files.json"), "utf8"));
+} catch {
+  console.warn("kb-files.json missing — source links disabled (run: gh api repos/cdeistopened/raypeat-wiki/contents/knowledge-base/<dir> --paginate --jq '.[].name')");
+}
 const SOURCE_DIRS = [
-  ["newsletters", "newsletter"],
-  ["articles", "article"],
-  ["emails", "email"],
-  ["books", "book"],
-  ["newspaper-letters", "letter"],
+  ["newsletters", "newsletter", "newsletters"],
+  ["articles", "article", "articles"],
+  ["emails", "email", "emails"],
+  ["books", "book", null], // books deliberately excluded from the public knowledge base
+  ["newspaper-letters", "letter", "newspaper-letters"],
 ];
-for (const [dirName, collection] of SOURCE_DIRS) {
+for (const [dirName, collection, kbDir] of SOURCE_DIRS) {
+  const inKb = new Set(kbDir ? kbFiles[kbDir] || [] : []);
   const dir = path.join(ROOT, "sources", dirName);
   walkMd(dir, (f) => {
     const base = path.basename(f);
@@ -183,7 +193,7 @@ for (const [dirName, collection] of SOURCE_DIRS) {
       date: meta.date || null,
       audioUrl: null,
       slug,
-      url: null, // newsletters/articles/emails/books/letters have no site route yet
+      url: kbDir && inKb.has(`${slug}.md`) ? `${KB}/${kbDir}/${slug}.md` : null,
       filePath: path.relative(ROOT, f),
       body,
     });
@@ -194,12 +204,16 @@ for (const [dirName, collection] of SOURCE_DIRS) {
 for (const cat of VAULT_CATEGORIES) {
   const dir = path.join(ROOT, "vault", cat);
   walkMd(dir, (f) => {
-    const rel = path.relative(path.join(ROOT, "vault"), f); // e.g. substances/amino-acids/x.md or substances/y.md
+    const rel = path.relative(path.join(ROOT, "vault"), f); // e.g. substances/amino-acids/x.md
     const base = path.basename(f);
     if (base.startsWith("_") || /^readme\.md$/i.test(base)) return;
+    // .research.md files are raw internal briefs — sync-vault.sh excludes them from the
+    // site by design, so a /wiki/ url for one can never resolve. Keep them SEARCHABLE
+    // (they hold verbatim gold) but with no link.
+    const isResearch = base.endsWith(".research.md");
     const raw = fs.readFileSync(f, "utf8");
     const { meta, body } = parseFrontmatter(raw);
-    const slug = path.basename(f, ".md");
+    const slug = isResearch ? base.replace(/\.research\.md$/, "") : path.basename(f, ".md");
     addDoc({
       title: meta.title || slug.replace(/-/g, " "),
       collection: "wiki",
@@ -207,7 +221,7 @@ for (const cat of VAULT_CATEGORIES) {
       date: null,
       audioUrl: null,
       slug,
-      url: `/wiki/${slug}`, // flat slug; api/wiki resolves basenames
+      url: isResearch ? null : `/wiki/${slug}`,
       filePath: `vault/${rel}`,
       body,
     });
