@@ -42,6 +42,23 @@ async function llm(
   messages: Array<{ role: string; content: string }>,
   opts?: { json?: boolean; model?: string | null },
 ): Promise<string> {
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    if (attempt > 0) await new Promise((r) => setTimeout(r, 1500));
+    try {
+      return await llmOnce(messages, opts);
+    } catch (e) {
+      if (e instanceof MissingKeyError) throw e;
+      lastErr = e;
+    }
+  }
+  throw lastErr;
+}
+
+async function llmOnce(
+  messages: Array<{ role: string; content: string }>,
+  opts?: { json?: boolean; model?: string | null },
+): Promise<string> {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) throw new MissingKeyError();
 

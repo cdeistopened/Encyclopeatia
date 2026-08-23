@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-23T15:13:06.748Z",
+  "builtAt": "2026-08-23T15:28:53.449Z",
   "totalChunks": 28282,
   "byCollection": {
     "transcript": 4486,
@@ -14,8 +14,8 @@
     {
       "file": "corpus-0.json.gz",
       "chunks": 5222,
-      "bytes": 8892308,
-      "gzipBytes": 2334505
+      "bytes": 9052566,
+      "gzipBytes": 2342162
     },
     {
       "file": "corpus-1.json.gz",

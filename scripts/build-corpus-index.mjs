@@ -135,8 +135,12 @@ function walkMd(dir, cb) {
   }
 }
 
-// 1. Transcripts
+// 1. Transcripts — episode URLs come from public/episodes.json (path-style slugs
+//    like "ask-the-herb-doctor/2012-10-19-..."), matched by filePath.
 {
+  const epsPath = path.join(APP_DIR, "public", "episodes.json");
+  const eps = JSON.parse(fs.readFileSync(epsPath, "utf8"));
+  const byFilePath = new Map(eps.filter((e) => e.filePath).map((e) => [e.filePath, e]));
   const base = path.join(APP_DIR, "public", "transcripts");
   for (const show of fs.readdirSync(base, { withFileTypes: true })) {
     if (!show.isDirectory()) continue;
@@ -144,15 +148,17 @@ function walkMd(dir, cb) {
     walkMd(polished, (f) => {
       const raw = fs.readFileSync(f, "utf8");
       const { meta, body } = parseFrontmatter(raw);
-      const slug = path.basename(f, ".md");
+      const fileName = path.basename(f, ".md");
+      const rel = `${show.name}/polished/${fileName}.md`;
+      const ep = byFilePath.get(rel) || eps.find((e) => e.slug === `${show.name}/${fileName}`);
       addDoc({
-        title: meta.title || slug,
+        title: meta.title || ep?.title || fileName,
         collection: "transcript",
         show: meta.show || show.name,
         date: meta.date_published || meta.date || null,
-        audioUrl: meta.audio_url || null,
-        slug,
-        url: `/episode/${slug}`,
+        audioUrl: meta.audio_url || ep?.audioUrl || null,
+        slug: ep?.slug || fileName,
+        url: ep ? `/episode/${ep.slug}` : null,
         filePath: path.relative(ROOT, f),
         body,
       });
