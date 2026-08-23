@@ -171,7 +171,7 @@ export default function EncyclopediaBrowser() {
                 auto_stories
               </span>
               <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
-                EncycloPEATia
+                Ray Peat Wiki
               </h1>
             </Link>
           </div>
@@ -207,7 +207,7 @@ export default function EncyclopediaBrowser() {
               auto_stories
             </span>
             <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
-              EncycloPEATia
+              Ray Peat Wiki
             </h1>
           </Link>
           <nav className="hidden md:flex gap-8 items-center">

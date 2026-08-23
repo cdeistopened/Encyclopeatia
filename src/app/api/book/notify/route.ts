@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import { sendMessage, sampleChapterEmail, agentMailConfigured } from "@/lib/agentmail";
 
 /**
  * POST /api/book/notify  { email, source? }
@@ -65,8 +66,16 @@ export async function POST(request: NextRequest) {
     await appendSubscriber(email, source);
     console.log(`[book] signup: ${email} (${source})`);
 
+    // Never block the response on email delivery — instant download always works.
+    let emailSent = false;
+    if (agentMailConfigured()) {
+      const { subject, text, html } = sampleChapterEmail(email);
+      emailSent = await sendMessage(email, subject, text, html);
+    }
+
     return NextResponse.json({
       ok: true,
+      emailSent,
       download: "/book/sample-chapter-coffee.pdf",
       message:
         "You're on the list. The Coffee chapter is yours below — the full deluxe hardback follows at launch.",

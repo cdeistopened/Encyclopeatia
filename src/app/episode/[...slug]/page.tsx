@@ -267,7 +267,7 @@ export default function EpisodePage({
               auto_stories
             </span>
             <h1 className="font-display text-xl font-bold tracking-tight text-ink">
-              EncycloPEATia
+              Ray Peat Wiki
             </h1>
           </Link>
           <nav className="flex gap-6 items-center">
@@ -579,7 +579,7 @@ export default function EpisodePage({
       <footer className="border-t-2 border-ink mt-16 py-8">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <p className="font-mono text-sm text-ink-muted">
-            EncycloPEATia is a community project. All content is for educational purposes.
+            Ray Peat Wiki is a community project. All content is for educational purposes.
           </p>
           <p className="font-mono text-sm text-ink-muted mt-2">
             Visit{" "}

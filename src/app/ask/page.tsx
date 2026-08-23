@@ -123,7 +123,7 @@ export default function AskPeatPage() {
     const newEmail: Email = {
       id: ++emailIdRef.current,
       from: userEmail,
-      to: "dr.peat@encyclopeatia.com",
+      to: "askray@raypeat.wiki",
       subject: subject || "Question for Dr. Peat",
       body: body,
       date: formatEmailDate(),
@@ -155,7 +155,7 @@ export default function AskPeatPage() {
 
       const replyEmail: Email = {
         id: ++emailIdRef.current,
-        from: "dr.peat@encyclopeatia.com",
+        from: "askray@raypeat.wiki",
         to: userEmail,
         subject: `Re: ${newEmail.subject}`,
         body: data.answer,
@@ -184,7 +184,7 @@ export default function AskPeatPage() {
               auto_stories
             </span>
             <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
-              EncycloPEATia
+              Ray Peat Wiki
             </h1>
           </Link>
           {/* Desktop Nav */}
@@ -336,7 +336,7 @@ export default function AskPeatPage() {
                     Continue
                   </button>
                   <p className="text-xs text-ink-muted">
-                    By continuing, you agree to receive emails from EncycloPEATia.
+                    By continuing, you agree to receive emails from Ray Peat Wiki.
                   </p>
                 </div>
               </div>
@@ -353,7 +353,7 @@ export default function AskPeatPage() {
                       <span className="material-symbols-outlined text-primary text-lg">
                         smart_toy
                       </span>
-                      <span className="font-medium">dr.peat@encyclopeatia.com</span>
+                      <span className="font-medium">askray@raypeat.wiki</span>
                       <span className="text-xs text-ink-muted">(AI Research Assistant)</span>
                     </div>
                   </div>
@@ -605,7 +605,7 @@ I have a question about..."
             </span>
             <span className="font-mono text-xs text-ink-muted flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-              Connected to EncycloPEATia
+              Connected to Ray Peat Wiki
             </span>
           </div>
         </div>
@@ -624,7 +624,7 @@ I have a question about..."
       {/* Footer */}
       <footer className="border-t-2 border-ink bg-paper-dim py-8 mt-12">
         <div className="max-w-7xl mx-auto px-6 text-center font-mono text-xs text-ink-muted">
-          <p>© 2024 EncycloPEATia • A community project</p>
+          <p>© 2026 Ray Peat Wiki • An open encyclopedia of the bioenergetic framework</p>
         </div>
       </footer>
     </div>

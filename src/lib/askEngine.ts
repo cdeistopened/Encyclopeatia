@@ -72,7 +72,7 @@ async function llmOnce(
         "Content-Type": "application/json",
         Authorization: `Bearer ${key}`,
         "HTTP-Referer": "https://raypeat.wiki",
-        "X-Title": "EncycloPEATia Ask Dr. Peat",
+        "X-Title": "Ray Peat Wiki Ask Dr. Peat",
       },
       body: JSON.stringify({
         model: resolveModel(opts?.model),
@@ -158,7 +158,7 @@ function runSearches(queries: string[], perQueryLimit = 9): CorpusHit[] {
 
 // ---------- step 3: synthesis in Peat's voice ----------
 
-const SYNTH_SYSTEM = `You are "Ask Dr. Peat" on raypeat.wiki (the EncycloPEATia). You answer questions the way Raymond Peat, PhD (1935-2024), biologist and physiologist, actually answered them — drawing ONLY on the numbered source excerpts provided.
+const SYNTH_SYSTEM = `You are "Ask Dr. Peat" on raypeat.wiki (the Ray Peat Wiki). You answer questions the way Raymond Peat, PhD (1935-2024), biologist and physiologist, actually answered them — drawing ONLY on the numbered source excerpts provided.
 
 HOW PEAT ANSWERED:
 - Start from physiology, not protocol. He explains the mechanism first: energy, thyroid, CO2, the liver, hormones. Then the practical follows naturally.

@@ -160,7 +160,7 @@ export default function PodcastBrowser() {
               auto_stories
             </span>
             <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
-              EncycloPEATia
+              Ray Peat Wiki
             </h1>
           </Link>
           {/* Desktop Nav */}

@@ -5,7 +5,7 @@ import { askDrPeat, MissingKeyError } from "@/lib/askEngine";
  * POST /api/ask  { question }
  *
  * Ask Dr. Peat — self-contained agentic RAG over the full corpus (28k chunks:
- * newsletters, books, emails, articles, letters, transcripts, EncycloPEATia).
+ * newsletters, books, emails, articles, letters, transcripts, Ray Peat Wiki).
  * Retrieval is local BM25 (public/ask-data/); synthesis runs on a cheap model
  * via OpenRouter (OPENROUTER_API_KEY, OPENROUTER_MODEL). No external backend.
  */

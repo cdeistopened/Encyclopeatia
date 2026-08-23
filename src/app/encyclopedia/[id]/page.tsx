@@ -156,7 +156,7 @@ export default function EncyclopediaEntry() {
             <span className="material-symbols-outlined text-3xl text-primary group-hover:rotate-12 transition-transform duration-300">
               auto_stories
             </span>
-            <h1 className="font-display text-2xl font-bold tracking-tight text-ink">EncycloPEATia</h1>
+            <h1 className="font-display text-2xl font-bold tracking-tight text-ink">Ray Peat Wiki</h1>
           </Link>
           <nav className="hidden md:flex gap-8 items-center">
             <Link href="/podcasts" className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4">

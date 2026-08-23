@@ -95,7 +95,7 @@ export default function Home() {
               auto_stories
             </span>
             <h1 className="font-display text-2xl font-bold tracking-tight text-ink">
-              EncycloPEATia
+              Ray Peat Wiki
             </h1>
           </Link>
           {/* Desktop Nav */}
@@ -521,7 +521,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t-2 border-ink bg-paper-dim py-8 mt-12">
         <div className="max-w-7xl mx-auto px-6 text-center font-mono text-xs text-ink-muted">
-          <p>© 2024 EncycloPEATia • A community project</p>
+          <p>© 2026 Ray Peat Wiki • An open encyclopedia of the bioenergetic framework</p>
         </div>
       </footer>
     </div>

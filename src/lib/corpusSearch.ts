@@ -9,7 +9,7 @@ import zlib from "zlib";
  * Loads the gzipped chunk index produced by scripts/build-corpus-index.mjs
  * (public/ask-data/) once, lazily, then serves BM25-ranked chunks over ALL of
  * Peat's writing and speech — newsletters, books, emails, articles, newspaper
- * letters, interview transcripts, plus the EncycloPEATia wiki layer.
+ * letters, interview transcripts, plus the Ray Peat Wiki wiki layer.
  */
 
 interface Chunk {

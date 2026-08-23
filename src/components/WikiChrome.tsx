@@ -1,16 +1,17 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type Active = "wiki" | "sources" | "ask" | undefined;
+type Active = "home" | "wiki" | "sources" | "ask";
 
 /** Locked-design wordmark navbar, shared across wiki pages. */
 export function WikiNav({ active, right }: { active?: Active; right?: ReactNode }) {
   return (
     <div className="navbar">
       <div className="nav-left">
-        <Link href="/wiki" className="wm wm-md">
+        <Link href="/" className="wm wm-md">
           Ray Peat Wiki<span className="dot">.</span>
         </Link>
+        <Link href="/" className={`nav-link${active === "home" ? " active" : ""}`}>Home</Link>
         <Link href="/wiki" className={`nav-link${active === "wiki" ? " active" : ""}`}>Wiki</Link>
         <Link href="/podcasts" className={`nav-link${active === "sources" ? " active" : ""}`}>Sources</Link>
         <Link href="/ask" className={`nav-link${active === "ask" ? " active" : ""}`}>Ask</Link>
