@@ -17,19 +17,33 @@ import path from "path";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 async function appendSubscriber(email: string, source: string): Promise<void> {
-  const dir = process.env.DATA_DIR || path.join(process.cwd(), "data");
-  const file = path.join(dir, "subscribers.json");
-  let list: Array<{ email: string; source: string; at: string }> = [];
-  try {
-    list = JSON.parse(await fs.readFile(file, "utf-8"));
-  } catch {
-    /* first signup or fresh volume */
+  const candidates = [
+    process.env.DATA_DIR,
+    path.join(process.cwd(), "data"),
+    require("os").tmpdir(),
+  ].filter(Boolean) as string[];
+  let lastErr: unknown;
+  for (const dir of candidates) {
+    try {
+      const file = path.join(dir, "subscribers.json");
+      let list: Array<{ email: string; source: string; at: string }> = [];
+      try {
+        list = JSON.parse(await fs.readFile(file, "utf-8"));
+      } catch {
+        /* first signup or fresh volume */
+      }
+      if (!list.some((s) => s.email === email)) {
+        list.push({ email, source, at: new Date().toISOString() });
+        await fs.mkdir(dir, { recursive: true });
+        await fs.writeFile(file, JSON.stringify(list, null, 2));
+      }
+      return;
+    } catch (e) {
+      lastErr = e;
+    }
   }
-  if (!list.some((s) => s.email === email)) {
-    list.push({ email, source, at: new Date().toISOString() });
-    await fs.mkdir(dir, { recursive: true });
-    await fs.writeFile(file, JSON.stringify(list, null, 2));
-  }
+  // Never block the signup on storage failure — Railway logs keep the record.
+  console.error("[book] all storage targets failed:", lastErr);
 }
 
 export async function POST(request: NextRequest) {

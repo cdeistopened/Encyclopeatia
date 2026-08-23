@@ -39,6 +39,9 @@ RUN adduser --system --uid 1001 nextjs
 # Copy public assets
 COPY --from=builder /app/public ./public
 
+# Writable data dir (book signups; optionally a Railway volume mounts here)
+RUN mkdir -p /data && chown nextjs:nodejs /data
+
 # Set up Next.js standalone output
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
