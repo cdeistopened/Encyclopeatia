@@ -12,7 +12,6 @@ export function WikiNav({ active, right }: { active?: Active; right?: ReactNode 
           Ray Peat Wiki<span className="dot">.</span>
         </Link>
         <Link href="/" className={`nav-link${active === "home" ? " active" : ""}`}>Home</Link>
-        <Link href="/wiki" className={`nav-link${active === "wiki" ? " active" : ""}`}>Wiki</Link>
         <Link href="/podcasts" className={`nav-link${active === "sources" ? " active" : ""}`}>Sources</Link>
         <Link href="/ask" className={`nav-link${active === "ask" ? " active" : ""}`}>Ask</Link>
       </div>
@@ -30,7 +29,7 @@ export function WikiFooter() {
         Content CC BY-SA 4.0 · Not medical advice
       </div>
       <div>
-        <Link href="/wiki">Wiki</Link>
+        <Link href="/">Home</Link>
         <Link href="/podcasts">Sources</Link>
         <Link href="/ask">Ask</Link>
       </div>

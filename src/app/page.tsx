@@ -6,13 +6,55 @@ import { usePlayer } from "@/contexts/PlayerContext";
 import type { Episode } from "@/lib/types";
 import { getShow } from "@/data/shows";
 
+interface WikiArticleSummary {
+  slug: string;
+  title: string;
+  category?: string;
+  status?: string;
+  mentions?: number;
+}
+
+const WIKI_CATEGORIES = [
+  { key: "substances", label: "Substances", desc: "Foods, fats, vitamins, minerals, hormones, and drugs — the atomic entities of the framework.", color: "#e63946" },
+  { key: "concepts", label: "Concepts", desc: "Frameworks for thinking: bioenergetics, stress, energy, structure.", color: "#1d3557" },
+  { key: "conditions", label: "Conditions", desc: "States you can have — and how the energy framework reads them.", color: "#c9a227" },
+  { key: "mechanisms", label: "Mechanisms", desc: "Processes and pathways: how the biology actually moves.", color: "#0d9488" },
+  { key: "people", label: "People", desc: "The researchers Peat built on — Barnes, Ling, Warburg, Selye.", color: "#7c3aed" },
+  { key: "protocols", label: "Protocols", desc: "Actionable frameworks: what to actually do, and when.", color: "#c96f2e" },
+  { key: "practices", label: "Practices", desc: "Daily and weekly routines that move the needle.", color: "#2a9d8f" },
+  { key: "articles", label: "Articles", desc: "Narrative synthesis across entities — where Peat's positions evolved.", color: "#e76f51" },
+] as const;
+
+function categoryOf(article: WikiArticleSummary): string {
+  if (article.slug.includes("/")) return article.slug.split("/")[0].toLowerCase();
+  if (article.category) return article.category.toLowerCase().replace(/s?$/, "s");
+  return "other";
+}
+
 export default function Home() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [wikiArticles, setWikiArticles] = useState<WikiArticleSummary[]>([]);
+  const [wikiLoading, setWikiLoading] = useState(true);
+  const [wikiSearch, setWikiSearch] = useState("");
+  const [wikiCategory, setWikiCategory] = useState<string | null>(null);
 
   const { play, currentEpisode, isPlaying } = usePlayer();
+
+  useEffect(() => {
+    fetch("/api/wiki/index")
+      .then((res) => res.json())
+      .then((data) => {
+        setWikiArticles(data.articles || []);
+        setWikiLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load wiki index:", err);
+        setWikiLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
     fetch("/episodes.json")
@@ -57,6 +99,24 @@ export default function Home() {
       ep.show.toLowerCase().includes(search.toLowerCase())
     );
   });
+
+  const wikiCounts: Record<string, number> = {};
+  for (const a of wikiArticles) {
+    const c = categoryOf(a);
+    wikiCounts[c] = (wikiCounts[c] || 0) + 1;
+  }
+
+  const wikiBrowsing = Boolean(wikiSearch || wikiCategory);
+
+  const filteredWiki = wikiArticles
+    .filter((a) => {
+      const q = wikiSearch.toLowerCase();
+      const matchesSearch =
+        !q || a.title.toLowerCase().includes(q) || a.slug.toLowerCase().includes(q);
+      const matchesCategory = !wikiCategory || categoryOf(a) === wikiCategory;
+      return matchesSearch && matchesCategory;
+    })
+    .sort((a, b) => a.title.localeCompare(b.title));
 
   const handlePlay = (episode: Episode) => {
     if (episode.audioUrl) {
@@ -104,13 +164,7 @@ export default function Home() {
               href="/podcasts"
               className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
             >
-              ARCHIVE
-            </Link>
-            <Link
-              href="/wiki"
-              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
-            >
-              WIKI
+              SOURCES
             </Link>
             <Link href="/ask" className="btn-primary">
               ASK PEAT
@@ -138,14 +192,7 @@ export default function Home() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
               >
-                ARCHIVE
-              </Link>
-              <Link
-                href="/wiki"
-                onClick={() => setMobileMenuOpen(false)}
-                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
-              >
-                WIKI
+                SOURCES
               </Link>
               <Link
                 href="/ask"
@@ -197,11 +244,11 @@ export default function Home() {
                 Ask Dr. Peat
               </Link>
               <Link
-                href="/wiki"
+                href="#encyclopedia"
                 className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-surface hover:bg-ink hover:text-white transition-all"
               >
                 <span className="material-symbols-outlined text-base">auto_stories</span>
-                Browse the Wiki
+                Browse the Encyclopedia
               </Link>
             </div>
 
@@ -227,46 +274,114 @@ export default function Home() {
         </section>
 
         {/* The Encyclopedia */}
-        <section className="py-12 border-t-2 border-ink">
-          <div className="flex items-center justify-between mb-8">
+        <section id="encyclopedia" className="py-12 border-t-2 border-ink">
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
             <h2 className="font-mono text-sm font-bold uppercase tracking-widest text-ink-muted flex items-center gap-2">
               <span className="material-symbols-outlined">auto_stories</span>
               The Encyclopedia
             </h2>
-            <Link
-              href="/wiki"
-              className="font-mono text-xs font-bold text-primary hover:underline flex items-center gap-1"
-            >
-              View All
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
-            </Link>
+            <div className="relative w-full md:w-80">
+              <input
+                type="text"
+                placeholder="Search the encyclopedia..."
+                value={wikiSearch}
+                onChange={(e) => setWikiSearch(e.target.value)}
+                className="w-full bg-surface border-2 border-ink px-4 py-2.5 pr-10 font-mono text-sm focus:border-primary focus:outline-none transition-all"
+              />
+              <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted">
+                search
+              </span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-            {[
-              { cat: "substances", label: "Substances", count: 178, color: "#e63946" },
-              { cat: "concepts", label: "Concepts", count: 61, color: "#1d3557" },
-              { cat: "conditions", label: "Conditions", count: 49, color: "#c9a227" },
-              { cat: "mechanisms", label: "Mechanisms", count: 31, color: "#0d9488" },
-              { cat: "protocols", label: "Protocols", count: 43, color: "#c96f2e" },
-              { cat: "people", label: "People", count: 17, color: "#7c3aed" },
-            ].map(({ cat, label, count, color }) => (
-              <Link
-                key={cat}
-                href={`/wiki/category/${cat}`}
-                className="group bg-surface border-2 border-ink p-4 shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 transition-all"
-              >
-                <span
-                  className="block w-8 h-1.5 mb-3 border border-ink"
-                  style={{ backgroundColor: color }}
-                />
-                <p className="font-serif text-lg font-bold leading-tight group-hover:text-primary transition-colors">
-                  {label}
+          {wikiLoading ? (
+            <p className="font-mono text-sm text-ink-muted">Loading encyclopedia…</p>
+          ) : wikiBrowsing ? (
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <p className="font-mono text-xs text-ink-muted">
+                  {filteredWiki.length}{" "}
+                  {wikiCategory
+                    ? `in ${WIKI_CATEGORIES.find((c) => c.key === wikiCategory)?.label ?? wikiCategory}`
+                    : "results"}
                 </p>
-                <p className="font-mono text-xs text-ink-muted mt-1">{count} entries</p>
-              </Link>
-            ))}
-          </div>
+                <button
+                  onClick={() => {
+                    setWikiSearch("");
+                    setWikiCategory(null);
+                  }}
+                  className="font-mono text-xs border-2 border-ink px-3 py-1 hover:bg-ink hover:text-white transition-all"
+                >
+                  Clear
+                </button>
+              </div>
+              <div className="bg-surface border-2 border-ink divide-y-2 divide-ink/10 max-h-[32rem] overflow-y-auto">
+                {filteredWiki.map((a) => (
+                  <Link
+                    key={a.slug}
+                    href={`/wiki/${a.slug}`}
+                    className="flex items-center justify-between gap-4 px-4 py-3 hover:bg-primary/10 transition-colors group"
+                  >
+                    <span className="font-serif font-bold group-hover:text-primary transition-colors">
+                      {a.title}
+                    </span>
+                    <span className="font-mono text-xs text-ink-muted shrink-0">{a.slug}</span>
+                  </Link>
+                ))}
+                {filteredWiki.length === 0 && (
+                  <p className="px-4 py-10 text-center font-mono text-sm text-ink-muted">
+                    No entries match.
+                  </p>
+                )}
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="flex flex-wrap gap-6 font-mono text-sm mb-6">
+                <span>
+                  <span className="font-bold">{wikiArticles.length || "—"}</span>{" "}
+                  <span className="text-ink-muted">articles</span>
+                </span>
+                <span className="text-ink-muted">·</span>
+                <span>
+                  <span className="font-bold">
+                    {WIKI_CATEGORIES.filter((c) => wikiCounts[c.key]).length}
+                  </span>{" "}
+                  <span className="text-ink-muted">categories</span>
+                </span>
+                <span className="text-ink-muted">·</span>
+                <span>
+                  <span className="font-bold">812</span>{" "}
+                  <span className="text-ink-muted">sources indexed</span>
+                </span>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {WIKI_CATEGORIES.filter((c) => wikiCounts[c.key]).map(
+                  ({ key, label, desc, color }) => (
+                    <Link
+                      key={key}
+                      href={`/wiki/category/${key}`}
+                      className="group bg-surface border-2 border-ink p-4 shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 transition-all"
+                    >
+                      <span
+                        className="block w-8 h-1.5 mb-3 border border-ink"
+                        style={{ backgroundColor: color }}
+                      />
+                      <p className="font-serif text-lg font-bold leading-tight group-hover:text-primary transition-colors">
+                        {label}
+                      </p>
+                      <p className="font-mono text-xs text-ink-muted mt-1">
+                        {wikiCounts[key] || 0} entries
+                      </p>
+                      <p className="text-xs text-ink-muted mt-2 leading-snug line-clamp-2">
+                        {desc}
+                      </p>
+                    </Link>
+                  )
+                )}
+              </div>
+            </>
+          )}
         </section>
 
         {/* Featured Episodes */}
@@ -389,15 +504,15 @@ export default function Home() {
               </span>
             </Link>
 
-            {/* Wiki */}
+            {/* Encyclopedia */}
             <Link
-              href="/wiki"
+              href="#encyclopedia"
               className="group bg-surface border-2 border-ink p-6 shadow-hard-sm hover:shadow-hard hover:-translate-y-0.5 transition-all"
             >
               <span className="material-symbols-outlined text-4xl text-primary mb-4 block group-hover:rotate-12 transition-transform">
                 auto_stories
               </span>
-              <h3 className="font-serif text-xl font-bold mb-2">Wiki</h3>
+              <h3 className="font-serif text-xl font-bold mb-2">Encyclopedia</h3>
               <p className="text-ink-muted text-sm mb-4">
                 Explore substances, conditions, and concepts from a bioenergetic lens.
               </p>
