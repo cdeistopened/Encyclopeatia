@@ -1,41 +1,76 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs/promises";
+import os from "os";
 import path from "path";
 import { sendMessage, sampleChapterEmail, agentMailConfigured } from "@/lib/agentmail";
 
 /**
- * POST /api/book/notify  { email, source? }
+ * POST /api/book/notify  { email, source?, edition?, items? }
  *
- * Book launch list. Appends to DATA_DIR/subscribers.json (mount a Railway
- * volume at DATA_DIR for durability across deploys; falls back to ./data and
- * still logs every signup so nothing is lost even without a volume).
- *
- * Returns an instant download link for the sample chapter. Actual email
- * delivery waits on a sending identity (ask-ray@raypeat.wiki via SMTP);
- * this endpoint is provider-agnostic by design.
+ * Shared book & print-shop launch list across raypeat.wiki and raypeatdiet.com.
+ * Appends to DATA_DIR/subscribers.json (falls back to ./data or tmpdir) and
+ * sends the Chapter 4 ("Coffee") PDF email when AgentMail is configured.
  */
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-async function appendSubscriber(email: string, source: string): Promise<void> {
+const ALLOWED_ORIGINS = new Set([
+  "https://raypeatdiet.com",
+  "https://www.raypeatdiet.com",
+  "https://raypeatdiet.vercel.app",
+  "https://raypeat.wiki",
+  "https://www.raypeat.wiki",
+  "http://localhost:5173",
+  "http://localhost:3000",
+]);
+
+function corsHeaders(request: NextRequest): Record<string, string> {
+  const origin = request.headers.get("origin") || "";
+  if (!origin) return {};
+  const allow = ALLOWED_ORIGINS.has(origin) ? origin : "https://raypeatdiet.vercel.app";
+  return {
+    "Access-Control-Allow-Origin": allow,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    Vary: "Origin",
+  };
+}
+
+interface SubscriberRecord {
+  email: string;
+  source: string;
+  edition?: string;
+  items?: string[];
+  at: string;
+}
+
+async function appendSubscriber(record: SubscriberRecord): Promise<void> {
   const candidates = [
     process.env.DATA_DIR,
     path.join(process.cwd(), "data"),
-    require("os").tmpdir(),
+    os.tmpdir(),
   ].filter(Boolean) as string[];
   let lastErr: unknown;
   for (const dir of candidates) {
     try {
       const file = path.join(dir, "subscribers.json");
-      let list: Array<{ email: string; source: string; at: string }> = [];
+      let list: SubscriberRecord[] = [];
       try {
         list = JSON.parse(await fs.readFile(file, "utf-8"));
       } catch {
         /* first signup or fresh volume */
       }
-      if (!list.some((s) => s.email === email)) {
-        list.push({ email, source, at: new Date().toISOString() });
+      const existing = list.find((s) => s.email === record.email);
+      if (!existing) {
+        list.push(record);
         await fs.mkdir(dir, { recursive: true });
+        await fs.writeFile(file, JSON.stringify(list, null, 2));
+      } else if (record.items?.length || record.edition) {
+        existing.edition = record.edition || existing.edition;
+        if (record.items?.length) {
+          existing.items = Array.from(new Set([...(existing.items || []), ...record.items]));
+        }
+        existing.at = record.at;
         await fs.writeFile(file, JSON.stringify(list, null, 2));
       }
       return;
@@ -43,45 +78,65 @@ async function appendSubscriber(email: string, source: string): Promise<void> {
       lastErr = e;
     }
   }
-  // Never block the signup on storage failure — Railway logs keep the record.
   console.error("[book] all storage targets failed:", lastErr);
 }
 
+export async function OPTIONS(request: NextRequest) {
+  return new NextResponse(null, { status: 204, headers: corsHeaders(request) });
+}
+
 export async function POST(request: NextRequest) {
+  const headers = corsHeaders(request);
   try {
-    let body: { email?: unknown; source?: unknown };
+    let body: { email?: unknown; source?: unknown; edition?: unknown; items?: unknown };
     try {
       body = await request.json();
     } catch {
-      return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+      return NextResponse.json({ error: "Invalid JSON" }, { status: 400, headers });
     }
     const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
-    const source = typeof body.source === "string" ? body.source.slice(0, 40) : "unknown";
+    const source = typeof body.source === "string" ? body.source.slice(0, 60) : "unknown";
+    const edition = typeof body.edition === "string" ? body.edition.slice(0, 40) : undefined;
+    const items = Array.isArray(body.items)
+      ? body.items.filter((x): x is string => typeof x === "string").slice(0, 20)
+      : undefined;
 
     if (!EMAIL_RE.test(email) || email.length > 254) {
-      return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
+      return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400, headers });
     }
 
-    // Rate-limit-friendly duplicate handling is inside appendSubscriber.
-    await appendSubscriber(email, source);
-    console.log(`[book] signup: ${email} (${source})`);
+    await appendSubscriber({
+      email,
+      source,
+      ...(edition ? { edition } : {}),
+      ...(items?.length ? { items } : {}),
+      at: new Date().toISOString(),
+    });
+    console.log(`[book] signup: ${email} (${source}${edition ? `, ${edition}` : ""}${items?.length ? `, items=${items.length}` : ""})`);
 
-    // Never block the response on email delivery — instant download always works.
     let emailSent = false;
     if (agentMailConfigured()) {
       const { subject, text, html } = sampleChapterEmail(email);
       emailSent = await sendMessage(email, subject, text, html);
     }
 
-    return NextResponse.json({
-      ok: true,
-      emailSent,
-      download: "/book/sample-chapter-coffee.pdf",
-      message:
-        "You're on the list. The Coffee chapter is yours below — the full deluxe hardback follows at launch.",
-    });
+    return NextResponse.json(
+      {
+        ok: true,
+        emailSent,
+        download: "/book/sample-chapter-coffee.pdf",
+        downloadUrl: "/book/sample-chapter-coffee.pdf",
+        message: items?.length
+          ? "Reservation recorded — Chapter 4 ('Coffee') is ready below while Printful batch checkout is finalized."
+          : "You're on the list. The Chapter 4 ('Coffee') PDF is ready below — print launch links follow first to this list.",
+      },
+      { headers }
+    );
   } catch (error) {
     console.error("[book] error:", error);
-    return NextResponse.json({ error: "Something went wrong. Try again shortly." }, { status: 500 });
+    return NextResponse.json(
+      { error: "Something went wrong. Try again shortly." },
+      { status: 500, headers }
+    );
   }
 }

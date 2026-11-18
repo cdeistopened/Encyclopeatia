@@ -2,12 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { DIET_SITE_URL } from "@/lib/constants";
 
 /**
- * Book pre-order card — slides in bottom-right after a short delay, dismissible.
- * The Tyger plate (Blake, Songs of Experience, plate 42 — public domain) is the
- * book's visual signature: Peat wrote his master's thesis on Blake and quoted
- * "Energy is Eternal Delight" for fifty years.
+ * Book launch popup — shows First Edition cover, accurate 348pp specs,
+ * instant Chapter 4 ("Coffee") PDF unlock, and link to the full book + print shop.
  */
 
 const SEEN_KEY = "rpw-book-popup-dismissed";
@@ -38,7 +37,7 @@ export default function BookPopup() {
       const res = await fetch("/api/book/notify", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "popup-preorder" }),
+        body: JSON.stringify({ email, source: "popup-launch" }),
       });
       const d = await res.json();
       if (!res.ok) throw new Error(d.error || "Something went wrong");
@@ -55,7 +54,7 @@ export default function BookPopup() {
   return (
     <div
       role="dialog"
-      aria-label="The Ray Peat Diet — deluxe hardback pre-order"
+      aria-label="The Elusive Quest for the Ray Peat Diet — First Edition"
       className="fixed bottom-4 right-4 z-50 w-[calc(100vw-2rem)] max-w-md bg-surface border-2 border-ink shadow-hard"
     >
       <button
@@ -69,28 +68,29 @@ export default function BookPopup() {
       <div className="flex gap-0">
         <div className="relative w-32 shrink-0 border-r-2 border-ink bg-ink">
           <Image
-            src="/book/tyger-plate.jpg"
-            alt="William Blake, The Tyger — Songs of Experience, plate 42"
-            width={1920}
-            height={3243}
-            className="object-cover h-full w-full opacity-95"
+            src="/book/cover-front.jpg"
+            alt="Cover of The Elusive Quest for the Ray Peat Diet"
+            width={960}
+            height={1440}
+            className="object-cover h-full w-full"
           />
         </div>
 
         <div className="p-5 flex-1">
           <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-primary mb-1">
-            Deluxe Hardcover · Pre-order
+            First Edition · 348 Pages
           </p>
-          <h3 className="font-serif text-2xl font-bold leading-tight mb-1">The Ray Peat Diet</h3>
-          <p className="font-mono text-[10px] text-ink-muted mb-3">
-            Peat in his own words · Blake woodcut interior
+          <h3 className="font-serif text-lg font-bold leading-snug mb-1">
+            The Elusive Quest for the Ray Peat Diet
+          </h3>
+          <p className="font-mono text-[10px] text-ink-muted mb-2.5">
+            In His Own Words · 346 notes · Paperback $24.95 / Hardcover $34.95
           </p>
 
           {state !== "done" ? (
             <>
-              <p className="text-sm text-ink-muted leading-relaxed mb-3">
-                Read the Coffee chapter now — free. We&apos;ll tell you when the
-                hardback is ready.
+              <p className="text-xs text-ink-muted leading-relaxed mb-3">
+                Get Chapter 4 (&ldquo;Coffee&rdquo;, 23 pp) free as a print PDF + print launch notification.
               </p>
               <form onSubmit={submit} className="flex gap-2">
                 <input
@@ -112,21 +112,36 @@ export default function BookPopup() {
               {state === "error" && (
                 <p className="text-xs text-red-600 mt-2">{message}</p>
               )}
+              <a
+                href={`${DIET_SITE_URL}/book`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 font-mono text-[10px] font-bold uppercase underline text-ink hover:text-primary"
+              >
+                Full Contents &amp; 18×24 Prints ↗
+              </a>
             </>
           ) : (
             <div>
-              <p className="text-sm text-ink-muted leading-relaxed mb-3">{message}</p>
+              <p className="text-xs text-ink-muted leading-relaxed mb-3">{message}</p>
               <a
                 href="/book/sample-chapter-coffee.pdf"
-                download
+                download="The-Ray-Peat-Diet-Chapter-4-Coffee.pdf"
                 className="inline-flex items-center gap-2 bg-ink text-white border-2 border-ink px-4 py-2 font-mono text-xs font-bold uppercase hover:bg-primary hover:text-ink transition-colors"
               >
                 <span className="material-symbols-outlined text-base">download</span>
-                Download the chapter
+                Download Chapter 4 PDF
               </a>
-              <p className="font-mono text-[9px] text-ink-muted mt-3">
-                William Blake, The Tyger (Songs of Experience, plate 42) · public domain
-              </p>
+              <div className="mt-3">
+                <a
+                  href={`${DIET_SITE_URL}/merch`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[10px] font-bold uppercase underline text-ink hover:text-primary"
+                >
+                  Browse Companion 18×24 Prints ↗
+                </a>
+              </div>
             </div>
           )}
         </div>

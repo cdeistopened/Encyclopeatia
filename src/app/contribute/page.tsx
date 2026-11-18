@@ -146,8 +146,25 @@ export default function ContributePage() {
             <span className="material-symbols-outlined text-base">auto_stories</span>
             Browse the Wiki
           </Link>
+          <Link
+            href="/methodology"
+            className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-surface hover:bg-ink hover:text-white transition-all"
+          >
+            <span className="material-symbols-outlined text-base">account_tree</span>
+            Methodology &amp; CIA
+          </Link>
         </div>
       </main>
+      <footer className="border-t-2 border-ink bg-paper-dim py-6">
+        <div className="max-w-4xl mx-auto px-6 font-mono text-xs text-ink-muted">
+          Not Ray Peat (1936–2022) · Independent open-source archive ·{" "}
+          <a href="https://raypeat.com" target="_blank" rel="noopener noreferrer" className="underline">
+            RayPeat.com
+          </a>{" "}
+          is the primary source ·{" "}
+          <a href="mailto:askray@raypeat.wiki" className="underline">askray@raypeat.wiki</a>
+        </div>
+      </footer>
     </div>
   );
 }

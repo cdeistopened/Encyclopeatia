@@ -612,11 +612,18 @@ I have a question about..."
 
 
         {/* Disclaimer */}
-        <div className="mt-6 text-center text-ink-muted text-xs">
+        <div className="mt-6 text-center text-ink-muted text-xs space-y-1">
           <p>
-            This is an AI research tool based on Ray Peat&apos;s published work.
-            <br />
-            Responses should not be considered medical advice.
+            <strong>This is not Ray Peat.</strong> Independent AI research tool over the published
+            writings and interviews of Raymond Peat, PhD (1936–2022) — not affiliated with his
+            estate, and not medical advice.
+          </p>
+          <p>
+            <a href="https://raypeat.com" target="_blank" rel="noopener noreferrer" className="underline">
+              RayPeat.com
+            </a>{" "}
+            and his books are always the primary sources · Direct inbox:{" "}
+            <a href="mailto:askray@raypeat.wiki" className="underline">askray@raypeat.wiki</a>
           </p>
         </div>
       </main>
@@ -624,7 +631,13 @@ I have a question about..."
       {/* Footer */}
       <footer className="border-t-2 border-ink bg-paper-dim py-8 mt-12">
         <div className="max-w-7xl mx-auto px-6 text-center font-mono text-xs text-ink-muted">
-          <p>© 2026 Ray Peat Wiki • An open encyclopedia of the bioenergetic framework</p>
+          <p>
+            © 2026 Ray Peat Wiki · Independent bioenergetic archive ·{" "}
+            <Link href="/methodology" className="underline">How it&apos;s built</Link> ·{" "}
+            <a href="https://creativeintel.agency" target="_blank" rel="noopener noreferrer" className="underline">
+              Creative Intelligence Agency ↗
+            </a>
+          </p>
         </div>
       </footer>
     </div>

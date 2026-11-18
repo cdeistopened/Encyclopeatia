@@ -2,9 +2,17 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePlayer } from "@/contexts/PlayerContext";
 import type { Episode } from "@/lib/types";
 import { getShow } from "@/data/shows";
+import {
+  ASK_EMAIL,
+  CIA_SITE_URL,
+  DIET_SITE_URL,
+  GITHUB_CORPUS_URL,
+  PRIMARY_SOURCE_URL,
+} from "@/lib/constants";
 
 interface WikiArticleSummary {
   slug: string;
@@ -159,13 +167,27 @@ export default function Home() {
             </h1>
           </Link>
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-8 items-center">
+          <nav className="hidden md:flex gap-6 items-center">
             <Link
               href="/podcasts"
               className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
             >
               SOURCES
             </Link>
+            <Link
+              href="/methodology"
+              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
+            >
+              METHODOLOGY
+            </Link>
+            <a
+              href={`${DIET_SITE_URL}/book`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-sm font-medium hover:underline decoration-2 underline-offset-4"
+            >
+              BOOK &amp; PRINTS ↗
+            </a>
             <Link href="/ask" className="btn-primary">
               ASK PEAT
             </Link>
@@ -195,6 +217,22 @@ export default function Home() {
                 SOURCES
               </Link>
               <Link
+                href="/methodology"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                METHODOLOGY
+              </Link>
+              <a
+                href={`${DIET_SITE_URL}/book`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-mono text-sm font-medium py-3 px-4 border-2 border-ink hover:bg-ink hover:text-white transition-colors"
+              >
+                BOOK &amp; PRINTS ↗
+              </a>
+              <Link
                 href="/ask"
                 onClick={() => setMobileMenuOpen(false)}
                 className="btn-primary text-center"
@@ -219,7 +257,7 @@ export default function Home() {
             </h1>
             <p className="font-body text-lg text-ink-muted leading-relaxed mb-8 max-w-xl">
               A 300-page interlinked encyclopedia and 250+ interview transcripts,
-              with an AI that answers questions in Peat's own words — every claim
+              with an AI that answers questions in Peat&apos;s own words — every claim
               cited back to the source.
             </p>
 
@@ -546,25 +584,92 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Book & Companion Print Shop */}
+        <section className="py-12 border-t-2 border-ink">
+          <div className="bg-ink text-white border-2 border-ink p-8 md:p-10 shadow-hard">
+            <div className="flex flex-col md:flex-row gap-8 md:items-center">
+              <a
+                href={`${DIET_SITE_URL}/book`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-44 shrink-0 border-2 border-white bg-paper overflow-hidden mx-auto md:mx-0 hover:-translate-y-1 transition-transform"
+              >
+                <Image
+                  src="/book/cover-front.jpg"
+                  alt="Cover of The Elusive Quest for the Ray Peat Diet"
+                  width={960}
+                  height={1440}
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+              <div className="flex-1">
+                <span className="inline-block bg-primary text-ink font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 border-2 border-ink mb-4">
+                  First Edition · 348 Pages · $24.95 Paperback / $34.95 Hardcover
+                </span>
+                <h2 className="font-serif text-3xl font-bold mb-2">
+                  The Elusive Quest for the Ray Peat Diet
+                </h2>
+                <p className="font-serif italic text-primary text-lg mb-3">
+                  A Guide to Food, Energy, and Vitality in His Own Words
+                </p>
+                <p className="text-white/80 leading-relaxed mb-6 max-w-2xl">
+                  Edited by Charlie Deist from fifty years of primary interviews, newsletters, and
+                  email correspondence—13 chapters with 346 numbered source notes. Read Chapter 4
+                  (&ldquo;Coffee&rdquo;) free today, browse 251 community recipes, or explore our
+                  companion 18×24 studio prints.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={`${DIET_SITE_URL}/book`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary flex items-center gap-2"
+                  >
+                    Read Coffee Chapter Free &amp; Book Info ↗
+                  </a>
+                  <a
+                    href={`${DIET_SITE_URL}/merch`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-white bg-transparent text-white hover:bg-white hover:text-ink transition-all"
+                  >
+                    18×24 Print Shop ↗
+                  </a>
+                  <Link
+                    href="/methodology"
+                    className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-white/50 bg-transparent text-white/90 hover:bg-white hover:text-ink transition-all"
+                  >
+                    How It&apos;s Built →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Disclaimer */}
         <section aria-label="Disclaimer" className="border-t-2 border-ink bg-paper-dim">
           <div className="py-5 px-6 flex flex-col md:flex-row items-start md:items-center gap-3 max-w-7xl mx-auto">
             <span className="material-symbols-outlined text-primary shrink-0">info</span>
             <p className="text-sm text-ink-muted leading-relaxed max-w-4xl">
-              <strong className="text-ink">This is not Ray Peat.</strong> Dr. Peat
-              (1935–2024) had no involvement with this site. Every answer and
-              article here is assembled exclusively from his published writings,
-              newsletters, and interviews — and every claim links back to its
-              source. Nothing here is individualized medical advice.{" "}
+              <strong className="text-ink">This is not Ray Peat.</strong> Dr. Raymond Peat
+              (1936–2022) had no involvement with this site, nor is it affiliated with or endorsed
+              by his estate or original publishers. Every answer and article here is assembled
+              exclusively from his published writings, newsletters, and interviews—and every claim
+              links back to its source. Nothing here is medical advice.{" "}
               <a
-                href="https://raypeat.com"
+                href={PRIMARY_SOURCE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary font-medium hover:underline"
               >
                 RayPeat.com
               </a>{" "}
-              and his books are always the primary sources.
+              and his books are always the primary sources. Contact:{" "}
+              <a href={`mailto:${ASK_EMAIL}`} className="text-primary font-medium hover:underline">
+                {ASK_EMAIL}
+              </a>
+              .
             </p>
           </div>
         </section>
@@ -577,16 +682,32 @@ export default function Home() {
                 <h2 className="font-serif text-3xl font-bold mb-3">Open source, openly editable</h2>
                 <p className="text-ink-muted leading-relaxed mb-4 max-w-2xl">
                   The whole encyclopedia and every transcript is Markdown on GitHub.
-                  Clone it, point your AI agent at it, fix a speaker label, add a
-                  connection, write a missing entry — pull requests welcome.
+                  Clone it, point your AI agent at it as a local research coach, fix a speaker
+                  label, or commission{" "}
+                  <a
+                    href={CIA_SITE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-medium hover:underline"
+                  >
+                    Creative Intelligence Agency
+                  </a>{" "}
+                  to build the same stack for your own archive.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link href="/contribute" className="btn-primary flex items-center gap-2">
                     <span className="material-symbols-outlined text-base">volunteer_activism</span>
                     How to Contribute
                   </Link>
+                  <Link
+                    href="/methodology"
+                    className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-paper hover:bg-ink hover:text-white transition-all"
+                  >
+                    <span className="material-symbols-outlined text-base">account_tree</span>
+                    Methodology &amp; Services
+                  </Link>
                   <a
-                    href="https://github.com/cdeistopened/raypeat-wiki"
+                    href={GITHUB_CORPUS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 py-2 px-5 font-mono text-xs font-bold uppercase tracking-widest border-2 border-ink bg-paper hover:bg-ink hover:text-white transition-all"
@@ -610,18 +731,28 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-serif text-3xl font-bold mb-4">About This Archive</h2>
             <p className="text-ink-muted leading-relaxed mb-6">
-              This archive preserves and makes searchable the life's work of Dr. Ray Peat,
-              exploring bioenergetic principles that support cellular energy production
-              and optimal health. All content is provided free and open source.
+              Compiled and edited by Charlie Deist to make searchable the life&apos;s work of Dr.
+              Raymond Peat (1936–2022), exploring bioenergetic principles that support cellular
+              energy production. All encyclopedia text is free and open source.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <a
-                href="https://raypeat.com"
+                href={PRIMARY_SOURCE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-primary hover:underline flex items-center gap-1"
               >
                 RayPeat.com
+                <span className="material-symbols-outlined text-sm">open_in_new</span>
+              </a>
+              <span className="text-ink-muted">•</span>
+              <a
+                href={CIA_SITE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-primary hover:underline flex items-center gap-1"
+              >
+                Creative Intelligence Agency
                 <span className="material-symbols-outlined text-sm">open_in_new</span>
               </a>
               <span className="text-ink-muted">•</span>
@@ -635,8 +766,18 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t-2 border-ink bg-paper-dim py-8 mt-12">
-        <div className="max-w-7xl mx-auto px-6 text-center font-mono text-xs text-ink-muted">
-          <p>© 2026 Ray Peat Wiki • An open encyclopedia of the bioenergetic framework</p>
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-xs text-ink-muted">
+          <p>
+            © 2026 Ray Peat Wiki · Independent archive (not Ray Peat, not affiliated with his estate) ·{" "}
+            <a href={`mailto:${ASK_EMAIL}`} className="underline text-ink">{ASK_EMAIL}</a>
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/methodology" className="hover:underline">Methodology</Link>
+            <Link href="/contribute" className="hover:underline">Contribute</Link>
+            <a href={`${DIET_SITE_URL}/book`} target="_blank" rel="noopener noreferrer" className="hover:underline">The Book ↗</a>
+            <a href={`${DIET_SITE_URL}/merch`} target="_blank" rel="noopener noreferrer" className="hover:underline">Print Shop ↗</a>
+            <a href={CIA_SITE_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">CIA ↗</a>
+          </div>
         </div>
       </footer>
     </div>

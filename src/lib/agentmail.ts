@@ -44,28 +44,28 @@ export async function sendMessage(to: string, subject: string, text: string, htm
 
 export function sampleChapterEmail(email: string): { subject: string; text: string; html: string } {
   const download = "https://raypeat.wiki/book/sample-chapter-coffee.pdf";
+  const recipientNote = email ? `Sent to ${email}. ` : "";
   return {
-    subject: "The Coffee chapter — The Ray Peat Diet",
-    text: `Thanks for signing up at raypeat.wiki.
+    subject: "Chapter 4: Coffee — The Elusive Quest for the Ray Peat Diet",
+    text: `Thanks for signing up at raypeat.wiki / raypeatdiet.com.
 
-Your sample chapter is here:
+Your free sample chapter from The Elusive Quest for the Ray Peat Diet (A Guide to Food, Energy, and Vitality in His Own Words) is ready here:
 ${download}
 
-This is the Coffee section of The Ray Peat Diet — Ray in his own words,
-every claim traced back to a source. The deluxe hardback follows at
-launch; you're on the list.
+This 348-page First Edition braids fifty years of Raymond Peat, PhD's newsletters, radio interviews, and letters into 13 chapters with 346 source notes. Paperback ($24.95) and Deluxe Hardcover ($34.95) launch links will go to this list first.
 
-- raypeat.wiki
+Questions or feedback? Reply or write askray@raypeat.wiki.
 
-P.S. This is not Ray Peat. Every word is assembled exclusively from his
-published writings and interviews — raypeat.com and his books are always
-the primary sources.`,
+- Charlie Deist / raypeat.wiki
+
+P.S. Independent compilation — this is not Ray Peat (1936–2022), and is not affiliated with or endorsed by his estate. RayPeat.com and his books are always the primary sources.`,
     html: `<div style="font-family:Georgia,serif;max-width:560px;margin:0 auto;color:#15181e;">
-<p>Thanks for signing up at <strong>raypeat.wiki</strong>.</p>
-<p><a href="${download}" style="display:inline-block;background:#f0c742;border:2px solid #15181e;padding:10px 18px;font-weight:bold;text-decoration:none;color:#15181e;">Download the Coffee chapter (PDF)</a></p>
-<p>This is the <em>Coffee</em> section of <strong>The Ray Peat Diet</strong> — Ray in his own words, every claim traced back to a source. The deluxe hardback follows at launch; you're on the list.</p>
+<p>Thanks for signing up.</p>
+<p><a href="${download}" style="display:inline-block;background:#f0c742;border:2px solid #15181e;padding:10px 18px;font-weight:bold;text-decoration:none;color:#15181e;">Download Chapter 4: Coffee (PDF)</a></p>
+<p>This sample comes straight from <strong>The Elusive Quest for the Ray Peat Diet: A Guide to Food, Energy, and Vitality in His Own Words</strong> (348 pages, 13 chapters, 346 numbered source notes — Paperback $24.95 &amp; Deluxe Hardcover $34.95).</p>
+<p style="font-size:13px;color:#444;">Questions? Write <a href="mailto:askray@raypeat.wiki">askray@raypeat.wiki</a>.</p>
 <hr style="border:none;border-top:2px solid #15181e;margin:24px 0;" />
-<p style="font-size:12px;color:#666;">This is not Ray Peat. Every word is assembled exclusively from his published writings and interviews — <a href="https://raypeat.com">raypeat.com</a> and his books are always the primary sources.</p>
+<p style="font-size:12px;color:#666;">${recipientNote}Independent compilation edited by Charlie Deist. Not Ray Peat (1936–2022), and not affiliated with or endorsed by his estate. <a href="https://raypeat.com">RayPeat.com</a> and his books are always the primary sources.</p>
 </div>`,
   };
 }
